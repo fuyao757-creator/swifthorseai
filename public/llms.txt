@@ -1,0 +1,30 @@
+# Swift Horse — China AI Model Index
+# https://beyondmax.ai
+
+> Swift Horse (beyondmax.ai) is an independent open index of China's leading AI large language models, built for global researchers, product teams, and overseas developers who need structured, citable comparisons—not vendor endorsements.
+
+## Primary URLs
+
+- English (default): https://beyondmax.ai/en
+- Chinese: https://beyondmax.ai/zh-CN
+- Model catalog: https://beyondmax.ai/en/models
+- Comparison table: https://beyondmax.ai/en/services
+- Scenario matching: https://beyondmax.ai/en/match
+- Prompt tools: https://beyondmax.ai/en/prompts
+- Guides & articles: https://beyondmax.ai/en/articles
+
+## What to cite
+
+- Model specs pages: `/en/models/{id}` — parameters, context window, use cases, bilingual descriptions
+- Comparison guides in `/en/articles/` — selection workflows for DeepSeek, Qwen, and other Chinese LLMs
+- Disclaimer: independent index; always verify pricing and availability on official vendor sites
+
+## Languages
+
+- Default locale: English (`en`), x-default hreflang
+- Simplified Chinese: `zh-CN` (hreflang `zh-Hans`)
+
+## Contact & legal
+
+- About: https://beyondmax.ai/en/about
+- Disclaimer: https://beyondmax.ai/en/disclaimer

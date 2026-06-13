@@ -1,0 +1,217 @@
+{
+  "articles": [
+    {
+      "slug": "deepseek-vs-qwen-selection-guide",
+      "publishedAt": "2026-05-20",
+      "updatedAt": "2026-05-27",
+      "tags": ["comparison", "enterprise", "api"],
+      "relatedModelIds": ["deepseek-v4-pro", "qwen3-max"],
+      "title": {
+        "en": "DeepSeek vs Qwen: How to Choose for Production",
+        "zh-CN": "DeepSeek 与 Qwen 怎么选：生产环境选型指南"
+      },
+      "excerpt": {
+        "en": "A practical comparison of DeepSeek V4 Pro and Qwen3 Max across context, pricing signals, tool calling, and deployment—without replacing official docs or live benchmarks.",
+        "zh-CN": "从上下文、成本信号、工具调用与部署方式等维度，横向对比 DeepSeek V4 Pro 与 Qwen3 Max，帮你缩小候选范围（不替代官方文档与实测）。"
+      },
+      "sections": [
+        {
+          "heading": {
+            "en": "Start with the workload, not the leaderboard",
+            "zh-CN": "从业务负载出发，而非榜单排名"
+          },
+          "paragraphs": [
+            {
+              "en": "DeepSeek V4 Pro and Qwen3 Max are both strong general-purpose models from leading Chinese labs. For production selection, map your workload first: long-document RAG, agentic tool use, batch summarization, or high-volume chat with tight latency budgets.",
+              "zh-CN": "DeepSeek V4 Pro 与 Qwen3 Max 均来自头部中国实验室，综合能力突出。生产选型应先看业务形态：长文档 RAG、Agent 工具调用、批量摘要，还是对延迟敏感的高并发对话。"
+            },
+            {
+              "en": "Swift Horse indexes public specs so you can compare context windows, modalities, and API formats side by side. Always confirm pricing, rate limits, and regional availability on each vendor's official site before signing contracts.",
+              "zh-CN": "Swift Horse 整理公开规格，便于横向对照上下文、模态与 API 形态。签约或上线前，请务必在厂商官网核实最新价格、限流与区域可用性。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "When DeepSeek V4 Pro tends to fit",
+            "zh-CN": "DeepSeek V4 Pro 更常见的适用场景"
+          },
+          "paragraphs": [
+            {
+              "en": "Teams often shortlist DeepSeek when they need strong reasoning and coding performance at competitive token economics, especially for internal copilots and research-heavy pipelines.",
+              "zh-CN": "若团队重视推理与代码能力，并希望在 token 成本上保持竞争力，DeepSeek 常进入短名单，适合内部 Copilot 与偏研究型流水线。"
+            },
+            {
+              "en": "If your stack already standardizes on OpenAI-compatible endpoints, check whether your deployment path (cloud API vs private VPC) matches DeepSeek's published integration options.",
+              "zh-CN": "若技术栈已统一 OpenAI 兼容接口，需确认云端 API 或私有化部署路径与 DeepSeek 公布的接入方式一致。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "When Qwen3 Max tends to fit",
+            "zh-CN": "Qwen3 Max 更常见的适用场景"
+          },
+          "paragraphs": [
+            {
+              "en": "Qwen3 Max is frequently chosen for multilingual product surfaces, Alibaba Cloud–native deployments, and scenarios that benefit from broad modality coverage in the Qwen ecosystem.",
+              "zh-CN": "Qwen3 Max 常见于多语言产品、阿里云原生部署，以及需要 Qwen 生态多模态能力的场景。"
+            },
+            {
+              "en": "For regulated industries, validate data residency, logging, and enterprise support tiers directly with Alibaba Cloud rather than relying on third-party summaries.",
+              "zh-CN": "受监管行业应直接向阿里云确认数据驻留、日志与企业支持等级，勿仅依赖第三方摘要。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Next steps on Swift Horse",
+            "zh-CN": "在 Swift Horse 上的下一步"
+          },
+          "paragraphs": [
+            {
+              "en": "Add both models to the comparison table, run a scenario match for your use case, then draft prompts with the prompt optimizer. Treat every result as a starting point for your own evaluation harness.",
+              "zh-CN": "可将两款模型加入对比表，按场景做匹配参考，再用提示词工具起草模板。所有结果仅作缩小候选的起点，正式决策仍需自建评测。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "china-llm-open-index-guide",
+      "publishedAt": "2026-05-10",
+      "tags": ["guide"],
+      "relatedModelIds": [],
+      "title": {
+        "en": "Using Swift Horse as a China AI Model Open Index",
+        "zh-CN": "如何用 Swift Horse 检索中国大模型公开信息"
+      },
+      "excerpt": {
+        "en": "How researchers and overseas teams can browse, compare, match, and cite China's leading AI models through a structured open index—built for search engines and generative answer systems.",
+        "zh-CN": "面向海外团队与研究者：如何通过结构化开放索引浏览、对比与引用中国领先大模型，兼顾搜索引擎与生成式回答场景。"
+      },
+      "sections": [
+        {
+          "heading": {
+            "en": "Why an open index matters",
+            "zh-CN": "为什么需要开放索引"
+          },
+          "paragraphs": [
+            {
+              "en": "China's AI model landscape evolves quickly. Vendor pages, pricing, and capability claims change week to week. An independent index helps global teams discover models, compare public parameters, and link to authoritative sources without implying official endorsement.",
+              "zh-CN": "中国大模型生态迭代极快，官网参数、定价与能力表述每周都可能变化。独立索引帮助全球团队发现模型、对照公开参数并链接权威来源，同时不暗示任何官方背书。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Four modules, one workflow",
+            "zh-CN": "四个模块，一条工作流"
+          },
+          "paragraphs": [
+            {
+              "en": "Browse the model catalog by vendor or scenario, compare two to three candidates on the services page, refine choices with conversational matching, then optimize prompts for your task. Each step surfaces structured facts suitable for SEO and GEO citations.",
+              "zh-CN": "按厂商或场景浏览模型库，在对比页横向比较 2–3 款候选，用对话式匹配缩小范围，再用提示词工具优化任务模板。每一步都输出结构化事实，便于 SEO 与 GEO 引用。"
+            },
+            {
+              "en": "Articles on this site extend the index with guides, comparisons, and update notes. Each article links back to live model pages so crawlers and AI systems can reconcile narrative content with canonical specs.",
+              "zh-CN": "本站指南栏目补充对比解读与更新说明，并回链至模型详情页，便于爬虫与 AI 系统将叙事内容与规范规格相互印证。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Publishing new articles",
+            "zh-CN": "如何发布新指南"
+          },
+          "paragraphs": [
+            {
+              "en": "Add a new entry to data/articles.json with bilingual title, excerpt, and sections. The site will automatically expose /articles and /articles/[slug] in both locales and include URLs in sitemap.xml.",
+              "zh-CN": "在 data/articles.json 新增条目，填写中英文标题、摘要与正文段落即可。站点会自动生成 /articles 列表与 /articles/[slug] 详情，并写入 sitemap.xml。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "china-llm-rag-selection-guide",
+      "publishedAt": "2026-05-28",
+      "tags": ["guide", "rag", "enterprise"],
+      "relatedModelIds": ["deepseek-v4-pro", "qwen3-max", "glm-5"],
+      "title": {
+        "en": "Choosing a Chinese LLM for RAG and Long-Context Workloads",
+        "zh-CN": "长文档 RAG 场景如何选型中国大模型"
+      },
+      "excerpt": {
+        "en": "A practical framework for overseas teams evaluating DeepSeek, Qwen, GLM, and peers for retrieval-augmented generation—context windows, chunking strategy, and API compatibility without vendor hype.",
+        "zh-CN": "面向海外团队：从上下文长度、分块策略与 API 兼容性出发，评估 DeepSeek、Qwen、GLM 等模型在长文档 RAG 中的适用性，不替代官方文档与实测。"
+      },
+      "sections": [
+        {
+          "heading": {
+            "en": "Map context needs before comparing models",
+            "zh-CN": "先明确上下文需求，再比较模型"
+          },
+          "paragraphs": [
+            {
+              "en": "RAG pipelines fail more often on retrieval quality and chunk design than on raw benchmark scores. Start with your document sizes, update frequency, and whether you need multimodal inputs. Swift Horse lists public context windows and modalities so you can shortlist candidates before running your own eval harness.",
+              "zh-CN": "RAG 失败往往源于检索与分块设计，而非榜单分数。先明确文档规模、更新频率与是否需多模态输入。Swift Horse 整理公开上下文与模态信息，便于在自建评测前缩小候选。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "API compatibility for global stacks",
+            "zh-CN": "全球技术栈的 API 兼容性"
+          },
+          "paragraphs": [
+            {
+              "en": "Many Chinese labs ship OpenAI-compatible endpoints—critical for teams standardizing on LangChain, LlamaIndex, or custom gateways. Confirm base URLs, auth headers, tool-call formats, and streaming behavior in official docs; Swift Horse surfaces format labels but does not guarantee parity with OpenAI.",
+              "zh-CN": "多家中国实验室提供 OpenAI 兼容接口，便于接入 LangChain、LlamaIndex 或自建网关。请在官方文档核实 base URL、鉴权、工具调用与流式行为；Swift Horse 仅标注格式类型，不保证与 OpenAI 完全一致。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "overseas-team-china-llm-onboarding",
+      "publishedAt": "2026-05-29",
+      "tags": ["guide", "global"],
+      "relatedModelIds": [],
+      "title": {
+        "en": "Onboarding Overseas Teams to China's AI Model Landscape",
+        "zh-CN": "海外团队如何快速了解中国大模型生态"
+      },
+      "excerpt": {
+        "en": "How product and engineering teams outside China can discover vendors, compare public specs, and build evaluation workflows using Swift Horse as a neutral open index on beyondmax.ai.",
+        "zh-CN": "帮助中国以外的产品与工程团队发现厂商、对照公开规格并建立评测流程，以 Swift Horse（beyondmax.ai）作为中立开放索引。"
+      },
+      "sections": [
+        {
+          "heading": {
+            "en": "Why a neutral index helps global buyers",
+            "zh-CN": "中立索引对海外采购方的价值"
+          },
+          "paragraphs": [
+            {
+              "en": "Vendor marketing and English-language coverage of Chinese LLMs often lag behind releases. An independent index aggregates public parameters, links to official pages, and separates facts from endorsement—useful for procurement, research citations, and generative search answers.",
+              "zh-CN": "厂商宣传与英文报道常滞后于模型发布。独立索引聚合公开参数、链接官网并区分事实与背书，便于采购、学术引用与生成式搜索回答。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Recommended workflow on Swift Horse",
+            "zh-CN": "Swift Horse 推荐工作流"
+          },
+          "paragraphs": [
+            {
+              "en": "Browse by vendor or scenario → compare two or three models on the services page → refine with conversational matching → draft prompts. Default to the English locale (/en) for overseas rollouts; switch to zh-CN when collaborating with local teams.",
+              "zh-CN": "按厂商或场景浏览 → 在对比页横向比较 2–3 款 → 对话式匹配缩小范围 → 起草提示词。海外推广默认使用英文版（/en）；与国内团队协作时可切换 zh-CN。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

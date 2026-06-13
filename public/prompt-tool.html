@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>提示词优化 | Swift Horse</title>
+  <style>
+    :root {
+      --bg: #f4f3ef; --card: #fff; --text: #1a1a1a; --muted: #64748b;
+      --border: #e2e8f0; --accent: #c23a2f; --accent2: #0891b2;
+      --user-bg: #1a1a1a; --user-fg: #fff; --bot-bg: #fff;
+    }
+    [data-theme="dark"] {
+      --bg: #06080f; --card: #0f1420; --text: #f1f5f9; --muted: #94a3b8;
+      --border: rgba(255,255,255,.1); --user-bg: #22d3ee; --user-fg: #06080f; --bot-bg: #141c2b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 1rem 1rem 2.5rem; }
+    .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: .75rem; font-size: .875rem; }
+    .theme-btn, .tab, .btn, .ex, .mode-btn, .link-btn { cursor: pointer; font-family: inherit; }
+    .theme-btn { border: 1px solid var(--border); background: var(--card); color: var(--text); border-radius: .5rem; padding: .35rem .75rem; }
+    .banner { background: rgba(8,145,178,.08); border: 1px solid rgba(8,145,178,.25); border-radius: .75rem; padding: .75rem 1rem; font-size: .8rem; margin-bottom: 1rem; }
+    h1 { font-size: 1.5rem; font-weight: 700; }
+    .subtitle { color: var(--muted); font-size: .9rem; margin-top: .35rem; }
+    .tabs { display: flex; gap: .5rem; margin: 1.25rem 0; flex-wrap: wrap; }
+    .tab { border: 1px solid var(--border); background: var(--card); color: var(--muted); border-radius: .65rem; padding: .55rem 1rem; font-size: .8rem; font-weight: 600; }
+    .tab.active { background: var(--user-bg); color: var(--user-fg); border-color: transparent; }
+    .panel-hidden { display: none !important; }
+    .layout { display: grid; gap: 1rem; }
+    @media (min-width: 900px) { .layout-2 { grid-template-columns: 1fr 1fr; } .layout-chat { grid-template-columns: 3fr 2fr; } }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 1rem; box-shadow: 0 4px 20px rgba(0,0,0,.05); }
+    .chat { display: flex; flex-direction: column; min-height: 28rem; }
+    .msgs { flex: 1; overflow-y: auto; padding: 1rem; display: flex; flex-direction: column; gap: .75rem; }
+    .msg { max-width: 88%; padding: .75rem 1rem; border-radius: 1rem; font-size: .875rem; white-space: pre-line; }
+    .msg.bot { align-self: flex-start; background: var(--bot-bg); border: 1px solid var(--border); }
+    .msg.user { align-self: flex-end; background: var(--user-bg); color: var(--user-fg); }
+    .msg .from { font-size: .65rem; opacity: .55; text-transform: uppercase; letter-spacing: .05em; display: block; margin-bottom: .25rem; }
+    .chat-foot { border-top: 1px solid var(--border); padding: 1rem; }
+    .examples { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: .75rem; }
+    .ex { font-size: .7rem; padding: .3rem .6rem; border: 1px solid var(--border); border-radius: .5rem; background: transparent; color: var(--muted); }
+    .ex:hover { border-color: var(--accent2); color: var(--text); }
+    .input-row { display: flex; gap: .5rem; }
+    .input-row input, textarea { flex: 1; border: 1px solid var(--border); border-radius: .75rem; padding: .65rem 1rem; font-size: .875rem; background: var(--card); color: var(--text); outline: none; font-family: inherit; }
+    textarea { width: 100%; resize: vertical; min-height: 10rem; }
+    .btn { border: none; border-radius: .75rem; padding: .65rem 1.1rem; font-size: .875rem; font-weight: 600; }
+    .btn-send, .btn-primary { background: linear-gradient(135deg, var(--accent), #e85d4c); color: #fff; }
+    .btn-outline { background: var(--card); border: 1px solid var(--border); color: var(--text); font-size: .75rem; padding: .4rem .75rem; }
+    .btn:disabled { opacity: .4; cursor: not-allowed; }
+    .side { padding: 1rem; position: sticky; top: 1rem; max-height: calc(100vh - 2rem); overflow-y: auto; display: flex; flex-direction: column; }
+    .side-head { display: flex; align-items: center; justify-content: space-between; gap: .5rem; margin-bottom: .75rem; }
+    .pre { overflow: auto; flex: 1; white-space: pre-wrap; border: 1px solid var(--border); border-radius: .75rem; padding: 1rem; font-family: ui-monospace, monospace; font-size: .75rem; line-height: 1.65; background: var(--bg); }
+    .badge { display: inline-block; font-size: .65rem; padding: .2rem .55rem; border-radius: .35rem; background: rgba(8,145,178,.12); color: var(--accent2); font-weight: 600; }
+    .meta { font-size: .7rem; color: var(--muted); margin-bottom: .75rem; display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+    .link-btn { background: none; border: none; color: var(--muted); font-size: .75rem; margin-left: auto; }
+    .pad { padding: 1rem 1.25rem; }
+    .modes { display: flex; flex-wrap: wrap; gap: .4rem; margin: .75rem 0; }
+    .mode-btn { font-size: .65rem; padding: .3rem .55rem; border: 1px solid var(--border); border-radius: .45rem; background: var(--card); color: var(--muted); }
+    .mode-btn.active { border-color: var(--accent2); background: rgba(8,145,178,.1); color: var(--text); }
+    .history { margin-top: 1.5rem; }
+    .history li { list-style: none; border: 1px solid var(--border); border-radius: .65rem; padding: .65rem .85rem; margin-bottom: .5rem; display: flex; justify-content: space-between; align-items: center; gap: .5rem; font-size: .8rem; }
+    .history small { display: block; color: var(--muted); font-size: .65rem; margin-top: .15rem; }
+    .pre-before { background: var(--bg); color: var(--muted); min-height: 14rem; }
+    .pre-after { background: rgba(8,145,178,.06); border-color: rgba(8,145,178,.25); min-height: 14rem; }
+    .tab-desc { font-size: .75rem; color: var(--muted); margin: -.5rem 0 1rem; }
+    .compare-head { display: flex; align-items: center; gap: .5rem; margin-bottom: .5rem; font-size: .75rem; }
+    .footnote { text-align: center; font-size: .65rem; color: var(--muted); margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <span>Swift Horse · 提示词优化</span>
+      <button type="button" class="theme-btn" id="themeBtn">🌓</button>
+    </div>
+    <div class="banner" role="note">本工具为演示版本，生成的提示词仅供参考，建议根据实际需求调整。</div>
+    <h1>提示词优化</h1>
+    <p class="subtitle">已有提示词？用优化器快速改进；还没想好？用对话生成从零构建</p>
+
+    <div class="tabs">
+      <button type="button" class="tab active" data-tab="optimize">优化器</button>
+      <button type="button" class="tab" data-tab="chat">对话生成</button>
+    </div>
+    <p class="tab-desc" id="tabDesc">适合已有草稿：输入原始提示词，系统自动优化并展示前后对比。</p>
+
+    <!-- 优化 Tab -->
+    <div id="panelOptimize">
+      <div class="card pad" style="margin-bottom:1rem">
+        <h2 style="font-size:1rem;margin-bottom:.35rem">输入原始提示词</h2>
+        <p style="font-size:.8rem;color:var(--muted);margin-bottom:.75rem">输入后系统自动优化（约 0.5 秒），下方实时展示优化前后对比</p>
+        <textarea id="rawPrompt" rows="4" placeholder="例如：帮我写一段产品介绍，要突出性价比…"></textarea>
+        <div class="modes" id="modeBtns">
+          <button type="button" class="mode-btn active" data-mode="auto">自动</button>
+          <button type="button" class="mode-btn" data-mode="structure">结构化</button>
+          <button type="button" class="mode-btn" data-mode="clarity">更清晰</button>
+          <button type="button" class="mode-btn" data-mode="constraints">加约束</button>
+          <button type="button" class="mode-btn" data-mode="professional">更专业</button>
+          <button type="button" class="btn-outline" id="clearOptBtn" style="display:none">清除输入与结果</button>
+        </div>
+      </div>
+      <div class="layout layout-2">
+        <div class="card pad">
+          <div class="compare-head"><span class="badge">优化前</span><span style="color:var(--muted)">原始输入</span></div>
+          <pre class="pre pre-before" id="beforeOut">在上方输入提示词，此处显示原始内容</pre>
+        </div>
+        <div class="card pad">
+          <div class="side-head">
+            <div class="compare-head" style="margin:0"><span class="badge">优化后</span><span style="color:var(--muted)">系统自动生成</span></div>
+            <button type="button" class="btn-outline" id="copyOptBtn">一键复制</button>
+          </div>
+          <pre class="pre pre-after" id="optOut">输入提示词后，优化结果将显示在这里</pre>
+        </div>
+      </div>
+      <p class="footnote">优化器与对话生成互补——一个改现有，一个帮新建。</p>
+    </div>
+
+    <!-- 对话 Tab -->
+    <div id="panelChat" class="panel-hidden">
+      <div class="meta">
+        <span class="badge" id="roundBadge">第 1/5 轮 · 场景</span>
+        <span id="sceneBadge"></span>
+        <button type="button" class="link-btn" id="resetBtn">清除对话</button>
+        <button type="button" class="link-btn" id="clearResultsBtn" style="display:none">清除结果，重新对话</button>
+      </div>
+      <div class="layout layout-chat">
+        <section class="card chat">
+          <div class="msgs" id="msgs"></div>
+          <div class="chat-foot">
+            <div class="examples" id="examples"></div>
+            <div class="input-row">
+              <input id="chatInput" type="text" placeholder="输入你的回答…" autocomplete="off" />
+              <button type="button" class="btn btn-send" id="sendBtn">发送</button>
+            </div>
+            <button type="button" class="link-btn" id="clearFootBtn" style="display:none;margin-top:.5rem">清除结果，重新对话</button>
+          </div>
+        </section>
+        <aside class="card side">
+          <div class="side-head">
+            <h2 style="font-size:1rem">提示词预览</h2>
+            <div style="display:flex;gap:.35rem">
+              <button type="button" class="btn-outline" id="clearPreviewBtn" style="display:none">清除结果，重新对话</button>
+              <button type="button" class="btn-outline" id="copyPreviewBtn">一键复制</button>
+            </div>
+          </div>
+          <p style="font-size:.7rem;color:var(--muted);margin-bottom:.5rem">每轮对话后实时更新</p>
+          <pre class="pre" id="preview"></pre>
+          <p id="completeHint" style="display:none;font-size:.7rem;color:var(--accent2);margin-top:.5rem">✓ 5 轮对话已完成</p>
+        </aside>
+      </div>
+      <div class="card pad history" id="historyBlock" style="display:none">
+        <h3 style="font-size:.95rem;margin-bottom:.65rem">历史生成的提示词</h3>
+        <ul id="historyList"></ul>
+      </div>
+    </div>
+  </div>
+  <div class="toast" id="toast">已复制</div>
+
+<script>
+(function () {
+  const STORAGE_SESSION = 'swift-horse-prompt-chat-session';
+  const STORAGE_HISTORY = 'swift-horse-prompt-history';
+
+  const SCENES = [
+    { id:'customer_service', label:'客服回复生成', keywords:['客服','售后','咨询','回复','电商','店铺'],
+      role:'你是一位专业、耐心且熟悉业务的客服代表',
+      round2:'了解！请补充：① 产品/行业类型 ② 常见处理场景（退款、物流、投诉等）③ 期望语气（亲切/正式/简洁）',
+      format:'分段回复，先共情再给出解决方案，必要时列出操作步骤',
+      notes:['不承诺无法兑现的政策','敏感问题转人工','避免泄露用户隐私'] },
+    { id:'code', label:'代码生成/解释', keywords:['代码','编程','python','javascript','java','bug','开发'],
+      role:'你是一位资深软件工程师，擅长编写清晰、可维护的代码',
+      round2:'请说明：① 编程语言/框架 ② 要实现的功能 ③ 代码风格偏好（简洁/注释详细/函数式等）',
+      format:'先简要说明思路，再给出完整代码块，最后列出关键说明与测试建议',
+      notes:['标注潜在边界情况','不执行危险系统命令','说明依赖与环境要求'] },
+    { id:'writing', label:'内容写作', keywords:['写作','文案','文章','脚本','营销','内容'],
+      role:'你是一位经验丰富的内容创作者与文案策划',
+      round2:'请补充：① 主题/产品 ② 目标受众 ③ 风格（专业/轻松/种草/故事化）④ 大致字数',
+      format:'标题 + 正文分段，段落有小标题，结尾可有行动号召',
+      notes:['避免夸大宣传','保持品牌调性一致','不抄袭他人内容'] },
+    { id:'translation', label:'翻译', keywords:['翻译','译','双语','本地化'],
+      role:'你是一位专业翻译，兼顾准确性与目标语言自然表达',
+      round2:'请说明：① 源语言 → 目标语言 ② 文本类型（技术/营销/法律/日常）③ 是否需要保留术语对照',
+      format:'输出译文；如有术语表则附关键术语对照',
+      notes:['文化差异处加注说明','不擅自增删原意','敏感内容保持中性'] },
+    { id:'analysis', label:'数据分析', keywords:['分析','数据','报表','统计','指标'],
+      role:'你是一位数据分析顾问，擅长从数据中提取可执行洞察',
+      round2:'请描述：① 数据类型/来源 ② 分析目标（趋势/对比/异常/预测）③ 期望输出（摘要/表格/图表描述）',
+      format:'结论摘要 → 关键发现（分点）→ 建议行动 → 可选数据表格',
+      notes:['标注数据局限性','区分相关与因果','不捏造未提供的数据'] },
+    { id:'meeting', label:'会议纪要', keywords:['会议','纪要','议程'],
+      role:'你是一位高效的会议记录与整理助手',
+      round2:'请补充：① 会议类型/主题 ② 参与角色 ③ 需要突出的内容（决策/待办/风险）',
+      format:'会议信息 → 讨论要点 → 决议事项 → 待办（负责人+截止时间）',
+      notes:['区分事实与推测','待办需明确负责人','敏感信息脱敏'] },
+    { id:'email', label:'邮件撰写', keywords:['邮件','信','函','跟进'],
+      role:'你是一位商务沟通专家，擅长撰写得体的专业邮件',
+      round2:'请说明：① 邮件目的（邀请/跟进/道歉/通知）② 收件人关系 ③ 语气（正式/友好/紧迫）',
+      format:'主题行 + 称呼 + 正文 + 结尾敬语 + 可选附言',
+      notes:['主题简洁明确','避免歧义与攻击性措辞','敏感承诺需审慎'] },
+    { id:'resume', label:'简历筛选', keywords:['简历','招聘','hr','筛选','面试'],
+      role:'你是一位严谨的 HR 招聘顾问，擅长结构化评估候选人',
+      round2:'请提供：① 岗位名称与核心要求 ② 优先/加分项 ③ 输出形式（评分表/优劣势/面试问题）',
+      format:'匹配度评分 → 优势 → 风险点 → 建议面试问题',
+      notes:['避免歧视性评判','基于岗位需求客观评估','不泄露候选人隐私'] },
+    { id:'tutoring', label:'学习辅导', keywords:['学习','辅导','教学','讲解','考试'],
+      role:'你是一位耐心且善于启发的学习导师',
+      round2:'请说明：① 学科/知识点 ② 学习者水平 ③ 期望方式（逐步讲解/举例/练习题）',
+      format:'概念解释 → 示例 → 练习或小结 → 鼓励性反馈',
+      notes:['由浅入深','鼓励独立思考','不确定时说明需核实'] },
+    { id:'brainstorm', label:'创意头脑风暴', keywords:['创意','头脑风暴','策划','灵感','方案'],
+      role:'你是一位创意策划师，擅长发散思维与结构化归纳',
+      round2:'请补充：① 创意目标/问题 ② 约束（预算/时间/受众）③ 需要多少方案/方向',
+      format:'问题重述 → 3–5 个创意方向（各含亮点与风险）→ 推荐优先级',
+      notes:['区分可行与实验性想法','标注假设条件','避免侵权与抄袭'] },
+    { id:'general', label:'通用任务', keywords:[],
+      role:'你是一位高效、可靠的 AI 助手',
+      round2:'请补充更多细节：背景、目标用户、使用场景，以及你期望的输出风格。',
+      format:'结构清晰、分点或分段输出，便于直接使用',
+      notes:['不确定处主动说明','不编造事实','遵守安全与合规边界'] }
+  ];
+
+  const TEMPLATES = {
+    customer_service: {
+      role: '你是{{产品}}的客服助手，名字叫{{助手名}}',
+      rules: ['语气{{风格}}，使用{{语言偏好}}与客户沟通', '重点处理场景：{{场景列表}}'],
+      task: '根据客户问题生成专业、得体的回复',
+      format: 'Markdown 分段；每条回复简洁明了'
+    },
+    code: {
+      role: '你是{{语言}}专家，擅长编写清晰、可维护的代码',
+      rules: ['实现功能：{{功能描述}}', '代码风格：{{风格}}'],
+      task: '{{功能描述}}',
+      format: '代码块使用 ```{{语言}}``` 标注；附依赖说明'
+    },
+    writing: {
+      role: '你是{{领域}}领域的内容创作者',
+      rules: ['目标受众：{{受众}}', '写作风格：{{风格}}，约 {{字数}} 字'],
+      task: '撰写关于「{{主题}}」的内容',
+      format: '标题 + 分段正文（含小标题）+ 可选行动号召'
+    },
+    general: {
+      role: '你是高效、可靠的 AI 助手',
+      rules: ['根据用户需求完成任务'],
+      task: '{{主题}}',
+      format: '结构清晰，分点或分段输出'
+    }
+  };
+
+  const COMBO_RULES = [
+    {
+      test: t => /客服|售后/.test(t) && /电商|店铺/.test(t),
+      role: '你是服装电商的客服助手，名字叫小雅。熟悉退换货政策、物流查询和尺码建议，能用亲切专业的语气中英文双语回复客户。'
+    },
+    {
+      test: t => /python/i.test(t) && /csv|批量|数据/.test(t),
+      role: '你是 Python 数据处理专家，擅长用 pandas 和标准库编写健壮的数据脚本。'
+    },
+    {
+      test: t => /文案|写作/.test(t) && /电商|详情页|产品/.test(t),
+      role: '你是电商详情页文案策划，擅长种草风格但不浮夸，熟悉天猫/京东平台规范。'
+    }
+  ];
+
+  function fillTpl(str, slots) {
+    return str.replace(/\{\{([^}]+)\}\}/g, (_, k) => slots[k.trim()] || '（' + k + '）');
+  }
+  function extractSlots(answers) {
+    const all = Object.values(answers).filter(Boolean).join('\n');
+    const product = /服装|配饰/.test(all) ? '服装配饰电商' : /电商|店铺/.test(all) ? '跨境电商' : '该产品/服务';
+    const tone = /亲切|friendly/.test(all) ? '亲切、有温度' : /正式|专业/.test(all) ? '正式、专业' : /简洁/.test(all) ? '简洁扼要' : '专业得体';
+    const lang = /python/i.test(all) ? 'Python' : /javascript|js/i.test(all) ? 'JavaScript' : /typescript|ts/i.test(all) ? 'TypeScript' : '指定编程语言';
+    const scenes = answers.details ? answers.details.slice(0, 80) : '常见咨询场景';
+    return {
+      '产品': product,
+      '助手名': /小雅/.test(all) ? '小雅' : '小助',
+      '风格': tone,
+      '场景列表': scenes,
+      '语言偏好': /双语|中英文/.test(all) ? '中英文双语' : '简体中文',
+      '语言': lang,
+      '功能描述': answers.details || answers.task || '用户描述的功能',
+      '字数': (all.match(/(\d+)\s*字/) || [])[1] ? (all.match(/(\d+)\s*字/)[1] + '字') : '300',
+      '领域': /营销|文案/.test(all) ? '营销' : /技术|代码/.test(all) ? '技术' : '通用',
+      '受众': /25-35|白领/.test(all) ? '25-35 岁都市白领' : '目标读者',
+      '主题': answers.task || '用户指定的主题'
+    };
+  }
+  function buildPrompt(sceneId, answers) {
+    const all = Object.values(answers).filter(Boolean).join('\n');
+    const task = answers.task || '完成相关任务';
+    const isAppEdu = /错题|考点|刷题|学习分析/i.test(all);
+    const isApp = /App|应用|小程序|软件/i.test(all);
+    let role = '你是一位高效、可靠的 AI 助手，擅长专业交付，输出可直接用于生产环境。';
+    if (isAppEdu) {
+      role = '你是一位资深的教育产品经理兼 AI 应用开发顾问，擅长将学习场景需求转化为可执行的技术方案。';
+    } else if (isApp) {
+      role = '你是一位资深产品经理兼技术方案顾问，擅长将产品需求拆解为可落地的功能与技术路径。';
+    } else {
+      for (const c of COMBO_RULES) { if (c.test(all)) { role = c.role; break; } }
+    }
+    let coreInfo;
+    if (isAppEdu) {
+      coreInfo = [
+        '- App名称：[例如：智学错题本 / 考点狙击]',
+        '- 目标用户年级：[小学 / 初中 / 高中 / 大学生 / 考研党]',
+        '- 主要科目：[数学 / 英语 / 物理 / 化学 / 多科目通用]',
+        '- 题目录入方式：[拍照识别 / 手动输入 / 导入图片 / 语音输入]',
+        '- 核心分析需求：[例如：按知识点统计错误率 / 推荐同类题 / 分析薄弱考点]'
+      ].join('\n');
+    } else {
+      const slots = extractSlots(answers);
+      coreInfo = [
+        '- 背景/场景：' + (answers.details ? answers.details.slice(0, 80) : '[描述使用背景]'),
+        '- 核心诉求：' + (task.length > 100 ? task.slice(0, 100) + '…' : task),
+        '- 约束条件：' + (answers.constraints ? answers.constraints.slice(0, 80) : '[输出约束]')
+      ].join('\n');
+    }
+    const outputReq = [
+      '- 分 5 个步骤输出，每个步骤标注进度（步骤 1/5 至步骤 5/5）',
+      '- 每个要求单独成句，不使用「大概、可能、尽量」等模糊词',
+      '- 首次出现的关键术语加粗并简要定义',
+      '- 假设按最常用场景执行，并注明假设',
+      '- 输出内容可直接用于后续提示词或开发文档'
+    ].join('\n');
+    let questions;
+    if (isAppEdu && /错题/.test(all)) {
+      questions = [
+        '1. 这款 App 的核心功能模块有哪些？',
+        '2. 拍照识别错题的技术实现路径是什么？',
+        '3. 错题分析报告应包含哪些维度的数据？',
+        '4. 推荐同类题的算法逻辑是什么？',
+        '5. 最小可行产品（MVP）建议先做哪 3 个功能？'
+      ].join('\n');
+    } else {
+      questions = [
+        '1. 任务的核心目标是什么？',
+        '2. 执行应分哪几个关键步骤？',
+        '3. 输出物应包含哪些必备要素？',
+        '4. 有哪些约束或边界需遵守？',
+        '5. 如何验证输出是否满足需求？'
+      ].join('\n');
+    }
+    if (answers.example) coreInfo += '\n- 参考示例：' + answers.example;
+    return [
+      '# 角色设定\n' + role,
+      '# 任务\n' + task,
+      '# 核心信息（请根据实际情况替换 [ ] 中的内容）\n' + coreInfo,
+      '# 输出要求\n' + outputReq,
+      '# 你需要回答的具体问题（请逐条输出）\n' + questions
+    ].join('\n\n');
+  }
+
+  const QUICK = [
+    { label:'做电商客服', scene:'customer_service', answers:[
+      '做跨境电商客服，处理买家咨询和售后',
+      '主营服装配饰，场景包括物流查询、尺码建议、退换货；语气亲切专业，中英文双语',
+      '回复简洁，先安抚再解决；涉及退款超过7天需转人工；输出 Markdown 分段',
+      '客户：我的包裹显示已签收但我没收到，订单 #8821'
+    ]},
+    { label:'写Python代码', scene:'code', answers:[
+      '用 Python 写一个批量处理 CSV 的小工具',
+      'Python 3.11，读取 sales.csv，按月份汇总销售额并导出 report.json；代码要有类型注解和注释',
+      '输出完整可运行脚本 + 使用说明；处理空值和文件不存在的情况',
+      'CSV 列：date, product, amount, region'
+    ]},
+    { label:'写产品文案', scene:'writing', answers:[
+      '为一款无线降噪耳机写电商详情页文案',
+      '目标受众 25-35 岁都市白领，风格种草但不浮夸，突出续航和降噪，约 400 字',
+      '标题 + 3 个卖点小标题 + 正文；避免绝对化用语；适合天猫/京东详情页',
+      '产品名：Swift Air Pro，续航 40h，混合主动降噪'
+    ]}
+  ];
+
+  const ROUND_LABELS = {1:'第 1/5 轮 · 场景',2:'第 2/5 轮 · 细节',3:'第 3/5 轮 · 约束',4:'第 4/5 轮 · 示例',5:'第 5/5 轮 · 完成'};
+  const WELCOME = '我来帮你生成提示词。先说说你想用 AI 做什么？（例如：写周报、客服回复、代码生成…）';
+  const Q3 = '有没有特别要求？比如输出格式、注意事项、敏感内容处理？';
+  const Q4 = '可以给一个输入示例吗？我来根据你的示例优化提示词。';
+  const Q5 = '好的！根据你的回答，我生成了以下提示词，你可以直接复制使用。';
+
+  let optimizeMode = 'auto';
+  let optimizeTimer = null;
+  let session = null;
+  let history = [];
+
+  function uid() { return Date.now() + '-' + Math.random().toString(36).slice(2,9); }
+  function getScene(id) { return SCENES.find(s => s.id === id) || SCENES[SCENES.length-1]; }
+  function detectScene(text) {
+    const lower = text.toLowerCase(); let best = 'general', score = 0;
+    SCENES.forEach(s => {
+      if (s.id === 'general') return;
+      let sc = 0; s.keywords.forEach(k => { if (lower.includes(k.toLowerCase())) sc += 2; });
+      if (sc > score) { score = sc; best = s.id; }
+    });
+    return best;
+  }
+  function createSession() {
+    return { round:1, scene:'general', answers:{}, completed:false, messages:[{id:uid(), role:'assistant', content:WELCOME}] };
+  }
+  function processMessage(sess, text) {
+    const t = text.trim(); if (!t) return sess;
+    const messages = [...sess.messages, {id:uid(), role:'user', content:t}];
+    const answers = {...sess.answers};
+    if (sess.round === 1) {
+      answers.task = t; const scene = detectScene(t);
+      return {...sess, round:2, scene, answers, messages:[...messages, {id:uid(), role:'assistant', content:getScene(scene).round2}]};
+    }
+    if (sess.round === 2) {
+      answers.details = t;
+      return {...sess, round:3, answers, messages:[...messages, {id:uid(), role:'assistant', content:Q3}]};
+    }
+    if (sess.round === 3) {
+      answers.constraints = t;
+      return {...sess, round:4, answers, messages:[...messages, {id:uid(), role:'assistant', content:Q4}]};
+    }
+    if (sess.round === 4) {
+      answers.example = t; const prompt = buildPrompt(sess.scene, answers);
+      return {...sess, round:5, answers, completed:true, messages:[...messages, {id:uid(), role:'assistant', content:Q5 + '\n\n---\n\n' + prompt}]};
+    }
+    answers.constraints = [answers.constraints, t].filter(Boolean).join('\n');
+    return {...sess, answers, messages:[...messages, {id:uid(), role:'assistant', content:'已记录补充说明，右侧预览已更新。'}]};
+  }
+  function getPreview(sess) {
+    const hasUserInput = sess.messages.some(m => m.role === 'user') || Boolean((sess.answers.task || '').trim());
+    if (!hasUserInput) return '';
+    return buildPrompt(sess.scene, {
+      task: sess.answers.task||'', details: sess.answers.details||'',
+      constraints: sess.answers.constraints||'', example: sess.answers.example||''
+    });
+  }
+  function optimize(raw, mode) {
+    const text = raw.trim(); if (!text) return '';
+    const resolved = mode === 'auto' ? 'structure' : mode;
+    const hints = {
+      clarity:'请使用清晰、无歧义的语言；每个要求单独成句；避免模糊词汇。',
+      structure:'按「角色 → 任务 → 要求 → 输出格式 → 示例 → 注意事项」结构组织。',
+      constraints:'明确边界：不编造信息、不确定时说明、遵守安全与合规要求。',
+      professional:'使用专业、正式的语气；术语准确；适合职场或生产环境使用。'
+    };
+    if (resolved === 'structure') {
+      return ['1. 角色设定','你是一位在该领域经验丰富的 AI 助手。','','2. 任务描述',text,'','3. 具体要求',hints.structure,'','4. 输出格式','结构清晰，分点或分段输出。','','5. 注意事项','• 不确定处主动说明\n• 不编造事实'].join('\n');
+    }
+    const label = {clarity:'更清晰', constraints:'加约束', professional:'更专业'}[resolved];
+    return '【优化后的提示词 · ' + label + '】\n\n' + text + '\n\n补充要求：\n' + hints[resolved];
+  }
+  function runOptimizeUI() {
+    const raw = document.getElementById('rawPrompt').value;
+    const beforeEl = document.getElementById('beforeOut');
+    const outEl = document.getElementById('optOut');
+    if (!raw.trim()) {
+      beforeEl.textContent = '在上方输入提示词，此处显示原始内容';
+      outEl.textContent = '输入提示词后，优化结果将显示在这里';
+      return;
+    }
+    beforeEl.textContent = raw;
+    outEl.textContent = optimize(raw, optimizeMode) || '输入提示词后，优化结果将显示在这里';
+    const clearBtn = document.getElementById('clearOptBtn');
+    clearBtn.style.display = raw.trim() || (outEl.textContent && !outEl.textContent.startsWith('输入提示词')) ? '' : 'none';
+  }
+  function clearOptimizer() {
+    document.getElementById('rawPrompt').value = '';
+    document.getElementById('beforeOut').textContent = '在上方输入提示词，此处显示原始内容';
+    document.getElementById('optOut').textContent = '输入提示词后，优化结果将显示在这里';
+    document.getElementById('clearOptBtn').style.display = 'none';
+  }
+
+  function toast(msg) {
+    const el = document.getElementById('toast');
+    el.textContent = msg; el.classList.add('show');
+    setTimeout(() => el.classList.remove('show'), 1800);
+  }
+  function copyText(text) {
+    navigator.clipboard.writeText(text).then(() => toast('已复制')).catch(() => toast('复制失败'));
+  }
+  function saveSession() { try { localStorage.setItem(STORAGE_SESSION, JSON.stringify(session)); } catch(e){} }
+  function saveHistory(prompt) {
+    const entry = { id:uid(), title:(session.answers.task||'未命名').slice(0,40), scene:session.scene, prompt, createdAt:Date.now() };
+    history = [entry, ...history.filter(h => h.prompt !== prompt)].slice(0,20);
+    try { localStorage.setItem(STORAGE_HISTORY, JSON.stringify(history)); } catch(e){}
+    renderHistory();
+  }
+  function renderMsgs() {
+    const box = document.getElementById('msgs');
+    box.innerHTML = session.messages.map(m =>
+      '<div class="msg ' + (m.role==='user'?'user':'bot') + '"><span class="from">' + (m.role==='user'?'你':'Swift Horse') + '</span>' + escapeHtml(m.content) + '</div>'
+    ).join('');
+    box.scrollTop = box.scrollHeight;
+  }
+  function escapeHtml(s) { return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+  function renderChatUI() {
+    document.getElementById('roundBadge').textContent = ROUND_LABELS[session.round] || ROUND_LABELS[5];
+    const scene = getScene(session.scene);
+    document.getElementById('sceneBadge').textContent = session.scene !== 'general' ? '识别场景：' + scene.label : '';
+    document.getElementById('preview').textContent = getPreview(session) || '开始对话后，结构化提示词将在此预览';
+    document.getElementById('completeHint').style.display = session.completed ? 'block' : 'none';
+    document.getElementById('chatInput').disabled = session.round > 5;
+    document.getElementById('chatInput').placeholder = session.round > 5 ? '对话已完成，请点击「清除结果，重新对话」' : '输入你的回答…';
+    const showClear = session.round > 1 || session.completed;
+    ['clearResultsBtn', 'clearPreviewBtn', 'clearFootBtn'].forEach(id => {
+      document.getElementById(id).style.display = showClear ? '' : 'none';
+    });
+    renderMsgs(); saveSession();
+  }
+  function renderHistory() {
+    const block = document.getElementById('historyBlock');
+    const list = document.getElementById('historyList');
+    if (!history.length) { block.style.display = 'none'; return; }
+    block.style.display = 'block';
+    list.innerHTML = history.map(h =>
+      '<li><div><strong>' + escapeHtml(h.title) + '</strong><small>' + getScene(h.scene).label + ' · ' + new Date(h.createdAt).toLocaleString('zh-CN') + '</small></div>' +
+      '<button type="button" class="btn-outline" data-copy="' + encodeURIComponent(h.prompt) + '">复制</button></li>'
+    ).join('');
+    list.querySelectorAll('[data-copy]').forEach(btn => {
+      btn.addEventListener('click', () => copyText(decodeURIComponent(btn.dataset.copy)));
+    });
+  }
+  const CLEARED_REPLY = '已清除当前对话与提示词预览。请重新描述您的需求，我将帮您生成新的提示词。';
+  function resetChat(showNotice) {
+    const hadProgress = session.round > 1 || session.messages.some(m => m.role === 'user');
+    try { localStorage.removeItem(STORAGE_SESSION); } catch(e) {}
+    session = createSession();
+    if (showNotice && hadProgress) {
+      session.messages.push({ id: uid(), role: 'assistant', content: CLEARED_REPLY });
+    }
+    document.getElementById('chatInput').value = '';
+    renderChatUI();
+  }
+  function clearAndRestart() { resetChat(true); }
+  function sendChat() {
+    const input = document.getElementById('chatInput');
+    const text = input.value.trim();
+    if (!text || session.round > 5) return;
+    session = processMessage(session, text);
+    input.value = '';
+    if (session.completed) saveHistory(getPreview(session));
+    renderChatUI();
+  }
+  function runQuick(i) {
+    session = createSession();
+    session.scene = QUICK[i].scene;
+    QUICK[i].answers.forEach(a => { session = processMessage(session, a); });
+    if (session.completed) saveHistory(getPreview(session));
+    document.querySelector('[data-tab="chat"]').click();
+    renderChatUI();
+  }
+
+  // Tabs
+  document.querySelectorAll('.tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const id = tab.dataset.tab;
+      document.getElementById('panelOptimize').classList.toggle('panel-hidden', id !== 'optimize');
+      document.getElementById('panelChat').classList.toggle('panel-hidden', id !== 'chat');
+      document.getElementById('tabDesc').textContent = id === 'optimize'
+        ? '适合已有草稿：输入原始提示词，系统自动优化并展示前后对比。'
+        : '适合从零开始：通过 5 轮对话引导表达需求，自动生成结构化提示词。';
+    });
+  });
+
+  // Optimize — auto on input
+  document.getElementById('rawPrompt').addEventListener('input', () => {
+    clearTimeout(optimizeTimer);
+    optimizeTimer = setTimeout(runOptimizeUI, 450);
+  });
+  document.querySelectorAll('.mode-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active'); optimizeMode = btn.dataset.mode;
+      runOptimizeUI();
+    });
+  });
+  document.getElementById('copyOptBtn').addEventListener('click', () => {
+    const t = document.getElementById('optOut').textContent;
+    if (t && !t.startsWith('输入提示词')) copyText(t);
+  });
+  document.getElementById('clearOptBtn').addEventListener('click', clearOptimizer);
+
+  // Chat
+  document.getElementById('sendBtn').addEventListener('click', sendChat);
+  document.getElementById('chatInput').addEventListener('keydown', e => { if (e.key === 'Enter') sendChat(); });
+  document.getElementById('resetBtn').addEventListener('click', () => resetChat(false));
+  document.getElementById('clearResultsBtn').addEventListener('click', clearAndRestart);
+  document.getElementById('clearPreviewBtn').addEventListener('click', clearAndRestart);
+  document.getElementById('clearFootBtn').addEventListener('click', clearAndRestart);
+  document.getElementById('copyPreviewBtn').addEventListener('click', () => {
+    const p = getPreview(session);
+    if (p) copyText(p);
+  });
+
+  const exBox = document.getElementById('examples');
+  QUICK.forEach((q, i) => {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'ex'; b.textContent = q.label;
+    b.addEventListener('click', () => runQuick(i));
+    exBox.appendChild(b);
+  });
+
+  // Theme
+  const themeBtn = document.getElementById('themeBtn');
+  const savedTheme = localStorage.getItem('sh-theme');
+  if (savedTheme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+  themeBtn.addEventListener('click', () => {
+    const dark = document.documentElement.getAttribute('data-theme') === 'dark';
+    if (dark) { document.documentElement.removeAttribute('data-theme'); localStorage.setItem('sh-theme','light'); }
+    else { document.documentElement.setAttribute('data-theme','dark'); localStorage.setItem('sh-theme','dark'); }
+  });
+
+  // Init
+  try {
+    const raw = localStorage.getItem(STORAGE_SESSION);
+    session = raw ? JSON.parse(raw) : createSession();
+    const rawH = localStorage.getItem(STORAGE_HISTORY);
+    history = rawH ? JSON.parse(rawH) : [];
+  } catch(e) { session = createSession(); history = []; }
+  renderChatUI();
+  renderHistory();
+})();
+</script>
+</body>
+</html>

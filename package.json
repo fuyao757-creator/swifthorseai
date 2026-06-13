@@ -1,0 +1,37 @@
+{
+  "name": "beyondmax-ai",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "dev:clean": "node scripts/clean-next.js && next dev -H 0.0.0.0",
+    "build": "next build",
+    "build:clean": "node scripts/clean-next.js && next build",
+    "sync:catalog": "node scripts/sync-benchmarks-catalog.mjs",
+    "sync:models": "node scripts/sync-models-catalog.mjs",
+    "encode:hero-mobile": "node scripts/encode-hero-mobile.mjs",
+    "start": "next start",
+    "start:lan": "next start -H 0.0.0.0",
+    "preview": "npm run build && next start -H 0.0.0.0",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.2.35",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "recharts": "^2.15.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.35",
+    "ffmpeg-static": "^5.3.0",
+    "postcss": "^8.4.49",
+    "sharp": "^0.34.5",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5"
+  }
+}

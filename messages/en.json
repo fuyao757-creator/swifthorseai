@@ -1,0 +1,505 @@
+{
+  "siteName": "Swift Horse",
+  "tagline": "Explore China's leading AI models",
+  "nav": {
+    "home": "Home",
+    "models": "Models",
+    "services": "Compare",
+    "match": "Matching",
+    "prompts": "Prompts",
+    "disclaimer": "Disclaimer",
+    "articles": "Guides",
+    "about": "About",
+    "backHome": "Back to Home",
+    "backToModels": "Back to Models"
+  },
+  "workflow": {
+    "eyebrow": "MODEL WORKFLOW",
+    "navLabel": "Model selection workflow",
+    "hint": "Browse the catalog → Compare specs → Match by scenario → Refine prompts—as the catalog grows",
+    "relatedTitle": "Next steps",
+    "relatedFor": "Continue with {name}",
+    "compareModel": "Add to compare",
+    "compareSelected": "Compare selected",
+    "matchScenario": "Scenario match",
+    "writePrompt": "Write prompts",
+    "contextBanner": "Linked models: {models}",
+    "goCompare": "Open comparison",
+    "goMatch": "Continue matching",
+    "goPrompts": "Open prompt tools"
+  },
+  "filter": {
+    "all": "All Companies",
+    "deepseek": "DeepSeek",
+    "alibaba": "Alibaba",
+    "baidu": "Baidu AI Cloud",
+    "baichuan": "Baichuan AI",
+    "lingyi": "01.AI",
+    "zhipu": "Zhipu AI",
+    "moonshot": "Moonshot AI",
+    "bytedance": "ByteDance",
+    "tencent": "Tencent Hunyuan",
+    "qihoo": "360",
+    "kunlun": "Kunlun Tech",
+    "sensetime": "SenseTime",
+    "jd": "JD Technology",
+    "other": "Other"
+  },
+  "landing": {
+    "metaTitle": "China AI Model Directory",
+    "metaDescription": "Swift Horse (beyondmax.ai) — an independent open index of China's leading AI models for global teams: catalog, scenario matching, and prompt tools.",
+    "badge": "Independent index · Global view",
+    "heroCode": "SWIFT HORSE · ATLAS v2",
+    "heroLead": "Explore",
+    "heroHighlight": "China's Leading",
+    "heroTail": "AI Models",
+    "heroTitleSecond": "",
+    "heroSubtitle": "A curated index of China's top AI models—browse by provider or use case, compare specs, and narrow your shortlist.",
+    "heroVideoLabel": "Swift Horse brand motion",
+    "heroVideoTag": "CINEMATIC · 3D MOTION",
+    "heroVideoCaption": "Speed and depth · Independent index engine",
+    "ctaModels": "Browse models",
+    "ctaMatch": "Guided matching",
+    "ctaPrompts": "Prompt tools",
+    "statModels": "Models indexed",
+    "statProviders": "Providers",
+    "statScenarios": "Use cases",
+    "modulesEyebrow": "PLATFORM",
+    "modulesTitle": "Core modules",
+    "modulesSubtitle": "From discovery to scenario matching—search, compare, and use tools in one place.",
+    "viewAllModels": "View all models",
+    "pipelineEyebrow": "WORKFLOW",
+    "pipelineTitle": "Four steps to a shortlist",
+    "pipelineSubtitle": "Browse → Compare → Match → Prompts—one connected flow. Not a substitute for official docs or live testing, but helps you narrow candidates faster.",
+    "pipelineSteps": [
+      {
+        "title": "Browse & filter",
+        "desc": "Browse the catalog by provider or use case; review parameters and typical applications."
+      },
+      {
+        "title": "Side-by-side compare",
+        "desc": "Select 2–3 models and compare public specs, access options, and cost references."
+      },
+      {
+        "title": "Guided matching",
+        "desc": "Describe your scenario in plain language and get an editorial shortlist based on your constraints."
+      },
+      {
+        "title": "Prompts & validation",
+        "desc": "Refine prompts with our tools, then validate with small-scale tests before you decide."
+      }
+    ],
+    "ctaEyebrow": "GET STARTED",
+    "ctaTitle": "Explore China's AI model ecosystem",
+    "ctaFootnote": "Independent index · No official affiliation",
+    "ctaSubtitle": "All content is compiled from public sources for research only—not official recommendations or buying advice.",
+    "modules": {
+      "models": {
+        "title": "Model library",
+        "desc": "Browse major Chinese AI models by provider and use case—parameters, capabilities, and profiles.",
+        "cta": "Open library"
+      },
+      "match": {
+        "title": "Matching guide",
+        "desc": "Describe your scenario and constraints to get an editorial shortlist for reference.",
+        "cta": "Start matching"
+      },
+      "prompts": {
+        "title": "Prompt optimizer",
+        "desc": "Improve existing prompts or build structured prompts through guided chat.",
+        "cta": "Open tools"
+      },
+      "services": {
+        "title": "Model comparison",
+        "desc": "Compare public specs, access options, and cost references side by side.",
+        "cta": "Start comparing"
+      }
+    }
+  },
+  "catalog": {
+    "browseByVendor": "By provider",
+    "browseByScenario": "By use case",
+    "scenarioEyebrow": "USE CASES",
+    "scenarioAll": "All use cases",
+    "scenarioFilterLabel": "Use case",
+    "vendorEyebrow": "BY PROVIDER",
+    "noScenarioModels": "No models match this use case.",
+    "pageBadge": "Model index",
+    "pageCode": "CATALOG · FILTER",
+    "pageTitle": "Model directory",
+    "pageSubtitle": "Search the index by provider or use case; open a card for specs, capabilities, and typical applications.",
+    "listTitle": "Browse results",
+    "quickMatch": "Matching guide",
+    "statModels": "Models indexed",
+    "statProviders": "Providers",
+    "statView": "Current view",
+    "statScenarios": "Use cases",
+    "browseLabel": "View by",
+    "filterVendorLabel": "Provider",
+    "resultsLabel": "Filtered results",
+    "providerIndex": "Provider index",
+    "providerJumpLinks": "Provider jump links"
+  },
+  "model": {
+    "parameters": "Parameters",
+    "context": "Context Window",
+    "knowledgeCutoff": "Knowledge Cutoff",
+    "description": "Overview",
+    "useCases": "Use Cases",
+    "pricing": "Pricing",
+    "viewDetails": "View Details",
+    "tier": "Tier",
+    "inputPrice": "Input Price",
+    "outputPrice": "Output Price",
+    "notFound": "Model not found",
+    "pricingNotice": "Pricing and specifications are compiled from public sources for reference only. Confirm current rates and limits on each provider's official site before use."
+  },
+  "commercialIndex": {
+    "pageTitle": "Model comparison",
+    "badge": "COMPARE",
+    "pageSubtitle": "Compare public specifications, then verify details on each provider's official site",
+    "disclosureTitle": "Reference only",
+    "disclosureBody": "Parameter summaries are compiled from public vendor materials for side-by-side review. They are not certifications, endorsements, or live quotes. Always confirm the latest information on each provider's official site before production use.",
+    "compareTitle": "Side-by-side comparison",
+    "compareHint": "Select 2–3 models to compare parameters (public reference data only).",
+    "objectiveOnly": "Public reference data",
+    "paramLabel": "Parameter",
+    "rowVendor": "Vendor",
+    "rowParameters": "Parameters",
+    "rowMmlu": "MMLU (public ref.)",
+    "rowContext": "Context window",
+    "rowMaxOutput": "Max output",
+    "rowModalities": "Modalities",
+    "rowApiFormat": "API format",
+    "rowToolCalling": "Tool / function calling",
+    "rowDeployment": "Deployment",
+    "rowLanguages": "Languages",
+    "rowPrice": "Vendor-listed price",
+    "rowCutoff": "Knowledge cutoff",
+    "rowStrengths": "Typical strengths",
+    "compareSummary": "Comparing {count} models · public reference only",
+    "pickerTitle": "Select models",
+    "groupCore": "Core specs",
+    "groupCapability": "Capabilities",
+    "groupAccess": "Access & cost",
+    "emptyTitle": "Select at least 2 models",
+    "viewProfileShort": "View profile",
+    "relatedTitle": "Related tools",
+    "objectiveFootnote": "Table summarizes public references; not an official or third-party benchmark certification.",
+    "catalogLink": "View profile: {name}",
+    "pickAtLeastTwo": "Select at least 2 models to show the comparison table.",
+    "resourcesTitle": "Official vendor resources",
+    "resourcesSubtitle": "Neutral links to on-site profiles and each provider's public documentation.",
+    "resourceVendor": "Vendor platform",
+    "viewProfile": "Catalog profile",
+    "visitOfficial": "Official site",
+    "verifyNote": "Confirm API access, pricing, and terms directly with the vendor.",
+    "guideTitle": "How teams typically evaluate access",
+    "guideSteps": [
+      {
+        "title": "Compare specs",
+        "desc": "Use the table above for context length, pricing references, and capability notes from public sources."
+      },
+      {
+        "title": "Read the model profile",
+        "desc": "Open the model page for use cases, parameters, and editorial summaries."
+      },
+      {
+        "title": "Verify with the vendor",
+        "desc": "Confirm API availability, regions, pricing, and enterprise options on the provider's official site."
+      }
+    ]
+  },
+  "modelMatch": {
+    "pageTitle": "Model matching guide",
+    "pageSubtitle": "Get an editorial shortlist based on your use case and constraints—not an official recommendation",
+    "badge": "MATCHING GUIDE",
+    "topBanner": "🔍 Reference tool · Results are for guidance only",
+    "progressLabel": "Step {current} of {total}",
+    "progressDone": "Questionnaire complete",
+    "prev": "Previous",
+    "next": "Next",
+    "reset": "Start over",
+    "selectHint": "Select an option above to continue",
+    "viewResults": "View results",
+    "resultsTitle": "Matching results",
+    "resultsHint": "Only models that meet every answer you provided are listed (up to three). If the list is empty, no entry in the current rule set satisfies all constraints.",
+    "matchLevelLabel": "Match level",
+    "matchHigh": "High",
+    "matchMidHigh": "Medium-high",
+    "matchMid": "Medium",
+    "suitableScenes": "Typical use cases",
+    "dataSourceLabel": "Data source",
+    "costRefLabel": "Cost reference",
+    "catalogLink": "View model profile",
+    "copyAll": "Copy all results",
+    "copied": "Copied",
+    "feedbackPrompt": "Was this reference helpful?",
+    "feedbackUp": "Helpful",
+    "feedbackDown": "Not helpful",
+    "feedbackThanks": "Thanks for your feedback—we’ll keep improving the rules.",
+    "disclaimerTitle": "Disclaimer",
+    "disclaimerBody": "1. Results are generated from Swift Horse editorial rules and public information—for reference only, not official recommendations, “best pick” advice, or performance guarantees.\n2. Match labels (high / mid-high / medium) are relative references, not third-party leaderboard rankings; real outcomes vary by scenario, prompts, and model version.\n3. Cost references come from vendor pricing pages; actual billing may differ. Verify deployment and compliance requirements yourself.\n4. Run small-scale tests before production or procurement; rely on each provider’s official docs and terms.\n5. Swift Horse is an independent directory with no affiliation or agency relationship with listed vendors.",
+    "lastUpdated": "Rules & data last updated: {date}",
+    "questions": {
+      "scenario": {
+        "title": "Q1. Primary use case?",
+        "options": {
+          "customer-service": "Customer support chat",
+          "coding": "Code & programming",
+          "content": "Content creation",
+          "translation": "Translation",
+          "data-analysis": "Data analysis",
+          "general": "General assistant"
+        }
+      },
+      "language": {
+        "title": "Q2. Primary language?",
+        "options": {
+          "zh": "Mostly Chinese",
+          "en": "Mostly English",
+          "multilingual": "Multilingual mix",
+          "ja-ko": "Japanese / Korean"
+        }
+      },
+      "volume": {
+        "title": "Q3. Daily API volume?",
+        "options": {
+          "lt1k": "<1K calls",
+          "1k-10k": "1K–10K calls",
+          "10k-100k": "10K–100K calls",
+          "gt100k": ">100K calls"
+        }
+      },
+      "budget": {
+        "title": "Q4. Monthly budget?",
+        "options": {
+          "lt50": "<$50",
+          "50-200": "$50–200",
+          "200-1000": "$200–1000",
+          "unlimited": "No limit"
+        }
+      },
+      "deployment": {
+        "title": "Q5. Deployment?",
+        "options": {
+          "cloud-api": "Cloud API",
+          "private": "On-prem / private",
+          "both": "Either works"
+        }
+      },
+      "mediaFocus": {
+        "title": "Content type",
+        "options": {
+          "video": "Video generation",
+          "image": "Image generation",
+          "text": "Text writing",
+          "search": "AI search",
+          "voice": "Voice interaction"
+        }
+      }
+    }
+  },
+  "modelMatchChat": {
+    "pageTitle": "Chat-based model matching",
+    "pageSubtitle": "Describe your needs in natural language; the panel updates matching results in real time (not official recommendations)",
+    "badge": "CHAT · MATCHING",
+    "welcome": "Hi! I'm the Swift Horse assistant. Tell me what you're building and I'll suggest models worth considering.\nExample: \"Southeast Asia e-commerce support bot, about 5,000 calls per day, tight budget\"",
+    "inputPlaceholder": "Describe use case, languages, call volume, budget…",
+    "send": "Send",
+    "clearChat": "Clear chat",
+    "clearHistory": "Clear history",
+    "clearResults": "Clear results & start over",
+    "clearedReply": "Previous results cleared. Describe your needs again for a fresh shortlist.",
+    "panelTitle": "Live matching results",
+    "panelEmpty": "Describe your needs on the left; recognized fields will appear here",
+    "panelAnalyzing": "Tell us your primary use case in the chat. Only requirements you mention are used for matching.",
+    "profileTitle": "Recognized requirements",
+    "profileEditHint": "Only fields mentioned in the chat are shown and matched—you can correct them below",
+    "profileFields": {
+      "scenario": "Use case",
+      "mediaFocus": "Format",
+      "language": "Language",
+      "volume": "Daily volume",
+      "budget": "Budget",
+      "deployment": "Deployment"
+    },
+    "notSet": "Not detected",
+    "matchResultsTitle": "Top matches (up to 3)",
+    "noStrictMatch": "No model in the rule set satisfies every condition from your chat. Relax one constraint (use the dropdowns) or add more detail and try again.",
+    "compareTitle": "Capability comparison",
+    "compareHint": "High / medium / low labels are editorial references, not certified benchmark scores",
+    "compareModel": "Model",
+    "compareSpeed": "Response speed",
+    "compareChinese": "Chinese",
+    "compareCoding": "Coding",
+    "compareCost": "Cost",
+    "historyTitle": "Recent chats",
+    "readyReply": "Matching results are ready in the right panel. They are rule-based references only—please validate with real tests before deciding.",
+    "followUp": {
+      "scenario": "What is your primary use case? e.g. support chat, coding, content, or translation.",
+      "deployment": "Do you need on-prem/private deployment, or is cloud API fine?",
+      "language": "Which users do you serve—Chinese, English, or multilingual?",
+      "budget": "What is your approximate monthly API budget?",
+      "volume": "Roughly how many API calls per day?"
+    },
+    "examples": [
+      "Code assistant, about 5,000 calls per day",
+      "Cross-border support in Chinese and English, $200/month budget",
+      "Marketing copy in Chinese, low call volume"
+    ]
+  },
+  "promptTool": {
+    "pageTitle": "Prompt optimizer",
+    "pageSubtitle": "Already have a draft? Use the optimizer. Starting from scratch? Use the chat builder—two workflows that complement each other.",
+    "badge": "PROMPT · OPTIMIZE",
+    "disclaimer": "Demo tool only. Generated prompts are for reference—adjust for your real use case.",
+    "disclaimerApi": "Optimization and chat run via a server-side AI model API. Do not submit sensitive or confidential data.",
+    "apiConnected": "AI connected · {model}",
+    "apiLocalFallback": "Without an API key, the local rule engine is used (set PROMPT_API_KEY in .env).",
+    "optimizeInputHintApi": "AI optimizes as you type (~1s), or click Optimize now",
+    "tabOptimize": "Optimizer",
+    "tabChat": "Chat builder",
+    "tabOptimizeDesc": "For existing drafts: paste your prompt, auto-optimize, and compare before vs after.",
+    "tabChatDesc": "For blank slates: 5-round guided chat to express needs and generate a structured prompt.",
+    "complementaryNote": "Optimizer refines what you have; chat builder creates from scratch—they complement each other.",
+    "optimizeInputTitle": "Original prompt",
+    "optimizeInputHint": "Type below—optimization runs automatically (~0.5s) with a live before/after view",
+    "optimizePlaceholder": "e.g. Write a product description highlighting value for money…",
+    "beforeLabel": "Before",
+    "beforeHint": "Raw input",
+    "beforeEmpty": "Your original prompt appears here after you type above",
+    "afterLabel": "After",
+    "afterHint": "Auto-generated",
+    "optimizeEmpty": "Optimized output will appear here once you enter a prompt",
+    "autoOptimizing": "Optimizing…",
+    "optimizeNow": "Optimize now",
+    "optimizedByApi": "AI optimized",
+    "apiFallbackNote": "API unavailable—fell back to local rules",
+    "sending": "Sending…",
+    "clearOptimize": "Clear input & result",
+    "modeAuto": "Auto",
+    "modeStructure": "Structure",
+    "modeClarity": "Clarity",
+    "modeConstraints": "Constraints",
+    "modeProfessional": "Professional",
+    "chatPlaceholder": "Type your answer…",
+    "chatDonePlaceholder": "Conversation complete — tap “Clear & start over”",
+    "send": "Send",
+    "resetChat": "Reset chat",
+    "clearChat": "Clear chat",
+    "clearResults": "Clear & start over",
+    "clearedReply": "Chat and prompt preview cleared. Describe your needs again and I'll build a new prompt.",
+    "previewTitle": "Prompt preview",
+    "previewHint": "Updates after each round; copy the full prompt when done",
+    "previewEmpty": "Structured prompt preview will appear as you chat",
+    "completeHint": "✓ All 5 rounds complete—copy the full prompt on the right",
+    "copy": "Copy",
+    "copied": "Copied",
+    "copyFailed": "Copy failed — long-press the text below to copy manually",
+    "sceneLabel": "Detected scene",
+    "historyTitle": "Previously generated prompts",
+    "historyUntitled": "Untitled prompt",
+    "quickLabels": ["E-commerce support", "Python code", "Product copy"],
+    "optimizeFailed": "Optimization failed",
+    "chatFailed": "Chat failed",
+    "loadingChat": "Loading chat…",
+    "youLabel": "You"
+  },
+  "about": {
+    "pageTitle": "About Swift Horse",
+    "pageTitleEn": "About Swift Horse",
+    "pageSubtitle": "An independent index of China's leading AI models—built on collaboration, transparency, and technical depth for readers worldwide.",
+    "badge": "ABOUT · OPEN INDEX",
+    "heroMeta": "GLOBAL · BILINGUAL · INDEPENDENT",
+    "heroTagline": "China AI Model Index · Open Index",
+    "heroImageAlt": "Tech-academic scene—neural network visualization on ultrawide display, books and cool cyan lighting, AI model index",
+    "statModels": "Models indexed",
+    "statProviders": "Vendor matrix",
+    "statLocales": "Languages",
+    "valuesHeading": "Built for a global audience",
+    "valuesSubheading": "Three principles behind every index entry",
+    "values": [
+      {
+        "eyebrow": "01 · COLLABORATION",
+        "title": "Open collaboration",
+        "body": "We work like an open-source community: public curation, continuous updates, and corrections welcome. The index is built for global readers—not a closed corporate brochure."
+      },
+      {
+        "eyebrow": "02 · TRANSPARENCY",
+        "title": "Transparent by design",
+        "body": "Every index entry traces back to public sources. Match and compare results show scoring and filter rules—no black-box picks. We're not official vendor docs, but we label sources and update cadence so you can verify yourself."
+      },
+      {
+        "eyebrow": "03 · DEPTH",
+        "title": "Technical depth",
+        "body": "From parameters and context windows to deployment and pricing—we focus on dimensions engineers actually need, not marketing copy."
+      }
+    ],
+    "storyEyebrow": "OUR STORY",
+    "storyTitle": "Why we built this",
+    "storyParagraphs": [
+      "Swift Horse started from a simple observation: China's AI model ecosystem moves fast, but public information for a global audience is often scattered, stale, or hard to compare.",
+      "We set out to organize that information into a verifiable, actionable index.",
+      "This site offers no official endorsements and sells no model services. Our job is to reduce search cost—help you narrow candidates faster, then validate with your own tests."
+    ],
+    "networkImageAlt": "Abstract decentralized network topology—thin glowing lines and nodes on white, transparency and open interconnection",
+    "networkCaption": "Open interconnection · Traceable by design",
+    "networkCaptionLocal": "Open interconnection · Information you can verify",
+    "storyQuote": "Independent index. Verifiable sources. Your call.",
+    "storyQuoteItems": ["Independent index", "Verifiable sources", "Your call"],
+    "storyQuoteLocal": "We organize public data—you verify and decide.",
+    "contactEyebrow": "CONTACT & CONTRIBUTE",
+    "contactTitle": "Get in touch",
+    "contactSubtitle": "Maintained by real developers, in the open",
+    "contactBody": "Swift Horse is maintained by a small team, in public. Issues, PRs, and data corrections welcome—every contribution becomes part of a visible changelog.",
+    "contactWhatsAppLabel": "WhatsApp",
+    "contactWhatsApp": "+8613352297629",
+    "portraitImageAlt": "Developer at night, multiple monitors, warm screen glow—building in public",
+    "githubLabel": "View and clone on GitHub",
+    "githubRepo": "https://github.com/swift-horse-ai/swift-horse"
+  },
+  "legal": {
+    "pageTitle": "Legal Notice & Disclaimer",
+    "pageSubtitle": "Please read before using this site",
+    "nonOfficialTitle": "Independent site — not affiliated",
+    "nonOfficialBody": "Swift Horse is an independent information directory. We are not affiliated with, sponsored by, endorsed by, or acting on behalf of DeepSeek, Alibaba Cloud, Zhipu AI, Moonshot AI, ByteDance, or any other company or model listed on this site. Product names and trademarks belong to their respective owners.",
+    "contentTitle": "Content accuracy",
+    "contentBody": "Model descriptions, parameters, pricing, and scenario picks are compiled from publicly available materials and editorial analysis. We do not guarantee completeness, accuracy, or timeliness. Always verify on official provider documentation before making production or purchasing decisions.",
+    "noAdviceTitle": "No professional advice",
+    "noAdviceBody": "Nothing on this site constitutes legal, financial, or technical advice. Use of any model is subject to each provider's terms of service, acceptable use policy, and applicable law in your jurisdiction."
+  },
+  "articles": {
+    "pageTitle": "Selection Guides",
+    "pageSubtitle": "Model comparisons, scenario notes, and index usage—structured for search and citation.",
+    "readMore": "Read article",
+    "backToList": "Back to guides",
+    "empty": "No guides yet. Check back soon.",
+    "relatedModels": "Related models",
+    "nextSteps": "Next steps",
+    "goCompare": "Open comparison",
+    "disclaimer": "Editorial content for reference only—not vendor certification or procurement advice. Confirm specs and pricing on official docs.",
+    "tagLabels": {
+      "comparison": "Comparison",
+      "guide": "Guide",
+      "enterprise": "Enterprise",
+      "api": "API"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Swift Horse. All rights reserved.",
+    "disclaimer": "Independent directory. Not affiliated with listed AI providers.",
+    "trademark": "All product names and trademarks are the property of their respective owners.",
+    "dataDisclaimer": "Data compiled from public sources for reference only; prices and specs may change without notice.",
+    "readMore": "Full legal notice",
+    "aboutLink": "About",
+    "indexLabel": "China AI Model Index",
+    "indexTagline": "An open index of China's AI models for global teams · beyondmax.ai",
+    "siteNavLabel": "Site"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "toggleLabel": "Toggle color theme"
+  }
+}

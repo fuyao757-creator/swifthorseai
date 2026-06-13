@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>对话式模型匹配参考 | Swift Horse</title>
+  <style>
+    :root {
+      --bg: #f4f3ef; --card: #fff; --text: #1a1a1a; --muted: #64748b;
+      --border: #e2e8f0; --accent: #c23a2f; --accent2: #2d6a5a;
+      --user-bg: #1a1a1a; --user-fg: #fff; --bot-bg: #fff;
+    }
+    [data-theme="dark"] {
+      --bg: #06080f; --card: #0f1420; --text: #f1f5f9; --muted: #94a3b8;
+      --border: rgba(255,255,255,.1); --user-bg: #22d3ee; --user-fg: #06080f; --bot-bg: #141c2b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 1rem 1rem 2.5rem; }
+    .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: .75rem; font-size: .875rem; }
+    .theme-btn { border: 1px solid var(--border); background: var(--card); color: var(--text); border-radius: .5rem; padding: .35rem .75rem; cursor: pointer; }
+    .banner { background: var(--card); border: 1px solid var(--border); border-radius: .75rem; padding: .75rem 1rem; font-size: .875rem; font-weight: 500; margin-bottom: 1rem; }
+    h1 { font-size: 1.5rem; font-weight: 700; }
+    .subtitle { color: var(--muted); font-size: .9rem; margin-top: .35rem; }
+    .layout { display: grid; gap: 1rem; margin-top: 1.25rem; }
+    @media (min-width: 900px) { .layout { grid-template-columns: 3fr 2fr; } }
+    .chat, .panel { background: var(--card); border: 1px solid var(--border); border-radius: 1rem; box-shadow: 0 4px 20px rgba(0,0,0,.05); }
+    .chat { display: flex; flex-direction: column; min-height: 28rem; }
+    .msgs { flex: 1; overflow-y: auto; padding: 1rem; display: flex; flex-direction: column; gap: .75rem; }
+    .msg { max-width: 88%; padding: .75rem 1rem; border-radius: 1rem; font-size: .875rem; white-space: pre-line; }
+    .msg.bot { align-self: flex-start; background: var(--bot-bg); border: 1px solid var(--border); }
+    .msg.user { align-self: flex-end; background: var(--user-bg); color: var(--user-fg); }
+    .msg .from { font-size: .65rem; opacity: .55; text-transform: uppercase; letter-spacing: .05em; display: block; margin-bottom: .25rem; }
+    .chat-foot { border-top: 1px solid var(--border); padding: 1rem; }
+    .examples { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: .75rem; }
+    .ex { font-size: .7rem; padding: .3rem .6rem; border: 1px solid var(--border); border-radius: .5rem; background: transparent; color: var(--muted); cursor: pointer; }
+    .ex:hover { border-color: var(--muted); }
+    .input-row { display: flex; gap: .5rem; }
+    .input-row input { flex: 1; border: 1px solid var(--border); border-radius: .75rem; padding: .65rem 1rem; font-size: .875rem; background: var(--card); color: var(--text); outline: none; }
+    .btn { border: none; border-radius: .75rem; padding: .65rem 1.1rem; font-size: .875rem; font-weight: 600; cursor: pointer; }
+    .btn-send { background: linear-gradient(135deg, var(--accent), #e85d4c); color: #fff; }
+    .link-btn { background: none; border: none; color: var(--muted); font-size: .75rem; cursor: pointer; margin-top: .5rem; margin-right: .75rem; }
+    .panel { padding: 1rem; position: sticky; top: 1rem; max-height: calc(100vh - 2rem); overflow-y: auto; }
+    .btn-outline { background: var(--card); border: 1px solid var(--border); color: var(--text); font-size: .75rem; padding: .4rem .75rem; }
+    .panel-head { display: flex; align-items: center; justify-content: space-between; gap: .5rem; margin-bottom: .75rem; }
+    .profile { background: var(--bg); border: 1px solid var(--border); border-radius: .75rem; padding: .75rem; margin-bottom: 1rem; font-size: .75rem; }
+    .profile label { display: flex; align-items: center; gap: .5rem; margin-bottom: .35rem; }
+    .profile span { width: 3rem; color: var(--muted); flex-shrink: 0; }
+    .profile select { flex: 1; font-size: .75rem; padding: .2rem; border-radius: .35rem; border: 1px solid var(--border); background: var(--card); color: var(--text); }
+    .hint { font-size: .65rem; color: var(--muted); margin-top: .35rem; }
+    .result { border: 1px solid var(--border); border-radius: .75rem; padding: .75rem; margin-bottom: .75rem; font-size: .8rem; }
+    .result h3 { font-size: .95rem; }
+    .badge { font-size: .65rem; padding: .15rem .5rem; border-radius: .35rem; background: rgba(45,106,90,.12); color: var(--accent2); }
+    .tags { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .5rem; }
+    .tag { font-size: .65rem; padding: .15rem .4rem; border-radius: .25rem; background: var(--bg); color: var(--muted); }
+    .src { font-size: .65rem; color: var(--muted); margin-top: .5rem; border-bottom: 1px dotted var(--muted); cursor: help; display: inline-block; }
+    table { width: 100%; font-size: .7rem; border-collapse: collapse; margin-top: .5rem; }
+    th, td { border-bottom: 1px solid var(--border); padding: .35rem .25rem; text-align: left; }
+    .disclaimer { margin-top: 2rem; padding: 1rem; border: 2px solid var(--border); border-radius: 1rem; font-size: .75rem; background: var(--card); }
+    .disclaimer h2 { font-size: .875rem; margin-bottom: .5rem; }
+    .empty { color: var(--muted); font-size: .875rem; }
+    .hidden { display: none !important; }
+    .history { margin-top: 1.5rem; font-size: .75rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <span>Swift Horse · 对话式模型匹配参考</span>
+      <button type="button" class="theme-btn" id="themeBtn">🌓</button>
+    </div>
+    <div class="banner" role="status">🔍 参考工具 | 结果仅供参考</div>
+    <h1>对话式模型匹配参考</h1>
+    <p class="subtitle">用自然语言描述需求，右侧实时更新匹配参考（非官方推荐）</p>
+
+    <div class="layout">
+      <section class="chat">
+        <div class="msgs" id="msgs"></div>
+        <div class="chat-foot">
+          <div class="examples" id="examples"></div>
+          <div class="input-row">
+            <input type="text" id="input" placeholder="描述你的使用场景、语言、调用量、预算…" />
+            <button type="button" class="btn btn-send" id="sendBtn">发送</button>
+          </div>
+          <button type="button" class="link-btn" id="clearChat">清空当前对话</button>
+          <button type="button" class="link-btn" id="clearHistory">清空历史记录</button>
+        </div>
+      </section>
+
+      <aside class="panel" id="matchResultsPanel">
+        <div class="panel-head">
+          <h2 style="margin:0;font-size:1rem">实时匹配参考</h2>
+          <button type="button" class="btn btn-outline hidden" id="clearResults">清除结果，重新匹配</button>
+        </div>
+        <div id="panelEmpty" class="empty">请在左侧描述需求，识别到的信息将显示在这里</div>
+        <div id="panelContent" class="hidden" style="display:none">
+          <div class="profile">
+            <strong style="font-size:.7rem;letter-spacing:.05em">识别到的需求摘要</strong>
+            <div id="profileFields" style="margin-top:.5rem"></div>
+            <p class="hint">可手动修正下拉选项，右侧结果将同步更新</p>
+          </div>
+          <div id="results"></div>
+          <div id="compareWrap"></div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="history" id="historyWrap" style="display:none">
+      <strong>最近对话记录</strong>
+      <ul id="historyList"></ul>
+    </div>
+
+    <footer class="disclaimer">
+      <h2>免责声明</h2>
+      <p>1. 本工具结果基于 Swift Horse 编辑团队整理的公开信息及规则库生成，仅供信息参考，不构成官方推荐、最优选型建议或性能承诺。</p>
+      <p style="margin-top:.35rem">2. 匹配度「高/中高/中」为相对参考标签，不代表第三方权威评测排名。</p>
+      <p style="margin-top:.35rem">3. 成本参考摘自各厂商公开定价页；建议在正式采购前进行小样本实测。</p>
+      <p style="margin-top:.35rem">4. Swift Horse 为独立信息目录，与所列厂商无隶属或代理关系。</p>
+      <p style="margin-top:.5rem;font-family:monospace;font-size:.65rem;opacity:.75">规则与数据最近更新：2026-05-29</p>
+    </footer>
+  </div>
+
+  <script>
+    const STORAGE_KEY = "swift-horse-match-chats";
+    const WELCOME = "Hi！我是 Swift Horse 助手。请描述你的需求，我会帮你匹配合适的 AI 模型参考。\n例如：「我想做一个东南亚电商客服，每天约 5000 次调用，预算有限」";
+    const EXAMPLES = [
+      "我要做代码助手，每天大概5000次调用",
+      "跨境电商客服，需要中英文，月预算$200",
+      "写营销文案，中文内容，调用量不大"
+    ];
+    const FOLLOW_UP = {
+      scenario: "请问您的主要使用场景是什么？例如客服对话、代码编程、内容创作或翻译等。",
+      deployment: "是否需要私有化部署？还是使用云 API 即可？",
+      language: "请问主要面向哪个地区的用户？中文、英文还是多语言？",
+      budget: "每月 API 预算大概在什么范围？",
+      volume: "预计每天的调用量大概是多少？"
+    };
+    const READY_REPLY = "已根据您的描述整理匹配参考，请查看右侧面板。结果为编辑规则生成，仅供参考，建议实测后决策。";
+    const CLEARED_REPLY = "已清除上次匹配结果。请重新描述您的需求，我将为您生成新的参考。";
+
+    const LABELS = {
+      scenario: { key: "scenario", options: { "customer-service":"客服对话","coding":"代码编程","content":"内容创作","translation":"翻译处理","data-analysis":"数据分析","general":"通用助手" }},
+      language: { key: "language", options: { zh:"中文为主", en:"英文为主", multilingual:"多语言混合", "ja-ko":"日韩语" }},
+      volume: { key: "volume", options: { lt1k:"<1K次", "1k-10k":"1K–10K次", "10k-100k":"10K–100K次", gt100k:">100K次" }},
+      budget: { key: "budget", options: { lt50:"<$50", "50-200":"$50–200", "200-1000":"$200–1000", unlimited:"不限" }},
+      deployment: { key: "deployment", options: { "cloud-api":"云 API", private:"私有化部署", both:"两者都可" }}
+    };
+
+    const MODELS = {
+      "deepseek-v3": { name:"DeepSeek-V3", vendor:"深度求索", desc:"代码生成能力强，HumanEval 公开参考表现领先，API 调用性价比高。", scenes:["代码生成","Debug、技术问答"], source:"官方技术报告 + 社区反馈", sourceDetail:"整理自深度求索公开技术报告与 API 定价页。", cost:"约 ¥0.5–2 / 百万 tokens", metrics:{ speed:"中", chinese:"中高", coding:"高", cost:"低" }},
+      "glm-4": { name:"GLM-4", vendor:"智谱AI", desc:"多轮对话能力强，工具调用方便，适合合规对话系统。", scenes:["客服机器人","对话系统"], source:"厂商文档 + 公开基准参考", sourceDetail:"基于智谱开放平台文档。", cost:"约 ¥5–15 / 百万 tokens", metrics:{ speed:"中", chinese:"高", coding:"中高", cost:"中" }},
+      qwen: { name:"通义千问", vendor:"阿里云", desc:"多语言支持广，适合电商对话、长文本创作与翻译。", scenes:["电商客服","多语言处理"], source:"官方文档 + 行业公开资料", sourceDetail:"来自阿里云百炼公开文档。", cost:"约 ¥2–8 / 百万 tokens", metrics:{ speed:"中高", chinese:"高", coding:"中", cost:"中" }},
+      "ernie-4": { name:"文心 4.0", vendor:"百度智能云", desc:"中文创意写作能力强，适合营销与故事类内容。", scenes:["营销文案","故事创作"], source:"百度千帆文档 + 公开评测参考", sourceDetail:"整理自百度文心官方页面。", cost:"约 ¥4–12 / 百万 tokens", metrics:{ speed:"中", chinese:"高", coding:"中", cost:"中" }},
+      "chatglm3-6b": { name:"ChatGLM3-6B", vendor:"智谱AI", desc:"开源可商用，适合私有化部署。", scenes:["私有化对话","内部助手"], source:"开源仓库 + 许可文档", sourceDetail:"来自智谱开源发布说明。", cost:"仅自建算力成本", metrics:{ speed:"中", chinese:"中高", coding:"中", cost:"低" }},
+      "qwen-7b": { name:"Qwen-7B", vendor:"阿里云", desc:"开源版本，适合私有化部署与微调。", scenes:["私有化部署","模型微调"], source:"Qwen 开源文档", sourceDetail:"来自 Qwen GitHub 发布。", cost:"仅自建算力成本", metrics:{ speed:"中", chinese:"中高", coding:"中", cost:"低" }}
+    };
+
+    let messages = [];
+    let profile = {};
+    let followUpCount = 0;
+    let sessionId = Date.now().toString();
+
+    function uid() { return Date.now() + "-" + Math.random().toString(36).slice(2); }
+
+    function extract(text) {
+      const out = {};
+      if (/客服|对话|售后/.test(text)) out.scenario = "customer-service";
+      else if (/代码|编程|开发/.test(text)) out.scenario = "coding";
+      else if (/写作|文案|创意|营销/.test(text)) out.scenario = "content";
+      else if (/翻译|多语言/.test(text)) out.scenario = "translation";
+      else if (/数据|分析/.test(text)) out.scenario = "data-analysis";
+      if (/电商|东南亚|欧美|跨境|海外/.test(text)) out.language = "multilingual";
+      else if (/英文|英语/.test(text)) out.language = "en";
+      else if (/日文|韩文|日语|韩语/.test(text)) out.language = "ja-ko";
+      else if (/中文/.test(text)) out.language = "zh";
+      const vn = text.match(/(\d[\d,]*)\s*(次|calls?)/i);
+      if (vn) {
+        const n = parseInt(vn[1].replace(/,/g,""),10);
+        if (n < 1000) out.volume = "lt1k";
+        else if (n < 10000) out.volume = "1k-10k";
+        else if (n < 100000) out.volume = "10k-100k";
+        else out.volume = "gt100k";
+      } else if (/调用量不大|量不大/.test(text)) out.volume = "lt1k";
+      if (/预算有限|省钱|便宜|低成本/.test(text)) out.budget = "lt50";
+      else if (/\$200|月预算.*200/.test(text)) out.budget = "50-200";
+      else if (/不限/.test(text)) out.budget = "unlimited";
+      if (/私有化|本地部署|内网/.test(text)) out.deployment = "private";
+      else if (/云\s*api|api\s*调用/.test(text)) out.deployment = "cloud-api";
+      return out;
+    }
+
+    function merge(a, b) { return { ...a, ...b, ...Object.fromEntries(Object.keys(b).filter(k => b[k]).map(k => [k, b[k]])) }; }
+
+    function missingFields(p) {
+      return ["scenario","deployment","language","budget","volume"].filter(k => !p[k]);
+    }
+
+    function isReady(p, fu) {
+      if (!p.scenario) return false;
+      const m = missingFields(p);
+      if (m.length === 0) return true;
+      if (fu >= 2) return true;
+      if (m.length <= 2 && fu >= 1) return true;
+      return false;
+    }
+
+    function computeMatches(p) {
+      const ans = {
+        scenario: p.scenario || "general",
+        language: p.language || "zh",
+        volume: p.volume || "1k-10k",
+        budget: p.budget || "50-200",
+        deployment: p.deployment || "cloud-api"
+      };
+      const s = {};
+      const add = (id, pts) => { s[id] = (s[id]||0) + pts; };
+      const sm = { "customer-service":()=>{add("glm-4",100);add("qwen",80);}, coding:()=>add("deepseek-v3",100), content:()=>{add("ernie-4",100);add("qwen",75);}, translation:()=>{add("qwen",100);add("deepseek-v3",75);}, "data-analysis":()=>{add("deepseek-v3",70);add("qwen",65);}, general:()=>{add("qwen",60);add("deepseek-v3",58);} };
+      (sm[ans.scenario]||sm.general)();
+      if (ans.language==="multilingual"||ans.language==="ja-ko") add("qwen",25);
+      if (ans.language==="zh") { add("ernie-4",15); add("glm-4",10); }
+      if (ans.language==="en") add("deepseek-v3",20);
+      const hv = ans.volume==="10k-100k"||ans.volume==="gt100k";
+      const tb = ans.budget==="lt50"||ans.budget==="50-200";
+      if (hv&&tb) add("deepseek-v3",90);
+      if (ans.deployment==="private") { add("chatglm3-6b",100); add("qwen-7b",75); ["deepseek-v3","glm-4","qwen","ernie-4"].forEach(id=>{if(s[id])s[id]*=.3;}); }
+      else if (ans.deployment==="cloud-api") { ["chatglm3-6b","qwen-7b"].forEach(id=>{if(s[id])s[id]*=.2;}); }
+      else { add("chatglm3-6b",40); add("qwen-7b",35); }
+      const ranked = Object.entries(s).filter(([,v])=>v>0).sort((a,b)=>b[1]-a[1]).slice(0,3);
+      const max = ranked[0]?.[1]||1;
+      return ranked.map(([id,score])=>{
+        let level = "中";
+        const r = score/max;
+        if (r>=.85||score>=90) level="高";
+        else if (r>=.65||score>=70) level="中高";
+        return { id, level, score };
+      });
+    }
+
+    function renderMsgs() {
+      const el = document.getElementById("msgs");
+      el.innerHTML = messages.map(m => `
+        <div class="msg ${m.role==='user'?'user':'bot'}">
+          ${m.role==='assistant'?'<span class="from">Swift Horse</span>':''}
+          ${m.content.replace(/</g,'&lt;')}
+        </div>`).join("");
+      el.scrollTop = el.scrollHeight;
+    }
+
+    function renderPanel() {
+      const has = Object.keys(profile).length > 0;
+      const hasResults = profile.scenario && computeMatches(profile).length > 0;
+      document.getElementById("panelEmpty").style.display = has ? "none" : "block";
+      const pc = document.getElementById("panelContent");
+      pc.style.display = has ? "block" : "none";
+      document.getElementById("clearResults").classList.toggle("hidden", !hasResults);
+      if (!has) return;
+
+      const pf = document.getElementById("profileFields");
+      const fieldNames = { scenario:"场景", language:"语言", volume:"调用量", budget:"预算", deployment:"部署" };
+      pf.innerHTML = Object.entries(LABELS).map(([k, cfg]) => `
+        <label><span>${fieldNames[k]}</span>
+          <select data-key="${k}" onchange="window.updateField('${k}', this.value)">
+            <option value="">未识别</option>
+            ${Object.entries(cfg.options).map(([vk,vl])=>`<option value="${vk}" ${profile[k]===vk?'selected':''}>${vl}</option>`).join("")}
+          </select>
+        </label>`).join("");
+
+      const results = profile.scenario ? computeMatches(profile) : [];
+      const resEl = document.getElementById("results");
+      if (!results.length) { resEl.innerHTML = ""; document.getElementById("compareWrap").innerHTML = ""; return; }
+
+      resEl.innerHTML = "<strong style='font-size:.75rem'>可考虑的方向（TOP3）</strong>" + results.map(({id,level})=>{
+        const m = MODELS[id];
+        return `<article class="result"><div style="display:flex;justify-content:space-between;gap:.5rem"><div><h3>${m.name}</h3><div style="font-size:.7rem;color:var(--muted)">${m.vendor}</div></div><span class="badge">匹配度参考：${level}</span></div>
+          <p style="margin-top:.5rem;color:var(--muted)">${m.desc}</p>
+          <div class="tags">${m.scenes.map(t=>`<span class="tag">${t}</span>`).join("")}</div>
+          <span class="src" title="${m.sourceDetail}">数据来源：${m.source}</span>
+          <div style="font-size:.65rem;color:var(--muted);margin-top:.25rem">成本参考：${m.cost}</div></article>`;
+      }).join("");
+
+      document.getElementById("compareWrap").innerHTML = `
+        <strong style="font-size:.75rem">维度参考对比</strong>
+        <p class="hint">表中为高/中/低参考标签，非权威跑分</p>
+        <table><thead><tr><th>模型</th><th>响应速度</th><th>中文能力</th><th>代码能力</th><th>成本</th></tr></thead>
+        <tbody>${results.map(({id})=>{const m=MODELS[id];const x=m.metrics;return `<tr><td>${m.name}</td><td>${x.speed}</td><td>${x.chinese}</td><td>${x.coding}</td><td>${x.cost}</td></tr>`;}).join("")}</tbody></table>`;
+    }
+
+    window.updateField = function(key, val) {
+      if (val) profile[key] = val; else delete profile[key];
+      renderPanel();
+    };
+
+    function saveHistory() {
+      const preview = messages.find(m=>m.role==="user")?.content||"";
+      let list = [];
+      try { list = JSON.parse(localStorage.getItem(STORAGE_KEY)||"[]"); } catch(e){}
+      list = [{ id: sessionId, updatedAt: Date.now(), preview: preview.slice(0,60), messages, profile }, ...list.filter(h=>h.id!==sessionId)].slice(0,10);
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(list));
+      renderHistory(list);
+    }
+
+    function renderHistory(list) {
+      const wrap = document.getElementById("historyWrap");
+      if (!list.length) { wrap.style.display="none"; return; }
+      wrap.style.display="block";
+      document.getElementById("historyList").innerHTML = list.map(h=>`<li>${new Date(h.updatedAt).toLocaleString("zh-CN")} — ${h.preview||"—"}</li>`).join("");
+    }
+
+    function send() {
+      const input = document.getElementById("input");
+      const text = input.value.trim();
+      if (!text) return;
+      input.value = "";
+      messages.push({ role:"user", content:text });
+      const ext = extract(text);
+      profile = merge(profile, ext);
+      renderPanel();
+
+      let reply;
+      if (!profile.scenario && followUpCount < 2) { reply = FOLLOW_UP.scenario; followUpCount++; }
+      else if (isReady(profile, followUpCount)) { reply = READY_REPLY; saveHistory(); }
+      else if (followUpCount < 2) {
+        const miss = missingFields(profile)[0];
+        reply = FOLLOW_UP[miss] || READY_REPLY;
+        followUpCount++;
+        if (reply === READY_REPLY) saveHistory();
+      } else { reply = READY_REPLY; saveHistory(); }
+
+      messages.push({ role:"assistant", content:reply });
+      renderMsgs();
+      renderPanel();
+      if (profile.scenario || Object.keys(profile).length > 0) {
+        document.getElementById("matchResultsPanel")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+
+    function resetMatch() {
+      messages = [{ role: "assistant", content: CLEARED_REPLY }];
+      profile = {};
+      followUpCount = 0;
+      sessionId = Date.now().toString();
+      renderMsgs();
+      renderPanel();
+    }
+
+    document.getElementById("sendBtn").onclick = send;
+    document.getElementById("input").onkeydown = e => { if (e.key==="Enter") send(); };
+    document.getElementById("clearChat").onclick = resetMatch;
+    document.getElementById("clearResults").onclick = resetMatch;
+    document.getElementById("clearHistory").onclick = () => {
+      localStorage.removeItem(STORAGE_KEY);
+      document.getElementById("historyWrap").style.display="none";
+    };
+    document.getElementById("themeBtn").onclick = () => {
+      const h = document.documentElement;
+      h.dataset.theme = h.dataset.theme === "dark" ? "light" : "dark";
+    };
+    document.getElementById("examples").innerHTML = EXAMPLES.map(ex=>`<button type="button" class="ex" onclick="document.getElementById('input').value='${ex.replace(/'/g,"\\'")}'">${ex}</button>`).join("");
+
+    messages.push({ role:"assistant", content:WELCOME });
+    renderMsgs();
+    try { renderHistory(JSON.parse(localStorage.getItem(STORAGE_KEY)||"[]")); } catch(e){}
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) document.documentElement.dataset.theme = "dark";
+  </script>
+</body>
+</html>

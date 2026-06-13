@@ -1,0 +1,48 @@
+{
+  "siteName": "Swift Horse",
+  "tagline": "Discover China's Leading AI Models",
+  "nav": {
+    "home": "AI Models",
+    "benchmarks": "Capability Ref."
+  },
+  "filter": {
+    "all": "All Companies",
+    "deepseek": "DeepSeek",
+    "alibaba": "Alibaba",
+    "zhipu": "Zhipu AI",
+    "moonshot": "Moonshot AI",
+    "other": "Other"
+  },
+  "model": {
+    "parameters": "Parameters",
+    "context": "Context Window",
+    "knowledgeCutoff": "Knowledge Cutoff",
+    "description": "Overview",
+    "useCases": "Use Cases",
+    "pricing": "Pricing",
+    "viewDetails": "View Details",
+    "tier": "Tier",
+    "inputPrice": "Input Price",
+    "outputPrice": "Output Price",
+    "notFound": "Model not found"
+  },
+  "benchmarks": {
+    "title": "Smart Recommendations",
+    "subtitle": "Comparative performance across key dimensions",
+    "modelName": "Model",
+    "chineseUnderstanding": "Chinese",
+    "coding": "Coding",
+    "reasoning": "Reasoning",
+    "responseSpeed": "Speed",
+    "valueForMoney": "Value",
+    "contextLength": "Context"
+  },
+  "footer": {
+    "copyright": "© 2025 Swift Horse. All rights reserved.",
+    "disclaimer": "Model data is based on publicly available information. Prices may change."
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark"
+  }
+}
