@@ -7,6 +7,7 @@ import {
   getSiteTitle,
 } from "@/lib/seo";
 import { defaultLocale } from "@/lib/i18n";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -74,6 +75,7 @@ export default function RootLayout({
         className="font-sans antialiased"
         style={{ backgroundColor: "#f7f8fb", color: "#0c1222" }}
       >
+        <GoogleAnalytics />
         {children}
       </body>
     </html>
