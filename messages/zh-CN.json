@@ -47,7 +47,7 @@
   },
   "landing": {
     "metaTitle": "中国 AI 模型导航",
-    "metaDescription": "Swift Horse（beyondmax.ai）— 面向全球团队的中国大模型开放索引：模型库、场景匹配与提示词工具，独立整理公开规格。",
+    "metaDescription": "Swift Horse（swifthorseai.com）— 面向全球团队的中国大模型开放索引：模型库、场景匹配与提示词工具，独立整理公开规格。",
     "badge": "独立索引 · 全球视野",
     "heroCode": "SWIFT HORSE · ATLAS v2",
     "heroLead": "探索",
@@ -494,7 +494,7 @@
     "readMore": "查看完整法律声明",
     "aboutLink": "关于我们",
     "indexLabel": "中国 AI 模型索引",
-    "indexTagline": "面向全球团队的中国大模型开放索引 · beyondmax.ai",
+    "indexTagline": "面向全球团队的中国大模型开放索引 · swifthorseai.com",
     "siteNavLabel": "站点"
   },
   "theme": {

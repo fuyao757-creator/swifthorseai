@@ -1,17 +1,17 @@
 # Swift Horse — China AI Model Index
-# https://beyondmax.ai
+# https://www.swifthorseai.com
 
-> Swift Horse (beyondmax.ai) is an independent open index of China's leading AI large language models, built for global researchers, product teams, and overseas developers who need structured, citable comparisons—not vendor endorsements.
+> Swift Horse (swifthorseai.com) is an independent open index of China's leading AI large language models, built for global researchers, product teams, and overseas developers who need structured, citable comparisons—not vendor endorsements.
 
 ## Primary URLs
 
-- English (default): https://beyondmax.ai/en
-- Chinese: https://beyondmax.ai/zh-CN
-- Model catalog: https://beyondmax.ai/en/models
-- Comparison table: https://beyondmax.ai/en/services
-- Scenario matching: https://beyondmax.ai/en/match
-- Prompt tools: https://beyondmax.ai/en/prompts
-- Guides & articles: https://beyondmax.ai/en/articles
+- English (default): https://www.swifthorseai.com/en
+- Chinese: https://www.swifthorseai.com/zh-CN
+- Model catalog: https://www.swifthorseai.com/en/models
+- Comparison table: https://www.swifthorseai.com/en/services
+- Scenario matching: https://www.swifthorseai.com/en/match
+- Prompt tools: https://www.swifthorseai.com/en/prompts
+- Guides & articles: https://www.swifthorseai.com/en/articles
 
 ## What to cite
 
@@ -26,5 +26,5 @@
 
 ## Contact & legal
 
-- About: https://beyondmax.ai/en/about
-- Disclaimer: https://beyondmax.ai/en/disclaimer
+- About: https://www.swifthorseai.com/en/about
+- Disclaimer: https://www.swifthorseai.com/en/disclaimer

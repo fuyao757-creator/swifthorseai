@@ -32,7 +32,7 @@ Open [http://localhost:3000](http://localhost:3000) — middleware redirects to 
 1. Push to GitHub
 2. Import project in [Vercel](https://vercel.com)
 3. Set environment variable (optional):
-   - `NEXT_PUBLIC_BASE_URL` — your production domain (e.g. `https://beyondmax.ai`)
+   - `NEXT_PUBLIC_BASE_URL` — your production domain (e.g. `https://www.swifthorseai.com`)
 
 ## Project Structure
 

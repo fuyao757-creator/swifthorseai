@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { defaultLocale, locales, type Locale } from "./i18n";
 
-export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://beyondmax.ai";
+export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://www.swifthorseai.com";
 export const SITE_BRAND = "Swift Horse";
-export const SITE_DOMAIN = "beyondmax.ai";
+export const SITE_DOMAIN = "swifthorseai.com";
 export const SITE_OG_IMAGE = "/logos/swift-horse.png";
 
 export function getSiteTitle(locale: Locale): string {
