@@ -8,6 +8,11 @@ export type ArticleSection = {
   paragraphs: LocalizedString[];
 };
 
+export type ArticleFaq = {
+  question: LocalizedString;
+  answer: LocalizedString;
+};
+
 export type Article = {
   slug: string;
   publishedAt: string;
@@ -17,6 +22,7 @@ export type Article = {
   title: LocalizedString;
   excerpt: LocalizedString;
   sections: ArticleSection[];
+  faqs?: ArticleFaq[];
 };
 
 export function getArticles(): Article[] {
@@ -48,6 +54,10 @@ export function localizeArticle(article: Article, locale: Locale) {
         ? getLocalizedValue(section.heading, locale)
         : undefined,
       paragraphs: section.paragraphs.map((p) => getLocalizedValue(p, locale)),
+    })),
+    faqs: article.faqs?.map((faq) => ({
+      question: getLocalizedValue(faq.question, locale),
+      answer: getLocalizedValue(faq.answer, locale),
     })),
   };
 }

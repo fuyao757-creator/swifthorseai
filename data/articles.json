@@ -1,6 +1,223 @@
 {
   "articles": [
     {
+      "slug": "china-ai-llm-guide-2026",
+      "publishedAt": "2026-06-15",
+      "updatedAt": "2026-06-15",
+      "tags": ["guide", "comparison", "enterprise"],
+      "relatedModelIds": ["deepseek-v4-pro", "qwen3-max", "kimi-k2-6", "glm-5"],
+      "title": {
+        "en": "China AI LLM Guide 2026: DeepSeek, Qwen, Kimi, GLM Compared",
+        "zh-CN": "2026中国AI大模型选型指南：DeepSeek/Qwen/Kimi/GLM对比"
+      },
+      "excerpt": {
+        "en": "Independent 2026 guide to China's leading LLMs—match DeepSeek, Qwen, Kimi, and GLM to your workload with POC checklists, pricing comparison tips, and compliance paths. Public specs only; not vendor endorsement.",
+        "zh-CN": "独立梳理2026中国AI大模型格局：DeepSeek、Qwen、Kimi、GLM按场景怎么选。含POC清单、价格对比维度、出海合规与7天落地步骤。公开规格，非厂商背书。"
+      },
+      "sections": [
+        {
+          "heading": {
+            "en": "Key takeaways (AI-readable summary)",
+            "zh-CN": "本文要点（AI速读版）"
+          },
+          "paragraphs": [
+            {
+              "en": "In 2026, Chinese LLMs are chosen by workload—not a single leaderboard winner. Map code/reasoning, Chinese/multilingual surfaces, ultra-long documents, or enterprise agents first; then validate cost, latency, and compliance. DeepSeek often leads on reasoning value, Qwen on Chinese and cloud integration, Kimi on very long context, GLM on stable tool calling.",
+              "zh-CN": "2026年国产大模型已从「追GPT」进入「按场景分工」。选型先看工作负载（代码/长文档/Agent/多语言），再看成本与合规；DeepSeek偏推理性价比，Qwen偏中文与生态，Kimi偏超长上下文，GLM偏企业Agent。文末附7天POC清单。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "What you really want when searching \"China AI LLM\"",
+            "zh-CN": "你搜「中国AI大模型」真正想解决什么"
+          },
+          "paragraphs": [
+            {
+              "en": "Most searches hide one of four goals: ship an API integration, build an agent with reliable tool calls, process book-length documents, or satisfy data residency for overseas or regulated teams. Rankings rarely answer those directly.",
+              "zh-CN": "搜这个词的人，表面在看名单，实际通常在问：接API上线、做Agent、啃长材料，还是满足出海/合规。榜单最爱给「综合第一」，生产环境里综合第一往往等于没有第一——你的负载才是标尺。"
+            },
+            {
+              "en": "Swift Horse indexes public specs so you can shortlist before running your own eval. Confirm pricing, rate limits, and regions on each vendor's official site.",
+              "zh-CN": "Swift Horse 整理公开规格便于缩小候选；签约前请务必在厂商官网核实价格、限流与区域可用性。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "2026 landscape at a glance",
+            "zh-CN": "2026格局一张表：主流厂商与适合谁"
+          },
+          "paragraphs": [
+            {
+              "en": "DeepSeek (R1/V3/V4 families) is widely cited for reasoning, coding, and token economics with open-weight options. Qwen3 Max anchors Chinese, multilingual, and Alibaba Cloud–native stacks. Kimi K2 targets ultra-long context for legal and research reading. GLM-5 and GLM-4.x emphasize enterprise agents and structured JSON. ERNIE, Doubao, Spark, and MiniMax matter when you are already tied to Baidu, ByteDance, iFLYTEK, or voice/multimodal products.",
+              "zh-CN": "DeepSeek（R1/V3/V4）公开资料中常见卖点是推理、代码、开源与token成本。Qwen3 Max 主打中文、多语言与阿里云生态。Kimi K2 面向超长上下文（法律/学术/长文阅读）。GLM 系列强调企业Agent与结构化输出。文心、豆包、讯飞、MiniMax 等在你已绑定对应生态时仍有价值。"
+            },
+            {
+              "en": "Third-party roundups (e.g. Check.AI, May 2026) place DeepSeek R1, Qwen3 Max, Kimi K2, and GLM-4.6 in the top tier for different axes—treat those figures as signals, not contracts.",
+              "zh-CN": "第三方横评（如 Check.AI 2026年5月）常把 DeepSeek R1、Qwen3 Max、Kimi K2、GLM 列入第一梯队，但分属不同维度——请当作信号，不是合同承诺。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "What to measure beyond public benchmarks",
+            "zh-CN": "Benchmark之外，生产环境更该看什么"
+          },
+          "paragraphs": [
+            {
+              "en": "HumanEval, SWE-bench, and AIME scores help you shortlist. Before production, run five checks: P95 latency, tool-call success rate (for agents), long-context needle retrieval, cost per completed task, and logging/residency fit.",
+              "zh-CN": "HumanEval、SWE-bench、AIME 适合缩小候选。上线前建议自测五项：P95延迟、工具调用成功率（Agent必测）、长上下文needle测试、单位任务成本、日志与数据驻留是否符合要求。"
+            },
+            {
+              "en": "Do not copy blog conclusions—run 50 fixed prompts from your product on each finalist.",
+              "zh-CN": "别直接抄文章结论——用你们产品里的50条固定prompt在各候选模型上跑一遍。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Scenario-based selection",
+            "zh-CN": "按场景选型：从负载出发，不从排名出发"
+          },
+          "paragraphs": [
+            {
+              "en": "Code and math-heavy pipelines: DeepSeek is often shortlisted for reasoning-per-dollar and open deployment paths. Chinese or Southeast Asian multilingual products: Qwen3 Max plus Alibaba tooling. Contracts or full books in one pass: Kimi K2's long-context positioning. Internal ERP/IT agents with JSON and tools: GLM series stability matters more than chat polish.",
+              "zh-CN": "代码/数学/推理流水线：DeepSeek 常因性价比与开源路径进入短名单。中文或多语言产品：Qwen3 Max 与阿里云栈。单份合同或整本书：Kimi K2 的长上下文是硬差异。对接ERP的内部Agent：GLM 的工具调用与JSON稳定性比聊天体验更重要。"
+            },
+            {
+              "en": "Decision flow: define workload → pick two or three vendors → POC on latency/cost/tools → branch on compliance (self-host open weights vs official API vs overseas MaaS).",
+              "zh-CN": "决策路径：明确负载 → 筛2–3家 → POC测延迟/成本/工具 → 按合规分叉（开源自托管 / 官方API / 海外MaaS）。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Three team patterns that work in practice",
+            "zh-CN": "三个真实选型故事"
+          },
+          "paragraphs": [
+            {
+              "en": "Ten-person overseas SaaS (English-first, cost-sensitive): primary DeepSeek API, Qwen for Chinese support pages; POC gates on cost per 1k chats and P95 under 2.5s; compliance via open weights or regional MaaS.",
+              "zh-CN": "10人出海SaaS（英文为主、成本敏感）：主力DeepSeek API，中文页用Qwen；POC看千次对话成本与P95<2.5s；合规走开源自托管或区域MaaS。"
+            },
+            {
+              "en": "Domestic law firm (80–120 page contracts): Kimi for full-text Q&A, Qwen for bilingual email; POC on clause retrieval accuracy plus 50-question hallucination spot checks.",
+              "zh-CN": "国内律所（80–120页合同）：Kimi做全文问答，Qwen做双语邮件；POC看条款定位准确率+50题幻觉抽检。"
+            },
+            {
+              "en": "Manufacturing agent on ERP: GLM for tools/JSON, DeepSeek for hard reasoning subtasks; POC requires >95% tool success and auditable logs.",
+              "zh-CN": "制造业ERP Agent：GLM负责工具链与JSON，DeepSeek做复杂推理子任务；POC要求工具成功率>95%且日志可审计。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "How to compare API pricing without surprises",
+            "zh-CN": "API价格怎么比才不被骗"
+          },
+          "paragraphs": [
+            {
+              "en": "Split input vs output tokens, check long-context surcharges, batch or off-peak discounts, and free-tier cliffs. Example snapshot from Check.AI (May 2026): DeepSeek R1 output about $2.19/M tokens vs Qwen3 Max output about $4.00/M—verify live vendor pages before budgeting.",
+              "zh-CN": "分开看输入/输出单价、长上下文加价、批处理/夜间折扣与免费额度陷阱。Check.AI 2026年5月示例：DeepSeek R1 输出约 $2.19/百万token，Qwen3 Max 输出约 $4.00/百万token——预算前请截图官网价目。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Compliance and global rollout",
+            "zh-CN": "合规与出海：三条路径"
+          },
+          "paragraphs": [
+            {
+              "en": "Path A: vendor official API (fastest integration; review data residency). Path B: self-host open weights (DeepSeek, Qwen, GLM smaller variants) for control. Path C: overseas MaaS (OpenRouter, Together, cloud regions)—often +5–15% cost, fewer cross-border surprises.",
+              "zh-CN": "路径A：官方API（接入快，需审数据条款）。路径B：开源自托管（DeepSeek/Qwen/GLM小参数等，数据可控）。路径C：海外MaaS（OpenRouter、Together、云区域节点），价格略高但跨境顾虑更少。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Seven-day POC you can copy",
+            "zh-CN": "7天POC：可以直接抄的作业表"
+          },
+          "paragraphs": [
+            {
+              "en": "D1: write three prompt classes and pass/fail criteria. D2: pick two or three models by scenario. D3: run 50-case set; log latency and cost. D4: 100 tool calls if agentic. D5: long-doc needle test if applicable. D6: security/compliance review. D7: Go/No-Go memo with primary and failover model.",
+              "zh-CN": "D1：写清3类核心prompt与成功标准。D2：按场景筛2–3个候选。D3：跑50条固定测试集，记延迟与成本。D4：Agent场景做100次工具调用压测。D5：长文档needle测试（如适用）。D6：合规/安全评审。D7：出Go/No-Go备忘录，定主备模型。"
+            },
+            {
+              "en": "On Swift Horse: browse the model catalog, compare on the services page, refine with scenario matching, then draft prompts—link: swifthorseai.com.",
+              "zh-CN": "在 Swift Horse：浏览模型库 → 对比页横向比较 → 场景匹配缩小范围 → 提示词工具固化模板（swifthorseai.com）。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Common mistakes",
+            "zh-CN": "常见误区"
+          },
+          "paragraphs": [
+            {
+              "en": "Choosing from leaderboard rank alone; treating a chat demo as agent sign-off; ignoring output-token spend; skipping needle tests on long-context models; treating third-party reviews as vendor SLAs; locking one vendor with no failover.",
+              "zh-CN": "只看榜单不做业务prompt测试；把聊天demo当Agent验收；忽略输出token导致月底爆预算；长上下文不做needle测试；把第三方横评当官方承诺；一次锁死厂商没有failover。"
+            }
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": {
+            "en": "Which major China AI LLMs exist in 2026?",
+            "zh-CN": "2026中国有哪些主流AI大模型？"
+          },
+          "answer": {
+            "en": "DeepSeek, Qwen (Tongyi), Kimi (Moonshot), GLM (Zhipu), ERNIE, Doubao, Spark, MiniMax, and others. Swift Horse lists public specs for side-by-side discovery.",
+            "zh-CN": "包括 DeepSeek、Qwen（通义）、Kimi（月之暗面）、GLM（智谱）、文心、豆包、讯飞、MiniMax 等。Swift Horse 模型库提供公开规格索引。"
+          }
+        },
+        {
+          "question": {
+            "en": "How do Chinese LLMs compare to ChatGPT?",
+            "zh-CN": "国产大模型和ChatGPT比怎么样？"
+          },
+          "answer": {
+            "en": "Chinese models often win on Mandarin quality, pricing, and long context for many workloads; global agent ecosystems and some English frontier tasks still favor leading closed models. POC on your prompts, not nationality.",
+            "zh-CN": "中文、价格、长上下文不少场景已具优势；全球Agent生态与部分英文前沿任务闭源仍强。按你的负载POC，别按国籍选。"
+          }
+        },
+        {
+          "question": {
+            "en": "Which is best for coding?",
+            "zh-CN": "哪个最适合写代码？"
+          },
+          "answer": {
+            "en": "DeepSeek frequently leads SWE-bench/HumanEval-style benchmarks; Qwen Coder is strong for front-end workflows. Run 20 real repo tasks on finalists.",
+            "zh-CN": "DeepSeek 在 SWE-bench/HumanEval 类评测常靠前；前端场景也有人更偏好 Qwen Coder。用20个真实repo任务自测再定。"
+          }
+        },
+        {
+          "question": {
+            "en": "Which is cheapest?",
+            "zh-CN": "哪个最便宜？"
+          },
+          "answer": {
+            "en": "Pricing shifts with versions and promos; DeepSeek is often the value leader. Compare input/output rates, context surcharges, and batch discounts on official pages.",
+            "zh-CN": "价格随版本与促销变动，DeepSeek 常具性价比优势。比较时需看输入/输出单价、长上下文加价与批处理折扣。"
+          }
+        },
+        {
+          "question": {
+            "en": "Can I self-host?",
+            "zh-CN": "可以私有化部署吗？"
+          },
+          "answer": {
+            "en": "Yes for several open-weight lines (DeepSeek, Qwen, GLM variants). Flagship closed APIs remain cloud-only. Check license and GPU requirements before committing.",
+            "zh-CN": "DeepSeek、Qwen、GLM 等提供开源权重或企业私有化选项；闭源旗舰通常仅API。部署前确认license与算力。"
+          }
+        }
+      ]
+    },
+    {
       "slug": "deepseek-vs-qwen-selection-guide",
       "publishedAt": "2026-05-20",
       "updatedAt": "2026-05-27",

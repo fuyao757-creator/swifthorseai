@@ -43,6 +43,18 @@ export function ArticleDetail({
             ))}
           </section>
         ))}
+
+        {article.faqs && article.faqs.length > 0 && (
+          <section className="article-section">
+            <h2 className="article-section-heading">{t.faqHeading}</h2>
+            {article.faqs.map((faq, i) => (
+              <div key={i} className="article-faq-item">
+                <h3 className="article-faq-question">{faq.question}</h3>
+                <p className="article-paragraph">{faq.answer}</p>
+              </div>
+            ))}
+          </section>
+        )}
       </div>
 
       <aside className="article-aside">

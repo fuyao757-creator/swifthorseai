@@ -1272,6 +1272,14 @@
     @apply mt-3 text-base leading-[1.85] text-ink-muted dark:text-slate-400;
   }
 
+  .article-faq-item {
+    @apply mt-6;
+  }
+
+  .article-faq-question {
+    @apply font-display text-lg font-semibold text-ink dark:text-white;
+  }
+
   .article-aside {
     @apply space-y-5 lg:sticky lg:top-28;
   }
