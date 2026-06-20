@@ -1,6 +1,223 @@
 {
   "articles": [
     {
+      "slug": "access-china-llm-api-overseas",
+      "publishedAt": "2026-06-19",
+      "updatedAt": "2026-06-19",
+      "tags": ["guide", "api", "global"],
+      "relatedModelIds": ["deepseek-v4-pro", "qwen3-max", "kimi-k2-6", "glm-5"],
+      "title": {
+        "en": "Access China LLM APIs from Overseas (2026 Setup Guide)",
+        "zh-CN": "海外如何接入中国大模型 API（2026 实操指南）"
+      },
+      "excerpt": {
+        "en": "Step-by-step for overseas teams: official DeepSeek, Qwen, Kimi, and GLM APIs, OpenAI-compatible setup, payment tips, and a 5-step POC checklist. Independent index—not vendor endorsement.",
+        "zh-CN": "海外团队接入 DeepSeek、Qwen、Kimi、GLM 官方 API 或 OpenAI 兼容网关。含三条路径、代码示例、支付避坑与 5 步 POC 清单。独立索引，非厂商背书。"
+      },
+      "sections": [
+        {
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "Overseas teams usually access Chinese LLMs via three paths: official APIs (fastest), self-hosted open weights (most control), or overseas MaaS gateways (simplest cross-border billing). DeepSeek and Qwen ship OpenAI-compatible endpoints—change base_url and API key in most SDKs. Before production, test streaming, tool calling, P95 latency, and real token cost. Swift Horse indexes public specs; pricing and SLAs are on vendor sites.",
+              "zh-CN": "海外团队接中国大模型，通常走三条路：官方 API（最快）、开源自托管（数据可控）、海外 MaaS 网关（支付省心）。DeepSeek 与 Qwen 都支持 OpenAI 兼容接口，多数情况只改 base_url 和 API Key。上线前务必自测流式、tool calling、P95 延迟与真实 token 账单。Swift Horse 提供公开规格索引，价格与 SLA 以厂商官网为准。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "You may be stuck on the path, not the model",
+            "zh-CN": "你可能卡在的不是「选模型」，而是「选路径」"
+          },
+          "paragraphs": [
+            {
+              "en": "People searching \"access Chinese LLM API overseas\" usually need four answers: Can I register and pay from abroad? Do I rewrite my OpenAI SDK? What about latency and compliance? What is the POC sign-off checklist? Leaderboards say DeepSeek reasons well and Qwen handles Chinese—you likely know that. The friction is payment, the three lines of config, and what to test before launch.",
+              "zh-CN": "搜「海外接入中国大模型 API」的人，实际往往在问：能不能从海外注册付款？OpenAI SDK 要不要重写？延迟和合规会不会踩雷？POC 通过标准是什么？榜单告诉你 DeepSeek 推理强、Qwen 中文好——这些你大概知道了。真正卡住的是：钱怎么付、代码改哪三行、测试跑哪几项。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Three access paths at a glance",
+            "zh-CN": "三条接入路径：一张表讲清楚"
+          },
+          "paragraphs": [
+            {
+              "en": "Path A — Official API: best when you need speed and cloud access; watch regional billing limits. Path B — Self-host open weights: when data must stay in your VPC (finance, legal, regulated manufacturing). Path C — Overseas MaaS / OpenAI-compatible gateways: when registration or payment blocks you; expect +5–15% cost and review data terms. Decision flow: define workload → pick path → run the 5-step POC below.",
+              "zh-CN": "路径 A 官方 API：要快、能接云，注意区域与支付限制。路径 B 开源自托管：数据不能出境时用（金融、律所、强合规制造）。路径 C 海外 MaaS / 聚合网关：注册或支付卡住时的备选，通常贵 5～15%，要审数据条款。决策顺序：明确负载 → 选路径 → 跑下文 5 步 POC。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Path A: Official APIs (DeepSeek, Qwen, GLM, Kimi)",
+            "zh-CN": "路径 A：官方 API（DeepSeek / Qwen / GLM / Kimi）"
+          },
+          "paragraphs": [
+            {
+              "en": "DeepSeek documents OpenAI-compatible Chat Completions at https://api.deepseek.com. Sign up at platform.deepseek.com; email registration often works internationally—confirm on the live site. Swap base_url and API key in the OpenAI Python or Node SDK; verify model names in official docs (aliases can deprecate).",
+              "zh-CN": "DeepSeek 文档标明 OpenAI 兼容接口，base URL 为 https://api.deepseek.com。在 platform.deepseek.com 注册；海外常用邮箱注册，以官网当前流程为准。在 OpenAI Python/Node SDK 中替换 base_url 与 API Key；模型名以官方文档为准（旧别名可能下线）。"
+            },
+            {
+              "en": "Qwen via Alibaba DashScope uses compatible-mode base URL https://dashscope.aliyuncs.com/compatible-mode/v1. International and domestic consoles may differ in model IDs and billing—copy names from your console, not blog posts. For agents, test function calling and streaming; do not assume 100% OpenAI parity.",
+              "zh-CN": "Qwen 走阿里云 DashScope，兼容模式 base URL 常见为 https://dashscope.aliyuncs.com/compatible-mode/v1。国际站与国内站模型 ID、账单可能不同——从控制台复制模型名，别抄博客。做 Agent 先测 function calling 与流式，别假设与 OpenAI 完全一致。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Path B: Self-host when data cannot leave your VPC",
+            "zh-CN": "路径 B：开源自托管——数据必须留在自己 VPC 时"
+          },
+          "paragraphs": [
+            {
+              "en": "Several Chinese labs publish open weights or enterprise private deployment options (check each license). You own GPUs, quantization, monitoring, and scaling. Higher ops cost, clearest data path—fits teams with infra, not a two-person demo sprint.",
+              "zh-CN": "多家中国实验室提供开源权重或企业私有化选项（以各厂商 license 为准）。你要自己扛 GPU、量化、监控与扩缩容。成本高，但数据路径最清楚——适合有运维团队的 mid-size 团队，不适合「两个人先跑通 demo」。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Path C: Overseas MaaS and aggregation gateways",
+            "zh-CN": "路径 C：海外 MaaS / 聚合网关"
+          },
+          "paragraphs": [
+            {
+              "en": "If official signup or payment fails, OpenRouter, Together, or other OpenAI-compatible gateways are common fallbacks. Same pattern: unified endpoint, USD billing, multi-model routing. You pay for access convenience, not the lowest unit price. Production tip: primary on official API, MaaS as failover—do not single-source.",
+              "zh-CN": "官方注册或支付失败时，OpenRouter、Together 等 OpenAI 兼容网关是常见备选。模式相同：统一 endpoint、美元计费、多模型切换。你买的是接入便利性，不是最低单价。生产建议：官方 API 做主路径，MaaS 做 failover，别单吊一家。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Account and payment pitfalls (overseas teams)",
+            "zh-CN": "账号与支付：海外团队常踩的 4 个坑"
+          },
+          "paragraphs": [
+            {
+              "en": "(1) Wrong platform URL—verify domains like platform.deepseek.com, not wrapper sites ranking in search. (2) Single payment method—if cards fail, some teams use Wise plus Alipay top-up per vendor Billing pages. (3) Stale model names—check deprecation notices in official docs. (4) No invoice entity—enterprise buyers need contracts early, not after POC.",
+              "zh-CN": "（1）抄错平台 URL——核对 platform.deepseek.com 等官方域名，警惕搜索前排 wrapper 站。（2）只准备一种支付——信用卡失败时，部分团队用 Wise + 支付宝充值，以官网 Billing 为准。（3）模型名过期——对接官方文档 deprecation 说明。（4）没留发票主体——企业采购要尽早走商务通道，别 POC 通过后才开不了票。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Scenario: 48-hour POC for a 10-person overseas SaaS team",
+            "zh-CN": "场景案例：10 人 SaaS 团队的 48 小时 POC"
+          },
+          "paragraphs": [
+            {
+              "en": "English product, Chinese support pages, cost-sensitive users in US/EU. Day 1: register DeepSeek + DashScope trial keys; run 20 identical prompts each, log latency and output tokens. Day 2: 50 tool calls if agentic; rough monthly bill = (input×input rate + output×output rate) × daily volume × 30. Example outcome: DeepSeek for reasoning/code, Qwen for Chinese surfaces, MaaS key idle as failover—not a universal answer, a template.",
+              "zh-CN": "英文产品、中文客服页、用户在欧美、成本敏感。D1：注册 DeepSeek + DashScope 试用 Key；同一套 prompt 各跑 20 条，记延迟与 output token。D2：Agent 场景 50 次 tool call；粗算月账 = (input×输入价 + output×输出价) × 日调用 × 30。示例结果：DeepSeek 做推理/代码，Qwen 做中文页，MaaS Key 仅 failover——是模板，不是标准答案。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Five-step launch checklist",
+            "zh-CN": "上线前 5 步验收"
+          },
+          "paragraphs": [
+            {
+              "en": "Connectivity (single 200 OK) → Streaming (stream=true meets UX) → Tool calling (≥50 calls, >95% success for agents) → P95 latency from your user regions, not localhost → Cost using real prompt lengths and input/output mix. Shortlist on Swift Horse comparison table and scenario match, then run this list before contracts.",
+              "zh-CN": "连通性（单条 200 OK）→ 流式（stream=true 满足产品）→ Tool calling（Agent 必测 ≥50 次、成功率 >95%）→ P95 延迟（从用户区域测，别只 localhost）→ 成本（用真实 prompt 长度算 input/output 比例）。在 Swift Horse 对比页与场景匹配缩小候选，签约前跑完本清单。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Compliance and production",
+            "zh-CN": "合规与生产"
+          },
+          "paragraphs": [
+            {
+              "en": "Read vendor data retention and training terms; redact sensitive payloads. Store API keys in env vars, never in git. Configure primary plus failover models with circuit breaking. Strip PII from logs; let legal own cross-border transfer decisions—not blog posts.",
+              "zh-CN": "读清厂商数据留存与训练条款；敏感 payload 先脱敏。API Key 放环境变量，别进 Git。配置主备模型与熔断。日志去掉 PII；跨境传输问法务，别问博客。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Common mistakes",
+            "zh-CN": "常见误区"
+          },
+          "paragraphs": [
+            {
+              "en": "Treating chat web demos as API sign-off; ignoring output-token spend in agents; skipping tool-call tests; single-vendor lock-in without failover; treating gateway SLAs as vendor SLAs.",
+              "zh-CN": "把聊天网页 demo 当 API 验收；Agent 场景忽略 output token 导致爆预算；未测 tool calling 就上线；锁死单一厂商无 failover；把第三方网关 SLA 当成厂商 SLA。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Next steps on Swift Horse",
+            "zh-CN": "在 Swift Horse 上的下一步"
+          },
+          "paragraphs": [
+            {
+              "en": "Browse the model catalog → compare on the services page → refine with scenario matching → run this POC checklist → confirm pricing and terms on vendor sites before signing. See also the 2026 China LLM guide and overseas onboarding article on swifthorseai.com.",
+              "zh-CN": "浏览模型库 → 对比页横向比较 → 场景匹配缩小范围 → 用本文 checklist 跑 POC → 签约前回厂商官网核实价格与条款。延伸阅读：2026 选型指南与海外团队入门文（swifthorseai.com）。"
+            }
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": {
+            "en": "Do I need a Chinese phone number to access China LLM APIs from overseas?",
+            "zh-CN": "海外接入中国大模型 API 需要中国手机号吗？"
+          },
+          "answer": {
+            "en": "It depends on the vendor. DeepSeek often supports email signup; DashScope requires an Alibaba Cloud account; GLM and Kimi follow their open-platform policies. Walk through registration once before your POC.",
+            "zh-CN": "视厂商而定。DeepSeek 常见为邮箱注册；DashScope 需阿里云账号；GLM/Kimi 以开放平台当前政策为准。POC 前先走一遍注册流程验证。"
+          }
+        },
+        {
+          "question": {
+            "en": "Can I use the OpenAI SDK with DeepSeek or Qwen?",
+            "zh-CN": "能用 OpenAI SDK 调用 DeepSeek 或 Qwen 吗？"
+          },
+          "answer": {
+            "en": "Yes. Set the vendor base_url and API key; match model names to official docs. DeepSeek: https://api.deepseek.com. Qwen DashScope compatible mode: https://dashscope.aliyuncs.com/compatible-mode/v1.",
+            "zh-CN": "可以。设置对应 base_url 与 API Key，模型名以官方文档为准。DeepSeek：https://api.deepseek.com。Qwen DashScope 兼容模式：https://dashscope.aliyuncs.com/compatible-mode/v1。"
+          }
+        },
+        {
+          "question": {
+            "en": "Does DeepSeek offer an overseas API node?",
+            "zh-CN": "DeepSeek 有海外节点吗？"
+          },
+          "answer": {
+            "en": "Official DeepSeek API traffic is served from mainland China infrastructure. Evaluate latency and compliance yourself; strongly regulated workloads may need self-hosting or a reviewed MaaS data-processing agreement.",
+            "zh-CN": "官方 DeepSeek API 流量走中国大陆基础设施。延迟与合规需自评；强监管负载可考虑自托管或审阅 MaaS 数据处理条款。"
+          }
+        },
+        {
+          "question": {
+            "en": "Official API vs OpenRouter—which should I pick?",
+            "zh-CN": "官方 API 和 OpenRouter 怎么选？"
+          },
+          "answer": {
+            "en": "Prefer official APIs for lowest latency and newest model revisions. Use MaaS when payment or signup blocks you, or as failover. Production stacks benefit from dual paths.",
+            "zh-CN": "要低延迟与最新模型版本，优先官方 API；支付或注册受阻时可用 MaaS，或作 failover。生产环境建议主备双路径。"
+          }
+        },
+        {
+          "question": {
+            "en": "How does Swift Horse relate to vendor documentation?",
+            "zh-CN": "Swift Horse 与厂商文档是什么关系？"
+          },
+          "answer": {
+            "en": "Swift Horse is an independent public-spec index to shortlist models. Pricing, rate limits, and SLAs remain on each vendor site—we do not imply endorsement or guaranteed SLAs.",
+            "zh-CN": "Swift Horse 是独立公开规格索引，帮你缩小候选；价格、限流与 SLA 以各厂商官网为准，不构成背书或 SLA 承诺。"
+          }
+        }
+      ]
+    },
+    {
       "slug": "china-ai-llm-guide-2026",
       "publishedAt": "2026-06-15",
       "updatedAt": "2026-06-15",
@@ -17,8 +234,8 @@
       "sections": [
         {
           "heading": {
-            "en": "Key takeaways (AI-readable summary)",
-            "zh-CN": "本文要点（AI速读版）"
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
           },
           "paragraphs": [
             {
