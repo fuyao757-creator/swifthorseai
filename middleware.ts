@@ -19,10 +19,17 @@ function getPreferredLocale(request: NextRequest): string {
 
 /** Redirect common locale typos (e.g. /zh-cn/...) before prefix injection causes 404. */
 function normalizeLocalePathname(pathname: string): string | null {
+  // Already canonical — do not redirect (case-insensitive regex would loop on /zh-CN).
+  if (pathname === "/zh-CN" || pathname.startsWith("/zh-CN/")) {
+    return null;
+  }
+
   const match = pathname.match(/^\/(zh-cn|zh_cn|zh-hans|zh-hant)(\/|$)/i);
   if (!match) return null;
+
   const rest = pathname.slice(match[0].length);
-  return `/zh-CN${rest ? (rest.startsWith("/") ? rest : `/${rest}`) : ""}`;
+  const normalized = `/zh-CN${rest ? (rest.startsWith("/") ? rest : `/${rest}`) : ""}`;
+  return normalized === pathname ? null : normalized;
 }
 
 export function middleware(request: NextRequest) {
