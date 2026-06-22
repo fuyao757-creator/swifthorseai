@@ -17,6 +17,14 @@ function getPreferredLocale(request: NextRequest): string {
   return defaultLocale;
 }
 
+/** Redirect common locale typos (e.g. /zh-cn/...) before prefix injection causes 404. */
+function normalizeLocalePathname(pathname: string): string | null {
+  const match = pathname.match(/^\/(zh-cn|zh_cn|zh-hans|zh-hant)(\/|$)/i);
+  if (!match) return null;
+  const rest = pathname.slice(match[0].length);
+  return `/zh-CN${rest ? (rest.startsWith("/") ? rest : `/${rest}`) : ""}`;
+}
+
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
@@ -26,6 +34,13 @@ export function middleware(request: NextRequest) {
     pathname.includes(".") // static files
   ) {
     return NextResponse.next();
+  }
+
+  const normalizedPath = normalizeLocalePathname(pathname);
+  if (normalizedPath) {
+    const url = request.nextUrl.clone();
+    url.pathname = normalizedPath;
+    return NextResponse.redirect(url, 308);
   }
 
   const activeLocale = getLocaleFromPathname(pathname);
@@ -54,6 +69,6 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   matcher: [
-    "/((?!_next|api|favicon.ico|robots.txt|sitemap.xml|locales|logos|videos|swift-horse-logo).*)",
+    "/((?!_next|api|favicon.ico|robots.txt|sitemap.xml|llms.txt|locales|logos|videos|swift-horse-logo|6f8e4a2b9c1d3e5f7a8b9c0d1e2f3a4).*)",
   ],
 };

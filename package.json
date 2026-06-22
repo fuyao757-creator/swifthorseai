@@ -6,6 +6,7 @@
     "dev": "next dev -H 0.0.0.0",
     "dev:clean": "node scripts/clean-next.js && next dev -H 0.0.0.0",
     "build": "next build",
+    "postbuild": "node scripts/indexnow-ping.mjs",
     "build:clean": "node scripts/clean-next.js && next build",
     "sync:catalog": "node scripts/sync-benchmarks-catalog.mjs",
     "sync:models": "node scripts/sync-models-catalog.mjs",
