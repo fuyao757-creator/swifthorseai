@@ -25,10 +25,16 @@ const STATIC_PATHS = [
   "/disclaimer",
 ];
 
+const PRIORITY_URLS = [
+  `${BASE_URL}/en`,
+  `${BASE_URL}/en/articles/china-ai-llm-guide-2026`,
+  `${BASE_URL}/en/articles/access-china-llm-api-overseas`,
+];
+
 function collectUrls() {
   const articlesPath = join(ROOT, "data", "articles.json");
   const { articles } = JSON.parse(readFileSync(articlesPath, "utf8"));
-  const urls = new Set();
+  const urls = new Set(PRIORITY_URLS);
 
   for (const locale of LOCALES) {
     for (const path of STATIC_PATHS) {
@@ -39,7 +45,7 @@ function collectUrls() {
     }
   }
 
-  return [...urls];
+  return [...PRIORITY_URLS, ...Array.from(urls).filter((u) => !PRIORITY_URLS.includes(u))];
 }
 
 async function pingIndexNow() {
