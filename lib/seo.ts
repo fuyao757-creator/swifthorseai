@@ -15,7 +15,7 @@ export function getSiteTitle(locale: Locale): string {
 export function getSiteDescription(locale: Locale): string {
   return locale === "zh-CN"
     ? `${SITE_BRAND}（${SITE_DOMAIN}）是面向全球团队的中国大模型开放索引：模型库、场景匹配与提示词工具，独立整理公开规格，不替代官方文档。`
-    : `${SITE_BRAND} (${SITE_DOMAIN}) is an independent open index of China's leading AI models for global teams—catalog, scenario matching, and prompt tools. Public specs only; not vendor endorsement.`;
+    : `${SITE_BRAND} (${SITE_DOMAIN}) is an independent index of china ai and chinese llms—browse top Chinese AI models, compare specs, and read selection guides for global teams.`;
 }
 
 export function getAlternateLanguages(path: string) {

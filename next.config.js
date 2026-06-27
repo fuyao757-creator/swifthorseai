@@ -61,7 +61,13 @@ const nextConfig = {
         permanent: true,
       })
     );
+    const articleTypoRedirects = ["/en", "/zh-CN"].map((locale) => ({
+      source: `${locale}/article/:slug`,
+      destination: `${locale}/articles/:slug`,
+      permanent: true,
+    }));
     return [
+      ...articleTypoRedirects,
       ...newsRedirects,
       ...workflowsRedirects,
       ...recommendRedirects,
