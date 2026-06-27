@@ -29,6 +29,9 @@ const PRIORITY_URLS = [
   `${BASE_URL}/en`,
   `${BASE_URL}/en/articles/china-ai-llm-guide-2026`,
   `${BASE_URL}/en/articles/access-china-llm-api-overseas`,
+  `${BASE_URL}/en/articles/china-llm-api-pricing-2026`,
+  `${BASE_URL}/en/articles/top-chinese-ai-models-2026`,
+  `${BASE_URL}/en/articles/chinese-llms-global-guide-2026`,
 ];
 
 function collectUrls() {
