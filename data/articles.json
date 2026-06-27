@@ -3,15 +3,15 @@
     {
       "slug": "access-china-llm-api-overseas",
       "publishedAt": "2026-06-19",
-      "updatedAt": "2026-06-19",
+      "updatedAt": "2026-05-27",
       "tags": ["guide", "api", "global"],
       "relatedModelIds": ["deepseek-v4-pro", "qwen3-max", "kimi-k2-6", "glm-5"],
       "title": {
-        "en": "Access China LLM APIs from Overseas (2026 Setup Guide)",
+        "en": "China LLM API from Overseas (2026): DeepSeek, Qwen, Kimi, GLM Setup",
         "zh-CN": "海外如何接入中国大模型 API（2026 实操指南）"
       },
       "excerpt": {
-        "en": "Step-by-step for overseas teams: official DeepSeek, Qwen, Kimi, and GLM APIs, OpenAI-compatible setup, payment tips, and a 5-step POC checklist. Independent index—not vendor endorsement.",
+        "en": "How to call Chinese LLM APIs from outside China—official DeepSeek, Qwen, Kimi, and GLM endpoints, OpenAI-compatible setup, payment tips, and a 5-step POC checklist. Independent index.",
         "zh-CN": "海外团队接入 DeepSeek、Qwen、Kimi、GLM 官方 API 或 OpenAI 兼容网关。含三条路径、代码示例、支付避坑与 5 步 POC 清单。独立索引，非厂商背书。"
       },
       "sections": [
@@ -220,15 +220,15 @@
     {
       "slug": "china-ai-llm-guide-2026",
       "publishedAt": "2026-06-15",
-      "updatedAt": "2026-06-15",
+      "updatedAt": "2026-05-27",
       "tags": ["guide", "comparison", "enterprise"],
       "relatedModelIds": ["deepseek-v4-pro", "qwen3-max", "kimi-k2-6", "glm-5"],
       "title": {
-        "en": "China AI LLM Guide 2026: DeepSeek, Qwen, Kimi, GLM Compared",
+        "en": "China LLM Guide 2026: Top Chinese LLMs Compared (DeepSeek, Qwen, Kimi, GLM)",
         "zh-CN": "2026中国AI大模型选型指南：DeepSeek/Qwen/Kimi/GLM对比"
       },
       "excerpt": {
-        "en": "Independent 2026 guide to China's leading LLMs—match DeepSeek, Qwen, Kimi, and GLM to your workload with POC checklists, pricing comparison tips, and compliance paths. Public specs only; not vendor endorsement.",
+        "en": "Compare top Chinese LLMs and China AI models in 2026—DeepSeek, Qwen, Kimi, GLM by use case, pricing, and API access. POC checklist + overseas setup tips. Independent index.",
         "zh-CN": "独立梳理2026中国AI大模型格局：DeepSeek、Qwen、Kimi、GLM按场景怎么选。含POC清单、价格对比维度、出海合规与7天落地步骤。公开规格，非厂商背书。"
       },
       "sections": [
