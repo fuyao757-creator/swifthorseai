@@ -1,7 +1,7 @@
 import type { Article } from "@/lib/articles";
 import { localizeArticle } from "@/lib/articles";
 import type { Locale } from "@/lib/i18n";
-import { BASE_URL, SITE_BRAND, SITE_OG_IMAGE } from "@/lib/seo";
+import { BASE_URL, SITE_BRAND, SITE_OG_IMAGE, SITE_SAME_AS } from "@/lib/seo";
 
 export function ArticleJsonLd({
   article,
@@ -35,6 +35,7 @@ export function ArticleJsonLd({
       "@type": "Organization",
       name: SITE_BRAND,
       url: BASE_URL,
+      sameAs: [...SITE_SAME_AS],
       logo: {
         "@type": "ImageObject",
         url: `${BASE_URL}${SITE_OG_IMAGE}`,

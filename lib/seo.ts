@@ -5,6 +5,10 @@ export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? "https://www.swiftho
 export const SITE_BRAND = "Swift Horse";
 export const SITE_DOMAIN = "swifthorseai.com";
 export const SITE_OG_IMAGE = "/logos/swift-horse.png";
+/** External profiles for Organization schema (GEO / knowledge graph). */
+export const SITE_SAME_AS = [
+  "https://github.com/fuyao757-creator/swifthorseai",
+] as const;
 
 export function getSiteTitle(locale: Locale): string {
   return locale === "zh-CN"

@@ -1,4 +1,4 @@
-import { BASE_URL, SITE_BRAND, SITE_DOMAIN, getSiteDescription } from "@/lib/seo";
+import { BASE_URL, SITE_BRAND, SITE_DOMAIN, getSiteDescription, SITE_SAME_AS } from "@/lib/seo";
 import type { Locale } from "@/lib/i18n";
 
 export function SiteJsonLd({ locale }: { locale: Locale }) {
@@ -18,7 +18,7 @@ export function SiteJsonLd({ locale }: { locale: Locale }) {
           "@type": "ImageObject",
           url: `${BASE_URL}/logos/swift-horse.png`,
         },
-        sameAs: [],
+        sameAs: [...SITE_SAME_AS],
       },
       {
         "@type": "WebSite",
