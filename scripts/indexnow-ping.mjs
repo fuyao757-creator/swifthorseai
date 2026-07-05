@@ -32,6 +32,11 @@ const PRIORITY_URLS = [
   `${BASE_URL}/en/articles/china-llm-api-pricing-2026`,
   `${BASE_URL}/en/articles/top-chinese-ai-models-2026`,
   `${BASE_URL}/en/articles/chinese-llms-global-guide-2026`,
+  `${BASE_URL}/en/articles/china-llm-agent-tool-calling-2026`,
+  `${BASE_URL}/en/articles/kimi-vs-glm-selection-guide-2026`,
+  `${BASE_URL}/en/articles/deepseek-api-overseas-quickstart-2026`,
+  `${BASE_URL}/en/articles/china-llm-compliance-overseas-2026`,
+  `${BASE_URL}/en/articles/chinese-llm-self-hosting-guide-2026`,
 ];
 
 function collectUrls() {

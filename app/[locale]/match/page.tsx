@@ -4,6 +4,8 @@ import { type Locale, isValidLocale } from "@/lib/i18n";
 import { getDictionary } from "@/lib/dictionary";
 import { buildPageMetadata } from "@/lib/seo";
 import { ModelMatchChatClient } from "@/components/match-reference/ModelMatchChatClient";
+import { GuideLinksStrip } from "@/components/GuideLinksStrip";
+import { MATCH_PAGE_GUIDE_SLUGS } from "@/lib/featured-guides";
 
 export async function generateMetadata({
   params,
@@ -31,7 +33,17 @@ export default function MatchPage({
 
   return (
     <Suspense fallback={null}>
-      <ModelMatchChatClient locale={locale} dict={dict} />
+      <div className="animate-fade-in">
+        <ModelMatchChatClient locale={locale} dict={dict} />
+        <div className="mx-auto max-w-6xl px-4 pb-10 sm:px-6">
+          <GuideLinksStrip
+            locale={locale}
+            dict={dict}
+            slugs={MATCH_PAGE_GUIDE_SLUGS}
+            compact
+          />
+        </div>
+      </div>
     </Suspense>
   );
 }

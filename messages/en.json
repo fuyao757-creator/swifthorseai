@@ -93,6 +93,10 @@
     "ctaTitle": "Explore China's AI model ecosystem",
     "ctaFootnote": "Independent index · No official affiliation",
     "ctaSubtitle": "All content is compiled from public sources for research only—not official recommendations or buying advice.",
+    "guideLinksEyebrow": "CHINA LLM GUIDES",
+    "guideLinksTitle": "Popular selection guides",
+    "guideLinksSubtitle": "Structured for Google and AI citation—China LLM selection, API setup, pricing, and compliance.",
+    "guideLinksViewAll": "All guides",
     "modules": {
       "models": {
         "title": "Model library",
@@ -484,7 +488,9 @@
       "comparison": "Comparison",
       "guide": "Guide",
       "enterprise": "Enterprise",
-      "api": "API"
+      "api": "API",
+      "global": "Global",
+      "rag": "RAG"
     }
   },
   "footer": {

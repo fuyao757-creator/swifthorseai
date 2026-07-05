@@ -15,6 +15,8 @@ const LandingHorseLayer = dynamic(
   { ssr: false }
 );
 
+import { GuideLinksStrip } from "./GuideLinksStrip";
+import { HOMEPAGE_GUIDE_SLUGS } from "@/lib/featured-guides";
 import { LandingWorkflowStrip } from "./LandingWorkflowStrip";
 
 import { LandingTechDecor } from "./LandingTechDecor";
@@ -242,6 +244,10 @@ export function LandingPage({
         </div>
 
       </section>
+
+
+
+      <GuideLinksStrip locale={locale} dict={dict} slugs={HOMEPAGE_GUIDE_SLUGS} />
 
 
 

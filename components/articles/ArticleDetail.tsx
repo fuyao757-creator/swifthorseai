@@ -4,6 +4,9 @@ import type { Dictionary } from "@/lib/dictionary";
 import type { LocalizedArticle } from "@/lib/articles";
 import { getModelById, localizeModel } from "@/lib/data";
 import { buildMatchUrl, buildPromptsUrl } from "@/lib/model-workflow";
+import { getRelatedGuideSlugs } from "@/lib/featured-guides";
+import { getArticleBySlug } from "@/lib/articles";
+import { getLocalizedValue } from "@/lib/i18n";
 
 export function ArticleDetail({
   article,
@@ -27,6 +30,14 @@ export function ArticleDetail({
           .map((m) => m.id)
           .join(",")}`
       : `/${locale}/services`;
+
+  const relatedGuides = getRelatedGuideSlugs(article.slug, 4)
+    .map((slug) => {
+      const a = getArticleBySlug(slug);
+      if (!a) return null;
+      return { slug, title: getLocalizedValue(a.title, locale) };
+    })
+    .filter(Boolean) as { slug: string; title: string }[];
 
   return (
     <div className="article-detail">
@@ -70,6 +81,24 @@ export function ArticleDetail({
                   >
                     {m.name}
                     <span className="article-related-vendor">{m.companyName}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {relatedGuides.length > 0 && (
+          <div className="article-aside-block">
+            <p className="mono-label">{dict.landing.guideLinksTitle}</p>
+            <ul className="article-related-list">
+              {relatedGuides.map((g) => (
+                <li key={g.slug}>
+                  <Link
+                    href={`/${locale}/articles/${g.slug}`}
+                    className="article-related-link"
+                  >
+                    {g.title}
                   </Link>
                 </li>
               ))}

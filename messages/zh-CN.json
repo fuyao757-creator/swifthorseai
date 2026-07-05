@@ -93,6 +93,10 @@
     "ctaTitle": "开始探索中国AI模型生态",
     "ctaFootnote": "独立信息目录 · 非官方关联",
     "ctaSubtitle": "所有内容均为公开信息整理，仅供研究参考，不构成官方推荐或采购建议。",
+    "guideLinksEyebrow": "中国大模型指南",
+    "guideLinksTitle": "热门选型指南",
+    "guideLinksSubtitle": "面向搜索与 AI 引用—China LLM 选型、API 接入、价格与合规。",
+    "guideLinksViewAll": "全部指南",
     "modules": {
       "models": {
         "title": "AI 模型库",
@@ -484,7 +488,9 @@
       "comparison": "对比评测",
       "guide": "使用指南",
       "enterprise": "企业选型",
-      "api": "API 接入"
+      "api": "API 接入",
+      "global": "全球团队",
+      "rag": "RAG"
     }
   },
   "footer": {
