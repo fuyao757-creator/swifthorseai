@@ -37,6 +37,9 @@ const PRIORITY_URLS = [
   `${BASE_URL}/en/articles/deepseek-api-overseas-quickstart-2026`,
   `${BASE_URL}/en/articles/china-llm-compliance-overseas-2026`,
   `${BASE_URL}/en/articles/chinese-llm-self-hosting-guide-2026`,
+  `${BASE_URL}/en/articles/china-llm-vs-chatgpt-2026`,
+  `${BASE_URL}/en/articles/qwen-api-overseas-quickstart-2026`,
+  `${BASE_URL}/en/articles/china-llm-coding-assistant-2026`,
 ];
 
 function collectUrls() {
