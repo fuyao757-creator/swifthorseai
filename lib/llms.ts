@@ -26,6 +26,9 @@ const GEO_PRIORITY_SLUGS = [
   "china-llm-vs-chatgpt-2026",
   "qwen-api-overseas-quickstart-2026",
   "china-llm-coding-assistant-2026",
+  "best-chinese-llm-2026",
+  "china-llm-vs-claude-2026",
+  "china-llm-benchmarks-guide-2026",
 ] as const;
 
 function appendArticleEntry(lines: string[], slug: string) {

@@ -40,6 +40,15 @@ const PRIORITY_URLS = [
   `${BASE_URL}/en/articles/china-llm-vs-chatgpt-2026`,
   `${BASE_URL}/en/articles/qwen-api-overseas-quickstart-2026`,
   `${BASE_URL}/en/articles/china-llm-coding-assistant-2026`,
+  `${BASE_URL}/en/articles/glm-api-overseas-quickstart-2026`,
+  `${BASE_URL}/en/articles/kimi-api-overseas-quickstart-2026`,
+  `${BASE_URL}/en/articles/china-llm-openai-compatible-sdk-2026`,
+  `${BASE_URL}/en/articles/china-llm-latency-failover-2026`,
+  `${BASE_URL}/en/articles/best-chinese-llm-2026`,
+  `${BASE_URL}/en/articles/china-llm-vs-claude-2026`,
+  `${BASE_URL}/en/articles/china-llm-benchmarks-guide-2026`,
+  `${BASE_URL}/en/articles/china-llm-multimodal-vision-2026`,
+  `${BASE_URL}/en/articles/china-llm-json-structured-output-2026`,
 ];
 
 function collectUrls() {
