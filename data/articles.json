@@ -220,7 +220,7 @@
     {
       "slug": "china-ai-llm-guide-2026",
       "publishedAt": "2026-06-15",
-      "updatedAt": "2026-05-27",
+      "updatedAt": "2026-08-15",
       "tags": ["guide", "comparison", "enterprise"],
       "relatedModelIds": ["deepseek-v4-pro", "qwen3-max", "kimi-k2-6", "glm-5"],
       "title": {
@@ -228,8 +228,8 @@
         "zh-CN": "2026中国AI大模型选型指南：DeepSeek/Qwen/Kimi/GLM对比"
       },
       "excerpt": {
-        "en": "Compare top Chinese LLMs and China AI models in 2026—DeepSeek, Qwen, Kimi, GLM by use case, pricing, and API access. POC checklist + overseas setup tips. Independent index.",
-        "zh-CN": "独立梳理2026中国AI大模型格局：DeepSeek、Qwen、Kimi、GLM按场景怎么选。含POC清单、价格对比维度、出海合规与7天落地步骤。公开规格，非厂商背书。"
+        "en": "China LLM & Chinese LLMs 2026: choose DeepSeek, Qwen, Kimi or GLM by use case—pricing, overseas API access, and a 7-day POC checklist. Independent shortlist, not vendor ads.",
+        "zh-CN": "China LLM / 中国大模型2026选型：按场景在 DeepSeek、Qwen、Kimi、GLM 间选择——价格、海外API接入与7天POC清单。独立短名单，非厂商广告。"
       },
       "sections": [
         {
