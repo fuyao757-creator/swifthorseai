@@ -29,6 +29,10 @@ const GEO_PRIORITY_SLUGS = [
   "best-chinese-llm-2026",
   "china-llm-vs-claude-2026",
   "china-llm-benchmarks-guide-2026",
+  "glm-4-selection-guide-2026",
+  "china-llm-optimization-guide-2026",
+  "deepseek-r1-reasoning-guide-2026",
+  "china-llm-enterprise-buyers-guide-2026",
 ] as const;
 
 function appendArticleEntry(lines: string[], slug: string) {
