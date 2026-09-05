@@ -75,5 +75,5 @@ export function getGuideSlugsForModel(modelId: string, limit = 3): string[] {
     ...related.filter((slug) => !prioritySet.has(slug)),
   ];
 
-  return [...new Set(ranked)].slice(0, limit);
+  return Array.from(new Set(ranked)).slice(0, limit);
 }
