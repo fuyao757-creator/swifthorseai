@@ -54,6 +54,11 @@ const PRIORITY_URLS = [
   `${BASE_URL}/en/articles/deepseek-r1-reasoning-guide-2026`,
   `${BASE_URL}/en/articles/china-llm-embedding-rag-setup-2026`,
   `${BASE_URL}/en/articles/china-llm-enterprise-buyers-guide-2026`,
+  `${BASE_URL}/en/articles/deepseek-vs-kimi-selection-guide-2026`,
+  `${BASE_URL}/en/articles/china-llm-langchain-integration-2026`,
+  `${BASE_URL}/en/articles/china-llm-translation-localization-2026`,
+  `${BASE_URL}/en/articles/china-llm-startup-mvp-guide-2026`,
+  `${BASE_URL}/en/articles/china-llm-fine-tuning-vs-api-2026`,
 ];
 
 function collectUrls() {
