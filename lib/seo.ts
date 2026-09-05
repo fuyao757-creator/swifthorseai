@@ -12,14 +12,14 @@ export const SITE_SAME_AS = [
 
 export function getSiteTitle(locale: Locale): string {
   return locale === "zh-CN"
-    ? `${SITE_BRAND} — 中国 AI 模型导航 · ${SITE_DOMAIN}`
-    : `${SITE_BRAND} — China AI Model Index · ${SITE_DOMAIN}`;
+    ? `${SITE_BRAND} — 中国大模型 / China LLM 导航 · ${SITE_DOMAIN}`
+    : `${SITE_BRAND} — China LLM & Chinese LLMs Index · ${SITE_DOMAIN}`;
 }
 
 export function getSiteDescription(locale: Locale): string {
   return locale === "zh-CN"
-    ? `${SITE_BRAND}（${SITE_DOMAIN}）是面向全球团队的中国大模型开放索引：模型库、场景匹配与提示词工具，独立整理公开规格，不替代官方文档。`
-    : `${SITE_BRAND} (${SITE_DOMAIN}) is an independent index of china ai and chinese llms—browse top Chinese AI models, compare specs, and read selection guides for global teams.`;
+    ? `${SITE_BRAND}（${SITE_DOMAIN}）是面向全球团队的中国大模型（China LLM）开放索引：对比 DeepSeek、Qwen、GLM、Kimi，含模型库、场景匹配与选型指南，独立整理公开规格。`
+    : `${SITE_BRAND} (${SITE_DOMAIN}): independent China LLM & Chinese LLMs index—compare DeepSeek, Qwen, GLM, Kimi; browse top Chinese AI models and selection guides for global teams.`;
 }
 
 export function getAlternateLanguages(path: string) {

@@ -27,6 +27,8 @@ const STATIC_PATHS = [
 
 const PRIORITY_URLS = [
   `${BASE_URL}/en`,
+  `${BASE_URL}/en/articles/best-chinese-llm-2026`,
+  `${BASE_URL}/en/articles/glm-4-selection-guide-2026`,
   `${BASE_URL}/en/articles/china-ai-llm-guide-2026`,
   `${BASE_URL}/en/articles/access-china-llm-api-overseas`,
   `${BASE_URL}/en/articles/china-llm-api-pricing-2026`,
@@ -44,12 +46,10 @@ const PRIORITY_URLS = [
   `${BASE_URL}/en/articles/kimi-api-overseas-quickstart-2026`,
   `${BASE_URL}/en/articles/china-llm-openai-compatible-sdk-2026`,
   `${BASE_URL}/en/articles/china-llm-latency-failover-2026`,
-  `${BASE_URL}/en/articles/best-chinese-llm-2026`,
   `${BASE_URL}/en/articles/china-llm-vs-claude-2026`,
   `${BASE_URL}/en/articles/china-llm-benchmarks-guide-2026`,
   `${BASE_URL}/en/articles/china-llm-multimodal-vision-2026`,
   `${BASE_URL}/en/articles/china-llm-json-structured-output-2026`,
-  `${BASE_URL}/en/articles/glm-4-selection-guide-2026`,
   `${BASE_URL}/en/articles/china-llm-optimization-guide-2026`,
   `${BASE_URL}/en/articles/deepseek-r1-reasoning-guide-2026`,
   `${BASE_URL}/en/articles/china-llm-embedding-rag-setup-2026`,

@@ -4,8 +4,17 @@
       "slug": "access-china-llm-api-overseas",
       "publishedAt": "2026-06-19",
       "updatedAt": "2026-05-27",
-      "tags": ["guide", "api", "global"],
-      "relatedModelIds": ["deepseek-v4-pro", "qwen3-max", "kimi-k2-6", "glm-5"],
+      "tags": [
+        "guide",
+        "api",
+        "global"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro",
+        "qwen3-max",
+        "kimi-k2-6",
+        "glm-5"
+      ],
       "title": {
         "en": "China LLM API from Overseas (2026): DeepSeek, Qwen, Kimi, GLM Setup",
         "zh-CN": "海外如何接入中国大模型 API（2026 实操指南）"
@@ -220,16 +229,25 @@
     {
       "slug": "china-ai-llm-guide-2026",
       "publishedAt": "2026-06-15",
-      "updatedAt": "2026-08-15",
-      "tags": ["guide", "comparison", "enterprise"],
-      "relatedModelIds": ["deepseek-v4-pro", "qwen3-max", "kimi-k2-6", "glm-5"],
+      "updatedAt": "2026-09-05",
+      "tags": [
+        "guide",
+        "comparison",
+        "enterprise"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro",
+        "qwen3-max",
+        "kimi-k2-6",
+        "glm-5"
+      ],
       "title": {
-        "en": "China LLM Guide 2026: Top Chinese LLMs Compared (DeepSeek, Qwen, Kimi, GLM)",
-        "zh-CN": "2026中国AI大模型选型指南：DeepSeek/Qwen/Kimi/GLM对比"
+        "en": "China LLM Guide 2026: Chinese LLMs—DeepSeek, Qwen, Kimi, GLM",
+        "zh-CN": "2026中国大模型指南：Chinese LLMs（DeepSeek/Qwen/Kimi/GLM）"
       },
       "excerpt": {
-        "en": "China LLM & Chinese LLMs 2026: choose DeepSeek, Qwen, Kimi or GLM by use case—pricing, overseas API access, and a 7-day POC checklist. Independent shortlist, not vendor ads.",
-        "zh-CN": "China LLM / 中国大模型2026选型：按场景在 DeepSeek、Qwen、Kimi、GLM 间选择——价格、海外API接入与7天POC清单。独立短名单，非厂商广告。"
+        "en": "China LLM & Chinese LLMs 2026: pick DeepSeek, Qwen, Kimi or GLM by use case—API pricing, overseas access, and a 7-day POC. Independent guide for global product teams.",
+        "zh-CN": "2026 China LLM / Chinese LLMs：按场景选 DeepSeek、Qwen、Kimi 或 GLM——API 定价、海外接入与 7 天 POC。面向全球产品团队的独立指南。"
       },
       "sections": [
         {
@@ -438,8 +456,15 @@
       "slug": "deepseek-vs-qwen-selection-guide",
       "publishedAt": "2026-05-20",
       "updatedAt": "2026-05-27",
-      "tags": ["comparison", "enterprise", "api"],
-      "relatedModelIds": ["deepseek-v4-pro", "qwen3-max"],
+      "tags": [
+        "comparison",
+        "enterprise",
+        "api"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro",
+        "qwen3-max"
+      ],
       "title": {
         "en": "DeepSeek vs Qwen: How to Choose for Production",
         "zh-CN": "DeepSeek 与 Qwen 怎么选：生产环境选型指南"
@@ -514,7 +539,9 @@
     {
       "slug": "china-llm-open-index-guide",
       "publishedAt": "2026-05-10",
-      "tags": ["guide"],
+      "tags": [
+        "guide"
+      ],
       "relatedModelIds": [],
       "title": {
         "en": "Using Swift Horse as a China AI Model Open Index",
@@ -570,8 +597,16 @@
     {
       "slug": "china-llm-rag-selection-guide",
       "publishedAt": "2026-05-28",
-      "tags": ["guide", "rag", "enterprise"],
-      "relatedModelIds": ["deepseek-v4-pro", "qwen3-max", "glm-5"],
+      "tags": [
+        "guide",
+        "rag",
+        "enterprise"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro",
+        "qwen3-max",
+        "glm-5"
+      ],
       "title": {
         "en": "Choosing a Chinese LLM for RAG and Long-Context Workloads",
         "zh-CN": "长文档 RAG 场景如何选型中国大模型"
@@ -610,7 +645,10 @@
     {
       "slug": "overseas-team-china-llm-onboarding",
       "publishedAt": "2026-05-29",
-      "tags": ["guide", "global"],
+      "tags": [
+        "guide",
+        "global"
+      ],
       "relatedModelIds": [],
       "title": {
         "en": "Onboarding Overseas Teams to China's AI Model Landscape",
@@ -651,8 +689,18 @@
       "slug": "china-llm-api-pricing-2026",
       "publishedAt": "2026-05-27",
       "updatedAt": "2026-05-27",
-      "tags": ["guide", "api", "comparison", "global"],
-      "relatedModelIds": ["deepseek-v4-pro", "qwen3-max", "kimi-k2-6", "glm-5"],
+      "tags": [
+        "guide",
+        "api",
+        "comparison",
+        "global"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro",
+        "qwen3-max",
+        "kimi-k2-6",
+        "glm-5"
+      ],
       "title": {
         "en": "China LLM API Pricing 2026: DeepSeek, Qwen, Kimi, GLM Cost Comparison",
         "zh-CN": "2026中国大模型API价格对比：DeepSeek/Qwen/Kimi/GLM成本指南"
@@ -793,16 +841,25 @@
     {
       "slug": "top-chinese-ai-models-2026",
       "publishedAt": "2026-05-27",
-      "updatedAt": "2026-05-27",
-      "tags": ["guide", "comparison", "enterprise"],
-      "relatedModelIds": ["deepseek-v4-pro", "qwen3-max", "kimi-k2-6", "glm-5"],
+      "updatedAt": "2026-09-05",
+      "tags": [
+        "guide",
+        "comparison",
+        "enterprise"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro",
+        "qwen3-max",
+        "kimi-k2-6",
+        "glm-5"
+      ],
       "title": {
-        "en": "Top Chinese AI Models 2026: China LLM Rankings & Use-Case Matrix",
-        "zh-CN": "2026中国AI大模型排行榜：场景选型矩阵（DeepSeek/Qwen/Kimi/GLM）"
+        "en": "Top Chinese AI Models 2026: China LLM Use-Case Matrix",
+        "zh-CN": "2026顶级中国AI模型：China LLM 场景矩阵"
       },
       "excerpt": {
-        "en": "Top Chinese AI models and China LLM picks for 2026—not a single leaderboard score, but a use-case matrix for DeepSeek, Qwen, Kimi, GLM, and peers. For global teams comparing china ai options.",
-        "zh-CN": "2026 top chinese ai models 怎么选：按场景矩阵理解 DeepSeek、Qwen、Kimi、GLM，而非单一榜单。面向对比 china ai 与 chinese llms 的海外团队。"
+        "en": "Top Chinese AI models 2026—China LLM picks by use case (coding, RAG, agents, multimodal), not one score. Compare DeepSeek, Qwen, Kimi, GLM for global teams.",
+        "zh-CN": "2026顶级中国 AI 模型——按编程/RAG/Agent/多模态场景选 China LLM，而非单一分数。对比 DeepSeek、Qwen、Kimi、GLM。"
       },
       "sections": [
         {
@@ -924,16 +981,25 @@
     {
       "slug": "chinese-llms-global-guide-2026",
       "publishedAt": "2026-05-27",
-      "updatedAt": "2026-05-27",
-      "tags": ["guide", "global", "comparison"],
-      "relatedModelIds": ["deepseek-v4-pro", "qwen3-max", "kimi-k2-6", "glm-5"],
+      "updatedAt": "2026-09-05",
+      "tags": [
+        "guide",
+        "global",
+        "comparison"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro",
+        "qwen3-max",
+        "kimi-k2-6",
+        "glm-5"
+      ],
       "title": {
-        "en": "Chinese LLMs Guide 2026: China LLM Landscape for Global Teams",
-        "zh-CN": "2026 Chinese LLMs 指南：海外团队如何理解中国大模型（China LLM）"
+        "en": "Chinese LLMs 2026: China LLM Landscape for Global Teams",
+        "zh-CN": "2026 Chinese LLMs：面向全球团队的中国大模型全景"
       },
       "excerpt": {
-        "en": "Plain-language guide to chinese llms and the china llm market for overseas product and engineering teams—vendors, API access, compliance questions, and links to DeepSeek, Qwen, Kimi, GLM profiles.",
-        "zh-CN": "面向海外团队的 chinese llms / china llm 入门：厂商地图、API 接入、合规要点与 DeepSeek、Qwen、Kimi、GLM 索引链接。独立整理，非厂商背书。"
+        "en": "Chinese LLMs & China LLM market 2026 for overseas teams—vendors, API access, compliance basics, and DeepSeek/Qwen/Kimi/GLM profiles in one plain-language index.",
+        "zh-CN": "2026 Chinese LLMs / China LLM 市场导读——厂商、API 接入、合规要点，以及 DeepSeek/Qwen/Kimi/GLM 一页速览。"
       },
       "sections": [
         {
@@ -1068,8 +1134,17 @@
       "slug": "china-llm-agent-tool-calling-2026",
       "publishedAt": "2026-07-05",
       "updatedAt": "2026-07-05",
-      "tags": ["guide", "api", "enterprise"],
-      "relatedModelIds": ["deepseek-v4-pro", "qwen3-max", "glm-5", "kimi-k2-6"],
+      "tags": [
+        "guide",
+        "api",
+        "enterprise"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro",
+        "qwen3-max",
+        "glm-5",
+        "kimi-k2-6"
+      ],
       "title": {
         "en": "China LLM Agent & Tool Calling Guide 2026: DeepSeek, Qwen, GLM",
         "zh-CN": "2026中国大模型Agent与Tool Calling指南：DeepSeek/Qwen/GLM"
@@ -1080,57 +1155,106 @@
       },
       "sections": [
         {
-          "heading": { "en": "Key takeaways", "zh-CN": "本文要点" },
-          "paragraphs": [{
-            "en": "Agent workloads on China LLM APIs fail more often on tool-call parity than on chat quality. Before picking DeepSeek, Qwen, Kimi, or GLM for production agents, test: schema support, parallel tools, streaming + tools, error payloads, and output-token cost per successful task. Swift Horse indexes public API labels—not OpenAI parity guarantees.",
-            "zh-CN": "Agent 场景失败点多在 tool calling 兼容性而非对话质量。选 DeepSeek/Qwen/Kimi/GLM 前需测：schema、并行 tool、流式+tools、错误 payload、每次成功任务的 output 成本。Swift Horse 仅索引公开 API 标签，不保证与 OpenAI 完全一致。"
-          }]
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "Agent workloads on China LLM APIs fail more often on tool-call parity than on chat quality. Before picking DeepSeek, Qwen, Kimi, or GLM for production agents, test: schema support, parallel tools, streaming + tools, error payloads, and output-token cost per successful task. Swift Horse indexes public API labels—not OpenAI parity guarantees.",
+              "zh-CN": "Agent 场景失败点多在 tool calling 兼容性而非对话质量。选 DeepSeek/Qwen/Kimi/GLM 前需测：schema、并行 tool、流式+tools、错误 payload、每次成功任务的 output 成本。Swift Horse 仅索引公开 API 标签，不保证与 OpenAI 完全一致。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Why tool calling breaks across vendors", "zh-CN": "为什么各家 tool calling 表现不同" },
-          "paragraphs": [{
-            "en": "OpenAI-compatible endpoints from Chinese labs vary on JSON mode, strict schemas, tool_choice behavior, and whether streaming emits tool deltas. A model strong on chat may drop or malform calls on nested objects. Run identical 50-call suites on finalists—see /en/articles/access-china-llm-api-overseas for setup.",
-            "zh-CN": "中国实验室的 OpenAI 兼容接口在 JSON mode、strict schema、tool_choice、流式 tool delta 上差异大。聊天强的模型可能在嵌套对象上失败。对候选跑相同 50 次调用套件；接入见 access-china-llm-api-overseas。"
-          }]
+          "heading": {
+            "en": "Why tool calling breaks across vendors",
+            "zh-CN": "为什么各家 tool calling 表现不同"
+          },
+          "paragraphs": [
+            {
+              "en": "OpenAI-compatible endpoints from Chinese labs vary on JSON mode, strict schemas, tool_choice behavior, and whether streaming emits tool deltas. A model strong on chat may drop or malform calls on nested objects. Run identical 50-call suites on finalists—see /en/articles/access-china-llm-api-overseas for setup.",
+              "zh-CN": "中国实验室的 OpenAI 兼容接口在 JSON mode、strict schema、tool_choice、流式 tool delta 上差异大。聊天强的模型可能在嵌套对象上失败。对候选跑相同 50 次调用套件；接入见 access-china-llm-api-overseas。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Vendor notes (2026 snapshot)", "zh-CN": "厂商快照（2026）" },
-          "paragraphs": [{
-            "en": "DeepSeek: popular for reasoning agents; verify reasoner vs chat model IDs. Qwen/DashScope: strong ecosystem tools; check international console model names. GLM: often chosen for stable enterprise function calling. Kimi: test long-context + tools together if documents drive agent state. Confirm on official docs before contracts.",
-            "zh-CN": "DeepSeek：推理 Agent 常见；区分 reasoner/chat 模型 ID。Qwen/DashScope：生态工具多；国际站模型名另查。GLM：企业 function calling 稳定。Kimi：长文档+tools 联测。签约前以官方文档为准。"
-          }]
+          "heading": {
+            "en": "Vendor notes (2026 snapshot)",
+            "zh-CN": "厂商快照（2026）"
+          },
+          "paragraphs": [
+            {
+              "en": "DeepSeek: popular for reasoning agents; verify reasoner vs chat model IDs. Qwen/DashScope: strong ecosystem tools; check international console model names. GLM: often chosen for stable enterprise function calling. Kimi: test long-context + tools together if documents drive agent state. Confirm on official docs before contracts.",
+              "zh-CN": "DeepSeek：推理 Agent 常见；区分 reasoner/chat 模型 ID。Qwen/DashScope：生态工具多；国际站模型名另查。GLM：企业 function calling 稳定。Kimi：长文档+tools 联测。签约前以官方文档为准。"
+            }
+          ]
         },
         {
-          "heading": { "en": "50-call agent POC checklist", "zh-CN": "50 次 Agent POC 清单" },
-          "paragraphs": [{
-            "en": "Define 5 tool schemas → 10 prompts each → log success, latency, malformed JSON, retries → measure output tokens per success → compare monthly cost at real volume (/en/articles/china-llm-api-pricing-2026) → document failover model. Pass threshold: >95% success for your schemas, P95 latency within product budget.",
-            "zh-CN": "5 组 tool schema × 10 prompt → 记录成功、延迟、畸形 JSON、重试 → 统计每次成功 output token → 按真实量估算月成本（见 china-llm-api-pricing-2026）→ 文档化 failover。通过线：schema 成功率 >95%，P95 延迟满足产品预算。"
-          }]
+          "heading": {
+            "en": "50-call agent POC checklist",
+            "zh-CN": "50 次 Agent POC 清单"
+          },
+          "paragraphs": [
+            {
+              "en": "Define 5 tool schemas → 10 prompts each → log success, latency, malformed JSON, retries → measure output tokens per success → compare monthly cost at real volume (/en/articles/china-llm-api-pricing-2026) → document failover model. Pass threshold: >95% success for your schemas, P95 latency within product budget.",
+              "zh-CN": "5 组 tool schema × 10 prompt → 记录成功、延迟、畸形 JSON、重试 → 统计每次成功 output token → 按真实量估算月成本（见 china-llm-api-pricing-2026）→ 文档化 failover。通过线：schema 成功率 >95%，P95 延迟满足产品预算。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Next steps on Swift Horse", "zh-CN": "在 Swift Horse 上的下一步" },
-          "paragraphs": [{
-            "en": "Compare specs → /en/services → selection matrix /en/articles/top-chinese-ai-models-2026 → API setup /en/articles/access-china-llm-api-overseas → Kimi vs GLM /en/articles/kimi-vs-glm-selection-guide-2026.",
-            "zh-CN": "对比 /services → 矩阵 top-chinese-ai-models-2026 → API access-china-llm-api-overseas → Kimi vs GLM kimi-vs-glm-selection-guide-2026。"
-          }]
+          "heading": {
+            "en": "Next steps on Swift Horse",
+            "zh-CN": "在 Swift Horse 上的下一步"
+          },
+          "paragraphs": [
+            {
+              "en": "Compare specs → /en/services → selection matrix /en/articles/top-chinese-ai-models-2026 → API setup /en/articles/access-china-llm-api-overseas → Kimi vs GLM /en/articles/kimi-vs-glm-selection-guide-2026.",
+              "zh-CN": "对比 /services → 矩阵 top-chinese-ai-models-2026 → API access-china-llm-api-overseas → Kimi vs GLM kimi-vs-glm-selection-guide-2026。"
+            }
+          ]
         }
       ],
       "faqs": [
         {
-          "question": { "en": "Which China LLM is best for tool calling?", "zh-CN": "哪个国产大模型 tool calling 最好？" },
-          "answer": { "en": "No universal winner—GLM and Qwen often enter enterprise agent shortlists; DeepSeek for reasoning-heavy tools. Run your 50-call POC; Swift Horse does not rank live tool success rates.", "zh-CN": "无 universal 答案；GLM/Qwen 常进企业 Agent 名单，DeepSeek 偏推理 tool。跑 50 次 POC；Swift Horse 不排名实时成功率。" }
+          "question": {
+            "en": "Which China LLM is best for tool calling?",
+            "zh-CN": "哪个国产大模型 tool calling 最好？"
+          },
+          "answer": {
+            "en": "No universal winner—GLM and Qwen often enter enterprise agent shortlists; DeepSeek for reasoning-heavy tools. Run your 50-call POC; Swift Horse does not rank live tool success rates.",
+            "zh-CN": "无 universal 答案；GLM/Qwen 常进企业 Agent 名单，DeepSeek 偏推理 tool。跑 50 次 POC；Swift Horse 不排名实时成功率。"
+          }
         },
         {
-          "question": { "en": "Are Chinese LLM APIs OpenAI tool compatible?", "zh-CN": "国产 API 与 OpenAI tools 兼容吗？" },
-          "answer": { "en": "Many vendors ship compatible endpoints, but parity is not guaranteed. Test streaming tools, strict JSON, and error formats on your stack before launch.", "zh-CN": "多家声明兼容，但不保证完全一致。上线前自测流式 tools、strict JSON 与错误格式。" }
+          "question": {
+            "en": "Are Chinese LLM APIs OpenAI tool compatible?",
+            "zh-CN": "国产 API 与 OpenAI tools 兼容吗？"
+          },
+          "answer": {
+            "en": "Many vendors ship compatible endpoints, but parity is not guaranteed. Test streaming tools, strict JSON, and error formats on your stack before launch.",
+            "zh-CN": "多家声明兼容，但不保证完全一致。上线前自测流式 tools、strict JSON 与错误格式。"
+          }
         },
         {
-          "question": { "en": "How do agents affect API cost?", "zh-CN": "Agent 如何影响 API 成本？" },
-          "answer": { "en": "Agents multiply output tokens and tool-round trips. Budget using real traces—see /en/articles/china-llm-api-pricing-2026.", "zh-CN": "Agent 放大 output 与 tool 轮次。用真实 trace 预算——见 china-llm-api-pricing-2026。" }
+          "question": {
+            "en": "How do agents affect API cost?",
+            "zh-CN": "Agent 如何影响 API 成本？"
+          },
+          "answer": {
+            "en": "Agents multiply output tokens and tool-round trips. Budget using real traces—see /en/articles/china-llm-api-pricing-2026.",
+            "zh-CN": "Agent 放大 output 与 tool 轮次。用真实 trace 预算——见 china-llm-api-pricing-2026。"
+          }
         },
         {
-          "question": { "en": "Can I use LangChain with China LLMs?", "zh-CN": "能用 LangChain 接国产模型吗？" },
-          "answer": { "en": "Yes via OpenAI-compatible base URLs for many vendors. Validate tool bindings with your chosen model IDs from official consoles.", "zh-CN": "多数厂商可通过 OpenAI 兼容 base URL 接入 LangChain。工具绑定需用控制台最新模型 ID 验证。" }
+          "question": {
+            "en": "Can I use LangChain with China LLMs?",
+            "zh-CN": "能用 LangChain 接国产模型吗？"
+          },
+          "answer": {
+            "en": "Yes via OpenAI-compatible base URLs for many vendors. Validate tool bindings with your chosen model IDs from official consoles.",
+            "zh-CN": "多数厂商可通过 OpenAI 兼容 base URL 接入 LangChain。工具绑定需用控制台最新模型 ID 验证。"
+          }
         }
       ]
     },
@@ -1138,8 +1262,15 @@
       "slug": "kimi-vs-glm-selection-guide-2026",
       "publishedAt": "2026-07-05",
       "updatedAt": "2026-07-05",
-      "tags": ["comparison", "enterprise", "guide"],
-      "relatedModelIds": ["kimi-k2-6", "glm-5"],
+      "tags": [
+        "comparison",
+        "enterprise",
+        "guide"
+      ],
+      "relatedModelIds": [
+        "kimi-k2-6",
+        "glm-5"
+      ],
       "title": {
         "en": "Kimi vs GLM 2026: Long Context vs Enterprise Agents (China LLM)",
         "zh-CN": "Kimi vs GLM 2026：长上下文 vs 企业Agent（中国大模型）"
@@ -1150,57 +1281,106 @@
       },
       "sections": [
         {
-          "heading": { "en": "Key takeaways", "zh-CN": "本文要点" },
-          "paragraphs": [{
-            "en": "Kimi and GLM solve different China LLM workloads: Kimi K2 class lines excel when ultra-long documents dominate context; GLM-5 tier targets regulated enterprise agents with tool calling and stable function schemas. Do not choose from benchmarks alone—map document length, agent complexity, and compliance first.",
-            "zh-CN": "Kimi 与 GLM 解决不同负载：Kimi K2 档擅长超长文档；GLM-5 面向强合规企业 Agent 与稳定 function schema。别只看榜单——先明确文档长度、Agent 复杂度与合规。"
-          }]
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "Kimi and GLM solve different China LLM workloads: Kimi K2 class lines excel when ultra-long documents dominate context; GLM-5 tier targets regulated enterprise agents with tool calling and stable function schemas. Do not choose from benchmarks alone—map document length, agent complexity, and compliance first.",
+              "zh-CN": "Kimi 与 GLM 解决不同负载：Kimi K2 档擅长超长文档；GLM-5 面向强合规企业 Agent 与稳定 function schema。别只看榜单——先明确文档长度、Agent 复杂度与合规。"
+            }
+          ]
         },
         {
-          "heading": { "en": "When Kimi K2 tends to fit", "zh-CN": "Kimi K2 更常见的场景" },
-          "paragraphs": [{
-            "en": "Legal review, research synthesis, and multi-file RAG where a single prompt includes hundreds of thousands of tokens. Validate pricing tiers at full context window—long inputs can change unit economics. Pair with /en/articles/china-llm-rag-selection-guide.",
-            "zh-CN": "法务审阅、研究综述、单 prompt 含数十万 token 的多文件 RAG。在全窗口下核实价目。搭配 china-llm-rag-selection-guide。"
-          }]
+          "heading": {
+            "en": "When Kimi K2 tends to fit",
+            "zh-CN": "Kimi K2 更常见的场景"
+          },
+          "paragraphs": [
+            {
+              "en": "Legal review, research synthesis, and multi-file RAG where a single prompt includes hundreds of thousands of tokens. Validate pricing tiers at full context window—long inputs can change unit economics. Pair with /en/articles/china-llm-rag-selection-guide.",
+              "zh-CN": "法务审阅、研究综述、单 prompt 含数十万 token 的多文件 RAG。在全窗口下核实价目。搭配 china-llm-rag-selection-guide。"
+            }
+          ]
         },
         {
-          "heading": { "en": "When GLM-5 tends to fit", "zh-CN": "GLM-5 更常见的场景" },
-          "paragraphs": [{
-            "en": "Internal copilots with structured tools, CRM lookups, ticketing, and audit logs. Teams report GLM for predictable function-call formats—still run your POC. For agent checklist see /en/articles/china-llm-agent-tool-calling-2026.",
-            "zh-CN": "带结构化 tool 的内部 Copilot、CRM/工单/审计。GLM 的 function 格式较可预期——仍要 POC。Agent 清单见 china-llm-agent-tool-calling-2026。"
-          }]
+          "heading": {
+            "en": "When GLM-5 tends to fit",
+            "zh-CN": "GLM-5 更常见的场景"
+          },
+          "paragraphs": [
+            {
+              "en": "Internal copilots with structured tools, CRM lookups, ticketing, and audit logs. Teams report GLM for predictable function-call formats—still run your POC. For agent checklist see /en/articles/china-llm-agent-tool-calling-2026.",
+              "zh-CN": "带结构化 tool 的内部 Copilot、CRM/工单/审计。GLM 的 function 格式较可预期——仍要 POC。Agent 清单见 china-llm-agent-tool-calling-2026。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Side-by-side decision table", "zh-CN": "对照决策表" },
-          "paragraphs": [{
-            "en": "Ultra-long single-shot Q&A → lean Kimi. Multi-step tools + approvals → lean GLM. Mixed workload → shortlist both, 30-prompt A/B on /en/services, then API POC from /en/articles/access-china-llm-api-overseas.",
-            "zh-CN": "超长单次问答 → 偏 Kimi。多步 tool+审批 → 偏 GLM。混合 → 两者短名单，/services 做 30 prompt A/B，再按 access-china-llm-api-overseas 跑 API POC。"
-          }]
+          "heading": {
+            "en": "Side-by-side decision table",
+            "zh-CN": "对照决策表"
+          },
+          "paragraphs": [
+            {
+              "en": "Ultra-long single-shot Q&A → lean Kimi. Multi-step tools + approvals → lean GLM. Mixed workload → shortlist both, 30-prompt A/B on /en/services, then API POC from /en/articles/access-china-llm-api-overseas.",
+              "zh-CN": "超长单次问答 → 偏 Kimi。多步 tool+审批 → 偏 GLM。混合 → 两者短名单，/services 做 30 prompt A/B，再按 access-china-llm-api-overseas 跑 API POC。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Next steps on Swift Horse", "zh-CN": "在 Swift Horse 上的下一步" },
-          "paragraphs": [{
-            "en": "Open Kimi + GLM profiles on /en/models → compare table → main guide /en/articles/china-ai-llm-guide-2026.",
-            "zh-CN": "在 /models 打开 Kimi/GLM → 对比表 → 主指南 china-ai-llm-guide-2026。"
-          }]
+          "heading": {
+            "en": "Next steps on Swift Horse",
+            "zh-CN": "在 Swift Horse 上的下一步"
+          },
+          "paragraphs": [
+            {
+              "en": "Open Kimi + GLM profiles on /en/models → compare table → main guide /en/articles/china-ai-llm-guide-2026.",
+              "zh-CN": "在 /models 打开 Kimi/GLM → 对比表 → 主指南 china-ai-llm-guide-2026。"
+            }
+          ]
         }
       ],
       "faqs": [
         {
-          "question": { "en": "Is Kimi better than GLM for RAG?", "zh-CN": "RAG 场景 Kimi 比 GLM 好吗？" },
-          "answer": { "en": "Often for very long retrieved context; GLM may win when agents and tools dominate. Test both on your chunk sizes and retrieval quality.", "zh-CN": "超长检索上下文常偏 Kimi；Agent+tool 主导时 GLM 可能更好。按你的分块与检索质量 A/B。" }
+          "question": {
+            "en": "Is Kimi better than GLM for RAG?",
+            "zh-CN": "RAG 场景 Kimi 比 GLM 好吗？"
+          },
+          "answer": {
+            "en": "Often for very long retrieved context; GLM may win when agents and tools dominate. Test both on your chunk sizes and retrieval quality.",
+            "zh-CN": "超长检索上下文常偏 Kimi；Agent+tool 主导时 GLM 可能更好。按你的分块与检索质量 A/B。"
+          }
         },
         {
-          "question": { "en": "Can overseas teams use Kimi and GLM APIs?", "zh-CN": "海外能用 Kimi/GLM API 吗？" },
-          "answer": { "en": "Both offer open-platform APIs; registration and billing differ. See overseas setup guide on this site and vendor consoles.", "zh-CN": "均有开放平台 API；注册与支付不同。见本站海外接入指南与厂商控制台。" }
+          "question": {
+            "en": "Can overseas teams use Kimi and GLM APIs?",
+            "zh-CN": "海外能用 Kimi/GLM API 吗？"
+          },
+          "answer": {
+            "en": "Both offer open-platform APIs; registration and billing differ. See overseas setup guide on this site and vendor consoles.",
+            "zh-CN": "均有开放平台 API；注册与支付不同。见本站海外接入指南与厂商控制台。"
+          }
         },
         {
-          "question": { "en": "How does this compare to DeepSeek vs Qwen?", "zh-CN": "与 DeepSeek vs Qwen 文有何不同？" },
-          "answer": { "en": "This page covers Kimi vs GLM only. For DeepSeek vs Qwen see /en/articles/deepseek-vs-qwen-selection-guide.", "zh-CN": "本文仅 Kimi vs GLM。DeepSeek vs Qwen 见 deepseek-vs-qwen-selection-guide。" }
+          "question": {
+            "en": "How does this compare to DeepSeek vs Qwen?",
+            "zh-CN": "与 DeepSeek vs Qwen 文有何不同？"
+          },
+          "answer": {
+            "en": "This page covers Kimi vs GLM only. For DeepSeek vs Qwen see /en/articles/deepseek-vs-qwen-selection-guide.",
+            "zh-CN": "本文仅 Kimi vs GLM。DeepSeek vs Qwen 见 deepseek-vs-qwen-selection-guide。"
+          }
         },
         {
-          "question": { "en": "Does Swift Horse endorse either vendor?", "zh-CN": "Swift Horse 是否背书厂商？" },
-          "answer": { "en": "No—public-spec index only. Confirm SLAs and pricing on official sites.", "zh-CN": "否——仅公开规格索引。SLA 与价格在官网确认。" }
+          "question": {
+            "en": "Does Swift Horse endorse either vendor?",
+            "zh-CN": "Swift Horse 是否背书厂商？"
+          },
+          "answer": {
+            "en": "No—public-spec index only. Confirm SLAs and pricing on official sites.",
+            "zh-CN": "否——仅公开规格索引。SLA 与价格在官网确认。"
+          }
         }
       ]
     },
@@ -1208,8 +1388,16 @@
       "slug": "china-llm-compliance-overseas-2026",
       "publishedAt": "2026-07-05",
       "updatedAt": "2026-07-05",
-      "tags": ["guide", "enterprise", "global"],
-      "relatedModelIds": ["deepseek-v4-pro", "qwen3-max", "glm-5"],
+      "tags": [
+        "guide",
+        "enterprise",
+        "global"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro",
+        "qwen3-max",
+        "glm-5"
+      ],
       "title": {
         "en": "China LLM Compliance for Overseas Teams 2026: Data & API Risk",
         "zh-CN": "2026海外团队使用中国大模型合规指南：数据与API风险"
@@ -1220,50 +1408,94 @@
       },
       "sections": [
         {
-          "heading": { "en": "Key takeaways", "zh-CN": "本文要点" },
-          "paragraphs": [{
-            "en": "Overseas teams using Chinese LLM APIs must separate model quality from legal fit. Cloud APIs may process data in mainland infrastructure; self-hosted open weights shift control to your VPC. Swift Horse summarizes public marketing terms—legal review and vendor DPAs are mandatory for regulated workloads.",
-            "zh-CN": "海外团队须将模型能力与法律适配分开评估。云 API 可能走大陆基础设施；自托管开源权重把控制拉回 VPC。Swift Horse 仅摘要公开条款—— regulated 负载必须法务+DPA。"
-          }]
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "Overseas teams using Chinese LLM APIs must separate model quality from legal fit. Cloud APIs may process data in mainland infrastructure; self-hosted open weights shift control to your VPC. Swift Horse summarizes public marketing terms—legal review and vendor DPAs are mandatory for regulated workloads.",
+              "zh-CN": "海外团队须将模型能力与法律适配分开评估。云 API 可能走大陆基础设施；自托管开源权重把控制拉回 VPC。Swift Horse 仅摘要公开条款—— regulated 负载必须法务+DPA。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Questions legal should ask", "zh-CN": "法务应问的 6 个问题" },
-          "paragraphs": [{
-            "en": "(1) Where is inference run? (2) Are prompts/logs retained or used for training? (3) Cross-border transfer basis? (4) Subprocessor list? (5) Industry rules (HIPAA/PCI)? (6) Incident notification SLAs? Answers vary by vendor SKU—not by blog rankings.",
-            "zh-CN": "（1）推理在哪跑？（2）prompt/日志是否留存或训练？（3）跨境法律依据？（4）子处理者清单？（5）行业规则？（6）事件通知 SLA？因 SKU 而异，不看博客排名。"
-          }]
+          "heading": {
+            "en": "Questions legal should ask",
+            "zh-CN": "法务应问的 6 个问题"
+          },
+          "paragraphs": [
+            {
+              "en": "(1) Where is inference run? (2) Are prompts/logs retained or used for training? (3) Cross-border transfer basis? (4) Subprocessor list? (5) Industry rules (HIPAA/PCI)? (6) Incident notification SLAs? Answers vary by vendor SKU—not by blog rankings.",
+              "zh-CN": "（1）推理在哪跑？（2）prompt/日志是否留存或训练？（3）跨境法律依据？（4）子处理者清单？（5）行业规则？（6）事件通知 SLA？因 SKU 而异，不看博客排名。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Mitigation patterns", "zh-CN": "常见缓释模式" },
-          "paragraphs": [{
-            "en": "Redact PII before API calls; use private deployment or self-hosting (/en/articles/chinese-llm-self-hosting-guide-2026); route only non-sensitive workloads to public APIs; maintain failover to non-CN regions when required.",
-            "zh-CN": "API 前脱敏；私有化或自托管（chinese-llm-self-hosting-guide-2026）；仅非敏感负载走公有 API；必要时 failover 到非 CN 区域。"
-          }]
+          "heading": {
+            "en": "Mitigation patterns",
+            "zh-CN": "常见缓释模式"
+          },
+          "paragraphs": [
+            {
+              "en": "Redact PII before API calls; use private deployment or self-hosting (/en/articles/chinese-llm-self-hosting-guide-2026); route only non-sensitive workloads to public APIs; maintain failover to non-CN regions when required.",
+              "zh-CN": "API 前脱敏；私有化或自托管（chinese-llm-self-hosting-guide-2026）；仅非敏感负载走公有 API；必要时 failover 到非 CN 区域。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Link to selection workflow", "zh-CN": "与选型流程衔接" },
-          "paragraphs": [{
-            "en": "After compliance screen, shortlist models on /en/articles/china-ai-llm-guide-2026 → API paths /en/articles/access-china-llm-api-overseas → pricing /en/articles/china-llm-api-pricing-2026.",
-            "zh-CN": "合规筛选后：china-ai-llm-guide-2026 → access-china-llm-api-overseas → china-llm-api-pricing-2026。"
-          }]
+          "heading": {
+            "en": "Link to selection workflow",
+            "zh-CN": "与选型流程衔接"
+          },
+          "paragraphs": [
+            {
+              "en": "After compliance screen, shortlist models on /en/articles/china-ai-llm-guide-2026 → API paths /en/articles/access-china-llm-api-overseas → pricing /en/articles/china-llm-api-pricing-2026.",
+              "zh-CN": "合规筛选后：china-ai-llm-guide-2026 → access-china-llm-api-overseas → china-llm-api-pricing-2026。"
+            }
+          ]
         }
       ],
       "faqs": [
         {
-          "question": { "en": "Is using China LLM APIs GDPR-compliant?", "zh-CN": "用中国 LLM API 符合 GDPR 吗？" },
-          "answer": { "en": "It depends on data categories, vendor DPA, transfer mechanisms, and your role as controller/processor. Swift Horse cannot provide compliance determinations.", "zh-CN": "取决于数据类别、DPA、传输机制与控制器/处理者角色。Swift Horse 不能给出合规结论。" }
+          "question": {
+            "en": "Is using China LLM APIs GDPR-compliant?",
+            "zh-CN": "用中国 LLM API 符合 GDPR 吗？"
+          },
+          "answer": {
+            "en": "It depends on data categories, vendor DPA, transfer mechanisms, and your role as controller/processor. Swift Horse cannot provide compliance determinations.",
+            "zh-CN": "取决于数据类别、DPA、传输机制与控制器/处理者角色。Swift Horse 不能给出合规结论。"
+          }
         },
         {
-          "question": { "en": "When should we self-host instead?", "zh-CN": "何时应自托管？" },
-          "answer": { "en": "When data cannot leave your region/VPC or contracts require on-prem inference. See self-hosting guide on this site.", "zh-CN": "数据不能出区域/VPC 或合同要求本地推理时。见本站自托管指南。" }
+          "question": {
+            "en": "When should we self-host instead?",
+            "zh-CN": "何时应自托管？"
+          },
+          "answer": {
+            "en": "When data cannot leave your region/VPC or contracts require on-prem inference. See self-hosting guide on this site.",
+            "zh-CN": "数据不能出区域/VPC 或合同要求本地推理时。见本站自托管指南。"
+          }
         },
         {
-          "question": { "en": "Do Chinese LLMs train on API prompts?", "zh-CN": "国产 API 会用 prompt 训练吗？" },
-          "answer": { "en": "Policies differ by vendor and product tier—read current terms on official sites; enterprise SKUs often offer opt-out.", "zh-CN": "因厂商与产品档而异——读官网现行条款；企业档常可 opt-out。" }
+          "question": {
+            "en": "Do Chinese LLMs train on API prompts?",
+            "zh-CN": "国产 API 会用 prompt 训练吗？"
+          },
+          "answer": {
+            "en": "Policies differ by vendor and product tier—read current terms on official sites; enterprise SKUs often offer opt-out.",
+            "zh-CN": "因厂商与产品档而异——读官网现行条款；企业档常可 opt-out。"
+          }
         },
         {
-          "question": { "en": "Where to start on Swift Horse?", "zh-CN": "在 Swift Horse 从哪开始？" },
-          "answer": { "en": "/en/articles/chinese-llms-global-guide-2026 for landscape, then this page for compliance framing.", "zh-CN": "先看 chinese-llms-global-guide-2026，再用本文框合规。" }
+          "question": {
+            "en": "Where to start on Swift Horse?",
+            "zh-CN": "在 Swift Horse 从哪开始？"
+          },
+          "answer": {
+            "en": "/en/articles/chinese-llms-global-guide-2026 for landscape, then this page for compliance framing.",
+            "zh-CN": "先看 chinese-llms-global-guide-2026，再用本文框合规。"
+          }
         }
       ]
     },
@@ -1271,8 +1503,14 @@
       "slug": "deepseek-api-overseas-quickstart-2026",
       "publishedAt": "2026-07-05",
       "updatedAt": "2026-07-05",
-      "tags": ["guide", "api", "global"],
-      "relatedModelIds": ["deepseek-v4-pro"],
+      "tags": [
+        "guide",
+        "api",
+        "global"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro"
+      ],
       "title": {
         "en": "DeepSeek API Overseas Quickstart 2026: China LLM Setup Guide",
         "zh-CN": "2026海外接入DeepSeek API快速指南（China LLM）"
@@ -1283,50 +1521,94 @@
       },
       "sections": [
         {
-          "heading": { "en": "Key takeaways", "zh-CN": "本文要点" },
-          "paragraphs": [{
-            "en": "DeepSeek is a frequent first China LLM API for overseas teams because of OpenAI-compatible endpoints and competitive reasoning pricing. Official base URL: https://api.deepseek.com. Always copy model names from platform.deepseek.com docs—aliases change. Swift Horse is not DeepSeek; verify billing and limits on the vendor site.",
-            "zh-CN": "DeepSeek 常是海外团队首个 China LLM API：OpenAI 兼容且推理性价比高。官方 base URL：https://api.deepseek.com。模型名以 platform.deepseek.com 文档为准。Swift Horse 非 DeepSeek 官方，计费与限流以官网为准。"
-          }]
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "DeepSeek is a frequent first China LLM API for overseas teams because of OpenAI-compatible endpoints and competitive reasoning pricing. Official base URL: https://api.deepseek.com. Always copy model names from platform.deepseek.com docs—aliases change. Swift Horse is not DeepSeek; verify billing and limits on the vendor site.",
+              "zh-CN": "DeepSeek 常是海外团队首个 China LLM API：OpenAI 兼容且推理性价比高。官方 base URL：https://api.deepseek.com。模型名以 platform.deepseek.com 文档为准。Swift Horse 非 DeepSeek 官方，计费与限流以官网为准。"
+            }
+          ]
         },
         {
-          "heading": { "en": "1-hour overseas POC", "zh-CN": "1 小时海外 POC" },
-          "paragraphs": [{
-            "en": "Register → create API key → set base_url + key in OpenAI SDK → run chat + stream=true → optional tool-call smoke test → log latency from your user region → estimate monthly cost (/en/articles/china-llm-api-pricing-2026). For multi-vendor setup see /en/articles/access-china-llm-api-overseas.",
-            "zh-CN": "注册 → Key → OpenAI SDK 改 base_url → chat + stream → 可选 tool 冒烟 → 从用户区测延迟 → 估月成本（china-llm-api-pricing-2026）。多厂商见 access-china-llm-api-overseas。"
-          }]
+          "heading": {
+            "en": "1-hour overseas POC",
+            "zh-CN": "1 小时海外 POC"
+          },
+          "paragraphs": [
+            {
+              "en": "Register → create API key → set base_url + key in OpenAI SDK → run chat + stream=true → optional tool-call smoke test → log latency from your user region → estimate monthly cost (/en/articles/china-llm-api-pricing-2026). For multi-vendor setup see /en/articles/access-china-llm-api-overseas.",
+              "zh-CN": "注册 → Key → OpenAI SDK 改 base_url → chat + stream → 可选 tool 冒烟 → 从用户区测延迟 → 估月成本（china-llm-api-pricing-2026）。多厂商见 access-china-llm-api-overseas。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Common overseas pitfalls", "zh-CN": "海外常见坑" },
-          "paragraphs": [{
-            "en": "Wrong mirror sites; using deprecated model IDs; ignoring output-token cost on reasoning models; skipping tool-call tests for agents (/en/articles/china-llm-agent-tool-calling-2026).",
-            "zh-CN": "镜像站冒充官方；过期模型 ID；忽略 reasoning 的 output 成本；Agent 未测 tool（见 china-llm-agent-tool-calling-2026）。"
-          }]
+          "heading": {
+            "en": "Common overseas pitfalls",
+            "zh-CN": "海外常见坑"
+          },
+          "paragraphs": [
+            {
+              "en": "Wrong mirror sites; using deprecated model IDs; ignoring output-token cost on reasoning models; skipping tool-call tests for agents (/en/articles/china-llm-agent-tool-calling-2026).",
+              "zh-CN": "镜像站冒充官方；过期模型 ID；忽略 reasoning 的 output 成本；Agent 未测 tool（见 china-llm-agent-tool-calling-2026）。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Compare with other Chinese LLMs", "zh-CN": "与其他国产模型对照" },
-          "paragraphs": [{
-            "en": "DeepSeek vs Qwen: /en/articles/deepseek-vs-qwen-selection-guide. Full matrix: /en/articles/top-chinese-ai-models-2026.",
-            "zh-CN": "DeepSeek vs Qwen：deepseek-vs-qwen-selection-guide。全矩阵：top-chinese-ai-models-2026。"
-          }]
+          "heading": {
+            "en": "Compare with other Chinese LLMs",
+            "zh-CN": "与其他国产模型对照"
+          },
+          "paragraphs": [
+            {
+              "en": "DeepSeek vs Qwen: /en/articles/deepseek-vs-qwen-selection-guide. Full matrix: /en/articles/top-chinese-ai-models-2026.",
+              "zh-CN": "DeepSeek vs Qwen：deepseek-vs-qwen-selection-guide。全矩阵：top-chinese-ai-models-2026。"
+            }
+          ]
         }
       ],
       "faqs": [
         {
-          "question": { "en": "What is the DeepSeek API base URL?", "zh-CN": "DeepSeek API base URL 是什么？" },
-          "answer": { "en": "https://api.deepseek.com for OpenAI-compatible Chat Completions—confirm on official docs before production.", "zh-CN": "OpenAI 兼容 Chat Completions 常见为 https://api.deepseek.com——生产前以官方文档为准。" }
+          "question": {
+            "en": "What is the DeepSeek API base URL?",
+            "zh-CN": "DeepSeek API base URL 是什么？"
+          },
+          "answer": {
+            "en": "https://api.deepseek.com for OpenAI-compatible Chat Completions—confirm on official docs before production.",
+            "zh-CN": "OpenAI 兼容 Chat Completions 常见为 https://api.deepseek.com——生产前以官方文档为准。"
+          }
         },
         {
-          "question": { "en": "Can I use DeepSeek from the US or EU?", "zh-CN": "美国/欧洲能调用 DeepSeek 吗？" },
-          "answer": { "en": "Many teams register via platform.deepseek.com; evaluate latency and compliance for your workload—see compliance guide on this site.", "zh-CN": "多数团队在 platform.deepseek.com 注册；请自评延迟与合规——见本站合规指南。" }
+          "question": {
+            "en": "Can I use DeepSeek from the US or EU?",
+            "zh-CN": "美国/欧洲能调用 DeepSeek 吗？"
+          },
+          "answer": {
+            "en": "Many teams register via platform.deepseek.com; evaluate latency and compliance for your workload—see compliance guide on this site.",
+            "zh-CN": "多数团队在 platform.deepseek.com 注册；请自评延迟与合规——见本站合规指南。"
+          }
         },
         {
-          "question": { "en": "DeepSeek vs ChatGPT for coding?", "zh-CN": "写代码 DeepSeek 比 ChatGPT 如何？" },
-          "answer": { "en": "Public benchmarks often favor DeepSeek on coding value; run your repo tasks in a POC—see DeepSeek model profile on /en/models.", "zh-CN": "公开 benchmark 常显示 DeepSeek 代码性价比；用自有 repo 任务 POC——见 /models 详情。" }
+          "question": {
+            "en": "DeepSeek vs ChatGPT for coding?",
+            "zh-CN": "写代码 DeepSeek 比 ChatGPT 如何？"
+          },
+          "answer": {
+            "en": "Public benchmarks often favor DeepSeek on coding value; run your repo tasks in a POC—see DeepSeek model profile on /en/models.",
+            "zh-CN": "公开 benchmark 常显示 DeepSeek 代码性价比；用自有 repo 任务 POC——见 /models 详情。"
+          }
         },
         {
-          "question": { "en": "Is this official DeepSeek documentation?", "zh-CN": "这是 DeepSeek 官方文档吗？" },
-          "answer": { "en": "No—independent Swift Horse quickstart. Always defer to platform.deepseek.com for authoritative specs.", "zh-CN": "否——Swift Horse 独立快速指南。权威规格以 platform.deepseek.com 为准。" }
+          "question": {
+            "en": "Is this official DeepSeek documentation?",
+            "zh-CN": "这是 DeepSeek 官方文档吗？"
+          },
+          "answer": {
+            "en": "No—independent Swift Horse quickstart. Always defer to platform.deepseek.com for authoritative specs.",
+            "zh-CN": "否——Swift Horse 独立快速指南。权威规格以 platform.deepseek.com 为准。"
+          }
         }
       ]
     },
@@ -1334,8 +1616,16 @@
       "slug": "chinese-llm-self-hosting-guide-2026",
       "publishedAt": "2026-07-05",
       "updatedAt": "2026-07-05",
-      "tags": ["guide", "enterprise", "global"],
-      "relatedModelIds": ["deepseek-v4-pro", "qwen3-max", "glm-5"],
+      "tags": [
+        "guide",
+        "enterprise",
+        "global"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro",
+        "qwen3-max",
+        "glm-5"
+      ],
       "title": {
         "en": "Self-Host Chinese LLMs 2026: Open Weights & Private China LLM Deploy",
         "zh-CN": "2026中国大模型自托管指南：开源权重与私有化部署"
@@ -1346,50 +1636,94 @@
       },
       "sections": [
         {
-          "heading": { "en": "Key takeaways", "zh-CN": "本文要点" },
-          "paragraphs": [{
-            "en": "Self-hosting Chinese LLMs trades cloud convenience for data control. Several labs publish open or enterprise-private weights (check each license). You own GPUs, inference stack, monitoring, and upgrades. Best when compliance blocks public APIs—not when you need fastest time-to-demo.",
-            "zh-CN": "自托管用运维换数据可控。多家发布开源或企业私有化权重（以 license 为准）。您负责 GPU、推理栈、监控与升级。适合合规阻挡公有 API——不适合追求最快 demo。"
-          }]
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "Self-hosting Chinese LLMs trades cloud convenience for data control. Several labs publish open or enterprise-private weights (check each license). You own GPUs, inference stack, monitoring, and upgrades. Best when compliance blocks public APIs—not when you need fastest time-to-demo.",
+              "zh-CN": "自托管用运维换数据可控。多家发布开源或企业私有化权重（以 license 为准）。您负责 GPU、推理栈、监控与升级。适合合规阻挡公有 API——不适合追求最快 demo。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Cloud API vs self-host decision", "zh-CN": "云 API vs 自托管决策" },
-          "paragraphs": [{
-            "en": "Choose API (/en/articles/access-china-llm-api-overseas) when speed, latest models, and low ops matter. Choose self-host when prompts cannot leave VPC, air-gapped environments, or contract requires on-prem. Hybrid: sensitive paths self-hosted, general chat on API.",
-            "zh-CN": "要快、要新模型、少运维 → API（access-china-llm-api-overseas）。prompt 不能出 VPC/ air-gap/合同要求本地 → 自托管。混合：敏感自托管，通用对话 API。"
-          }]
+          "heading": {
+            "en": "Cloud API vs self-host decision",
+            "zh-CN": "云 API vs 自托管决策"
+          },
+          "paragraphs": [
+            {
+              "en": "Choose API (/en/articles/access-china-llm-api-overseas) when speed, latest models, and low ops matter. Choose self-host when prompts cannot leave VPC, air-gapped environments, or contract requires on-prem. Hybrid: sensitive paths self-hosted, general chat on API.",
+              "zh-CN": "要快、要新模型、少运维 → API（access-china-llm-api-overseas）。prompt 不能出 VPC/ air-gap/合同要求本地 → 自托管。混合：敏感自托管，通用对话 API。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Operational checklist", "zh-CN": "运维清单" },
-          "paragraphs": [{
-            "en": "License review → GPU/quantization plan → inference framework (vLLM/TGI/etc.) → security patches → eval harness same as cloud POC → document failover to vendor API if self-host fails.",
-            "zh-CN": "License → GPU/量化 → 推理框架 → 安全补丁 → 与云 POC 相同评测 → 自托管失败时文档化 failover 到厂商 API。"
-          }]
+          "heading": {
+            "en": "Operational checklist",
+            "zh-CN": "运维清单"
+          },
+          "paragraphs": [
+            {
+              "en": "License review → GPU/quantization plan → inference framework (vLLM/TGI/etc.) → security patches → eval harness same as cloud POC → document failover to vendor API if self-host fails.",
+              "zh-CN": "License → GPU/量化 → 推理框架 → 安全补丁 → 与云 POC 相同评测 → 自托管失败时文档化 failover 到厂商 API。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Compliance link", "zh-CN": "合规衔接" },
-          "paragraphs": [{
-            "en": "Pair with /en/articles/china-llm-compliance-overseas-2026 and pricing comparison /en/articles/china-llm-api-pricing-2026 for TCO.",
-            "zh-CN": "配合 china-llm-compliance-overseas-2026 与 china-llm-api-pricing-2026 算 TCO。"
-          }]
+          "heading": {
+            "en": "Compliance link",
+            "zh-CN": "合规衔接"
+          },
+          "paragraphs": [
+            {
+              "en": "Pair with /en/articles/china-llm-compliance-overseas-2026 and pricing comparison /en/articles/china-llm-api-pricing-2026 for TCO.",
+              "zh-CN": "配合 china-llm-compliance-overseas-2026 与 china-llm-api-pricing-2026 算 TCO。"
+            }
+          ]
         }
       ],
       "faqs": [
         {
-          "question": { "en": "Which Chinese LLMs can be self-hosted?", "zh-CN": "哪些国产模型可自托管？" },
-          "answer": { "en": "DeepSeek, Qwen, and GLM families offer open-weight or private options depending on version—verify license and GPU requirements on vendor pages.", "zh-CN": "DeepSeek、Qwen、GLM 等部分版本可开源或私有化——以厂商页 license 与 GPU 要求为准。" }
+          "question": {
+            "en": "Which Chinese LLMs can be self-hosted?",
+            "zh-CN": "哪些国产模型可自托管？"
+          },
+          "answer": {
+            "en": "DeepSeek, Qwen, and GLM families offer open-weight or private options depending on version—verify license and GPU requirements on vendor pages.",
+            "zh-CN": "DeepSeek、Qwen、GLM 等部分版本可开源或私有化——以厂商页 license 与 GPU 要求为准。"
+          }
         },
         {
-          "question": { "en": "Is self-hosting cheaper than API?", "zh-CN": "自托管比 API 便宜吗？" },
-          "answer": { "en": "Not always—factor GPU capex/opex, MLOps headcount, and utilization. Low volume often favors API.", "zh-CN": "不一定——算 GPU、MLOps 人力与利用率。低用量常 API 更省。" }
+          "question": {
+            "en": "Is self-hosting cheaper than API?",
+            "zh-CN": "自托管比 API 便宜吗？"
+          },
+          "answer": {
+            "en": "Not always—factor GPU capex/opex, MLOps headcount, and utilization. Low volume often favors API.",
+            "zh-CN": "不一定——算 GPU、MLOps 人力与利用率。低用量常 API 更省。"
+          }
         },
         {
-          "question": { "en": "Can overseas teams self-host Chinese models?", "zh-CN": "海外团队能自托管吗？" },
-          "answer": { "en": "Yes in your own infrastructure; export/license terms may apply to weights—legal review required.", "zh-CN": "可在自有基础设施部署；权重可能有出口/license 条款——需法务审查。" }
+          "question": {
+            "en": "Can overseas teams self-host Chinese models?",
+            "zh-CN": "海外团队能自托管吗？"
+          },
+          "answer": {
+            "en": "Yes in your own infrastructure; export/license terms may apply to weights—legal review required.",
+            "zh-CN": "可在自有基础设施部署；权重可能有出口/license 条款——需法务审查。"
+          }
         },
         {
-          "question": { "en": "Where to compare cloud alternatives?", "zh-CN": "云方案去哪对比？" },
-          "answer": { "en": "/en/articles/china-llm-api-pricing-2026 and /en/services comparison table.", "zh-CN": "china-llm-api-pricing-2026 与 /services 对比表。" }
+          "question": {
+            "en": "Where to compare cloud alternatives?",
+            "zh-CN": "云方案去哪对比？"
+          },
+          "answer": {
+            "en": "/en/articles/china-llm-api-pricing-2026 and /en/services comparison table.",
+            "zh-CN": "china-llm-api-pricing-2026 与 /services 对比表。"
+          }
         }
       ]
     },
@@ -1397,8 +1731,17 @@
       "slug": "china-llm-vs-chatgpt-2026",
       "publishedAt": "2026-07-20",
       "updatedAt": "2026-07-20",
-      "tags": ["comparison", "guide", "global"],
-      "relatedModelIds": ["deepseek-v4-pro", "qwen3-max", "glm-5", "kimi-k2-6"],
+      "tags": [
+        "comparison",
+        "guide",
+        "global"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro",
+        "qwen3-max",
+        "glm-5",
+        "kimi-k2-6"
+      ],
       "title": {
         "en": "China LLM vs ChatGPT 2026: When to Use Chinese LLMs Instead of GPT",
         "zh-CN": "2026中国大模型 vs ChatGPT：何时用国产LLM替代GPT"
@@ -1409,57 +1752,106 @@
       },
       "sections": [
         {
-          "heading": { "en": "Key takeaways", "zh-CN": "本文要点" },
-          "paragraphs": [{
-            "en": "Chinese LLMs (China LLM / chinese llms) do not replace ChatGPT universally. They win on token cost, Chinese/English bilingual tasks, and coding value at scale. GPT-class models still win when you need max ecosystem plugins, Western enterprise contracts, or lowest integration risk. Decide by workload—not brand loyalty. Swift Horse indexes public Chinese models independently.",
-            "zh-CN": "国产大模型（China LLM）并不全面替代 ChatGPT。在 token 成本、中英双语与大规模编程上常更有优势；GPT 在生态插件、西方企业合同与集成风险上仍更稳。按负载选型，不要跟品牌站队。Swift Horse 独立索引公开中国模型。"
-          }]
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "Chinese LLMs (China LLM / chinese llms) do not replace ChatGPT universally. They win on token cost, Chinese/English bilingual tasks, and coding value at scale. GPT-class models still win when you need max ecosystem plugins, Western enterprise contracts, or lowest integration risk. Decide by workload—not brand loyalty. Swift Horse indexes public Chinese models independently.",
+              "zh-CN": "国产大模型（China LLM）并不全面替代 ChatGPT。在 token 成本、中英双语与大规模编程上常更有优势；GPT 在生态插件、西方企业合同与集成风险上仍更稳。按负载选型，不要跟品牌站队。Swift Horse 独立索引公开中国模型。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Where China LLMs typically win", "zh-CN": "国产模型通常更强的场景" },
-          "paragraphs": [{
-            "en": "High-volume batch inference and agent loops where output tokens dominate cost—see /en/articles/china-llm-api-pricing-2026. Chinese document QA, CN↔EN product copy, and coding assistants often favor DeepSeek/Qwen on public benchmarks. Long-context Chinese PDFs may favor Kimi-class lines—see /en/articles/kimi-vs-glm-selection-guide-2026.",
-            "zh-CN": "高用量批处理与 Agent 轮次（output 成本主导）——见 china-llm-api-pricing-2026。中文文档 QA、中英文案、编程助手公开榜单常偏向 DeepSeek/Qwen。超长中文 PDF 可看 Kimi——见 kimi-vs-glm-selection-guide-2026。"
-          }]
+          "heading": {
+            "en": "Where China LLMs typically win",
+            "zh-CN": "国产模型通常更强的场景"
+          },
+          "paragraphs": [
+            {
+              "en": "High-volume batch inference and agent loops where output tokens dominate cost—see /en/articles/china-llm-api-pricing-2026. Chinese document QA, CN↔EN product copy, and coding assistants often favor DeepSeek/Qwen on public benchmarks. Long-context Chinese PDFs may favor Kimi-class lines—see /en/articles/kimi-vs-glm-selection-guide-2026.",
+              "zh-CN": "高用量批处理与 Agent 轮次（output 成本主导）——见 china-llm-api-pricing-2026。中文文档 QA、中英文案、编程助手公开榜单常偏向 DeepSeek/Qwen。超长中文 PDF 可看 Kimi——见 kimi-vs-glm-selection-guide-2026。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Where ChatGPT / GPT APIs still win", "zh-CN": "ChatGPT / GPT API 仍更合适的场景" },
-          "paragraphs": [{
-            "en": "Teams already deep in OpenAI Assistants, Azure OpenAI, or US/EU data-processing agreements. Products that need mature tool marketplaces, voice/realtime stacks, or vendor SLAs familiar to Western procurement. Hybrid is common: GPT for product UX, China LLM for cost-sensitive backends.",
-            "zh-CN": "已深度绑定 OpenAI Assistants、Azure OpenAI 或美欧数据处理协议的团队。需要成熟工具市场、语音/实时栈、或西方采购熟悉 SLA 的产品。常见混合：产品 UX 用 GPT，成本敏感后端用 China LLM。"
-          }]
+          "heading": {
+            "en": "Where ChatGPT / GPT APIs still win",
+            "zh-CN": "ChatGPT / GPT API 仍更合适的场景"
+          },
+          "paragraphs": [
+            {
+              "en": "Teams already deep in OpenAI Assistants, Azure OpenAI, or US/EU data-processing agreements. Products that need mature tool marketplaces, voice/realtime stacks, or vendor SLAs familiar to Western procurement. Hybrid is common: GPT for product UX, China LLM for cost-sensitive backends.",
+              "zh-CN": "已深度绑定 OpenAI Assistants、Azure OpenAI 或美欧数据处理协议的团队。需要成熟工具市场、语音/实时栈、或西方采购熟悉 SLA 的产品。常见混合：产品 UX 用 GPT，成本敏感后端用 China LLM。"
+            }
+          ]
         },
         {
-          "heading": { "en": "90-minute bake-off checklist", "zh-CN": "90 分钟对比清单" },
-          "paragraphs": [{
-            "en": "Pick 20 prompts from production → run on GPT + DeepSeek + Qwen → score Chinese accuracy, English fluency, tool-call success, latency P95 → estimate monthly cost at real volume → check compliance path (/en/articles/china-llm-compliance-overseas-2026). Failover: keep a second vendor ready.",
-            "zh-CN": "取 20 条生产 prompt → 在 GPT + DeepSeek + Qwen 上跑 → 评中文准确、英文流畅、tool 成功率、P95 延迟 → 按真实量估月成本 → 查合规路径（china-llm-compliance-overseas-2026）。保留第二厂商作 failover。"
-          }]
+          "heading": {
+            "en": "90-minute bake-off checklist",
+            "zh-CN": "90 分钟对比清单"
+          },
+          "paragraphs": [
+            {
+              "en": "Pick 20 prompts from production → run on GPT + DeepSeek + Qwen → score Chinese accuracy, English fluency, tool-call success, latency P95 → estimate monthly cost at real volume → check compliance path (/en/articles/china-llm-compliance-overseas-2026). Failover: keep a second vendor ready.",
+              "zh-CN": "取 20 条生产 prompt → 在 GPT + DeepSeek + Qwen 上跑 → 评中文准确、英文流畅、tool 成功率、P95 延迟 → 按真实量估月成本 → 查合规路径（china-llm-compliance-overseas-2026）。保留第二厂商作 failover。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Next steps on Swift Horse", "zh-CN": "在 Swift Horse 上的下一步" },
-          "paragraphs": [{
-            "en": "Model matrix /en/articles/top-chinese-ai-models-2026 → API access /en/articles/access-china-llm-api-overseas → DeepSeek quickstart /en/articles/deepseek-api-overseas-quickstart-2026 → Qwen quickstart /en/articles/qwen-api-overseas-quickstart-2026 → catalog /en/models.",
-            "zh-CN": "矩阵 top-chinese-ai-models-2026 → API access-china-llm-api-overseas → DeepSeek quickstart → Qwen quickstart → 模型库 /models。"
-          }]
+          "heading": {
+            "en": "Next steps on Swift Horse",
+            "zh-CN": "在 Swift Horse 上的下一步"
+          },
+          "paragraphs": [
+            {
+              "en": "Model matrix /en/articles/top-chinese-ai-models-2026 → API access /en/articles/access-china-llm-api-overseas → DeepSeek quickstart /en/articles/deepseek-api-overseas-quickstart-2026 → Qwen quickstart /en/articles/qwen-api-overseas-quickstart-2026 → catalog /en/models.",
+              "zh-CN": "矩阵 top-chinese-ai-models-2026 → API access-china-llm-api-overseas → DeepSeek quickstart → Qwen quickstart → 模型库 /models。"
+            }
+          ]
         }
       ],
       "faqs": [
         {
-          "question": { "en": "Is DeepSeek better than ChatGPT?", "zh-CN": "DeepSeek 比 ChatGPT 更好吗？" },
-          "answer": { "en": "For many coding and cost-sensitive tasks, public results favor DeepSeek value—but ChatGPT may win on ecosystem and some English product UX. Run your own 20-prompt bake-off.", "zh-CN": "许多编程与成本敏感任务上，公开结果偏 DeepSeek 性价比——但生态与部分英文产品体验 ChatGPT 仍可能更好。用自有 20 条 prompt 对比。" }
+          "question": {
+            "en": "Is DeepSeek better than ChatGPT?",
+            "zh-CN": "DeepSeek 比 ChatGPT 更好吗？"
+          },
+          "answer": {
+            "en": "For many coding and cost-sensitive tasks, public results favor DeepSeek value—but ChatGPT may win on ecosystem and some English product UX. Run your own 20-prompt bake-off.",
+            "zh-CN": "许多编程与成本敏感任务上，公开结果偏 DeepSeek 性价比——但生态与部分英文产品体验 ChatGPT 仍可能更好。用自有 20 条 prompt 对比。"
+          }
         },
         {
-          "question": { "en": "Can Chinese LLMs replace OpenAI in production?", "zh-CN": "国产大模型能在生产替代 OpenAI 吗？" },
-          "answer": { "en": "Yes for well-scoped workloads after POC, pricing, and compliance review. Hybrid stacks are common. Swift Horse does not guarantee OpenAI parity.", "zh-CN": "在明确负载经 POC、定价与合规审查后可以。混合栈常见。Swift Horse 不保证与 OpenAI 完全对等。" }
+          "question": {
+            "en": "Can Chinese LLMs replace OpenAI in production?",
+            "zh-CN": "国产大模型能在生产替代 OpenAI 吗？"
+          },
+          "answer": {
+            "en": "Yes for well-scoped workloads after POC, pricing, and compliance review. Hybrid stacks are common. Swift Horse does not guarantee OpenAI parity.",
+            "zh-CN": "在明确负载经 POC、定价与合规审查后可以。混合栈常见。Swift Horse 不保证与 OpenAI 完全对等。"
+          }
         },
         {
-          "question": { "en": "Which China LLM is closest to GPT-4 class?", "zh-CN": "哪个国产模型最接近 GPT-4 档？" },
-          "answer": { "en": "No stable public ranking—DeepSeek, Qwen, GLM, and Kimi lead different axes. Use /en/articles/top-chinese-ai-models-2026 and live model pages.", "zh-CN": "无稳定公开排名——DeepSeek/Qwen/GLM/Kimi 各擅胜场。见 top-chinese-ai-models-2026 与模型详情页。" }
+          "question": {
+            "en": "Which China LLM is closest to GPT-4 class?",
+            "zh-CN": "哪个国产模型最接近 GPT-4 档？"
+          },
+          "answer": {
+            "en": "No stable public ranking—DeepSeek, Qwen, GLM, and Kimi lead different axes. Use /en/articles/top-chinese-ai-models-2026 and live model pages.",
+            "zh-CN": "无稳定公开排名——DeepSeek/Qwen/GLM/Kimi 各擅胜场。见 top-chinese-ai-models-2026 与模型详情页。"
+          }
         },
         {
-          "question": { "en": "Is this official OpenAI or DeepSeek advice?", "zh-CN": "这是 OpenAI 或 DeepSeek 官方建议吗？" },
-          "answer": { "en": "No—independent Swift Horse selection guide. Defer to vendor docs for contracts and specs.", "zh-CN": "否——Swift Horse 独立选型指南。合同与规格以厂商文档为准。" }
+          "question": {
+            "en": "Is this official OpenAI or DeepSeek advice?",
+            "zh-CN": "这是 OpenAI 或 DeepSeek 官方建议吗？"
+          },
+          "answer": {
+            "en": "No—independent Swift Horse selection guide. Defer to vendor docs for contracts and specs.",
+            "zh-CN": "否——Swift Horse 独立选型指南。合同与规格以厂商文档为准。"
+          }
         }
       ]
     },
@@ -1467,8 +1859,16 @@
       "slug": "qwen-api-overseas-quickstart-2026",
       "publishedAt": "2026-07-20",
       "updatedAt": "2026-07-20",
-      "tags": ["api", "guide", "global"],
-      "relatedModelIds": ["qwen3-max", "qwen-plus-flash", "qwen3-7-max"],
+      "tags": [
+        "api",
+        "guide",
+        "global"
+      ],
+      "relatedModelIds": [
+        "qwen3-max",
+        "qwen-plus-flash",
+        "qwen3-7-max"
+      ],
       "title": {
         "en": "Qwen API Overseas Quickstart 2026: DashScope China LLM from Abroad",
         "zh-CN": "2026 Qwen API 海外快速接入：从境外调用 DashScope 中国大模型"
@@ -1479,127 +1879,233 @@
       },
       "sections": [
         {
-          "heading": { "en": "Key takeaways", "zh-CN": "本文要点" },
-          "paragraphs": [{
-            "en": "Qwen (Tongyi) via DashScope is one of the most accessible China LLM APIs for overseas builders who already use OpenAI SDKs. Success depends on picking the correct international console, model name, and region endpoint—not copying China-mainland IDs blindly. Pair with pricing (/en/articles/china-llm-api-pricing-2026) and DeepSeek quickstart (/en/articles/deepseek-api-overseas-quickstart-2026) for dual-vendor failover.",
-            "zh-CN": "经 DashScope 的 Qwen（通义）是海外开发者最易接入的 China LLM 之一，尤其已用 OpenAI SDK 的团队。关键是选对国际站控制台、模型名与区域 endpoint——不要照搬国内站 ID。配合定价与 DeepSeek quickstart 做双厂商 failover。"
-          }]
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "Qwen (Tongyi) via DashScope is one of the most accessible China LLM APIs for overseas builders who already use OpenAI SDKs. Success depends on picking the correct international console, model name, and region endpoint—not copying China-mainland IDs blindly. Pair with pricing (/en/articles/china-llm-api-pricing-2026) and DeepSeek quickstart (/en/articles/deepseek-api-overseas-quickstart-2026) for dual-vendor failover.",
+              "zh-CN": "经 DashScope 的 Qwen（通义）是海外开发者最易接入的 China LLM 之一，尤其已用 OpenAI SDK 的团队。关键是选对国际站控制台、模型名与区域 endpoint——不要照搬国内站 ID。配合定价与 DeepSeek quickstart 做双厂商 failover。"
+            }
+          ]
         },
         {
-          "heading": { "en": "10-minute first call", "zh-CN": "10 分钟首请求" },
-          "paragraphs": [{
-            "en": "Create an Alibaba Cloud / DashScope account allowed for your region → enable model access → create API key → set OpenAI-compatible base URL from official docs → call chat.completions with a current Qwen model ID → log latency and token usage. Confirm names on the live console—Swift Horse does not mirror private model catalogs.",
-            "zh-CN": "注册可用区域的阿里云/DashScope → 开通模型 → 创建 API key → 按官方文档设置 OpenAI 兼容 base URL → 用当前 Qwen 模型 ID 调 chat.completions → 记录延迟与 token。模型名以控制台为准——Swift Horse 不镜像私有目录。"
-          }]
+          "heading": {
+            "en": "10-minute first call",
+            "zh-CN": "10 分钟首请求"
+          },
+          "paragraphs": [
+            {
+              "en": "Create an Alibaba Cloud / DashScope account allowed for your region → enable model access → create API key → set OpenAI-compatible base URL from official docs → call chat.completions with a current Qwen model ID → log latency and token usage. Confirm names on the live console—Swift Horse does not mirror private model catalogs.",
+              "zh-CN": "注册可用区域的阿里云/DashScope → 开通模型 → 创建 API key → 按官方文档设置 OpenAI 兼容 base URL → 用当前 Qwen 模型 ID 调 chat.completions → 记录延迟与 token。模型名以控制台为准——Swift Horse 不镜像私有目录。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Common overseas pitfalls", "zh-CN": "海外常见踩坑" },
-          "paragraphs": [{
-            "en": "Using mainland-only model IDs from blogs; wrong region endpoint; unpaid balance blocking inference; assuming tool-calling parity with OpenAI without testing—see /en/articles/china-llm-agent-tool-calling-2026. Keep a billing alert and a second vendor (DeepSeek/GLM) for outages.",
-            "zh-CN": "照抄仅国内可用的模型 ID；区域 endpoint 错误；欠费导致推理失败；未测试就假设 tool calling 与 OpenAI 一致——见 china-llm-agent-tool-calling-2026。设置账单告警，并备 DeepSeek/GLM 作第二厂商。"
-          }]
+          "heading": {
+            "en": "Common overseas pitfalls",
+            "zh-CN": "海外常见踩坑"
+          },
+          "paragraphs": [
+            {
+              "en": "Using mainland-only model IDs from blogs; wrong region endpoint; unpaid balance blocking inference; assuming tool-calling parity with OpenAI without testing—see /en/articles/china-llm-agent-tool-calling-2026. Keep a billing alert and a second vendor (DeepSeek/GLM) for outages.",
+              "zh-CN": "照抄仅国内可用的模型 ID；区域 endpoint 错误；欠费导致推理失败；未测试就假设 tool calling 与 OpenAI 一致——见 china-llm-agent-tool-calling-2026。设置账单告警，并备 DeepSeek/GLM 作第二厂商。"
+            }
+          ]
         },
         {
-          "heading": { "en": "When to pick Qwen vs DeepSeek", "zh-CN": "何时选 Qwen vs DeepSeek" },
-          "paragraphs": [{
-            "en": "Qwen: strong Alibaba ecosystem, multimodal options, and enterprise China cloud paths. DeepSeek: often preferred for coding cost/performance in public suites. Run the same 20 prompts—see /en/articles/deepseek-vs-qwen-selection-guide and /en/articles/china-llm-vs-chatgpt-2026.",
-            "zh-CN": "Qwen：阿里生态、多模态与企业云路径强。DeepSeek：公开评测中常在编程性价比占优。跑相同 20 条 prompt——见 deepseek-vs-qwen-selection-guide 与 china-llm-vs-chatgpt-2026。"
-          }]
+          "heading": {
+            "en": "When to pick Qwen vs DeepSeek",
+            "zh-CN": "何时选 Qwen vs DeepSeek"
+          },
+          "paragraphs": [
+            {
+              "en": "Qwen: strong Alibaba ecosystem, multimodal options, and enterprise China cloud paths. DeepSeek: often preferred for coding cost/performance in public suites. Run the same 20 prompts—see /en/articles/deepseek-vs-qwen-selection-guide and /en/articles/china-llm-vs-chatgpt-2026.",
+              "zh-CN": "Qwen：阿里生态、多模态与企业云路径强。DeepSeek：公开评测中常在编程性价比占优。跑相同 20 条 prompt——见 deepseek-vs-qwen-selection-guide 与 china-llm-vs-chatgpt-2026。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Next steps on Swift Horse", "zh-CN": "在 Swift Horse 上的下一步" },
-          "paragraphs": [{
-            "en": "Qwen model pages /en/models → comparison /en/services → overseas access overview /en/articles/access-china-llm-api-overseas → coding guide /en/articles/china-llm-coding-assistant-2026.",
-            "zh-CN": "Qwen 模型页 /models → 对比 /services → 海外接入总览 access-china-llm-api-overseas → 编程指南 china-llm-coding-assistant-2026。"
-          }]
+          "heading": {
+            "en": "Next steps on Swift Horse",
+            "zh-CN": "在 Swift Horse 上的下一步"
+          },
+          "paragraphs": [
+            {
+              "en": "Qwen model pages /en/models → comparison /en/services → overseas access overview /en/articles/access-china-llm-api-overseas → coding guide /en/articles/china-llm-coding-assistant-2026.",
+              "zh-CN": "Qwen 模型页 /models → 对比 /services → 海外接入总览 access-china-llm-api-overseas → 编程指南 china-llm-coding-assistant-2026。"
+            }
+          ]
         }
       ],
       "faqs": [
         {
-          "question": { "en": "Can I call Qwen API from the US or Europe?", "zh-CN": "美国/欧洲能调 Qwen API 吗？" },
-          "answer": { "en": "Many teams use DashScope international paths; verify account eligibility, latency, and compliance for your region before production.", "zh-CN": "多数团队走 DashScope 国际路径；生产前确认账户资格、延迟与区域合规。" }
+          "question": {
+            "en": "Can I call Qwen API from the US or Europe?",
+            "zh-CN": "美国/欧洲能调 Qwen API 吗？"
+          },
+          "answer": {
+            "en": "Many teams use DashScope international paths; verify account eligibility, latency, and compliance for your region before production.",
+            "zh-CN": "多数团队走 DashScope 国际路径；生产前确认账户资格、延迟与区域合规。"
+          }
         },
         {
-          "question": { "en": "Is Qwen OpenAI API compatible?", "zh-CN": "Qwen 兼容 OpenAI API 吗？" },
-          "answer": { "en": "DashScope offers OpenAI-compatible endpoints for many chat models. Test tools, streaming, and JSON mode on your SDK version.", "zh-CN": "DashScope 对多数对话模型提供 OpenAI 兼容接口。请在您的 SDK 上自测 tools、流式与 JSON mode。" }
+          "question": {
+            "en": "Is Qwen OpenAI API compatible?",
+            "zh-CN": "Qwen 兼容 OpenAI API 吗？"
+          },
+          "answer": {
+            "en": "DashScope offers OpenAI-compatible endpoints for many chat models. Test tools, streaming, and JSON mode on your SDK version.",
+            "zh-CN": "DashScope 对多数对话模型提供 OpenAI 兼容接口。请在您的 SDK 上自测 tools、流式与 JSON mode。"
+          }
         },
         {
-          "question": { "en": "Qwen vs DeepSeek for overseas teams?", "zh-CN": "海外团队选 Qwen 还是 DeepSeek？" },
-          "answer": { "en": "No universal winner—compare coding vs bilingual vs multimodal needs. See /en/articles/deepseek-vs-qwen-selection-guide.", "zh-CN": "无 universal 答案——按编程/双语/多模态需求对比。见 deepseek-vs-qwen-selection-guide。" }
+          "question": {
+            "en": "Qwen vs DeepSeek for overseas teams?",
+            "zh-CN": "海外团队选 Qwen 还是 DeepSeek？"
+          },
+          "answer": {
+            "en": "No universal winner—compare coding vs bilingual vs multimodal needs. See /en/articles/deepseek-vs-qwen-selection-guide.",
+            "zh-CN": "无 universal 答案——按编程/双语/多模态需求对比。见 deepseek-vs-qwen-selection-guide。"
+          }
         },
         {
-          "question": { "en": "Is this official Alibaba documentation?", "zh-CN": "这是阿里官方文档吗？" },
-          "answer": { "en": "No—independent Swift Horse quickstart. Authoritative specs live on Alibaba Cloud / DashScope docs.", "zh-CN": "否——Swift Horse 独立快速指南。权威规格以阿里云/DashScope 文档为准。" }
+          "question": {
+            "en": "Is this official Alibaba documentation?",
+            "zh-CN": "这是阿里官方文档吗？"
+          },
+          "answer": {
+            "en": "No—independent Swift Horse quickstart. Authoritative specs live on Alibaba Cloud / DashScope docs.",
+            "zh-CN": "否——Swift Horse 独立快速指南。权威规格以阿里云/DashScope 文档为准。"
+          }
         }
       ]
     },
     {
       "slug": "china-llm-coding-assistant-2026",
       "publishedAt": "2026-07-20",
-      "updatedAt": "2026-07-20",
-      "tags": ["guide", "comparison", "api"],
-      "relatedModelIds": ["deepseek-v4-pro", "qwen3-max", "glm-5"],
+      "updatedAt": "2026-09-05",
+      "tags": [
+        "guide",
+        "comparison",
+        "api"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro",
+        "qwen3-max",
+        "glm-5"
+      ],
       "title": {
-        "en": "Best China LLM for Coding 2026: DeepSeek, Qwen, GLM Assistants",
-        "zh-CN": "2026最佳编程中国大模型：DeepSeek/Qwen/GLM 编程助手选型"
+        "en": "Best China LLM for Coding 2026: DeepSeek vs Qwen vs GLM",
+        "zh-CN": "2026最佳编程中国大模型：DeepSeek vs Qwen vs GLM"
       },
       "excerpt": {
-        "en": "Pick a China LLM coding assistant in 2026—DeepSeek vs Qwen vs GLM for repo tasks, unit tests, agent tool calling, and API cost. Practical POC checklist for overseas engineering teams.",
-        "zh-CN": "2026 编程助手选型：DeepSeek vs Qwen vs GLM——仓库任务、单测、Agent tool calling 与 API 成本。面向海外工程团队的 POC 清单。"
+        "en": "Top China LLM for coding in 2026—DeepSeek vs Qwen vs GLM for repos, tests, agents & API cost. POC checklist for overseas engineering teams shipping with Chinese LLMs.",
+        "zh-CN": "2026 编程向 China LLM：DeepSeek vs Qwen vs GLM，覆盖仓库、测试、Agent 与 API 成本。面向海外工程团队的 POC 清单。"
       },
       "sections": [
         {
-          "heading": { "en": "Key takeaways", "zh-CN": "本文要点" },
-          "paragraphs": [{
-            "en": "For coding, Chinese LLMs often compete with ChatGPT on value: DeepSeek frequently leads public coding suites; Qwen is strong in multilingual repos and Alibaba-cloud stacks; GLM appears in enterprise IDE/agent pilots with stable function calling. Rank by your repo language mix, test harness, and output-token budget—not a single leaderboard screenshot.",
-            "zh-CN": "编程场景下，国产大模型常在性价比上与 ChatGPT 竞争：DeepSeek 公开编程评测常见领先；Qwen 适合多语言仓库与阿里云栈；GLM 常见于企业 IDE/Agent 试点且 function calling 稳。按语言组合、测试脚手架与 output 预算排序——不要只看一张榜单截图。"
-          }]
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "For coding, Chinese LLMs often compete with ChatGPT on value: DeepSeek frequently leads public coding suites; Qwen is strong in multilingual repos and Alibaba-cloud stacks; GLM appears in enterprise IDE/agent pilots with stable function calling. Rank by your repo language mix, test harness, and output-token budget—not a single leaderboard screenshot.",
+              "zh-CN": "编程场景下，国产大模型常在性价比上与 ChatGPT 竞争：DeepSeek 公开编程评测常见领先；Qwen 适合多语言仓库与阿里云栈；GLM 常见于企业 IDE/Agent 试点且 function calling 稳。按语言组合、测试脚手架与 output 预算排序——不要只看一张榜单截图。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Coding workload map", "zh-CN": "编程负载地图" },
-          "paragraphs": [{
-            "en": "Inline completion and chat fix → prioritize low latency. Repo-wide refactor and test generation → prioritize long context + tool calling (/en/articles/china-llm-agent-tool-calling-2026). CI batch review → prioritize cost (/en/articles/china-llm-api-pricing-2026). Self-host open weights only when code cannot leave VPC (/en/articles/chinese-llm-self-hosting-guide-2026).",
-            "zh-CN": "行内补全与对话修 bug → 优先低延迟。全仓重构与单测生成 → 优先长上下文 + tool calling。CI 批量 review → 优先成本。代码不能出 VPC 才自托管开源权重。"
-          }]
+          "heading": {
+            "en": "Coding workload map",
+            "zh-CN": "编程负载地图"
+          },
+          "paragraphs": [
+            {
+              "en": "Inline completion and chat fix → prioritize low latency. Repo-wide refactor and test generation → prioritize long context + tool calling (/en/articles/china-llm-agent-tool-calling-2026). CI batch review → prioritize cost (/en/articles/china-llm-api-pricing-2026). Self-host open weights only when code cannot leave VPC (/en/articles/chinese-llm-self-hosting-guide-2026).",
+              "zh-CN": "行内补全与对话修 bug → 优先低延迟。全仓重构与单测生成 → 优先长上下文 + tool calling。CI 批量 review → 优先成本。代码不能出 VPC 才自托管开源权重。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Vendor notes (2026 snapshot)", "zh-CN": "厂商快照（2026）" },
-          "paragraphs": [{
-            "en": "DeepSeek: start here for coding POC from overseas—/en/articles/deepseek-api-overseas-quickstart-2026. Qwen: DashScope model IDs and multimodal helpers—/en/articles/qwen-api-overseas-quickstart-2026. GLM: enterprise agent + IDE integrations—compare with Kimi only if docs dominate context (/en/articles/kimi-vs-glm-selection-guide-2026).",
-            "zh-CN": "DeepSeek：海外编程 POC 首选入口——deepseek-api-overseas-quickstart-2026。Qwen：DashScope 模型 ID 与多模态——qwen-api-overseas-quickstart-2026。GLM：企业 Agent/IDE——仅当文档上下文主导时再与 Kimi 比。"
-          }]
+          "heading": {
+            "en": "Vendor notes (2026 snapshot)",
+            "zh-CN": "厂商快照（2026）"
+          },
+          "paragraphs": [
+            {
+              "en": "DeepSeek: start here for coding POC from overseas—/en/articles/deepseek-api-overseas-quickstart-2026. Qwen: DashScope model IDs and multimodal helpers—/en/articles/qwen-api-overseas-quickstart-2026. GLM: enterprise agent + IDE integrations—compare with Kimi only if docs dominate context (/en/articles/kimi-vs-glm-selection-guide-2026).",
+              "zh-CN": "DeepSeek：海外编程 POC 首选入口——deepseek-api-overseas-quickstart-2026。Qwen：DashScope 模型 ID 与多模态——qwen-api-overseas-quickstart-2026。GLM：企业 Agent/IDE——仅当文档上下文主导时再与 Kimi 比。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Engineering POC (1 day)", "zh-CN": "工程 POC（1 天）" },
-          "paragraphs": [{
-            "en": "Freeze 15 tasks from your backlog (bugfix, test, refactor, explain) → same system prompt → measure pass@1, lint errors, tokens, P95 latency → try one agent path with tools → pick primary + failover → document model IDs in runbooks. Compare vs GPT if needed: /en/articles/china-llm-vs-chatgpt-2026.",
-            "zh-CN": "冻结 backlog 15 个任务（修 bug/写测/重构/解释）→ 同一 system prompt → 测 pass@1、lint、token、P95 → 再试一条带 tools 的 Agent 路径 → 选定主用 + failover → runbook 写清模型 ID。需与 GPT 对比见 china-llm-vs-chatgpt-2026。"
-          }]
+          "heading": {
+            "en": "Engineering POC (1 day)",
+            "zh-CN": "工程 POC（1 天）"
+          },
+          "paragraphs": [
+            {
+              "en": "Freeze 15 tasks from your backlog (bugfix, test, refactor, explain) → same system prompt → measure pass@1, lint errors, tokens, P95 latency → try one agent path with tools → pick primary + failover → document model IDs in runbooks. Compare vs GPT if needed: /en/articles/china-llm-vs-chatgpt-2026.",
+              "zh-CN": "冻结 backlog 15 个任务（修 bug/写测/重构/解释）→ 同一 system prompt → 测 pass@1、lint、token、P95 → 再试一条带 tools 的 Agent 路径 → 选定主用 + failover → runbook 写清模型 ID。需与 GPT 对比见 china-llm-vs-chatgpt-2026。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Next steps on Swift Horse", "zh-CN": "在 Swift Horse 上的下一步" },
-          "paragraphs": [{
-            "en": "Catalog /en/models → table /en/services → selection /en/match → API overview /en/articles/access-china-llm-api-overseas → global index /en/articles/chinese-llms-global-guide-2026.",
-            "zh-CN": "模型库 /models → 表 /services → 选型 /match → API 总览 access-china-llm-api-overseas → 全球索引 chinese-llms-global-guide-2026。"
-          }]
+          "heading": {
+            "en": "Next steps on Swift Horse",
+            "zh-CN": "在 Swift Horse 上的下一步"
+          },
+          "paragraphs": [
+            {
+              "en": "Catalog /en/models → table /en/services → selection /en/match → API overview /en/articles/access-china-llm-api-overseas → global index /en/articles/chinese-llms-global-guide-2026.",
+              "zh-CN": "模型库 /models → 表 /services → 选型 /match → API 总览 access-china-llm-api-overseas → 全球索引 chinese-llms-global-guide-2026。"
+            }
+          ]
         }
       ],
       "faqs": [
         {
-          "question": { "en": "What is the best China LLM for coding in 2026?", "zh-CN": "2026 编程最好的国产大模型是哪个？" },
-          "answer": { "en": "DeepSeek is a common first POC for coding value; Qwen and GLM win on other axes. Validate on your repos—Swift Horse does not publish a live coding rank.", "zh-CN": "DeepSeek 常作编程性价比首轮 POC；Qwen/GLM 在其他轴更强。用自有仓库验证——Swift Horse 不发布实时编程排名。" }
+          "question": {
+            "en": "What is the best China LLM for coding in 2026?",
+            "zh-CN": "2026 编程最好的国产大模型是哪个？"
+          },
+          "answer": {
+            "en": "DeepSeek is a common first POC for coding value; Qwen and GLM win on other axes. Validate on your repos—Swift Horse does not publish a live coding rank.",
+            "zh-CN": "DeepSeek 常作编程性价比首轮 POC；Qwen/GLM 在其他轴更强。用自有仓库验证——Swift Horse 不发布实时编程排名。"
+          }
         },
         {
-          "question": { "en": "Can Chinese LLMs replace GitHub Copilot?", "zh-CN": "国产大模型能替代 Copilot 吗？" },
-          "answer": { "en": "They can power custom IDE assistants via API; UX parity with Copilot depends on your editor plugin, not the model alone.", "zh-CN": "可通过 API 做自建 IDE 助手；与 Copilot 体验对等取决于编辑器插件，不只看模型。" }
+          "question": {
+            "en": "Can Chinese LLMs replace GitHub Copilot?",
+            "zh-CN": "国产大模型能替代 Copilot 吗？"
+          },
+          "answer": {
+            "en": "They can power custom IDE assistants via API; UX parity with Copilot depends on your editor plugin, not the model alone.",
+            "zh-CN": "可通过 API 做自建 IDE 助手；与 Copilot 体验对等取决于编辑器插件，不只看模型。"
+          }
         },
         {
-          "question": { "en": "DeepSeek or Qwen for TypeScript backends?", "zh-CN": "TypeScript 后端选 DeepSeek 还是 Qwen？" },
-          "answer": { "en": "Run identical tasks on both; many teams start with DeepSeek then keep Qwen as failover. See /en/articles/deepseek-vs-qwen-selection-guide.", "zh-CN": "两边跑相同任务；多数团队先 DeepSeek，Qwen 作 failover。见 deepseek-vs-qwen-selection-guide。" }
+          "question": {
+            "en": "DeepSeek or Qwen for TypeScript backends?",
+            "zh-CN": "TypeScript 后端选 DeepSeek 还是 Qwen？"
+          },
+          "answer": {
+            "en": "Run identical tasks on both; many teams start with DeepSeek then keep Qwen as failover. See /en/articles/deepseek-vs-qwen-selection-guide.",
+            "zh-CN": "两边跑相同任务；多数团队先 DeepSeek，Qwen 作 failover。见 deepseek-vs-qwen-selection-guide。"
+          }
         },
         {
-          "question": { "en": "How do agents change coding API cost?", "zh-CN": "Agent 如何改变编程 API 成本？" },
-          "answer": { "en": "Multi-step tool loops multiply output tokens. Budget with real traces—/en/articles/china-llm-api-pricing-2026 and /en/articles/china-llm-agent-tool-calling-2026.", "zh-CN": "多步 tool 循环放大 output。用真实 trace 预算——见定价与 Agent 指南。" }
+          "question": {
+            "en": "How do agents change coding API cost?",
+            "zh-CN": "Agent 如何改变编程 API 成本？"
+          },
+          "answer": {
+            "en": "Multi-step tool loops multiply output tokens. Budget with real traces—/en/articles/china-llm-api-pricing-2026 and /en/articles/china-llm-agent-tool-calling-2026.",
+            "zh-CN": "多步 tool 循环放大 output。用真实 trace 预算——见定价与 Agent 指南。"
+          }
         }
       ]
     },
@@ -1607,8 +2113,14 @@
       "slug": "glm-api-overseas-quickstart-2026",
       "publishedAt": "2026-07-21",
       "updatedAt": "2026-07-21",
-      "tags": ["api", "guide", "enterprise"],
-      "relatedModelIds": ["glm-5"],
+      "tags": [
+        "api",
+        "guide",
+        "enterprise"
+      ],
+      "relatedModelIds": [
+        "glm-5"
+      ],
       "title": {
         "en": "GLM API Overseas Quickstart 2026: Zhipu China LLM from Abroad",
         "zh-CN": "2026 GLM API 海外快速接入：从境外调用智谱中国大模型"
@@ -1619,50 +2131,94 @@
       },
       "sections": [
         {
-          "heading": { "en": "Key takeaways", "zh-CN": "本文要点" },
-          "paragraphs": [{
-            "en": "GLM (Zhipu) is a common China LLM shortlist pick for enterprise agents and stable function calling. Overseas teams should confirm the correct international console, model name, and billing path—do not copy mainland-only IDs from blogs. Pair with Kimi comparison (/en/articles/kimi-vs-glm-selection-guide-2026) and agent POC (/en/articles/china-llm-agent-tool-calling-2026).",
-            "zh-CN": "GLM（智谱）常进企业 Agent 与稳定 function calling 短名单。海外团队需确认国际站控制台、模型名与计费路径——勿照抄仅国内可用的 ID。配合 Kimi 对比与 Agent POC。"
-          }]
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "GLM (Zhipu) is a common China LLM shortlist pick for enterprise agents and stable function calling. Overseas teams should confirm the correct international console, model name, and billing path—do not copy mainland-only IDs from blogs. Pair with Kimi comparison (/en/articles/kimi-vs-glm-selection-guide-2026) and agent POC (/en/articles/china-llm-agent-tool-calling-2026).",
+              "zh-CN": "GLM（智谱）常进企业 Agent 与稳定 function calling 短名单。海外团队需确认国际站控制台、模型名与计费路径——勿照抄仅国内可用的 ID。配合 Kimi 对比与 Agent POC。"
+            }
+          ]
         },
         {
-          "heading": { "en": "10-minute first call", "zh-CN": "10 分钟首请求" },
-          "paragraphs": [{
-            "en": "Create a Zhipu / BigModel account eligible for your region → enable chat models → create API key → set OpenAI-compatible base URL from official docs → call chat.completions with a current GLM model ID → log latency, tokens, and tool-call success. Model names change—verify on the live console. Swift Horse does not mirror private catalogs.",
-            "zh-CN": "注册可用区域的智谱/BigModel → 开通对话模型 → 创建 API key → 按官方文档设 OpenAI 兼容 base URL → 用当前 GLM 模型 ID 调 chat.completions → 记录延迟、token 与 tool 成功率。模型名以控制台为准。"
-          }]
+          "heading": {
+            "en": "10-minute first call",
+            "zh-CN": "10 分钟首请求"
+          },
+          "paragraphs": [
+            {
+              "en": "Create a Zhipu / BigModel account eligible for your region → enable chat models → create API key → set OpenAI-compatible base URL from official docs → call chat.completions with a current GLM model ID → log latency, tokens, and tool-call success. Model names change—verify on the live console. Swift Horse does not mirror private catalogs.",
+              "zh-CN": "注册可用区域的智谱/BigModel → 开通对话模型 → 创建 API key → 按官方文档设 OpenAI 兼容 base URL → 用当前 GLM 模型 ID 调 chat.completions → 记录延迟、token 与 tool 成功率。模型名以控制台为准。"
+            }
+          ]
         },
         {
-          "heading": { "en": "When to pick GLM", "zh-CN": "何时选 GLM" },
-          "paragraphs": [{
-            "en": "Prefer GLM when enterprise agents, IDE plugins, or regulated Chinese-language workflows matter more than raw coding-cost leadership. Prefer DeepSeek for coding value POCs (/en/articles/deepseek-api-overseas-quickstart-2026) and Qwen for Alibaba-cloud ecosystems (/en/articles/qwen-api-overseas-quickstart-2026).",
-            "zh-CN": "企业 Agent、IDE 插件或强合规中文工作流 → 偏 GLM。编程性价比 POC → DeepSeek；阿里云生态 → Qwen。"
-          }]
+          "heading": {
+            "en": "When to pick GLM",
+            "zh-CN": "何时选 GLM"
+          },
+          "paragraphs": [
+            {
+              "en": "Prefer GLM when enterprise agents, IDE plugins, or regulated Chinese-language workflows matter more than raw coding-cost leadership. Prefer DeepSeek for coding value POCs (/en/articles/deepseek-api-overseas-quickstart-2026) and Qwen for Alibaba-cloud ecosystems (/en/articles/qwen-api-overseas-quickstart-2026).",
+              "zh-CN": "企业 Agent、IDE 插件或强合规中文工作流 → 偏 GLM。编程性价比 POC → DeepSeek；阿里云生态 → Qwen。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Next steps on Swift Horse", "zh-CN": "在 Swift Horse 上的下一步" },
-          "paragraphs": [{
-            "en": "GLM model page /en/models → services table /en/services → SDK guide /en/articles/china-llm-openai-compatible-sdk-2026 → failover /en/articles/china-llm-latency-failover-2026 → pricing /en/articles/china-llm-api-pricing-2026.",
-            "zh-CN": "GLM 详情 /models → 对比表 /services → SDK 指南 → 延迟 failover → 定价。"
-          }]
+          "heading": {
+            "en": "Next steps on Swift Horse",
+            "zh-CN": "在 Swift Horse 上的下一步"
+          },
+          "paragraphs": [
+            {
+              "en": "GLM model page /en/models → services table /en/services → SDK guide /en/articles/china-llm-openai-compatible-sdk-2026 → failover /en/articles/china-llm-latency-failover-2026 → pricing /en/articles/china-llm-api-pricing-2026.",
+              "zh-CN": "GLM 详情 /models → 对比表 /services → SDK 指南 → 延迟 failover → 定价。"
+            }
+          ]
         }
       ],
       "faqs": [
         {
-          "question": { "en": "Can I call GLM API from the US or EU?", "zh-CN": "美国/欧洲能调 GLM API 吗？" },
-          "answer": { "en": "Many teams use Zhipu international paths; verify account eligibility, latency, and compliance before production.", "zh-CN": "多数团队走智谱国际路径；生产前确认账户资格、延迟与合规。" }
+          "question": {
+            "en": "Can I call GLM API from the US or EU?",
+            "zh-CN": "美国/欧洲能调 GLM API 吗？"
+          },
+          "answer": {
+            "en": "Many teams use Zhipu international paths; verify account eligibility, latency, and compliance before production.",
+            "zh-CN": "多数团队走智谱国际路径；生产前确认账户资格、延迟与合规。"
+          }
         },
         {
-          "question": { "en": "Is GLM good for tool calling?", "zh-CN": "GLM 适合 tool calling 吗？" },
-          "answer": { "en": "Often yes for enterprise agents—still run a 50-call POC. See /en/articles/china-llm-agent-tool-calling-2026.", "zh-CN": "企业 Agent 场景常见——仍需 50 次 POC。见 china-llm-agent-tool-calling-2026。" }
+          "question": {
+            "en": "Is GLM good for tool calling?",
+            "zh-CN": "GLM 适合 tool calling 吗？"
+          },
+          "answer": {
+            "en": "Often yes for enterprise agents—still run a 50-call POC. See /en/articles/china-llm-agent-tool-calling-2026.",
+            "zh-CN": "企业 Agent 场景常见——仍需 50 次 POC。见 china-llm-agent-tool-calling-2026。"
+          }
         },
         {
-          "question": { "en": "GLM vs Kimi for long documents?", "zh-CN": "长文档选 GLM 还是 Kimi？" },
-          "answer": { "en": "Kimi often wins ultra-long context; GLM often wins agent schemas—see /en/articles/kimi-vs-glm-selection-guide-2026.", "zh-CN": "超长上下文常偏 Kimi；Agent schema 常偏 GLM——见 kimi-vs-glm-selection-guide-2026。" }
+          "question": {
+            "en": "GLM vs Kimi for long documents?",
+            "zh-CN": "长文档选 GLM 还是 Kimi？"
+          },
+          "answer": {
+            "en": "Kimi often wins ultra-long context; GLM often wins agent schemas—see /en/articles/kimi-vs-glm-selection-guide-2026.",
+            "zh-CN": "超长上下文常偏 Kimi；Agent schema 常偏 GLM——见 kimi-vs-glm-selection-guide-2026。"
+          }
         },
         {
-          "question": { "en": "Is this official Zhipu documentation?", "zh-CN": "这是智谱官方文档吗？" },
-          "answer": { "en": "No—independent Swift Horse quickstart. Defer to Zhipu / BigModel docs for specs and contracts.", "zh-CN": "否——Swift Horse 独立快速指南。规格与合同以智谱/BigModel 文档为准。" }
+          "question": {
+            "en": "Is this official Zhipu documentation?",
+            "zh-CN": "这是智谱官方文档吗？"
+          },
+          "answer": {
+            "en": "No—independent Swift Horse quickstart. Defer to Zhipu / BigModel docs for specs and contracts.",
+            "zh-CN": "否——Swift Horse 独立快速指南。规格与合同以智谱/BigModel 文档为准。"
+          }
         }
       ]
     },
@@ -1670,8 +2226,14 @@
       "slug": "kimi-api-overseas-quickstart-2026",
       "publishedAt": "2026-07-21",
       "updatedAt": "2026-07-21",
-      "tags": ["api", "guide", "global"],
-      "relatedModelIds": ["kimi-k2-6"],
+      "tags": [
+        "api",
+        "guide",
+        "global"
+      ],
+      "relatedModelIds": [
+        "kimi-k2-6"
+      ],
       "title": {
         "en": "Kimi API Overseas Quickstart 2026: Moonshot China LLM Long Context",
         "zh-CN": "2026 Kimi API 海外快速接入：月之暗面长上下文中国大模型"
@@ -1682,50 +2244,94 @@
       },
       "sections": [
         {
-          "heading": { "en": "Key takeaways", "zh-CN": "本文要点" },
-          "paragraphs": [{
-            "en": "Kimi (Moonshot) is the China LLM to test first when ultra-long documents dominate context. Overseas access succeeds when you use the correct platform endpoint and model ID for your account region. Compare with GLM for agents (/en/articles/kimi-vs-glm-selection-guide-2026) and budget tokens carefully—long context multiplies cost (/en/articles/china-llm-api-pricing-2026).",
-            "zh-CN": "当超长文档主导上下文时，Kimi（月之暗面）常是首测对象。海外接入关键是选对区域 endpoint 与模型 ID。与 GLM Agent 对比见 kimi-vs-glm；长上下文会放大成本——见定价文。"
-          }]
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "Kimi (Moonshot) is the China LLM to test first when ultra-long documents dominate context. Overseas access succeeds when you use the correct platform endpoint and model ID for your account region. Compare with GLM for agents (/en/articles/kimi-vs-glm-selection-guide-2026) and budget tokens carefully—long context multiplies cost (/en/articles/china-llm-api-pricing-2026).",
+              "zh-CN": "当超长文档主导上下文时，Kimi（月之暗面）常是首测对象。海外接入关键是选对区域 endpoint 与模型 ID。与 GLM Agent 对比见 kimi-vs-glm；长上下文会放大成本——见定价文。"
+            }
+          ]
         },
         {
-          "heading": { "en": "10-minute first call", "zh-CN": "10 分钟首请求" },
-          "paragraphs": [{
-            "en": "Create a Moonshot account allowed for your region → create API key → set OpenAI-compatible base URL from official docs → pick a current Kimi model ID with the context window you need → send a short then a long-document prompt → log tokens and P95 latency. Confirm IDs on the live console.",
-            "zh-CN": "注册可用区域的 Moonshot → 创建 API key → 按官方设 OpenAI 兼容 base URL → 选当前所需上下文窗口的 Kimi 模型 ID → 先短后长文档 prompt → 记录 token 与 P95。模型名以控制台为准。"
-          }]
+          "heading": {
+            "en": "10-minute first call",
+            "zh-CN": "10 分钟首请求"
+          },
+          "paragraphs": [
+            {
+              "en": "Create a Moonshot account allowed for your region → create API key → set OpenAI-compatible base URL from official docs → pick a current Kimi model ID with the context window you need → send a short then a long-document prompt → log tokens and P95 latency. Confirm IDs on the live console.",
+              "zh-CN": "注册可用区域的 Moonshot → 创建 API key → 按官方设 OpenAI 兼容 base URL → 选当前所需上下文窗口的 Kimi 模型 ID → 先短后长文档 prompt → 记录 token 与 P95。模型名以控制台为准。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Long-context pitfalls", "zh-CN": "长上下文踩坑" },
-          "paragraphs": [{
-            "en": "Stuffing entire PDFs without chunking can blow budgets and latency. Prefer retrieval + selective context when possible (/en/articles/china-llm-rag-selection-guide). Test tools + long context together if agents read documents (/en/articles/china-llm-agent-tool-calling-2026).",
-            "zh-CN": "整本 PDF 硬塞会爆成本与延迟。能 RAG 就选择性塞上下文（china-llm-rag-selection-guide）。Agent 读文档时要联测 tools + 长上下文。"
-          }]
+          "heading": {
+            "en": "Long-context pitfalls",
+            "zh-CN": "长上下文踩坑"
+          },
+          "paragraphs": [
+            {
+              "en": "Stuffing entire PDFs without chunking can blow budgets and latency. Prefer retrieval + selective context when possible (/en/articles/china-llm-rag-selection-guide). Test tools + long context together if agents read documents (/en/articles/china-llm-agent-tool-calling-2026).",
+              "zh-CN": "整本 PDF 硬塞会爆成本与延迟。能 RAG 就选择性塞上下文（china-llm-rag-selection-guide）。Agent 读文档时要联测 tools + 长上下文。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Next steps on Swift Horse", "zh-CN": "在 Swift Horse 上的下一步" },
-          "paragraphs": [{
-            "en": "Kimi model page /en/models → vs GLM /en/articles/kimi-vs-glm-selection-guide-2026 → SDK /en/articles/china-llm-openai-compatible-sdk-2026 → failover /en/articles/china-llm-latency-failover-2026.",
-            "zh-CN": "Kimi 详情 /models → vs GLM → SDK 指南 → 延迟 failover。"
-          }]
+          "heading": {
+            "en": "Next steps on Swift Horse",
+            "zh-CN": "在 Swift Horse 上的下一步"
+          },
+          "paragraphs": [
+            {
+              "en": "Kimi model page /en/models → vs GLM /en/articles/kimi-vs-glm-selection-guide-2026 → SDK /en/articles/china-llm-openai-compatible-sdk-2026 → failover /en/articles/china-llm-latency-failover-2026.",
+              "zh-CN": "Kimi 详情 /models → vs GLM → SDK 指南 → 延迟 failover。"
+            }
+          ]
         }
       ],
       "faqs": [
         {
-          "question": { "en": "Can overseas teams use Kimi API?", "zh-CN": "海外团队能用 Kimi API 吗？" },
-          "answer": { "en": "Many can via Moonshot platform paths; verify eligibility, latency, and compliance for your region.", "zh-CN": "多数可通过 Moonshot 平台路径；请确认区域资格、延迟与合规。" }
+          "question": {
+            "en": "Can overseas teams use Kimi API?",
+            "zh-CN": "海外团队能用 Kimi API 吗？"
+          },
+          "answer": {
+            "en": "Many can via Moonshot platform paths; verify eligibility, latency, and compliance for your region.",
+            "zh-CN": "多数可通过 Moonshot 平台路径；请确认区域资格、延迟与合规。"
+          }
         },
         {
-          "question": { "en": "When should I choose Kimi over DeepSeek?", "zh-CN": "何时选 Kimi 而不是 DeepSeek？" },
-          "answer": { "en": "When document length dominates; DeepSeek often leads coding POCs—see /en/articles/china-llm-coding-assistant-2026.", "zh-CN": "文档长度主导时选 Kimi；编程 POC 常先 DeepSeek——见 china-llm-coding-assistant-2026。" }
+          "question": {
+            "en": "When should I choose Kimi over DeepSeek?",
+            "zh-CN": "何时选 Kimi 而不是 DeepSeek？"
+          },
+          "answer": {
+            "en": "When document length dominates; DeepSeek often leads coding POCs—see /en/articles/china-llm-coding-assistant-2026.",
+            "zh-CN": "文档长度主导时选 Kimi；编程 POC 常先 DeepSeek——见 china-llm-coding-assistant-2026。"
+          }
         },
         {
-          "question": { "en": "Is Kimi OpenAI API compatible?", "zh-CN": "Kimi 兼容 OpenAI API 吗？" },
-          "answer": { "en": "Moonshot offers OpenAI-compatible endpoints for many chat models. Test streaming and tools on your SDK.", "zh-CN": "Moonshot 对多数对话模型提供 OpenAI 兼容接口。请在您的 SDK 上自测流式与 tools。" }
+          "question": {
+            "en": "Is Kimi OpenAI API compatible?",
+            "zh-CN": "Kimi 兼容 OpenAI API 吗？"
+          },
+          "answer": {
+            "en": "Moonshot offers OpenAI-compatible endpoints for many chat models. Test streaming and tools on your SDK.",
+            "zh-CN": "Moonshot 对多数对话模型提供 OpenAI 兼容接口。请在您的 SDK 上自测流式与 tools。"
+          }
         },
         {
-          "question": { "en": "Is this official Moonshot documentation?", "zh-CN": "这是月之暗面官方文档吗？" },
-          "answer": { "en": "No—independent Swift Horse quickstart. Authoritative specs live on Moonshot docs.", "zh-CN": "否——Swift Horse 独立快速指南。权威规格以 Moonshot 文档为准。" }
+          "question": {
+            "en": "Is this official Moonshot documentation?",
+            "zh-CN": "这是月之暗面官方文档吗？"
+          },
+          "answer": {
+            "en": "No—independent Swift Horse quickstart. Authoritative specs live on Moonshot docs.",
+            "zh-CN": "否——Swift Horse 独立快速指南。权威规格以 Moonshot 文档为准。"
+          }
         }
       ]
     },
@@ -1733,8 +2339,17 @@
       "slug": "china-llm-openai-compatible-sdk-2026",
       "publishedAt": "2026-07-21",
       "updatedAt": "2026-07-21",
-      "tags": ["api", "guide", "global"],
-      "relatedModelIds": ["deepseek-v4-pro", "qwen3-max", "glm-5", "kimi-k2-6"],
+      "tags": [
+        "api",
+        "guide",
+        "global"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro",
+        "qwen3-max",
+        "glm-5",
+        "kimi-k2-6"
+      ],
       "title": {
         "en": "OpenAI-Compatible SDK for China LLMs 2026: One Client, Many Vendors",
         "zh-CN": "2026用OpenAI兼容SDK接中国大模型：一套客户端多厂商"
@@ -1745,50 +2360,94 @@
       },
       "sections": [
         {
-          "heading": { "en": "Key takeaways", "zh-CN": "本文要点" },
-          "paragraphs": [{
-            "en": "Most China LLM vendors expose OpenAI-compatible chat endpoints. You keep one SDK and swap `base_url` + `api_key` + `model`. Compatibility is not 100%—test JSON mode, tool_choice, streaming tool deltas, and error shapes before production. Swift Horse indexes public labels; vendor docs win on edge cases.",
-            "zh-CN": "多数国产厂商提供 OpenAI 兼容对话接口。一套 SDK，换 base_url、api_key、model 即可。兼容不是 100%——上线前自测 JSON mode、tool_choice、流式 tool delta 与错误格式。边界以厂商文档为准。"
-          }]
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "Most China LLM vendors expose OpenAI-compatible chat endpoints. You keep one SDK and swap `base_url` + `api_key` + `model`. Compatibility is not 100%—test JSON mode, tool_choice, streaming tool deltas, and error shapes before production. Swift Horse indexes public labels; vendor docs win on edge cases.",
+              "zh-CN": "多数国产厂商提供 OpenAI 兼容对话接口。一套 SDK，换 base_url、api_key、model 即可。兼容不是 100%——上线前自测 JSON mode、tool_choice、流式 tool delta 与错误格式。边界以厂商文档为准。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Minimal client pattern", "zh-CN": "最小客户端模式" },
-          "paragraphs": [{
-            "en": "Store per-vendor config: base_url, key, default model → initialize OpenAI client → chat.completions.create → log request_id / latency / tokens. Keep vendor quickstarts handy: DeepSeek, Qwen, GLM, Kimi articles on this site under /en/articles/.",
-            "zh-CN": "按厂商存 base_url、key、默认模型 → 初始化 OpenAI 客户端 → chat.completions.create → 记录 request_id/延迟/token。本站 /articles/ 下有 DeepSeek、Qwen、GLM、Kimi 快速指南。"
-          }]
+          "heading": {
+            "en": "Minimal client pattern",
+            "zh-CN": "最小客户端模式"
+          },
+          "paragraphs": [
+            {
+              "en": "Store per-vendor config: base_url, key, default model → initialize OpenAI client → chat.completions.create → log request_id / latency / tokens. Keep vendor quickstarts handy: DeepSeek, Qwen, GLM, Kimi articles on this site under /en/articles/.",
+              "zh-CN": "按厂商存 base_url、key、默认模型 → 初始化 OpenAI 客户端 → chat.completions.create → 记录 request_id/延迟/token。本站 /articles/ 下有 DeepSeek、Qwen、GLM、Kimi 快速指南。"
+            }
+          ]
         },
         {
-          "heading": { "en": "What to test before launch", "zh-CN": "上线前必测" },
-          "paragraphs": [{
-            "en": "Streaming on/off → tools/function calling → empty/malformed tool args → rate-limit retries → bilingual prompts → cost at real volume (/en/articles/china-llm-api-pricing-2026). Agent stacks: /en/articles/china-llm-agent-tool-calling-2026. Latency failover: /en/articles/china-llm-latency-failover-2026.",
-            "zh-CN": "流式开关 → tools → 畸形 tool 参数 → 限流重试 → 双语 prompt → 真实量成本。Agent 见 agent-tool-calling；延迟 failover 见 latency-failover。"
-          }]
+          "heading": {
+            "en": "What to test before launch",
+            "zh-CN": "上线前必测"
+          },
+          "paragraphs": [
+            {
+              "en": "Streaming on/off → tools/function calling → empty/malformed tool args → rate-limit retries → bilingual prompts → cost at real volume (/en/articles/china-llm-api-pricing-2026). Agent stacks: /en/articles/china-llm-agent-tool-calling-2026. Latency failover: /en/articles/china-llm-latency-failover-2026.",
+              "zh-CN": "流式开关 → tools → 畸形 tool 参数 → 限流重试 → 双语 prompt → 真实量成本。Agent 见 agent-tool-calling；延迟 failover 见 latency-failover。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Next steps on Swift Horse", "zh-CN": "在 Swift Horse 上的下一步" },
-          "paragraphs": [{
-            "en": "Access overview /en/articles/access-china-llm-api-overseas → vendor quickstarts → vs ChatGPT /en/articles/china-llm-vs-chatgpt-2026 → catalog /en/models.",
-            "zh-CN": "接入总览 access-china-llm-api-overseas → 各厂商 quickstart → vs ChatGPT → 模型库 /models。"
-          }]
+          "heading": {
+            "en": "Next steps on Swift Horse",
+            "zh-CN": "在 Swift Horse 上的下一步"
+          },
+          "paragraphs": [
+            {
+              "en": "Access overview /en/articles/access-china-llm-api-overseas → vendor quickstarts → vs ChatGPT /en/articles/china-llm-vs-chatgpt-2026 → catalog /en/models.",
+              "zh-CN": "接入总览 access-china-llm-api-overseas → 各厂商 quickstart → vs ChatGPT → 模型库 /models。"
+            }
+          ]
         }
       ],
       "faqs": [
         {
-          "question": { "en": "Can I use the official OpenAI Python SDK with Chinese LLMs?", "zh-CN": "官方 OpenAI Python SDK 能接国产模型吗？" },
-          "answer": { "en": "Yes for many vendors by setting base_url and api_key. Validate tools and streaming on each model ID.", "zh-CN": "多数厂商可通过设置 base_url 与 api_key 接入。每个模型 ID 需自测 tools 与流式。" }
+          "question": {
+            "en": "Can I use the official OpenAI Python SDK with Chinese LLMs?",
+            "zh-CN": "官方 OpenAI Python SDK 能接国产模型吗？"
+          },
+          "answer": {
+            "en": "Yes for many vendors by setting base_url and api_key. Validate tools and streaming on each model ID.",
+            "zh-CN": "多数厂商可通过设置 base_url 与 api_key 接入。每个模型 ID 需自测 tools 与流式。"
+          }
         },
         {
-          "question": { "en": "Does OpenAI-compatible mean identical behavior?", "zh-CN": "兼容等于行为完全一致吗？" },
-          "answer": { "en": "No. Expect differences in tool schemas, JSON strictness, and error payloads.", "zh-CN": "不等于。tool schema、JSON 严格度与错误 payload 常有差异。" }
+          "question": {
+            "en": "Does OpenAI-compatible mean identical behavior?",
+            "zh-CN": "兼容等于行为完全一致吗？"
+          },
+          "answer": {
+            "en": "No. Expect differences in tool schemas, JSON strictness, and error payloads.",
+            "zh-CN": "不等于。tool schema、JSON 严格度与错误 payload 常有差异。"
+          }
         },
         {
-          "question": { "en": "How do I switch vendors without rewriting the app?", "zh-CN": "如何不改业务代码切换厂商？" },
-          "answer": { "en": "Abstract a provider config map and route by env or feature flag; keep the same chat interface.", "zh-CN": "抽象厂商配置表，用环境变量或 feature flag 路由；保持同一 chat 接口。" }
+          "question": {
+            "en": "How do I switch vendors without rewriting the app?",
+            "zh-CN": "如何不改业务代码切换厂商？"
+          },
+          "answer": {
+            "en": "Abstract a provider config map and route by env or feature flag; keep the same chat interface.",
+            "zh-CN": "抽象厂商配置表，用环境变量或 feature flag 路由；保持同一 chat 接口。"
+          }
         },
         {
-          "question": { "en": "Where are vendor-specific quickstarts?", "zh-CN": "各厂商快速指南在哪？" },
-          "answer": { "en": "DeepSeek, Qwen, GLM, and Kimi quickstarts live under /en/articles/ on Swift Horse.", "zh-CN": "DeepSeek、Qwen、GLM、Kimi 快速指南均在本站 /en/articles/。" }
+          "question": {
+            "en": "Where are vendor-specific quickstarts?",
+            "zh-CN": "各厂商快速指南在哪？"
+          },
+          "answer": {
+            "en": "DeepSeek, Qwen, GLM, and Kimi quickstarts live under /en/articles/ on Swift Horse.",
+            "zh-CN": "DeepSeek、Qwen、GLM、Kimi 快速指南均在本站 /en/articles/。"
+          }
         }
       ]
     },
@@ -1796,8 +2455,17 @@
       "slug": "china-llm-latency-failover-2026",
       "publishedAt": "2026-07-21",
       "updatedAt": "2026-07-21",
-      "tags": ["guide", "enterprise", "api"],
-      "relatedModelIds": ["deepseek-v4-pro", "qwen3-max", "glm-5", "kimi-k2-6"],
+      "tags": [
+        "guide",
+        "enterprise",
+        "api"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro",
+        "qwen3-max",
+        "glm-5",
+        "kimi-k2-6"
+      ],
       "title": {
         "en": "China LLM Latency & Failover 2026: Overseas Regions and Multi-Vendor",
         "zh-CN": "2026中国大模型延迟与Failover：海外区域与多厂商容灾"
@@ -1808,120 +2476,223 @@
       },
       "sections": [
         {
-          "heading": { "en": "Key takeaways", "zh-CN": "本文要点" },
-          "paragraphs": [{
-            "en": "Overseas teams feel China LLM latency as region RTT + vendor queueing + generation time. Fix product SLOs with P95 budgets, not average chat demos. Failover needs a second vendor already keyed and tested—not a weekend scramble. Compliance may force self-host or region limits (/en/articles/china-llm-compliance-overseas-2026).",
-            "zh-CN": "海外延迟 = 区域 RTT + 厂商排队 + 生成时间。用 P95 预算定 SLO，不要看平均 demo。Failover 需提前备好第二厂商密钥与用例。合规可能要求自托管或区域限制。"
-          }]
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "Overseas teams feel China LLM latency as region RTT + vendor queueing + generation time. Fix product SLOs with P95 budgets, not average chat demos. Failover needs a second vendor already keyed and tested—not a weekend scramble. Compliance may force self-host or region limits (/en/articles/china-llm-compliance-overseas-2026).",
+              "zh-CN": "海外延迟 = 区域 RTT + 厂商排队 + 生成时间。用 P95 预算定 SLO，不要看平均 demo。Failover 需提前备好第二厂商密钥与用例。合规可能要求自托管或区域限制。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Latency checklist", "zh-CN": "延迟清单" },
-          "paragraphs": [{
-            "en": "Measure TTFB and full completion separately → test from your real user regions → prefer nearer endpoints when vendors offer them → shrink prompts (RAG) → stream for UX even if total tokens stay high → cache idempotent answers where safe.",
-            "zh-CN": "分别测 TTFB 与完整完成 → 从真实用户区域测 → 有近端用近端 → 用 RAG 缩短 prompt → 流式改善体感 → 可安全缓存的答案做缓存。"
-          }]
+          "heading": {
+            "en": "Latency checklist",
+            "zh-CN": "延迟清单"
+          },
+          "paragraphs": [
+            {
+              "en": "Measure TTFB and full completion separately → test from your real user regions → prefer nearer endpoints when vendors offer them → shrink prompts (RAG) → stream for UX even if total tokens stay high → cache idempotent answers where safe.",
+              "zh-CN": "分别测 TTFB 与完整完成 → 从真实用户区域测 → 有近端用近端 → 用 RAG 缩短 prompt → 流式改善体感 → 可安全缓存的答案做缓存。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Multi-vendor failover pattern", "zh-CN": "多厂商 failover 模式" },
-          "paragraphs": [{
-            "en": "Primary vendor (e.g. DeepSeek) → on 5xx / timeout / rate-limit → retry with backoff → switch to secondary (Qwen/GLM) with same prompt contract via OpenAI-compatible client (/en/articles/china-llm-openai-compatible-sdk-2026) → alert on failover rate. Keep model capability gaps documented (tools, context).",
-            "zh-CN": "主厂商（如 DeepSeek）→ 遇 5xx/超时/限流 → 退避重试 → 经 OpenAI 兼容客户端切到次厂商（Qwen/GLM）→ 对 failover 率告警。文档化能力差（tools、上下文）。"
-          }]
+          "heading": {
+            "en": "Multi-vendor failover pattern",
+            "zh-CN": "多厂商 failover 模式"
+          },
+          "paragraphs": [
+            {
+              "en": "Primary vendor (e.g. DeepSeek) → on 5xx / timeout / rate-limit → retry with backoff → switch to secondary (Qwen/GLM) with same prompt contract via OpenAI-compatible client (/en/articles/china-llm-openai-compatible-sdk-2026) → alert on failover rate. Keep model capability gaps documented (tools, context).",
+              "zh-CN": "主厂商（如 DeepSeek）→ 遇 5xx/超时/限流 → 退避重试 → 经 OpenAI 兼容客户端切到次厂商（Qwen/GLM）→ 对 failover 率告警。文档化能力差（tools、上下文）。"
+            }
+          ]
         },
         {
-          "heading": { "en": "When self-host beats failover", "zh-CN": "何时自托管优于 failover" },
-          "paragraphs": [{
-            "en": "If data cannot leave your VPC or public APIs fail compliance, self-host open weights (/en/articles/chinese-llm-self-hosting-guide-2026). Otherwise multi-vendor cloud APIs are usually faster to operate.",
-            "zh-CN": "数据不能出 VPC 或公有 API 不合规 → 自托管开源权重。否则多厂商云 API 通常更好运维。"
-          }]
+          "heading": {
+            "en": "When self-host beats failover",
+            "zh-CN": "何时自托管优于 failover"
+          },
+          "paragraphs": [
+            {
+              "en": "If data cannot leave your VPC or public APIs fail compliance, self-host open weights (/en/articles/chinese-llm-self-hosting-guide-2026). Otherwise multi-vendor cloud APIs are usually faster to operate.",
+              "zh-CN": "数据不能出 VPC 或公有 API 不合规 → 自托管开源权重。否则多厂商云 API 通常更好运维。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Next steps on Swift Horse", "zh-CN": "在 Swift Horse 上的下一步" },
-          "paragraphs": [{
-            "en": "Pricing /en/articles/china-llm-api-pricing-2026 → access /en/articles/access-china-llm-api-overseas → coding /en/articles/china-llm-coding-assistant-2026 → match /en/match.",
-            "zh-CN": "定价 → 接入总览 → 编程选型 → 场景匹配 /match。"
-          }]
+          "heading": {
+            "en": "Next steps on Swift Horse",
+            "zh-CN": "在 Swift Horse 上的下一步"
+          },
+          "paragraphs": [
+            {
+              "en": "Pricing /en/articles/china-llm-api-pricing-2026 → access /en/articles/access-china-llm-api-overseas → coding /en/articles/china-llm-coding-assistant-2026 → match /en/match.",
+              "zh-CN": "定价 → 接入总览 → 编程选型 → 场景匹配 /match。"
+            }
+          ]
         }
       ],
       "faqs": [
         {
-          "question": { "en": "Why is China LLM API slow from the US?", "zh-CN": "为什么从美国调中国大模型 API 慢？" },
-          "answer": { "en": "Cross-region RTT plus generation time. Measure P95 from your region and consider nearer endpoints or streaming UX.", "zh-CN": "跨区 RTT 叠加生成时间。从您的区域测 P95，并考虑近端 endpoint 或流式体验。" }
+          "question": {
+            "en": "Why is China LLM API slow from the US?",
+            "zh-CN": "为什么从美国调中国大模型 API 慢？"
+          },
+          "answer": {
+            "en": "Cross-region RTT plus generation time. Measure P95 from your region and consider nearer endpoints or streaming UX.",
+            "zh-CN": "跨区 RTT 叠加生成时间。从您的区域测 P95，并考虑近端 endpoint 或流式体验。"
+          }
         },
         {
-          "question": { "en": "How many failover vendors do I need?", "zh-CN": "Failover 需要几个厂商？" },
-          "answer": { "en": "Two is enough for most teams: primary + secondary with tested tool/context parity.", "zh-CN": "多数团队两个即可：主用 + 次用，并测过 tool/上下文对等性。" }
+          "question": {
+            "en": "How many failover vendors do I need?",
+            "zh-CN": "Failover 需要几个厂商？"
+          },
+          "answer": {
+            "en": "Two is enough for most teams: primary + secondary with tested tool/context parity.",
+            "zh-CN": "多数团队两个即可：主用 + 次用，并测过 tool/上下文对等性。"
+          }
         },
         {
-          "question": { "en": "Should retries hit the same vendor forever?", "zh-CN": "重试要一直打同一厂商吗？" },
-          "answer": { "en": "No—cap retries then fail over. Endless retries amplify outages and cost.", "zh-CN": "不要——限制重试次数后切换。无限重试会放大故障与成本。" }
+          "question": {
+            "en": "Should retries hit the same vendor forever?",
+            "zh-CN": "重试要一直打同一厂商吗？"
+          },
+          "answer": {
+            "en": "No—cap retries then fail over. Endless retries amplify outages and cost.",
+            "zh-CN": "不要——限制重试次数后切换。无限重试会放大故障与成本。"
+          }
         },
         {
-          "question": { "en": "Where to start vendor setup?", "zh-CN": "厂商接入从哪开始？" },
-          "answer": { "en": "See DeepSeek/Qwen/GLM/Kimi quickstarts and /en/articles/china-llm-openai-compatible-sdk-2026.", "zh-CN": "见各厂商 quickstart 与 china-llm-openai-compatible-sdk-2026。" }
+          "question": {
+            "en": "Where to start vendor setup?",
+            "zh-CN": "厂商接入从哪开始？"
+          },
+          "answer": {
+            "en": "See DeepSeek/Qwen/GLM/Kimi quickstarts and /en/articles/china-llm-openai-compatible-sdk-2026.",
+            "zh-CN": "见各厂商 quickstart 与 china-llm-openai-compatible-sdk-2026。"
+          }
         }
       ]
     },
     {
       "slug": "best-chinese-llm-2026",
       "publishedAt": "2026-07-29",
-      "updatedAt": "2026-07-29",
-      "tags": ["guide", "comparison", "global"],
-      "relatedModelIds": ["deepseek-v4-pro", "qwen3-max", "glm-5", "kimi-k2-6"],
+      "updatedAt": "2026-09-05",
+      "tags": [
+        "guide",
+        "comparison",
+        "global"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro",
+        "qwen3-max",
+        "glm-4-7",
+        "glm-5",
+        "kimi-k2-6"
+      ],
       "title": {
-        "en": "Best Chinese LLM 2026: How to Pick Among DeepSeek, Qwen, GLM, Kimi",
-        "zh-CN": "2026最佳中国大模型：DeepSeek/Qwen/GLM/Kimi 怎么选"
+        "en": "Best Chinese LLM 2026: DeepSeek vs Qwen vs GLM vs Kimi",
+        "zh-CN": "2026最佳中国大模型：DeepSeek、Qwen、GLM、Kimi怎么选"
       },
       "excerpt": {
-        "en": "Best Chinese LLM in 2026 is workload-dependent—coding, agents, long context, bilingual, and cost. Decision framework for overseas teams comparing DeepSeek, Qwen, GLM, and Kimi without chasing a single leaderboard.",
-        "zh-CN": "2026「最佳中国大模型」取决于负载——编程、Agent、长上下文、双语与成本。海外团队对比 DeepSeek/Qwen/GLM/Kimi 的决策框架，不盲目追单一榜单。"
+        "en": "Best Chinese LLM 2026? Match DeepSeek, Qwen, GLM or Kimi by coding, agents, long context & cost—independent shortlist for overseas teams, not a single leaderboard winner.",
+        "zh-CN": "2026最佳中国大模型？按编程、Agent、长上下文与成本在 DeepSeek/Qwen/GLM/Kimi 中匹配——面向海外团队的独立短名单，非单一榜单冠军。"
       },
       "sections": [
         {
-          "heading": { "en": "Key takeaways", "zh-CN": "本文要点" },
-          "paragraphs": [{
-            "en": "There is no universal “best Chinese LLM” in 2026. DeepSeek often leads coding value POCs; Qwen fits Alibaba-cloud and multimodal stacks; GLM is common for enterprise agents; Kimi for ultra-long documents. Rank by your prompts, P95 latency, tool success, and monthly token cost—not one screenshot of a public bench. Swift Horse is an independent index.",
-            "zh-CN": "2026 没有 universal 的「最佳国产大模型」。DeepSeek 常领跑编程性价比 POC；Qwen 适合阿里云与多模态；GLM 常见于企业 Agent；Kimi 偏超长文档。按自有 prompt、P95、tool 成功率与月 token 成本排序。Swift Horse 为独立索引。"
-          }]
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "There is no universal “best Chinese LLM” in 2026. DeepSeek often leads coding value POCs; Qwen fits Alibaba-cloud and multimodal stacks; GLM is common for enterprise agents; Kimi for ultra-long documents. Rank by your prompts, P95 latency, tool success, and monthly token cost—not one screenshot of a public bench. Swift Horse is an independent index.",
+              "zh-CN": "2026 没有 universal 的「最佳国产大模型」。DeepSeek 常领跑编程性价比 POC；Qwen 适合阿里云与多模态；GLM 常见于企业 Agent；Kimi 偏超长文档。按自有 prompt、P95、tool 成功率与月 token 成本排序。Swift Horse 为独立索引。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Match model to workload", "zh-CN": "按负载匹配模型" },
-          "paragraphs": [{
-            "en": "Coding & CI → /en/articles/china-llm-coding-assistant-2026. Agents/tools → /en/articles/china-llm-agent-tool-calling-2026. Long PDFs → Kimi path /en/articles/kimi-vs-glm-selection-guide-2026. Cost at scale → /en/articles/china-llm-api-pricing-2026. vs GPT → /en/articles/china-llm-vs-chatgpt-2026.",
-            "zh-CN": "编程 → coding-assistant；Agent → agent-tool-calling；长文档 → kimi-vs-glm；规模成本 → pricing；对比 GPT → china-llm-vs-chatgpt。"
-          }]
+          "heading": {
+            "en": "Match model to workload",
+            "zh-CN": "按负载匹配模型"
+          },
+          "paragraphs": [
+            {
+              "en": "Coding & CI → /en/articles/china-llm-coding-assistant-2026. Agents/tools → /en/articles/china-llm-agent-tool-calling-2026. Long PDFs → Kimi path /en/articles/kimi-vs-glm-selection-guide-2026. Cost at scale → /en/articles/china-llm-api-pricing-2026. vs GPT → /en/articles/china-llm-vs-chatgpt-2026.",
+              "zh-CN": "编程 → coding-assistant；Agent → agent-tool-calling；长文档 → kimi-vs-glm；规模成本 → pricing；对比 GPT → china-llm-vs-chatgpt。"
+            }
+          ]
         },
         {
-          "heading": { "en": "2-hour shortlist process", "zh-CN": "2 小时短名单流程" },
-          "paragraphs": [{
-            "en": "Write 15 production prompts → run on DeepSeek + Qwen + one of GLM/Kimi → score quality, tools, latency, tokens → pick primary + failover → document model IDs. Use OpenAI-compatible clients: /en/articles/china-llm-openai-compatible-sdk-2026.",
-            "zh-CN": "写 15 条生产 prompt → 跑 DeepSeek + Qwen +（GLM 或 Kimi）→ 评质量/tools/延迟/token → 定主用+failover → 记录模型 ID。SDK 见 openai-compatible-sdk。"
-          }]
+          "heading": {
+            "en": "2-hour shortlist process",
+            "zh-CN": "2 小时短名单流程"
+          },
+          "paragraphs": [
+            {
+              "en": "Write 15 production prompts → run on DeepSeek + Qwen + one of GLM/Kimi → score quality, tools, latency, tokens → pick primary + failover → document model IDs. Use OpenAI-compatible clients: /en/articles/china-llm-openai-compatible-sdk-2026.",
+              "zh-CN": "写 15 条生产 prompt → 跑 DeepSeek + Qwen +（GLM 或 Kimi）→ 评质量/tools/延迟/token → 定主用+failover → 记录模型 ID。SDK 见 openai-compatible-sdk。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Next steps on Swift Horse", "zh-CN": "在 Swift Horse 上的下一步" },
-          "paragraphs": [{
-            "en": "Matrix /en/articles/top-chinese-ai-models-2026 → catalog /en/models → match /en/match → global guide /en/articles/chinese-llms-global-guide-2026.",
-            "zh-CN": "矩阵 top-chinese-ai-models-2026 → 模型库 /models → 选型 /match → 全球指南 chinese-llms-global-guide-2026。"
-          }]
+          "heading": {
+            "en": "Next steps on Swift Horse",
+            "zh-CN": "在 Swift Horse 上的下一步"
+          },
+          "paragraphs": [
+            {
+              "en": "Matrix /en/articles/top-chinese-ai-models-2026 → catalog /en/models → match /en/match → global guide /en/articles/chinese-llms-global-guide-2026.",
+              "zh-CN": "矩阵 top-chinese-ai-models-2026 → 模型库 /models → 选型 /match → 全球指南 chinese-llms-global-guide-2026。"
+            }
+          ]
         }
       ],
       "faqs": [
         {
-          "question": { "en": "What is the best Chinese LLM in 2026?", "zh-CN": "2026 最好的中国大模型是哪个？" },
-          "answer": { "en": "No single winner—DeepSeek, Qwen, GLM, and Kimi lead different jobs. Run a short bake-off on your data.", "zh-CN": "无单一冠军——四家各擅胜场。用自有数据做短对比。" }
+          "question": {
+            "en": "What is the best Chinese LLM in 2026?",
+            "zh-CN": "2026 最好的中国大模型是哪个？"
+          },
+          "answer": {
+            "en": "No single winner—DeepSeek, Qwen, GLM, and Kimi lead different jobs. Run a short bake-off on your data.",
+            "zh-CN": "无单一冠军——四家各擅胜场。用自有数据做短对比。"
+          }
         },
         {
-          "question": { "en": "Is DeepSeek the best overall?", "zh-CN": "DeepSeek 是综合最强吗？" },
-          "answer": { "en": "Strong on coding value; not always best for long context or every enterprise agent stack.", "zh-CN": "编程性价比强；长上下文或企业 Agent 不一定最优。" }
+          "question": {
+            "en": "Is DeepSeek the best overall?",
+            "zh-CN": "DeepSeek 是综合最强吗？"
+          },
+          "answer": {
+            "en": "Strong on coding value; not always best for long context or every enterprise agent stack.",
+            "zh-CN": "编程性价比强；长上下文或企业 Agent 不一定最优。"
+          }
         },
         {
-          "question": { "en": "Should I trust public leaderboards?", "zh-CN": "该信公开榜单吗？" },
-          "answer": { "en": "Use them for shortlists only. Production ranking needs your prompts, tools, and cost model—see /en/articles/china-llm-benchmarks-guide-2026.", "zh-CN": "仅作短名单参考。生产排名需自有 prompt、tools 与成本模型——见 benchmarks-guide。" }
+          "question": {
+            "en": "Should I trust public leaderboards?",
+            "zh-CN": "该信公开榜单吗？"
+          },
+          "answer": {
+            "en": "Use them for shortlists only. Production ranking needs your prompts, tools, and cost model—see /en/articles/china-llm-benchmarks-guide-2026.",
+            "zh-CN": "仅作短名单参考。生产排名需自有 prompt、tools 与成本模型——见 benchmarks-guide。"
+          }
         },
         {
-          "question": { "en": "Is this an official ranking?", "zh-CN": "这是官方排名吗？" },
-          "answer": { "en": "No—independent Swift Horse selection guide. Verify specs on vendor sites.", "zh-CN": "否——Swift Horse 独立选型指南。规格以厂商站点为准。" }
+          "question": {
+            "en": "Is this an official ranking?",
+            "zh-CN": "这是官方排名吗？"
+          },
+          "answer": {
+            "en": "No—independent Swift Horse selection guide. Verify specs on vendor sites.",
+            "zh-CN": "否——Swift Horse 独立选型指南。规格以厂商站点为准。"
+          }
         }
       ]
     },
@@ -1929,8 +2700,17 @@
       "slug": "china-llm-vs-claude-2026",
       "publishedAt": "2026-07-29",
       "updatedAt": "2026-07-29",
-      "tags": ["comparison", "guide", "global"],
-      "relatedModelIds": ["deepseek-v4-pro", "qwen3-max", "glm-5", "kimi-k2-6"],
+      "tags": [
+        "comparison",
+        "guide",
+        "global"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro",
+        "qwen3-max",
+        "glm-5",
+        "kimi-k2-6"
+      ],
       "title": {
         "en": "China LLM vs Claude 2026: When Chinese Models Beat Anthropic",
         "zh-CN": "2026中国大模型 vs Claude：何时国产模型更合适"
@@ -1941,57 +2721,106 @@
       },
       "sections": [
         {
-          "heading": { "en": "Key takeaways", "zh-CN": "本文要点" },
-          "paragraphs": [{
-            "en": "Claude often wins on careful English reasoning, long safety-tuned chats, and Anthropic ecosystem contracts. Chinese LLMs win on token economics, Chinese/English product work, and coding value at volume. Hybrid stacks are common. See also /en/articles/china-llm-vs-chatgpt-2026 for GPT comparisons.",
-            "zh-CN": "Claude 在谨慎英文推理、长对话安全调优与 Anthropic 合同生态上常更强。国产模型在 token 成本、中英产品文案与高用量编程上常更有优势。混合栈常见。GPT 对比见 china-llm-vs-chatgpt-2026。"
-          }]
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "Claude often wins on careful English reasoning, long safety-tuned chats, and Anthropic ecosystem contracts. Chinese LLMs win on token economics, Chinese/English product work, and coding value at volume. Hybrid stacks are common. See also /en/articles/china-llm-vs-chatgpt-2026 for GPT comparisons.",
+              "zh-CN": "Claude 在谨慎英文推理、长对话安全调优与 Anthropic 合同生态上常更强。国产模型在 token 成本、中英产品文案与高用量编程上常更有优势。混合栈常见。GPT 对比见 china-llm-vs-chatgpt-2026。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Where China LLMs typically win", "zh-CN": "国产模型通常更强的场景" },
-          "paragraphs": [{
-            "en": "High-volume batch and agent loops (cost) → pricing guide. Chinese document QA and CN marketing copy. Coding assistants at scale → /en/articles/china-llm-coding-assistant-2026. Long Chinese PDFs → Kimi class.",
-            "zh-CN": "高用量批处理/Agent（成本）→ 定价指南。中文文档 QA 与中文营销文案。规模化编程助手。超长中文 PDF → Kimi 档。"
-          }]
+          "heading": {
+            "en": "Where China LLMs typically win",
+            "zh-CN": "国产模型通常更强的场景"
+          },
+          "paragraphs": [
+            {
+              "en": "High-volume batch and agent loops (cost) → pricing guide. Chinese document QA and CN marketing copy. Coding assistants at scale → /en/articles/china-llm-coding-assistant-2026. Long Chinese PDFs → Kimi class.",
+              "zh-CN": "高用量批处理/Agent（成本）→ 定价指南。中文文档 QA 与中文营销文案。规模化编程助手。超长中文 PDF → Kimi 档。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Where Claude still wins", "zh-CN": "Claude 仍更合适的场景" },
-          "paragraphs": [{
-            "en": "Teams standardized on Anthropic APIs, Constitutional AI policies, or US/EU vendor risk reviews that prefer Claude. Products needing Claude-specific tooling and support SLAs. Keep China LLM as cost backend or CN-language path.",
-            "zh-CN": "已标准化 Anthropic API、偏好 Claude 风控审查、或需要 Claude 专用工具与 SLA 的团队。可用国产模型作成本后端或中文路径。"
-          }]
+          "heading": {
+            "en": "Where Claude still wins",
+            "zh-CN": "Claude 仍更合适的场景"
+          },
+          "paragraphs": [
+            {
+              "en": "Teams standardized on Anthropic APIs, Constitutional AI policies, or US/EU vendor risk reviews that prefer Claude. Products needing Claude-specific tooling and support SLAs. Keep China LLM as cost backend or CN-language path.",
+              "zh-CN": "已标准化 Anthropic API、偏好 Claude 风控审查、或需要 Claude 专用工具与 SLA 的团队。可用国产模型作成本后端或中文路径。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Bake-off checklist", "zh-CN": "对比清单" },
-          "paragraphs": [{
-            "en": "20 prompts × Claude + DeepSeek + Qwen → score English care, Chinese accuracy, tools, P95, monthly cost → compliance review (/en/articles/china-llm-compliance-overseas-2026) → failover plan (/en/articles/china-llm-latency-failover-2026).",
-            "zh-CN": "20 条 prompt × Claude + DeepSeek + Qwen → 评英文谨慎度、中文准确、tools、P95、月成本 → 合规 → failover。"
-          }]
+          "heading": {
+            "en": "Bake-off checklist",
+            "zh-CN": "对比清单"
+          },
+          "paragraphs": [
+            {
+              "en": "20 prompts × Claude + DeepSeek + Qwen → score English care, Chinese accuracy, tools, P95, monthly cost → compliance review (/en/articles/china-llm-compliance-overseas-2026) → failover plan (/en/articles/china-llm-latency-failover-2026).",
+              "zh-CN": "20 条 prompt × Claude + DeepSeek + Qwen → 评英文谨慎度、中文准确、tools、P95、月成本 → 合规 → failover。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Next steps on Swift Horse", "zh-CN": "在 Swift Horse 上的下一步" },
-          "paragraphs": [{
-            "en": "Best-of framework /en/articles/best-chinese-llm-2026 → access /en/articles/access-china-llm-api-overseas → models /en/models.",
-            "zh-CN": "最佳选型框架 best-chinese-llm-2026 → 接入总览 → 模型库。"
-          }]
+          "heading": {
+            "en": "Next steps on Swift Horse",
+            "zh-CN": "在 Swift Horse 上的下一步"
+          },
+          "paragraphs": [
+            {
+              "en": "Best-of framework /en/articles/best-chinese-llm-2026 → access /en/articles/access-china-llm-api-overseas → models /en/models.",
+              "zh-CN": "最佳选型框架 best-chinese-llm-2026 → 接入总览 → 模型库。"
+            }
+          ]
         }
       ],
       "faqs": [
         {
-          "question": { "en": "Is DeepSeek better than Claude?", "zh-CN": "DeepSeek 比 Claude 更好吗？" },
-          "answer": { "en": "Often on coding cost/performance; Claude may win on careful English product UX. Test your prompts.", "zh-CN": "编程性价比上常更优；谨慎英文产品体验 Claude 可能更好。用自有 prompt 测。" }
+          "question": {
+            "en": "Is DeepSeek better than Claude?",
+            "zh-CN": "DeepSeek 比 Claude 更好吗？"
+          },
+          "answer": {
+            "en": "Often on coding cost/performance; Claude may win on careful English product UX. Test your prompts.",
+            "zh-CN": "编程性价比上常更优；谨慎英文产品体验 Claude 可能更好。用自有 prompt 测。"
+          }
         },
         {
-          "question": { "en": "Can Chinese LLMs replace Claude in production?", "zh-CN": "国产大模型能在生产替代 Claude 吗？" },
-          "answer": { "en": "For scoped workloads after POC and compliance—yes. Many teams run hybrid.", "zh-CN": "明确负载经 POC 与合规后可以。很多团队混合部署。" }
+          "question": {
+            "en": "Can Chinese LLMs replace Claude in production?",
+            "zh-CN": "国产大模型能在生产替代 Claude 吗？"
+          },
+          "answer": {
+            "en": "For scoped workloads after POC and compliance—yes. Many teams run hybrid.",
+            "zh-CN": "明确负载经 POC 与合规后可以。很多团队混合部署。"
+          }
         },
         {
-          "question": { "en": "Claude vs ChatGPT vs China LLM—where to start?", "zh-CN": "Claude、ChatGPT、国产模型从哪看起？" },
-          "answer": { "en": "Start with /en/articles/best-chinese-llm-2026 and /en/articles/china-llm-vs-chatgpt-2026, then this page for Claude.", "zh-CN": "先看 best-chinese-llm-2026 与 china-llm-vs-chatgpt-2026，再看本文对比 Claude。" }
+          "question": {
+            "en": "Claude vs ChatGPT vs China LLM—where to start?",
+            "zh-CN": "Claude、ChatGPT、国产模型从哪看起？"
+          },
+          "answer": {
+            "en": "Start with /en/articles/best-chinese-llm-2026 and /en/articles/china-llm-vs-chatgpt-2026, then this page for Claude.",
+            "zh-CN": "先看 best-chinese-llm-2026 与 china-llm-vs-chatgpt-2026，再看本文对比 Claude。"
+          }
         },
         {
-          "question": { "en": "Is this official Anthropic advice?", "zh-CN": "这是 Anthropic 官方建议吗？" },
-          "answer": { "en": "No—independent Swift Horse guide. Defer to Anthropic and China LLM vendor docs.", "zh-CN": "否——Swift Horse 独立指南。以 Anthropic 与各国产厂商文档为准。" }
+          "question": {
+            "en": "Is this official Anthropic advice?",
+            "zh-CN": "这是 Anthropic 官方建议吗？"
+          },
+          "answer": {
+            "en": "No—independent Swift Horse guide. Defer to Anthropic and China LLM vendor docs.",
+            "zh-CN": "否——Swift Horse 独立指南。以 Anthropic 与各国产厂商文档为准。"
+          }
         }
       ]
     },
@@ -1999,8 +2828,17 @@
       "slug": "china-llm-benchmarks-guide-2026",
       "publishedAt": "2026-07-29",
       "updatedAt": "2026-07-29",
-      "tags": ["guide", "comparison", "global"],
-      "relatedModelIds": ["deepseek-v4-pro", "qwen3-max", "glm-5", "kimi-k2-6"],
+      "tags": [
+        "guide",
+        "comparison",
+        "global"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro",
+        "qwen3-max",
+        "glm-5",
+        "kimi-k2-6"
+      ],
       "title": {
         "en": "China LLM Benchmarks 2026: How to Read Scores Without Getting Misled",
         "zh-CN": "2026中国大模型榜单指南：如何读分不被误导"
@@ -2011,50 +2849,94 @@
       },
       "sections": [
         {
-          "heading": { "en": "Key takeaways", "zh-CN": "本文要点" },
-          "paragraphs": [{
-            "en": "Public benchmarks are marketing-adjacent signals, not purchase orders. They rarely capture your tool schemas, bilingual product tone, P95 under load, or token bills. Use benches to build a shortlist of 2–3 China LLMs, then run private evals. Swift Horse does not publish a live “best model” rank.",
-            "zh-CN": "公开榜单是信号，不是采购单。很少覆盖你的 tool schema、双语产品语气、负载下 P95 或 token 账单。用榜单筛 2–3 个候选，再跑私有评测。Swift Horse 不发布实时「最强模型」排名。"
-          }]
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "Public benchmarks are marketing-adjacent signals, not purchase orders. They rarely capture your tool schemas, bilingual product tone, P95 under load, or token bills. Use benches to build a shortlist of 2–3 China LLMs, then run private evals. Swift Horse does not publish a live “best model” rank.",
+              "zh-CN": "公开榜单是信号，不是采购单。很少覆盖你的 tool schema、双语产品语气、负载下 P95 或 token 账单。用榜单筛 2–3 个候选，再跑私有评测。Swift Horse 不发布实时「最强模型」排名。"
+            }
+          ]
         },
         {
-          "heading": { "en": "What benches miss", "zh-CN": "榜单常漏什么" },
-          "paragraphs": [{
-            "en": "Tool-calling parity, streaming + tools, rate limits from overseas, CN/EN mixed prompts, RAG citation faithfulness, and cost per successful task. Agent costs explode beyond chat benches—see /en/articles/china-llm-agent-tool-calling-2026 and pricing.",
-            "zh-CN": "tool calling 对等性、流式+tools、海外限流、中英混排、RAG 引用忠实度、每次成功任务成本。Agent 成本远超聊天榜——见 agent 与定价文。"
-          }]
+          "heading": {
+            "en": "What benches miss",
+            "zh-CN": "榜单常漏什么"
+          },
+          "paragraphs": [
+            {
+              "en": "Tool-calling parity, streaming + tools, rate limits from overseas, CN/EN mixed prompts, RAG citation faithfulness, and cost per successful task. Agent costs explode beyond chat benches—see /en/articles/china-llm-agent-tool-calling-2026 and pricing.",
+              "zh-CN": "tool calling 对等性、流式+tools、海外限流、中英混排、RAG 引用忠实度、每次成功任务成本。Agent 成本远超聊天榜——见 agent 与定价文。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Private eval recipe", "zh-CN": "私有评测配方" },
-          "paragraphs": [{
-            "en": "Freeze 20–50 tasks from production → identical system prompts → log pass/fail, human preference, tokens, latency → include 5 tool tasks → estimate monthly cost → pick primary + failover (/en/articles/china-llm-latency-failover-2026).",
-            "zh-CN": "冻结 20–50 个生产任务 → 同一 system prompt → 记录通过/失败、人工偏好、token、延迟 → 含 5 个 tool 任务 → 估月成本 → 定主用+failover。"
-          }]
+          "heading": {
+            "en": "Private eval recipe",
+            "zh-CN": "私有评测配方"
+          },
+          "paragraphs": [
+            {
+              "en": "Freeze 20–50 tasks from production → identical system prompts → log pass/fail, human preference, tokens, latency → include 5 tool tasks → estimate monthly cost → pick primary + failover (/en/articles/china-llm-latency-failover-2026).",
+              "zh-CN": "冻结 20–50 个生产任务 → 同一 system prompt → 记录通过/失败、人工偏好、token、延迟 → 含 5 个 tool 任务 → 估月成本 → 定主用+failover。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Next steps on Swift Horse", "zh-CN": "在 Swift Horse 上的下一步" },
-          "paragraphs": [{
-            "en": "Shortlist /en/articles/best-chinese-llm-2026 → matrix /en/articles/top-chinese-ai-models-2026 → services /en/services → models /en/models.",
-            "zh-CN": "短名单 best-chinese-llm-2026 → 矩阵 → /services → /models。"
-          }]
+          "heading": {
+            "en": "Next steps on Swift Horse",
+            "zh-CN": "在 Swift Horse 上的下一步"
+          },
+          "paragraphs": [
+            {
+              "en": "Shortlist /en/articles/best-chinese-llm-2026 → matrix /en/articles/top-chinese-ai-models-2026 → services /en/services → models /en/models.",
+              "zh-CN": "短名单 best-chinese-llm-2026 → 矩阵 → /services → /models。"
+            }
+          ]
         }
       ],
       "faqs": [
         {
-          "question": { "en": "Which China LLM ranks #1 on public benches?", "zh-CN": "公开榜上谁第一？" },
-          "answer": { "en": "It rotates by suite and date. Treat #1 as a shortlist hint, not a contract.", "zh-CN": "随套件与日期轮换。把第一名当短名单提示，不当合同。" }
+          "question": {
+            "en": "Which China LLM ranks #1 on public benches?",
+            "zh-CN": "公开榜上谁第一？"
+          },
+          "answer": {
+            "en": "It rotates by suite and date. Treat #1 as a shortlist hint, not a contract.",
+            "zh-CN": "随套件与日期轮换。把第一名当短名单提示，不当合同。"
+          }
         },
         {
-          "question": { "en": "Can I skip private evals?", "zh-CN": "可以跳过私有评测吗？" },
-          "answer": { "en": "Not for production. Benches miss your tools, latency, and cost shape.", "zh-CN": "生产环境不行。榜单漏掉 tools、延迟与成本形态。" }
+          "question": {
+            "en": "Can I skip private evals?",
+            "zh-CN": "可以跳过私有评测吗？"
+          },
+          "answer": {
+            "en": "Not for production. Benches miss your tools, latency, and cost shape.",
+            "zh-CN": "生产环境不行。榜单漏掉 tools、延迟与成本形态。"
+          }
         },
         {
-          "question": { "en": "How do benchmarks relate to API pricing?", "zh-CN": "榜单和 API 定价有何关系？" },
-          "answer": { "en": "High scores with expensive output tokens can lose on TCO—see /en/articles/china-llm-api-pricing-2026.", "zh-CN": "高分但 output 贵可能输在 TCO——见定价文。" }
+          "question": {
+            "en": "How do benchmarks relate to API pricing?",
+            "zh-CN": "榜单和 API 定价有何关系？"
+          },
+          "answer": {
+            "en": "High scores with expensive output tokens can lose on TCO—see /en/articles/china-llm-api-pricing-2026.",
+            "zh-CN": "高分但 output 贵可能输在 TCO——见定价文。"
+          }
         },
         {
-          "question": { "en": "Does Swift Horse host a leaderboard?", "zh-CN": "Swift Horse 有排行榜吗？" },
-          "answer": { "en": "No live ranked leaderboard—structured model pages and selection guides only.", "zh-CN": "无实时排名榜——仅结构化模型页与选型指南。" }
+          "question": {
+            "en": "Does Swift Horse host a leaderboard?",
+            "zh-CN": "Swift Horse 有排行榜吗？"
+          },
+          "answer": {
+            "en": "No live ranked leaderboard—structured model pages and selection guides only.",
+            "zh-CN": "无实时排名榜——仅结构化模型页与选型指南。"
+          }
         }
       ]
     },
@@ -2062,8 +2944,16 @@
       "slug": "china-llm-multimodal-vision-2026",
       "publishedAt": "2026-07-29",
       "updatedAt": "2026-07-29",
-      "tags": ["guide", "comparison", "api"],
-      "relatedModelIds": ["qwen3-max", "glm-5", "deepseek-v4-pro"],
+      "tags": [
+        "guide",
+        "comparison",
+        "api"
+      ],
+      "relatedModelIds": [
+        "qwen3-max",
+        "glm-5",
+        "deepseek-v4-pro"
+      ],
       "title": {
         "en": "China LLM Vision & Multimodal 2026: Image Understanding for Global Teams",
         "zh-CN": "2026中国大模型视觉与多模态：海外团队图像理解选型"
@@ -2074,57 +2964,106 @@
       },
       "sections": [
         {
-          "heading": { "en": "Key takeaways", "zh-CN": "本文要点" },
-          "paragraphs": [{
-            "en": "Multimodal China LLMs help when screenshots, UI, charts, or Chinese document images drive the task. Text-only coding winners are not automatically vision winners. Confirm which model IDs accept images on your vendor console, test from overseas latency paths, and budget larger payloads.",
-            "zh-CN": "截图、UI、图表或中文文档图片驱动任务时，需要多模态。纯文本编程冠军不等于视觉冠军。确认控制台哪些模型 ID 收图，从海外测延迟，并预算更大 payload。"
-          }]
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "Multimodal China LLMs help when screenshots, UI, charts, or Chinese document images drive the task. Text-only coding winners are not automatically vision winners. Confirm which model IDs accept images on your vendor console, test from overseas latency paths, and budget larger payloads.",
+              "zh-CN": "截图、UI、图表或中文文档图片驱动任务时，需要多模态。纯文本编程冠军不等于视觉冠军。确认控制台哪些模型 ID 收图，从海外测延迟，并预算更大 payload。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Workload map", "zh-CN": "负载地图" },
-          "paragraphs": [{
-            "en": "UI bug reports from screenshots → vision chat. Chinese scanned PDFs → often RAG + OCR pipeline, not one huge image prompt (/en/articles/china-llm-rag-selection-guide). Pure code → /en/articles/china-llm-coding-assistant-2026. Agents that see + act → test tools with images (/en/articles/china-llm-agent-tool-calling-2026).",
-            "zh-CN": "截图报 bug → 视觉对话。中文扫描 PDF → 常 RAG+OCR，而非一张超大图。纯代码 → coding-assistant。看图+行动的 Agent → 联测 tools。"
-          }]
+          "heading": {
+            "en": "Workload map",
+            "zh-CN": "负载地图"
+          },
+          "paragraphs": [
+            {
+              "en": "UI bug reports from screenshots → vision chat. Chinese scanned PDFs → often RAG + OCR pipeline, not one huge image prompt (/en/articles/china-llm-rag-selection-guide). Pure code → /en/articles/china-llm-coding-assistant-2026. Agents that see + act → test tools with images (/en/articles/china-llm-agent-tool-calling-2026).",
+              "zh-CN": "截图报 bug → 视觉对话。中文扫描 PDF → 常 RAG+OCR，而非一张超大图。纯代码 → coding-assistant。看图+行动的 Agent → 联测 tools。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Vendor notes", "zh-CN": "厂商提示" },
-          "paragraphs": [{
-            "en": "Qwen/DashScope often appears in multimodal shortlists—/en/articles/qwen-api-overseas-quickstart-2026. GLM enterprise stacks may expose vision variants—/en/articles/glm-api-overseas-quickstart-2026. Always verify current model names; Swift Horse does not mirror private catalogs.",
-            "zh-CN": "Qwen/DashScope 常进多模态短名单。GLM 企业栈可能有视觉变体。模型名以控制台为准。"
-          }]
+          "heading": {
+            "en": "Vendor notes",
+            "zh-CN": "厂商提示"
+          },
+          "paragraphs": [
+            {
+              "en": "Qwen/DashScope often appears in multimodal shortlists—/en/articles/qwen-api-overseas-quickstart-2026. GLM enterprise stacks may expose vision variants—/en/articles/glm-api-overseas-quickstart-2026. Always verify current model names; Swift Horse does not mirror private catalogs.",
+              "zh-CN": "Qwen/DashScope 常进多模态短名单。GLM 企业栈可能有视觉变体。模型名以控制台为准。"
+            }
+          ]
         },
         {
-          "heading": { "en": "POC checklist", "zh-CN": "POC 清单" },
-          "paragraphs": [{
-            "en": "10 real images from production → same questions per vendor → score accuracy, CN/EN answers, latency, failures on large images → estimate cost → plan failover text-only path if vision outage.",
-            "zh-CN": "10 张生产真实图 → 各厂商同一问题 → 评准确、中英文回答、延迟、大图失败 → 估成本 → 规划视觉故障时的纯文本 failover。"
-          }]
+          "heading": {
+            "en": "POC checklist",
+            "zh-CN": "POC 清单"
+          },
+          "paragraphs": [
+            {
+              "en": "10 real images from production → same questions per vendor → score accuracy, CN/EN answers, latency, failures on large images → estimate cost → plan failover text-only path if vision outage.",
+              "zh-CN": "10 张生产真实图 → 各厂商同一问题 → 评准确、中英文回答、延迟、大图失败 → 估成本 → 规划视觉故障时的纯文本 failover。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Next steps on Swift Horse", "zh-CN": "在 Swift Horse 上的下一步" },
-          "paragraphs": [{
-            "en": "Models /en/models → services /en/services → SDK /en/articles/china-llm-openai-compatible-sdk-2026 → best-of /en/articles/best-chinese-llm-2026.",
-            "zh-CN": "模型库 → 对比表 → SDK → best-chinese-llm-2026。"
-          }]
+          "heading": {
+            "en": "Next steps on Swift Horse",
+            "zh-CN": "在 Swift Horse 上的下一步"
+          },
+          "paragraphs": [
+            {
+              "en": "Models /en/models → services /en/services → SDK /en/articles/china-llm-openai-compatible-sdk-2026 → best-of /en/articles/best-chinese-llm-2026.",
+              "zh-CN": "模型库 → 对比表 → SDK → best-chinese-llm-2026。"
+            }
+          ]
         }
       ],
       "faqs": [
         {
-          "question": { "en": "Which China LLM is best for images?", "zh-CN": "看图哪个国产模型最好？" },
-          "answer": { "en": "No universal winner—shortlist multimodal IDs on Qwen/GLM consoles and run your 10-image POC.", "zh-CN": "无 universal 答案——在 Qwen/GLM 控制台筛多模态 ID，跑 10 图 POC。" }
+          "question": {
+            "en": "Which China LLM is best for images?",
+            "zh-CN": "看图哪个国产模型最好？"
+          },
+          "answer": {
+            "en": "No universal winner—shortlist multimodal IDs on Qwen/GLM consoles and run your 10-image POC.",
+            "zh-CN": "无 universal 答案——在 Qwen/GLM 控制台筛多模态 ID，跑 10 图 POC。"
+          }
         },
         {
-          "question": { "en": "Can I send PDFs as images?", "zh-CN": "PDF 能当图片发送吗？" },
-          "answer": { "en": "Sometimes, but large scans are costly and lossy—prefer OCR/RAG pipelines for documents.", "zh-CN": "有时可以，但大扫描件贵且易损——文档更建议 OCR/RAG。" }
+          "question": {
+            "en": "Can I send PDFs as images?",
+            "zh-CN": "PDF 能当图片发送吗？"
+          },
+          "answer": {
+            "en": "Sometimes, but large scans are costly and lossy—prefer OCR/RAG pipelines for documents.",
+            "zh-CN": "有时可以，但大扫描件贵且易损——文档更建议 OCR/RAG。"
+          }
         },
         {
-          "question": { "en": "Do OpenAI-compatible SDKs support vision?", "zh-CN": "OpenAI 兼容 SDK 支持视觉吗？" },
-          "answer": { "en": "Many vendors accept image parts in chat messages—test your SDK version. See /en/articles/china-llm-openai-compatible-sdk-2026.", "zh-CN": "多数厂商在 chat 消息中接受图片部分——请测 SDK 版本。见 openai-compatible-sdk。" }
+          "question": {
+            "en": "Do OpenAI-compatible SDKs support vision?",
+            "zh-CN": "OpenAI 兼容 SDK 支持视觉吗？"
+          },
+          "answer": {
+            "en": "Many vendors accept image parts in chat messages—test your SDK version. See /en/articles/china-llm-openai-compatible-sdk-2026.",
+            "zh-CN": "多数厂商在 chat 消息中接受图片部分——请测 SDK 版本。见 openai-compatible-sdk。"
+          }
         },
         {
-          "question": { "en": "Is this official vendor vision docs?", "zh-CN": "这是厂商官方视觉文档吗？" },
-          "answer": { "en": "No—independent Swift Horse guide. Confirm image limits on vendor docs.", "zh-CN": "否——Swift Horse 独立指南。图片限制以厂商文档为准。" }
+          "question": {
+            "en": "Is this official vendor vision docs?",
+            "zh-CN": "这是厂商官方视觉文档吗？"
+          },
+          "answer": {
+            "en": "No—independent Swift Horse guide. Confirm image limits on vendor docs.",
+            "zh-CN": "否——Swift Horse 独立指南。图片限制以厂商文档为准。"
+          }
         }
       ]
     },
@@ -2132,8 +3071,16 @@
       "slug": "china-llm-json-structured-output-2026",
       "publishedAt": "2026-07-29",
       "updatedAt": "2026-07-29",
-      "tags": ["api", "guide", "enterprise"],
-      "relatedModelIds": ["deepseek-v4-pro", "qwen3-max", "glm-5"],
+      "tags": [
+        "api",
+        "guide",
+        "enterprise"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro",
+        "qwen3-max",
+        "glm-5"
+      ],
       "title": {
         "en": "China LLM JSON & Structured Output 2026: Reliable Schemas in Production",
         "zh-CN": "2026中国大模型 JSON 与结构化输出：生产环境可靠 Schema"
@@ -2144,113 +3091,208 @@
       },
       "sections": [
         {
-          "heading": { "en": "Key takeaways", "zh-CN": "本文要点" },
-          "paragraphs": [{
-            "en": "Structured output failures cause more production incidents than chat quality gaps. Treat JSON as a contract: schema → model mode → parse → validate → retry/failover. OpenAI-compatible endpoints vary on strict JSON and tool argument shapes—see /en/articles/china-llm-openai-compatible-sdk-2026 and agent guide.",
-            "zh-CN": "结构化输出失败往往比聊天质量问题更易导致生产事故。把 JSON 当合同：schema → 模型模式 → 解析 → 校验 → 重试/failover。OpenAI 兼容接口在 strict JSON 与 tool 参数形态上有差异。"
-          }]
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "Structured output failures cause more production incidents than chat quality gaps. Treat JSON as a contract: schema → model mode → parse → validate → retry/failover. OpenAI-compatible endpoints vary on strict JSON and tool argument shapes—see /en/articles/china-llm-openai-compatible-sdk-2026 and agent guide.",
+              "zh-CN": "结构化输出失败往往比聊天质量问题更易导致生产事故。把 JSON 当合同：schema → 模型模式 → 解析 → 校验 → 重试/failover。OpenAI 兼容接口在 strict JSON 与 tool 参数形态上有差异。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Implementation pattern", "zh-CN": "实现模式" },
-          "paragraphs": [{
-            "en": "Define JSON Schema or Zod/Pydantic models → ask for JSON only → enable vendor JSON mode when available → parse → validate → on failure, one repair prompt or switch vendor (/en/articles/china-llm-latency-failover-2026). Log raw text for debugging.",
-            "zh-CN": "定义 JSON Schema 或 Zod/Pydantic → 要求只输出 JSON → 有则开厂商 JSON mode → 解析 → 校验 → 失败则一次修复 prompt 或切厂商 → 记录原文便于排查。"
-          }]
+          "heading": {
+            "en": "Implementation pattern",
+            "zh-CN": "实现模式"
+          },
+          "paragraphs": [
+            {
+              "en": "Define JSON Schema or Zod/Pydantic models → ask for JSON only → enable vendor JSON mode when available → parse → validate → on failure, one repair prompt or switch vendor (/en/articles/china-llm-latency-failover-2026). Log raw text for debugging.",
+              "zh-CN": "定义 JSON Schema 或 Zod/Pydantic → 要求只输出 JSON → 有则开厂商 JSON mode → 解析 → 校验 → 失败则一次修复 prompt 或切厂商 → 记录原文便于排查。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Vendor caveats", "zh-CN": "厂商注意点" },
-          "paragraphs": [{
-            "en": "Do not assume GPT-identical strict mode. Test nested objects, enums, and empty arrays on DeepSeek, Qwen, GLM. Tool calling often needs separate tests from pure JSON chat (/en/articles/china-llm-agent-tool-calling-2026).",
-            "zh-CN": "不要假设与 GPT strict mode 完全一致。在 DeepSeek/Qwen/GLM 上测嵌套对象、枚举、空数组。Tool calling 需与纯 JSON 对话分开测。"
-          }]
+          "heading": {
+            "en": "Vendor caveats",
+            "zh-CN": "厂商注意点"
+          },
+          "paragraphs": [
+            {
+              "en": "Do not assume GPT-identical strict mode. Test nested objects, enums, and empty arrays on DeepSeek, Qwen, GLM. Tool calling often needs separate tests from pure JSON chat (/en/articles/china-llm-agent-tool-calling-2026).",
+              "zh-CN": "不要假设与 GPT strict mode 完全一致。在 DeepSeek/Qwen/GLM 上测嵌套对象、枚举、空数组。Tool calling 需与纯 JSON 对话分开测。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Next steps on Swift Horse", "zh-CN": "在 Swift Horse 上的下一步" },
-          "paragraphs": [{
-            "en": "SDK /en/articles/china-llm-openai-compatible-sdk-2026 → agents /en/articles/china-llm-agent-tool-calling-2026 → pricing /en/articles/china-llm-api-pricing-2026 → access /en/articles/access-china-llm-api-overseas.",
-            "zh-CN": "SDK → Agent → 定价 → 接入总览。"
-          }]
+          "heading": {
+            "en": "Next steps on Swift Horse",
+            "zh-CN": "在 Swift Horse 上的下一步"
+          },
+          "paragraphs": [
+            {
+              "en": "SDK /en/articles/china-llm-openai-compatible-sdk-2026 → agents /en/articles/china-llm-agent-tool-calling-2026 → pricing /en/articles/china-llm-api-pricing-2026 → access /en/articles/access-china-llm-api-overseas.",
+              "zh-CN": "SDK → Agent → 定价 → 接入总览。"
+            }
+          ]
         }
       ],
       "faqs": [
         {
-          "question": { "en": "Do Chinese LLMs support JSON mode?", "zh-CN": "国产大模型支持 JSON mode 吗？" },
-          "answer": { "en": "Many expose JSON or schema-like controls—names differ. Verify on each vendor console and test nested schemas.", "zh-CN": "多数提供 JSON 或类 schema 控制——名称不同。以各控制台为准并测嵌套 schema。" }
+          "question": {
+            "en": "Do Chinese LLMs support JSON mode?",
+            "zh-CN": "国产大模型支持 JSON mode 吗？"
+          },
+          "answer": {
+            "en": "Many expose JSON or schema-like controls—names differ. Verify on each vendor console and test nested schemas.",
+            "zh-CN": "多数提供 JSON 或类 schema 控制——名称不同。以各控制台为准并测嵌套 schema。"
+          }
         },
         {
-          "question": { "en": "JSON mode vs tool calling?", "zh-CN": "JSON mode 和 tool calling 有何区别？" },
-          "answer": { "en": "JSON mode shapes assistant content; tools return function arguments. Pick based on whether you need side effects.", "zh-CN": "JSON mode 约束助手正文；tools 返回函数参数。看是否需要副作用来选。" }
+          "question": {
+            "en": "JSON mode vs tool calling?",
+            "zh-CN": "JSON mode 和 tool calling 有何区别？"
+          },
+          "answer": {
+            "en": "JSON mode shapes assistant content; tools return function arguments. Pick based on whether you need side effects.",
+            "zh-CN": "JSON mode 约束助手正文；tools 返回函数参数。看是否需要副作用来选。"
+          }
         },
         {
-          "question": { "en": "How to handle invalid JSON in production?", "zh-CN": "生产环境遇到非法 JSON 怎么办？" },
-          "answer": { "en": "Validate, one repair retry, then failover model; never silently pass bad payloads downstream.", "zh-CN": "校验 → 一次修复重试 → 切模型；切勿把坏 payload 静默传给下游。" }
+          "question": {
+            "en": "How to handle invalid JSON in production?",
+            "zh-CN": "生产环境遇到非法 JSON 怎么办？"
+          },
+          "answer": {
+            "en": "Validate, one repair retry, then failover model; never silently pass bad payloads downstream.",
+            "zh-CN": "校验 → 一次修复重试 → 切模型；切勿把坏 payload 静默传给下游。"
+          }
         },
         {
-          "question": { "en": "Is this official API documentation?", "zh-CN": "这是官方 API 文档吗？" },
-          "answer": { "en": "No—independent Swift Horse engineering guide. Defer to vendor docs for parameters.", "zh-CN": "否——Swift Horse 独立工程指南。参数以厂商文档为准。" }
+          "question": {
+            "en": "Is this official API documentation?",
+            "zh-CN": "这是官方 API 文档吗？"
+          },
+          "answer": {
+            "en": "No—independent Swift Horse engineering guide. Defer to vendor docs for parameters.",
+            "zh-CN": "否——Swift Horse 独立工程指南。参数以厂商文档为准。"
+          }
         }
       ]
     },
     {
       "slug": "glm-4-selection-guide-2026",
       "publishedAt": "2026-08-24",
-      "updatedAt": "2026-08-24",
-      "tags": ["comparison", "guide", "enterprise"],
-      "relatedModelIds": ["glm-5"],
+      "updatedAt": "2026-09-05",
+      "tags": [
+        "comparison",
+        "guide",
+        "enterprise"
+      ],
+      "relatedModelIds": [
+        "glm-4-7",
+        "glm-5"
+      ],
       "title": {
-        "en": "GLM-4 & GLM-4.7 Selection Guide 2026: Zhipu China LLM for Agents",
-        "zh-CN": "2026 GLM-4/GLM-4.7 选型指南：智谱中国大模型与企业Agent"
+        "en": "GLM-4.7 & GLM-4 Guide 2026: Zhipu China LLM for Agents",
+        "zh-CN": "2026 GLM-4.7/GLM-4 指南：智谱中国大模型与企业Agent"
       },
       "excerpt": {
-        "en": "GLM-4 and GLM-4.7 China LLM selection in 2026—when to pick Zhipu GLM over DeepSeek, Qwen, or Kimi for agents, JSON, and enterprise API access from overseas.",
-        "zh-CN": "2026 GLM-4/GLM-4.7 选型：何时选智谱 GLM 而非 DeepSeek/Qwen/Kimi——Agent、JSON 与海外企业 API 接入。"
+        "en": "GLM-4.7 and GLM-4 China LLM guide—when Zhipu beats DeepSeek, Qwen or Kimi for agents, JSON & enterprise APIs from overseas. Independent selection checklist.",
+        "zh-CN": "GLM-4.7/GLM-4 选型——Agent、JSON 与海外企业 API 场景何时选智谱而非 DeepSeek/Qwen/Kimi。独立选型清单。"
       },
       "sections": [
         {
-          "heading": { "en": "Key takeaways", "zh-CN": "本文要点" },
-          "paragraphs": [{
-            "en": "GLM-4.x and GLM-4.7 lines from Zhipu (智谱) often appear in enterprise agent shortlists for stable function calling and structured output—not always for raw coding cost leadership. Match GLM when tool schemas, Chinese enterprise workflows, or IDE integrations matter. Compare with Kimi on long docs (/en/articles/kimi-vs-glm-selection-guide-2026) and DeepSeek on coding value (/en/articles/china-llm-coding-assistant-2026).",
-            "zh-CN": "智谱 GLM-4.x/GLM-4.7 常进企业 Agent 短名单——稳定 function calling 与结构化输出，不一定在编程性价比上领先。工具 schema、中文企业流程、IDE 集成优先时选 GLM。长文档对比 Kimi；编程性价比对比 DeepSeek。"
-          }]
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "GLM-4.x and GLM-4.7 lines from Zhipu (智谱) often appear in enterprise agent shortlists for stable function calling and structured output—not always for raw coding cost leadership. Match GLM when tool schemas, Chinese enterprise workflows, or IDE integrations matter. Compare with Kimi on long docs (/en/articles/kimi-vs-glm-selection-guide-2026) and DeepSeek on coding value (/en/articles/china-llm-coding-assistant-2026).",
+              "zh-CN": "智谱 GLM-4.x/GLM-4.7 常进企业 Agent 短名单——稳定 function calling 与结构化输出，不一定在编程性价比上领先。工具 schema、中文企业流程、IDE 集成优先时选 GLM。长文档对比 Kimi；编程性价比对比 DeepSeek。"
+            }
+          ]
         },
         {
-          "heading": { "en": "GLM-4 vs GLM-4.7 vs GLM-5 tier", "zh-CN": "GLM-4 vs GLM-4.7 vs GLM-5 档" },
-          "paragraphs": [{
-            "en": "Model IDs change on the live console—never copy blog names blindly. GLM-4.7 class models often target upgraded reasoning and tool stability; GLM-5 tier targets flagship enterprise workloads. Run the same 20-prompt bake-off on your stack before contracts. API setup: /en/articles/glm-api-overseas-quickstart-2026.",
-            "zh-CN": "模型 ID 以控制台为准——勿照抄博客名。GLM-4.7 档常面向升级推理与 tool 稳定性；GLM-5 面向旗舰企业负载。签约前用相同 20 条 prompt 对比。接入见 glm-api-overseas-quickstart-2026。"
-          }]
+          "heading": {
+            "en": "GLM-4 vs GLM-4.7 vs GLM-5 tier",
+            "zh-CN": "GLM-4 vs GLM-4.7 vs GLM-5 档"
+          },
+          "paragraphs": [
+            {
+              "en": "Model IDs change on the live console—never copy blog names blindly. GLM-4.7 class models often target upgraded reasoning and tool stability; GLM-5 tier targets flagship enterprise workloads. Run the same 20-prompt bake-off on your stack before contracts. API setup: /en/articles/glm-api-overseas-quickstart-2026.",
+              "zh-CN": "模型 ID 以控制台为准——勿照抄博客名。GLM-4.7 档常面向升级推理与 tool 稳定性；GLM-5 面向旗舰企业负载。签约前用相同 20 条 prompt 对比。接入见 glm-api-overseas-quickstart-2026。"
+            }
+          ]
         },
         {
-          "heading": { "en": "When GLM wins vs loses", "zh-CN": "何时选 GLM / 何时不选" },
-          "paragraphs": [{
-            "en": "Wins: enterprise agents, JSON-heavy pipelines, regulated CN-language products. Loses: ultra-long PDF-only workloads (test Kimi), lowest-cost coding at scale (test DeepSeek), Alibaba-native multimodal (test Qwen). Hybrid stacks are normal.",
-            "zh-CN": "适合：企业 Agent、JSON 密集流水线、强合规中文产品。不适合：仅超长 PDF（测 Kimi）、大规模最低成本编程（测 DeepSeek）、阿里系多模态（测 Qwen）。混合栈常见。"
-          }]
+          "heading": {
+            "en": "When GLM wins vs loses",
+            "zh-CN": "何时选 GLM / 何时不选"
+          },
+          "paragraphs": [
+            {
+              "en": "Wins: enterprise agents, JSON-heavy pipelines, regulated CN-language products. Loses: ultra-long PDF-only workloads (test Kimi), lowest-cost coding at scale (test DeepSeek), Alibaba-native multimodal (test Qwen). Hybrid stacks are normal.",
+              "zh-CN": "适合：企业 Agent、JSON 密集流水线、强合规中文产品。不适合：仅超长 PDF（测 Kimi）、大规模最低成本编程（测 DeepSeek）、阿里系多模态（测 Qwen）。混合栈常见。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Next steps on Swift Horse", "zh-CN": "在 Swift Horse 上的下一步" },
-          "paragraphs": [{
-            "en": "GLM model page /en/models → vs Kimi /en/articles/kimi-vs-glm-selection-guide-2026 → JSON /en/articles/china-llm-json-structured-output-2026 → best-of /en/articles/best-chinese-llm-2026.",
-            "zh-CN": "GLM 详情 /models → vs Kimi → JSON 指南 → best-chinese-llm-2026。"
-          }]
+          "heading": {
+            "en": "Next steps on Swift Horse",
+            "zh-CN": "在 Swift Horse 上的下一步"
+          },
+          "paragraphs": [
+            {
+              "en": "GLM model page /en/models → vs Kimi /en/articles/kimi-vs-glm-selection-guide-2026 → JSON /en/articles/china-llm-json-structured-output-2026 → best-of /en/articles/best-chinese-llm-2026.",
+              "zh-CN": "GLM 详情 /models → vs Kimi → JSON 指南 → best-chinese-llm-2026。"
+            }
+          ]
         }
       ],
       "faqs": [
         {
-          "question": { "en": "What is GLM-4.7?", "zh-CN": "GLM-4.7 是什么？" },
-          "answer": { "en": "A Zhipu model generation in the GLM-4 family—verify exact IDs and specs on the official BigModel console before production.", "zh-CN": "智谱 GLM-4 系列中的一代——生产前以 BigModel 控制台 ID 与规格为准。" }
+          "question": {
+            "en": "What is GLM-4.7?",
+            "zh-CN": "GLM-4.7 是什么？"
+          },
+          "answer": {
+            "en": "A Zhipu model generation in the GLM-4 family—verify exact IDs and specs on the official BigModel console before production.",
+            "zh-CN": "智谱 GLM-4 系列中的一代——生产前以 BigModel 控制台 ID 与规格为准。"
+          }
         },
         {
-          "question": { "en": "GLM-4 vs DeepSeek for coding?", "zh-CN": "编程 GLM-4 还是 DeepSeek？" },
-          "answer": { "en": "Many teams POC DeepSeek first for coding cost; keep GLM for agents. See /en/articles/deepseek-vs-qwen-selection-guide.", "zh-CN": "多数团队编程先 POC DeepSeek；Agent 保留 GLM。见 deepseek-vs-qwen-selection-guide。" }
+          "question": {
+            "en": "GLM-4 vs DeepSeek for coding?",
+            "zh-CN": "编程 GLM-4 还是 DeepSeek？"
+          },
+          "answer": {
+            "en": "Many teams POC DeepSeek first for coding cost; keep GLM for agents. See /en/articles/deepseek-vs-qwen-selection-guide.",
+            "zh-CN": "多数团队编程先 POC DeepSeek；Agent 保留 GLM。见 deepseek-vs-qwen-selection-guide。"
+          }
         },
         {
-          "question": { "en": "Can overseas teams use GLM-4 API?", "zh-CN": "海外能用 GLM-4 API 吗？" },
-          "answer": { "en": "Often yes via Zhipu international paths—confirm eligibility, latency, and compliance. See /en/articles/glm-api-overseas-quickstart-2026.", "zh-CN": "多数可走智谱国际路径——确认资格、延迟与合规。见 glm-api-overseas-quickstart-2026。" }
+          "question": {
+            "en": "Can overseas teams use GLM-4 API?",
+            "zh-CN": "海外能用 GLM-4 API 吗？"
+          },
+          "answer": {
+            "en": "Often yes via Zhipu international paths—confirm eligibility, latency, and compliance. See /en/articles/glm-api-overseas-quickstart-2026.",
+            "zh-CN": "多数可走智谱国际路径——确认资格、延迟与合规。见 glm-api-overseas-quickstart-2026。"
+          }
         },
         {
-          "question": { "en": "Is this official Zhipu documentation?", "zh-CN": "这是智谱官方文档吗？" },
-          "answer": { "en": "No—independent Swift Horse selection guide.", "zh-CN": "否——Swift Horse 独立选型指南。" }
+          "question": {
+            "en": "Is this official Zhipu documentation?",
+            "zh-CN": "这是智谱官方文档吗？"
+          },
+          "answer": {
+            "en": "No—independent Swift Horse selection guide.",
+            "zh-CN": "否——Swift Horse 独立选型指南。"
+          }
         }
       ]
     },
@@ -2258,8 +3300,17 @@
       "slug": "china-llm-optimization-guide-2026",
       "publishedAt": "2026-08-24",
       "updatedAt": "2026-08-24",
-      "tags": ["guide", "api", "enterprise"],
-      "relatedModelIds": ["deepseek-v4-pro", "qwen3-max", "glm-5", "kimi-k2-6"],
+      "tags": [
+        "guide",
+        "api",
+        "enterprise"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro",
+        "qwen3-max",
+        "glm-5",
+        "kimi-k2-6"
+      ],
       "title": {
         "en": "China LLM Optimization 2026: Cut Latency, Tokens & Cost in Production",
         "zh-CN": "2026中国大模型优化指南：生产环境降延迟、省Token与成本"
@@ -2270,50 +3321,94 @@
       },
       "sections": [
         {
-          "heading": { "en": "Key takeaways", "zh-CN": "本文要点" },
-          "paragraphs": [{
-            "en": "China LLM optimization is not one magic prompt—it is routing, context discipline, and measurement. Most savings come from shorter contexts (RAG), cheaper models for easy tasks, streaming for perceived speed, and failover that does not retry forever. Align with pricing (/en/articles/china-llm-api-pricing-2026) and latency plans (/en/articles/china-llm-latency-failover-2026).",
-            "zh-CN": "China LLM 优化不是一句 magic prompt——而是路由、上下文纪律与度量。最大节省来自更短上下文（RAG）、简单任务用小模型、流式改善体感、有限重试的 failover。配合定价与延迟指南。"
-          }]
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "China LLM optimization is not one magic prompt—it is routing, context discipline, and measurement. Most savings come from shorter contexts (RAG), cheaper models for easy tasks, streaming for perceived speed, and failover that does not retry forever. Align with pricing (/en/articles/china-llm-api-pricing-2026) and latency plans (/en/articles/china-llm-latency-failover-2026).",
+              "zh-CN": "China LLM 优化不是一句 magic prompt——而是路由、上下文纪律与度量。最大节省来自更短上下文（RAG）、简单任务用小模型、流式改善体感、有限重试的 failover。配合定价与延迟指南。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Optimization levers", "zh-CN": "优化杠杆" },
-          "paragraphs": [{
-            "en": "Model routing: small/fast model for classify/extract, large model for hard reasoning. Context: chunk + retrieve instead of stuffing PDFs (/en/articles/china-llm-rag-selection-guide). Output caps: limit max_tokens on batch jobs. Cache: safe repeated system prompts and retrieval snippets. Agents: reduce tool-round trips (/en/articles/china-llm-agent-tool-calling-2026).",
-            "zh-CN": "路由：分类/抽取用小快模型，难推理用大模型。上下文：分块+检索而非硬塞 PDF。输出上限：批任务限 max_tokens。缓存：可安全缓存的 system 与检索片段。Agent：减少 tool 轮次。"
-          }]
+          "heading": {
+            "en": "Optimization levers",
+            "zh-CN": "优化杠杆"
+          },
+          "paragraphs": [
+            {
+              "en": "Model routing: small/fast model for classify/extract, large model for hard reasoning. Context: chunk + retrieve instead of stuffing PDFs (/en/articles/china-llm-rag-selection-guide). Output caps: limit max_tokens on batch jobs. Cache: safe repeated system prompts and retrieval snippets. Agents: reduce tool-round trips (/en/articles/china-llm-agent-tool-calling-2026).",
+              "zh-CN": "路由：分类/抽取用小快模型，难推理用大模型。上下文：分块+检索而非硬塞 PDF。输出上限：批任务限 max_tokens。缓存：可安全缓存的 system 与检索片段。Agent：减少 tool 轮次。"
+            }
+          ]
         },
         {
-          "heading": { "en": "7-day optimization sprint", "zh-CN": "7 天优化冲刺" },
-          "paragraphs": [{
-            "en": "Baseline P95 latency + token spend → pick top 3 expensive routes → add routing or RAG → re-measure → document model IDs in runbooks. Compare vendors only after you optimize one path—see /en/articles/best-chinese-llm-2026.",
-            "zh-CN": "基线 P95 与 token  spend → 找最贵 3 条路径 → 加路由或 RAG → 复测 → runbook 写清模型 ID。单路径优化后再比厂商。"
-          }]
+          "heading": {
+            "en": "7-day optimization sprint",
+            "zh-CN": "7 天优化冲刺"
+          },
+          "paragraphs": [
+            {
+              "en": "Baseline P95 latency + token spend → pick top 3 expensive routes → add routing or RAG → re-measure → document model IDs in runbooks. Compare vendors only after you optimize one path—see /en/articles/best-chinese-llm-2026.",
+              "zh-CN": "基线 P95 与 token  spend → 找最贵 3 条路径 → 加路由或 RAG → 复测 → runbook 写清模型 ID。单路径优化后再比厂商。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Next steps on Swift Horse", "zh-CN": "在 Swift Horse 上的下一步" },
-          "paragraphs": [{
-            "en": "Pricing /en/articles/china-llm-api-pricing-2026 → SDK /en/articles/china-llm-openai-compatible-sdk-2026 → coding /en/articles/china-llm-coding-assistant-2026 → match /en/match.",
-            "zh-CN": "定价 → SDK → 编程选型 → /match。"
-          }]
+          "heading": {
+            "en": "Next steps on Swift Horse",
+            "zh-CN": "在 Swift Horse 上的下一步"
+          },
+          "paragraphs": [
+            {
+              "en": "Pricing /en/articles/china-llm-api-pricing-2026 → SDK /en/articles/china-llm-openai-compatible-sdk-2026 → coding /en/articles/china-llm-coding-assistant-2026 → match /en/match.",
+              "zh-CN": "定价 → SDK → 编程选型 → /match。"
+            }
+          ]
         }
       ],
       "faqs": [
         {
-          "question": { "en": "What is China LLM optimization?", "zh-CN": "China LLM 优化指什么？" },
-          "answer": { "en": "Production techniques to reduce latency, tokens, and cost while keeping quality—routing, RAG, caching, and caps.", "zh-CN": "在保持质量前提下降延迟、token 与成本的工程手段——路由、RAG、缓存与上限。" }
+          "question": {
+            "en": "What is China LLM optimization?",
+            "zh-CN": "China LLM 优化指什么？"
+          },
+          "answer": {
+            "en": "Production techniques to reduce latency, tokens, and cost while keeping quality—routing, RAG, caching, and caps.",
+            "zh-CN": "在保持质量前提下降延迟、token 与成本的工程手段——路由、RAG、缓存与上限。"
+          }
         },
         {
-          "question": { "en": "Which Chinese LLM is cheapest to optimize?", "zh-CN": "哪个国产模型最容易优化成本？" },
-          "answer": { "en": "Depends on workload—DeepSeek often wins coding $/task; Qwen/GLM win other axes. Measure your traces.", "zh-CN": "看负载——DeepSeek 常在编程 $/任务领先；Qwen/GLM 在其他轴更强。用 trace 度量。" }
+          "question": {
+            "en": "Which Chinese LLM is cheapest to optimize?",
+            "zh-CN": "哪个国产模型最容易优化成本？"
+          },
+          "answer": {
+            "en": "Depends on workload—DeepSeek often wins coding $/task; Qwen/GLM win other axes. Measure your traces.",
+            "zh-CN": "看负载——DeepSeek 常在编程 $/任务领先；Qwen/GLM 在其他轴更强。用 trace 度量。"
+          }
         },
         {
-          "question": { "en": "Does optimization replace model selection?", "zh-CN": "优化能替代选型吗？" },
-          "answer": { "en": "No—optimize within a shortlist chosen for your use case. See /en/articles/china-ai-llm-guide-2026.", "zh-CN": "不能——在已按场景筛出的短名单内优化。见 china-ai-llm-guide-2026。" }
+          "question": {
+            "en": "Does optimization replace model selection?",
+            "zh-CN": "优化能替代选型吗？"
+          },
+          "answer": {
+            "en": "No—optimize within a shortlist chosen for your use case. See /en/articles/china-ai-llm-guide-2026.",
+            "zh-CN": "不能——在已按场景筛出的短名单内优化。见 china-ai-llm-guide-2026。"
+          }
         },
         {
-          "question": { "en": "Is this vendor-specific tuning?", "zh-CN": "这是某一家厂商的调参文档吗？" },
-          "answer": { "en": "No—vendor-agnostic Swift Horse guide; confirm limits on each API console.", "zh-CN": "否——Swift Horse 厂商无关指南；限制以各 API 控制台为准。" }
+          "question": {
+            "en": "Is this vendor-specific tuning?",
+            "zh-CN": "这是某一家厂商的调参文档吗？"
+          },
+          "answer": {
+            "en": "No—vendor-agnostic Swift Horse guide; confirm limits on each API console.",
+            "zh-CN": "否——Swift Horse 厂商无关指南；限制以各 API 控制台为准。"
+          }
         }
       ]
     },
@@ -2321,8 +3416,14 @@
       "slug": "deepseek-r1-reasoning-guide-2026",
       "publishedAt": "2026-08-24",
       "updatedAt": "2026-08-24",
-      "tags": ["guide", "api", "comparison"],
-      "relatedModelIds": ["deepseek-v4-pro"],
+      "tags": [
+        "guide",
+        "api",
+        "comparison"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro"
+      ],
       "title": {
         "en": "DeepSeek R1 & Reasoning Models 2026: China LLM for Hard Problems",
         "zh-CN": "2026 DeepSeek R1 与推理模型：中国大模型复杂问题选型"
@@ -2333,50 +3434,94 @@
       },
       "sections": [
         {
-          "heading": { "en": "Key takeaways", "zh-CN": "本文要点" },
-          "paragraphs": [{
-            "en": "DeepSeek R1 and reasoning-oriented China LLM endpoints trade latency and output tokens for harder multi-step tasks. Use them for math, complex code refactors, and planning—not for every chat turn. Chat/cheap models handle routing; reasoners handle the hard slice. Confirm live model names on platform.deepseek.com—Swift Horse does not mirror private catalogs.",
-            "zh-CN": "DeepSeek R1 等推理端点用延迟与 output token 换更难的多步任务。适合数学、复杂重构与规划——不适合每一轮对话。路由/便宜模型做分发，推理模型做难切片。模型名以 platform.deepseek.com 为准。"
-          }]
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "DeepSeek R1 and reasoning-oriented China LLM endpoints trade latency and output tokens for harder multi-step tasks. Use them for math, complex code refactors, and planning—not for every chat turn. Chat/cheap models handle routing; reasoners handle the hard slice. Confirm live model names on platform.deepseek.com—Swift Horse does not mirror private catalogs.",
+              "zh-CN": "DeepSeek R1 等推理端点用延迟与 output token 换更难的多步任务。适合数学、复杂重构与规划——不适合每一轮对话。路由/便宜模型做分发，推理模型做难切片。模型名以 platform.deepseek.com 为准。"
+            }
+          ]
         },
         {
-          "heading": { "en": "When to enable reasoning", "zh-CN": "何时开推理" },
-          "paragraphs": [{
-            "en": "Enable when pass@1 on standard chat models fails and errors are logic—not tool-schema. Skip for FAQ bots, simple extraction, and high-QPS paths. Budget output-heavy traces (/en/articles/china-llm-api-pricing-2026). Pair with agents carefully (/en/articles/china-llm-agent-tool-calling-2026).",
-            "zh-CN": "普通对话模型 pass@1 失败且错误在逻辑而非 tool schema 时启用。FAQ、简单抽取、高 QPS 路径不必开。预算 output 重的 trace。与 Agent 联用时谨慎。"
-          }]
+          "heading": {
+            "en": "When to enable reasoning",
+            "zh-CN": "何时开推理"
+          },
+          "paragraphs": [
+            {
+              "en": "Enable when pass@1 on standard chat models fails and errors are logic—not tool-schema. Skip for FAQ bots, simple extraction, and high-QPS paths. Budget output-heavy traces (/en/articles/china-llm-api-pricing-2026). Pair with agents carefully (/en/articles/china-llm-agent-tool-calling-2026).",
+              "zh-CN": "普通对话模型 pass@1 失败且错误在逻辑而非 tool schema 时启用。FAQ、简单抽取、高 QPS 路径不必开。预算 output 重的 trace。与 Agent 联用时谨慎。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Overseas setup", "zh-CN": "海外接入" },
-          "paragraphs": [{
-            "en": "Start from /en/articles/deepseek-api-overseas-quickstart-2026 → test reasoner vs chat on identical 15 tasks → measure P95 and $/success → add failover (/en/articles/china-llm-latency-failover-2026). Compare vs Qwen reasoners in your bake-off.",
-            "zh-CN": "从 deepseek-api-overseas-quickstart 开始 → 相同 15 任务对比 reasoner/chat → 测 P95 与 $/成功 → 加 failover。与 Qwen 推理档一并对比。"
-          }]
+          "heading": {
+            "en": "Overseas setup",
+            "zh-CN": "海外接入"
+          },
+          "paragraphs": [
+            {
+              "en": "Start from /en/articles/deepseek-api-overseas-quickstart-2026 → test reasoner vs chat on identical 15 tasks → measure P95 and $/success → add failover (/en/articles/china-llm-latency-failover-2026). Compare vs Qwen reasoners in your bake-off.",
+              "zh-CN": "从 deepseek-api-overseas-quickstart 开始 → 相同 15 任务对比 reasoner/chat → 测 P95 与 $/成功 → 加 failover。与 Qwen 推理档一并对比。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Next steps on Swift Horse", "zh-CN": "在 Swift Horse 上的下一步" },
-          "paragraphs": [{
-            "en": "DeepSeek model page /en/models → vs Qwen /en/articles/deepseek-vs-qwen-selection-guide → coding /en/articles/china-llm-coding-assistant-2026.",
-            "zh-CN": "DeepSeek /models → vs Qwen → 编程指南。"
-          }]
+          "heading": {
+            "en": "Next steps on Swift Horse",
+            "zh-CN": "在 Swift Horse 上的下一步"
+          },
+          "paragraphs": [
+            {
+              "en": "DeepSeek model page /en/models → vs Qwen /en/articles/deepseek-vs-qwen-selection-guide → coding /en/articles/china-llm-coding-assistant-2026.",
+              "zh-CN": "DeepSeek /models → vs Qwen → 编程指南。"
+            }
+          ]
         }
       ],
       "faqs": [
         {
-          "question": { "en": "What is DeepSeek R1?", "zh-CN": "DeepSeek R1 是什么？" },
-          "answer": { "en": "A DeepSeek reasoning model line—use for hard multi-step tasks; verify current API IDs on official docs.", "zh-CN": "DeepSeek 推理模型线——用于难多步任务；API ID 以官方文档为准。" }
+          "question": {
+            "en": "What is DeepSeek R1?",
+            "zh-CN": "DeepSeek R1 是什么？"
+          },
+          "answer": {
+            "en": "A DeepSeek reasoning model line—use for hard multi-step tasks; verify current API IDs on official docs.",
+            "zh-CN": "DeepSeek 推理模型线——用于难多步任务；API ID 以官方文档为准。"
+          }
         },
         {
-          "question": { "en": "Is R1 worth the extra cost?", "zh-CN": "R1 值得额外成本吗？" },
-          "answer": { "en": "Only on tasks where chat models fail—measure $/successful task, not demos.", "zh-CN": "仅在对话模型失败的任务上——看 $/成功任务，不看 demo。" }
+          "question": {
+            "en": "Is R1 worth the extra cost?",
+            "zh-CN": "R1 值得额外成本吗？"
+          },
+          "answer": {
+            "en": "Only on tasks where chat models fail—measure $/successful task, not demos.",
+            "zh-CN": "仅在对话模型失败的任务上——看 $/成功任务，不看 demo。"
+          }
         },
         {
-          "question": { "en": "R1 vs standard DeepSeek chat?", "zh-CN": "R1 还是普通 DeepSeek 对话？" },
-          "answer": { "en": "Route easy queries to chat; send hard queries to R1/reasoner endpoints.", "zh-CN": "简单走 chat；难的走 R1/推理端点。" }
+          "question": {
+            "en": "R1 vs standard DeepSeek chat?",
+            "zh-CN": "R1 还是普通 DeepSeek 对话？"
+          },
+          "answer": {
+            "en": "Route easy queries to chat; send hard queries to R1/reasoner endpoints.",
+            "zh-CN": "简单走 chat；难的走 R1/推理端点。"
+          }
         },
         {
-          "question": { "en": "Is this official DeepSeek documentation?", "zh-CN": "这是 DeepSeek 官方文档吗？" },
-          "answer": { "en": "No—independent Swift Horse guide.", "zh-CN": "否——Swift Horse 独立指南。" }
+          "question": {
+            "en": "Is this official DeepSeek documentation?",
+            "zh-CN": "这是 DeepSeek 官方文档吗？"
+          },
+          "answer": {
+            "en": "No—independent Swift Horse guide.",
+            "zh-CN": "否——Swift Horse 独立指南。"
+          }
         }
       ]
     },
@@ -2384,8 +3529,16 @@
       "slug": "china-llm-embedding-rag-setup-2026",
       "publishedAt": "2026-08-24",
       "updatedAt": "2026-08-24",
-      "tags": ["guide", "api", "enterprise"],
-      "relatedModelIds": ["qwen3-max", "deepseek-v4-pro", "glm-5"],
+      "tags": [
+        "guide",
+        "api",
+        "enterprise"
+      ],
+      "relatedModelIds": [
+        "qwen3-max",
+        "deepseek-v4-pro",
+        "glm-5"
+      ],
       "title": {
         "en": "China LLM Embeddings & RAG Setup 2026: Vector Search from Overseas",
         "zh-CN": "2026中国大模型 Embedding 与 RAG 搭建：海外向量检索接入"
@@ -2396,50 +3549,94 @@
       },
       "sections": [
         {
-          "heading": { "en": "Key takeaways", "zh-CN": "本文要点" },
-          "paragraphs": [{
-            "en": "RAG with Chinese LLMs splits into embeddings (retrieval) and chat (generation). Pick embedding models that match your languages—CN-heavy corpora often favor Qwen/GLM paths; verify dimensions and rate limits on vendor consoles. This guide complements model selection (/en/articles/china-llm-rag-selection-guide) with setup steps, not another leaderboard.",
-            "zh-CN": "国产 RAG 分 embedding（检索）与 chat（生成）。语料偏中文常看 Qwen/GLM 路径；维度与限流以控制台为准。本文在 rag-selection 选型之上补搭建步骤，非又一榜单。"
-          }]
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "RAG with Chinese LLMs splits into embeddings (retrieval) and chat (generation). Pick embedding models that match your languages—CN-heavy corpora often favor Qwen/GLM paths; verify dimensions and rate limits on vendor consoles. This guide complements model selection (/en/articles/china-llm-rag-selection-guide) with setup steps, not another leaderboard.",
+              "zh-CN": "国产 RAG 分 embedding（检索）与 chat（生成）。语料偏中文常看 Qwen/GLM 路径；维度与限流以控制台为准。本文在 rag-selection 选型之上补搭建步骤，非又一榜单。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Minimal RAG pipeline", "zh-CN": "最小 RAG 流水线" },
-          "paragraphs": [{
-            "en": "Ingest → chunk (500–1k tokens with overlap) → embed → store (pgvector, Pinecone, etc.) → retrieve top-k → inject into chat prompt → generate with your primary China LLM. Log citations and failures. Optimize tokens (/en/articles/china-llm-optimization-guide-2026).",
-            "zh-CN": "入库 → 分块（500–1k token 重叠）→ 向量化 → 存储 → 取 top-k → 注入 chat prompt → 主模型生成。记录引用与失败。配合 optimization 指南。"
-          }]
+          "heading": {
+            "en": "Minimal RAG pipeline",
+            "zh-CN": "最小 RAG 流水线"
+          },
+          "paragraphs": [
+            {
+              "en": "Ingest → chunk (500–1k tokens with overlap) → embed → store (pgvector, Pinecone, etc.) → retrieve top-k → inject into chat prompt → generate with your primary China LLM. Log citations and failures. Optimize tokens (/en/articles/china-llm-optimization-guide-2026).",
+              "zh-CN": "入库 → 分块（500–1k token 重叠）→ 向量化 → 存储 → 取 top-k → 注入 chat prompt → 主模型生成。记录引用与失败。配合 optimization 指南。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Vendor notes", "zh-CN": "厂商提示" },
-          "paragraphs": [{
-            "en": "Qwen/DashScope and others expose embedding endpoints—confirm names beside chat IDs (/en/articles/qwen-api-overseas-quickstart-2026). Do not assume OpenAI embedding parity—test CN/EN query-doc pairs. For compliance-sensitive docs, review /en/articles/china-llm-compliance-overseas-2026.",
-            "zh-CN": "Qwen/DashScope 等提供 embedding 端点——与对话 ID 分开确认。勿假设与 OpenAI embedding 完全一致——测中英 query-doc 对。敏感文档见合规指南。"
-          }]
+          "heading": {
+            "en": "Vendor notes",
+            "zh-CN": "厂商提示"
+          },
+          "paragraphs": [
+            {
+              "en": "Qwen/DashScope and others expose embedding endpoints—confirm names beside chat IDs (/en/articles/qwen-api-overseas-quickstart-2026). Do not assume OpenAI embedding parity—test CN/EN query-doc pairs. For compliance-sensitive docs, review /en/articles/china-llm-compliance-overseas-2026.",
+              "zh-CN": "Qwen/DashScope 等提供 embedding 端点——与对话 ID 分开确认。勿假设与 OpenAI embedding 完全一致——测中英 query-doc 对。敏感文档见合规指南。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Next steps on Swift Horse", "zh-CN": "在 Swift Horse 上的下一步" },
-          "paragraphs": [{
-            "en": "RAG selection /en/articles/china-llm-rag-selection-guide → SDK /en/articles/china-llm-openai-compatible-sdk-2026 → JSON /en/articles/china-llm-json-structured-output-2026.",
-            "zh-CN": "RAG 选型 → SDK → JSON 指南。"
-          }]
+          "heading": {
+            "en": "Next steps on Swift Horse",
+            "zh-CN": "在 Swift Horse 上的下一步"
+          },
+          "paragraphs": [
+            {
+              "en": "RAG selection /en/articles/china-llm-rag-selection-guide → SDK /en/articles/china-llm-openai-compatible-sdk-2026 → JSON /en/articles/china-llm-json-structured-output-2026.",
+              "zh-CN": "RAG 选型 → SDK → JSON 指南。"
+            }
+          ]
         }
       ],
       "faqs": [
         {
-          "question": { "en": "Which China LLM has the best embeddings?", "zh-CN": "哪个国产 embedding 最好？" },
-          "answer": { "en": "No universal winner—evaluate recall@k on your bilingual corpus.", "zh-CN": "无 universal 答案——用双语语料评 recall@k。" }
+          "question": {
+            "en": "Which China LLM has the best embeddings?",
+            "zh-CN": "哪个国产 embedding 最好？"
+          },
+          "answer": {
+            "en": "No universal winner—evaluate recall@k on your bilingual corpus.",
+            "zh-CN": "无 universal 答案——用双语语料评 recall@k。"
+          }
         },
         {
-          "question": { "en": "Can I use OpenAI embeddings with Chinese LLM chat?", "zh-CN": "能用 OpenAI embedding + 国产 chat 吗？" },
-          "answer": { "en": "Yes in hybrid stacks—ensure language alignment and compliance for stored vectors.", "zh-CN": "混合栈可以——注意语言对齐与向量存储合规。" }
+          "question": {
+            "en": "Can I use OpenAI embeddings with Chinese LLM chat?",
+            "zh-CN": "能用 OpenAI embedding + 国产 chat 吗？"
+          },
+          "answer": {
+            "en": "Yes in hybrid stacks—ensure language alignment and compliance for stored vectors.",
+            "zh-CN": "混合栈可以——注意语言对齐与向量存储合规。"
+          }
         },
         {
-          "question": { "en": "RAG vs long-context Kimi?", "zh-CN": "RAG 还是 Kimi 长上下文？" },
-          "answer": { "en": "RAG scales cost for large corpora; long-context suits few huge docs—see /en/articles/kimi-api-overseas-quickstart-2026.", "zh-CN": "大语料 RAG 更省；少量超大文档可看 Kimi 长上下文。" }
+          "question": {
+            "en": "RAG vs long-context Kimi?",
+            "zh-CN": "RAG 还是 Kimi 长上下文？"
+          },
+          "answer": {
+            "en": "RAG scales cost for large corpora; long-context suits few huge docs—see /en/articles/kimi-api-overseas-quickstart-2026.",
+            "zh-CN": "大语料 RAG 更省；少量超大文档可看 Kimi 长上下文。"
+          }
         },
         {
-          "question": { "en": "Is this official embedding documentation?", "zh-CN": "这是官方 embedding 文档吗？" },
-          "answer": { "en": "No—independent Swift Horse setup guide.", "zh-CN": "否——Swift Horse 独立搭建指南。" }
+          "question": {
+            "en": "Is this official embedding documentation?",
+            "zh-CN": "这是官方 embedding 文档吗？"
+          },
+          "answer": {
+            "en": "No—independent Swift Horse setup guide.",
+            "zh-CN": "否——Swift Horse 独立搭建指南。"
+          }
         }
       ]
     },
@@ -2447,8 +3644,17 @@
       "slug": "china-llm-enterprise-buyers-guide-2026",
       "publishedAt": "2026-08-24",
       "updatedAt": "2026-08-24",
-      "tags": ["guide", "enterprise", "global"],
-      "relatedModelIds": ["deepseek-v4-pro", "qwen3-max", "glm-5", "kimi-k2-6"],
+      "tags": [
+        "guide",
+        "enterprise",
+        "global"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro",
+        "qwen3-max",
+        "glm-5",
+        "kimi-k2-6"
+      ],
       "title": {
         "en": "China LLM Enterprise Buyer's Guide 2026: Procurement for Global Teams",
         "zh-CN": "2026中国大模型企业采购指南：全球团队选型与签约"
@@ -2459,50 +3665,94 @@
       },
       "sections": [
         {
-          "heading": { "en": "Key takeaways", "zh-CN": "本文要点" },
-          "paragraphs": [{
-            "en": "Enterprise buyers of Chinese LLMs need more than benchmarks: legal review, data flow diagrams, incident response, and exit plans (failover vendors). Run a bounded pilot—one workload, measurable KPIs, 2–4 weeks—before multi-year commits. Swift Horse helps shortlist; counsel and vendor contracts decide go-live.",
-            "zh-CN": "企业采购国产大模型不止看榜单：法务、数据流、 incident 响应与退出方案（failover 厂商）。先做有界试点——单负载、可测 KPI、2–4 周——再长合同。Swift Horse 助短名单；法务与合同决定上线。"
-          }]
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "Enterprise buyers of Chinese LLMs need more than benchmarks: legal review, data flow diagrams, incident response, and exit plans (failover vendors). Run a bounded pilot—one workload, measurable KPIs, 2–4 weeks—before multi-year commits. Swift Horse helps shortlist; counsel and vendor contracts decide go-live.",
+              "zh-CN": "企业采购国产大模型不止看榜单：法务、数据流、 incident 响应与退出方案（failover 厂商）。先做有界试点——单负载、可测 KPI、2–4 周——再长合同。Swift Horse 助短名单；法务与合同决定上线。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Procurement checklist", "zh-CN": "采购清单" },
-          "paragraphs": [{
-            "en": "Data classification → residency/regions → subprocessors → logging/retention → rate limits & SLA → security certs (ask vendors) → pilot success metrics → production failover (/en/articles/china-llm-latency-failover-2026) → compliance path (/en/articles/china-llm-compliance-overseas-2026).",
-            "zh-CN": "数据分级 → 驻留/区域 → 子处理器 → 日志留存 → 限流与 SLA → 安全认证（向厂商索取）→ 试点 KPI → 生产 failover → 合规路径。"
-          }]
+          "heading": {
+            "en": "Procurement checklist",
+            "zh-CN": "采购清单"
+          },
+          "paragraphs": [
+            {
+              "en": "Data classification → residency/regions → subprocessors → logging/retention → rate limits & SLA → security certs (ask vendors) → pilot success metrics → production failover (/en/articles/china-llm-latency-failover-2026) → compliance path (/en/articles/china-llm-compliance-overseas-2026).",
+              "zh-CN": "数据分级 → 驻留/区域 → 子处理器 → 日志留存 → 限流与 SLA → 安全认证（向厂商索取）→ 试点 KPI → 生产 failover → 合规路径。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Vendor comparison frame", "zh-CN": "厂商对比框架" },
-          "paragraphs": [{
-            "en": "DeepSeek: coding/value POCs. Qwen: Alibaba ecosystem & multimodal. GLM: enterprise agents/JSON. Kimi: long-document pilots. Document trade-offs in a scorecard—see /en/articles/top-chinese-ai-models-2026 and /en/articles/best-chinese-llm-2026.",
-            "zh-CN": "DeepSeek：编程/性价比 POC。Qwen：阿里生态与多模态。GLM：企业 Agent/JSON。Kimi：长文档试点。用记分卡记录权衡。"
-          }]
+          "heading": {
+            "en": "Vendor comparison frame",
+            "zh-CN": "厂商对比框架"
+          },
+          "paragraphs": [
+            {
+              "en": "DeepSeek: coding/value POCs. Qwen: Alibaba ecosystem & multimodal. GLM: enterprise agents/JSON. Kimi: long-document pilots. Document trade-offs in a scorecard—see /en/articles/top-chinese-ai-models-2026 and /en/articles/best-chinese-llm-2026.",
+              "zh-CN": "DeepSeek：编程/性价比 POC。Qwen：阿里生态与多模态。GLM：企业 Agent/JSON。Kimi：长文档试点。用记分卡记录权衡。"
+            }
+          ]
         },
         {
-          "heading": { "en": "Next steps on Swift Horse", "zh-CN": "在 Swift Horse 上的下一步" },
-          "paragraphs": [{
-            "en": "Onboarding /en/articles/overseas-team-china-llm-onboarding → pricing /en/articles/china-llm-api-pricing-2026 → global index /en/articles/chinese-llms-global-guide-2026 → /en/services.",
-            "zh-CN": "出海接入 onboarding → 定价 → 全球索引 → /services。"
-          }]
+          "heading": {
+            "en": "Next steps on Swift Horse",
+            "zh-CN": "在 Swift Horse 上的下一步"
+          },
+          "paragraphs": [
+            {
+              "en": "Onboarding /en/articles/overseas-team-china-llm-onboarding → pricing /en/articles/china-llm-api-pricing-2026 → global index /en/articles/chinese-llms-global-guide-2026 → /en/services.",
+              "zh-CN": "出海接入 onboarding → 定价 → 全球索引 → /services。"
+            }
+          ]
         }
       ],
       "faqs": [
         {
-          "question": { "en": "Can a US/EU company buy China LLM APIs?", "zh-CN": "美欧公司能采购国产 API 吗？" },
-          "answer": { "en": "Often yes with legal review—data types, regions, and contracts vary. See /en/articles/china-llm-compliance-overseas-2026.", "zh-CN": "多数可以但需法务审查——数据类型、区域与合同各异。见 compliance-overseas-2026。" }
+          "question": {
+            "en": "Can a US/EU company buy China LLM APIs?",
+            "zh-CN": "美欧公司能采购国产 API 吗？"
+          },
+          "answer": {
+            "en": "Often yes with legal review—data types, regions, and contracts vary. See /en/articles/china-llm-compliance-overseas-2026.",
+            "zh-CN": "多数可以但需法务审查——数据类型、区域与合同各异。见 compliance-overseas-2026。"
+          }
         },
         {
-          "question": { "en": "How long should an enterprise pilot run?", "zh-CN": "企业试点要多长？" },
-          "answer": { "en": "Typically 2–4 weeks on one workload with frozen prompts and KPIs.", "zh-CN": "通常单负载 2–4 周，prompt 与 KPI 冻结。" }
+          "question": {
+            "en": "How long should an enterprise pilot run?",
+            "zh-CN": "企业试点要多长？"
+          },
+          "answer": {
+            "en": "Typically 2–4 weeks on one workload with frozen prompts and KPIs.",
+            "zh-CN": "通常单负载 2–4 周，prompt 与 KPI 冻结。"
+          }
         },
         {
-          "question": { "en": "Single vendor or multi-vendor?", "zh-CN": "单厂商还是多厂商？" },
-          "answer": { "en": "Multi-vendor failover is common for production—budget two APIs in procurement.", "zh-CN": "生产常见多厂商 failover——采购时预算两家 API。" }
+          "question": {
+            "en": "Single vendor or multi-vendor?",
+            "zh-CN": "单厂商还是多厂商？"
+          },
+          "answer": {
+            "en": "Multi-vendor failover is common for production—budget two APIs in procurement.",
+            "zh-CN": "生产常见多厂商 failover——采购时预算两家 API。"
+          }
         },
         {
-          "question": { "en": "Is this legal or procurement advice?", "zh-CN": "这是法律或采购建议吗？" },
-          "answer": { "en": "No—independent Swift Horse buyer's framework; involve your counsel.", "zh-CN": "否——Swift Horse 独立框架；请咨询您的法务。" }
+          "question": {
+            "en": "Is this legal or procurement advice?",
+            "zh-CN": "这是法律或采购建议吗？"
+          },
+          "answer": {
+            "en": "No—independent Swift Horse buyer's framework; involve your counsel.",
+            "zh-CN": "否——Swift Horse 独立框架；请咨询您的法务。"
+          }
         }
       ]
     }

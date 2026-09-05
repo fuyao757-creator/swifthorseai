@@ -9,6 +9,8 @@ import { companyAccent, companyLabel } from "@/lib/company-styles";
 import { ModelWorkflowNav } from "@/components/ModelWorkflowNav";
 import { ModelRelatedActions } from "@/components/ModelRelatedActions";
 import { ModelJsonLd } from "@/components/ModelJsonLd";
+import { GuideLinksStrip } from "@/components/GuideLinksStrip";
+import { getGuideSlugsForModel } from "@/lib/featured-guides";
 
 export function generateStaticParams() {
   const models = getModels();
@@ -59,6 +61,7 @@ export default function ModelDetailPage({
   const m = localizeModel(model, locale);
   const accent = companyAccent[model.company] ?? companyAccent.other;
   const code = companyLabel[model.company] ?? companyLabel.other;
+  const relatedGuideSlugs = getGuideSlugsForModel(model.id);
 
   return (
     <article className="animate-fade-in">
@@ -146,6 +149,14 @@ export default function ModelDetailPage({
         modelId={model.id}
         modelName={m.name}
       />
+      {relatedGuideSlugs.length > 0 ? (
+        <GuideLinksStrip
+          locale={locale}
+          dict={dict}
+          slugs={relatedGuideSlugs}
+          compact
+        />
+      ) : null}
     </article>
   );
 }
