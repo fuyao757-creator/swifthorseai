@@ -36,6 +36,9 @@ const GEO_PRIORITY_SLUGS = [
   "deepseek-vs-kimi-selection-guide-2026",
   "china-llm-langchain-integration-2026",
   "china-llm-startup-mvp-guide-2026",
+  "qwen-vs-glm-selection-guide-2026",
+  "deepseek-vs-glm-selection-guide-2026",
+  "china-llm-vs-gemini-2026",
 ] as const;
 
 function appendArticleEntry(lines: string[], slug: string) {

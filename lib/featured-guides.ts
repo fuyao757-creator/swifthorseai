@@ -55,6 +55,11 @@ const RELATED_GUIDE_POOL = [
   "china-llm-translation-localization-2026",
   "china-llm-startup-mvp-guide-2026",
   "china-llm-fine-tuning-vs-api-2026",
+  "qwen-vs-glm-selection-guide-2026",
+  "deepseek-vs-glm-selection-guide-2026",
+  "china-llm-prompt-engineering-2026",
+  "china-llm-vs-gemini-2026",
+  "china-llm-customer-support-chatbot-2026",
   "deepseek-vs-qwen-selection-guide",
   "china-llm-rag-selection-guide",
 ] as const;
