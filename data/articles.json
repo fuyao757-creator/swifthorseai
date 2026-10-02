@@ -841,7 +841,7 @@
     {
       "slug": "top-chinese-ai-models-2026",
       "publishedAt": "2026-05-27",
-      "updatedAt": "2026-09-05",
+      "updatedAt": "2026-09-29",
       "tags": [
         "guide",
         "comparison",
@@ -854,12 +854,12 @@
         "glm-5"
       ],
       "title": {
-        "en": "Top Chinese AI Models 2026: China LLM Use-Case Matrix",
-        "zh-CN": "2026顶级中国AI模型：China LLM 场景矩阵"
+        "en": "Top Chinese LLMs 2026: Ranking by Use Case, Not One Score",
+        "zh-CN": "2026 Top Chinese LLMs：按场景排名，不是单一总分"
       },
       "excerpt": {
-        "en": "Top Chinese AI models 2026—China LLM picks by use case (coding, RAG, agents, multimodal), not one score. Compare DeepSeek, Qwen, Kimi, GLM for global teams.",
-        "zh-CN": "2026顶级中国 AI 模型——按编程/RAG/Agent/多模态场景选 China LLM，而非单一分数。对比 DeepSeek、Qwen、Kimi、GLM。"
+        "en": "Top Chinese LLMs 2026 and a China LLM ranking by use case—coding, RAG, agents, multimodal—not one score. Compare DeepSeek, Qwen, Kimi, GLM for global teams.",
+        "zh-CN": "2026 Top Chinese LLMs：按编程、RAG、Agent、多模态做 China LLM 排名，而不是单一分数。对比 DeepSeek、Qwen、Kimi、GLM。"
       },
       "sections": [
         {
@@ -871,6 +871,34 @@
             {
               "en": "Top Chinese AI models in 2026 are chosen by workload, not one universal ranking. This matrix maps code/reasoning, Chinese & multilingual UX, ultra-long documents, and enterprise agents to commonly shortlisted China LLM lines: DeepSeek, Qwen, Kimi, GLM—plus pointers to ERNIE, Doubao, and Spark in the Swift Horse catalog. Independent index; verify specs on vendor sites.",
               "zh-CN": "2026年「最强」取决于场景，而非单一总分。本文用矩阵对照代码推理、中文/多语言、超长文档、企业 Agent 与 DeepSeek、Qwen、Kimi、GLM 等；ERNIE、豆包、讯飞等见模型库。独立索引，规格以官网为准。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Top Chinese LLMs: how this ranking works",
+            "zh-CN": "Top Chinese LLMs：这份排名怎么读"
+          },
+          "paragraphs": [
+            {
+              "en": "“Top Chinese LLMs” and “Chinese LLM ranking” do not have one official order. This page ranks four lines by the job they are filed under in the Swift Horse catalog, then tells you what the catalog actually publishes. ERNIE, Doubao, and Spark stay in the model library; they are not dropped, they are just not the four names these English queries usually mean.",
+              "zh-CN": "「Top Chinese LLMs」和「中国大模型排名」没有官方名次。本页按 Swift Horse 目录里的任务归类排四家，并写明目录实际公开了什么。文心、豆包、讯飞仍在模型库里，只是英文查询通常不指这几个名字。"
+            },
+            {
+              "en": "Code and reasoning: DeepSeek-V4-Pro. Catalog figures: 1.6T total parameters, about 49B active per inference, 1M token context, 384K max output, very low call cost. Use it as the first coding candidate, then keep a failover.",
+              "zh-CN": "代码与推理：DeepSeek-V4-Pro。目录数字：总参数 1.6 万亿，每次推理激活约 490 亿，100 万 token 上下文，最大输出 384K，调用成本极低。把它当作编程的第一候选，并保留一个 failover。"
+            },
+            {
+              "en": "Multimodal and enterprise apps on Alibaba Cloud: Qwen3-Max / Qwen-Max. Catalog scope: overall capability plus image, video, and audio. Parameter count and context are not disclosed—do not copy them from a 2024 list.",
+              "zh-CN": "阿里云上的多模态与企业应用：Qwen3-Max / Qwen-Max。目录范围：综合能力，以及图像、视频、音频。参数量和上下文未公开，不要从 2024 年清单里抄。"
+            },
+            {
+              "en": "Agents and tools: GLM-4.7, with GLM-5 as the heavier flagship tier and GLM-4V for vision. GLM-4.7’s published scope is agentic coding, long-horizon planning, and tool use. Specs beyond that are not in this catalog.",
+              "zh-CN": "Agent 与工具：GLM-4.7；更重的旗舰档是 GLM-5，视觉是 GLM-4V。GLM-4.7 已公开的范围是 Agentic Coding、长程规划和工具调用。除此之外的规格不在本目录。"
+            },
+            {
+              "en": "Long context and many agents: Kimi K2.6. Catalog scope: swarm mode, collaboration on the order of hundreds of agents, multimodal input, thinking, and code. Context length is not published here, so the ranking is “test this line on your documents,” not “it has N tokens.”",
+              "zh-CN": "长上下文与大量 Agent：Kimi K2.6。目录范围：蜂群模式、约百级 Agent 协同、多模态、思考与代码。上下文长度本页未公布，所以排名的意思是「用你的文档测这一家」，不是「它有 N 个 token」。"
             }
           ]
         },
@@ -1985,7 +2013,7 @@
     {
       "slug": "china-llm-coding-assistant-2026",
       "publishedAt": "2026-07-20",
-      "updatedAt": "2026-09-05",
+      "updatedAt": "2026-09-29",
       "tags": [
         "guide",
         "comparison",
@@ -1997,8 +2025,8 @@
         "glm-5"
       ],
       "title": {
-        "en": "Best China LLM for Coding 2026: DeepSeek vs Qwen vs GLM",
-        "zh-CN": "2026最佳编程中国大模型：DeepSeek vs Qwen vs GLM"
+        "en": "Top Code LLM China 2026: DeepSeek vs Qwen vs GLM",
+        "zh-CN": "2026 中国编程大模型：DeepSeek vs Qwen vs GLM"
       },
       "excerpt": {
         "en": "Top China LLM for coding in 2026—DeepSeek vs Qwen vs GLM for repos, tests, agents & API cost. POC checklist for overseas engineering teams shipping with Chinese LLMs.",
@@ -2014,6 +2042,26 @@
             {
               "en": "For coding, Chinese LLMs often compete with ChatGPT on value: DeepSeek frequently leads public coding suites; Qwen is strong in multilingual repos and Alibaba-cloud stacks; GLM appears in enterprise IDE/agent pilots with stable function calling. Rank by your repo language mix, test harness, and output-token budget—not a single leaderboard screenshot.",
               "zh-CN": "编程场景下，国产大模型常在性价比上与 ChatGPT 竞争：DeepSeek 公开编程评测常见领先；Qwen 适合多语言仓库与阿里云栈；GLM 常见于企业 IDE/Agent 试点且 function calling 稳。按语言组合、测试脚手架与 output 预算排序——不要只看一张榜单截图。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Top code LLM in China: where to start",
+            "zh-CN": "中国编程大模型：从哪一家开始"
+          },
+          "paragraphs": [
+            {
+              "en": "“Top code LLM China” is a starting order for a one-day POC, not a medal table. Begin with DeepSeek-V4-Pro when the task is bugfix, refactor, or test generation and cost matters. The catalog gives it a 1M token context and 384K max output, with about 49B parameters active out of 1.6T. That is enough to hold a sizable repo slice in one request. Score pass rate, lint errors, and output tokens before you declare it the primary.",
+              "zh-CN": "「中国编程大模型谁最强」在这里是一天 POC 的起步顺序，不是奖牌榜。修 bug、重构、写测试且在意成本时，从 DeepSeek-V4-Pro 开始。目录给出 100 万 token 上下文、最大输出 384K，1.6 万亿参数里每次推理激活约 490 亿。一次请求可以放下不小的仓库片段。先记通过率、lint 错误和输出 token，再决定它是不是主用。"
+            },
+            {
+              "en": "Switch the first test to GLM-4.7 when the job is agentic coding: the model must plan across steps and call tools, not only emit a patch. This catalog does not publish GLM-4.7’s context length, so measure how much of the repo you can actually send. Keep DeepSeek as the cost failover if GLM’s tool success is only slightly better.",
+              "zh-CN": "任务是 Agentic Coding、要跨步骤规划并调用工具、而不只是吐一个补丁时，第一轮改测 GLM-4.7。本目录没有公布 GLM-4.7 的上下文长度，所以要自己量一次请求能送进多少仓库。如果 GLM 的工具成功率只是略好，就把 DeepSeek 留作成本 failover。"
+            },
+            {
+              "en": "Use Qwen3-Max when the repo is multimodal (screenshots, design files, or audio notes) or the team already bills through Alibaba Cloud. Overall capability and image/video/audio understanding are what the catalog states. It does not state a parameter count, so do not treat a third-party “top code LLM” table as a spec sheet.",
+              "zh-CN": "仓库是多模态（截图、设计稿或音频备注），或团队已经走阿里云账单时，用 Qwen3-Max。目录写明的是综合能力以及图、视频、音频理解，没有写参数量。不要把第三方「编程大模型排行」表格当成规格表。"
             }
           ]
         },
@@ -2582,7 +2630,7 @@
     {
       "slug": "best-chinese-llm-2026",
       "publishedAt": "2026-07-29",
-      "updatedAt": "2026-09-05",
+      "updatedAt": "2026-09-29",
       "tags": [
         "guide",
         "comparison",
@@ -2613,6 +2661,34 @@
             {
               "en": "There is no universal “best Chinese LLM” in 2026. DeepSeek often leads coding value POCs; Qwen fits Alibaba-cloud and multimodal stacks; GLM is common for enterprise agents; Kimi for ultra-long documents. Rank by your prompts, P95 latency, tool success, and monthly token cost—not one screenshot of a public bench. Swift Horse is an independent index.",
               "zh-CN": "2026 没有 universal 的「最佳国产大模型」。DeepSeek 常领跑编程性价比 POC；Qwen 适合阿里云与多模态；GLM 常见于企业 Agent；Kimi 偏超长文档。按自有 prompt、P95、tool 成功率与月 token 成本排序。Swift Horse 为独立索引。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Best Chinese LLM shortlist by job",
+            "zh-CN": "按任务看最佳中国大模型短名单"
+          },
+          "paragraphs": [
+            {
+              "en": "People also search “best llm chinese.” It is the same question: which China LLM to try first for a job, not which name sits at #1. The four lines below are the shortlist this index can actually describe from public catalog fields. Confirm live model IDs, prices, and context limits on each vendor console before you commit.",
+              "zh-CN": "「best llm chinese」和「最佳中国大模型」是同一个问题：某类任务先试哪一家，不是谁排第 1。下面四家是本索引能用公开目录字段说清楚的短名单。签约前以各厂商控制台的模型 ID、价格和上下文为准。"
+            },
+            {
+              "en": "Coding and hard reasoning: start the POC on DeepSeek-V4-Pro. This catalog lists 1.6 trillion total parameters with about 49 billion active per inference, a 1 million token context, and 384K maximum output, aimed at complex reasoning at very low call cost. That makes it the usual first test for code and analysis. It is not an automatic winner on long documents or every enterprise agent stack.",
+              "zh-CN": "编程和难推理：POC 从 DeepSeek-V4-Pro 开始。本目录记载总参数 1.6 万亿、每次推理激活约 490 亿、100 万 token 上下文、最大输出 384K，面向复杂推理且调用成本极低。它适合作为代码和分析的第一轮测试，不自动赢得长文档或所有企业 Agent。"
+            },
+            {
+              "en": "Multimodal work and Alibaba Cloud stacks: shortlist Qwen3-Max / Qwen-Max. The catalog describes it as the Tongyi flagship for overall capability plus image, video, and audio understanding, positioned for enterprise apps. Parameter count and context length are not publicly disclosed here—do not invent them from old blog tables.",
+              "zh-CN": "多模态和阿里云栈：把 Qwen3-Max / Qwen-Max 放进短名单。目录将其标为通义旗舰，综合能力强，覆盖图、视频和音频理解，面向企业应用。参数量和上下文长度此处未公开，不要用旧博客表格去补。"
+            },
+            {
+              "en": "Enterprise agents and tool use: shortlist GLM-4.7. The catalog lists agentic coding, long-horizon planning, tool collaboration, code, natural dialogue, and immersive writing. Searches for “GLM-4” and “GLM 4.7” are this Zhipu family; GLM-5 is the separate flagship tier on this site. Public parameter and context figures for GLM-4.7 are not disclosed—verify the console ID. Vision work points at GLM-4V, not at the text agent page.",
+              "zh-CN": "企业 Agent 和工具调用：把 GLM-4.7 放进短名单。目录记载 Agentic Coding、长程规划、工具协同、代码、自然对话和沉浸式写作。搜 GLM-4 或 GLM 4.7 指的是智谱这一族；GLM-5 是本站单独的旗舰档。GLM-4.7 的参数和上下文未公开，以控制台 ID 为准。视觉任务看 GLM-4V，不是文本 Agent 页。"
+            },
+            {
+              "en": "Long documents and many agents at once: shortlist Kimi K2.6. The catalog describes Moonshot’s flagship with swarm mode, collaboration on the order of hundreds of agents, multimodal input, thinking, and code. Context length is not published on this page, so test your own PDFs instead of assuming a number from a 2024 roundup.",
+              "zh-CN": "长文档和大量 Agent 并行：把 Kimi K2.6 放进短名单。目录将其标为月之暗面旗舰，含蜂群模式、约百级 Agent 协同、多模态、思考与代码。本页未公布上下文长度，用你自己的 PDF 实测，不要沿用 2024 年综述里的数字。"
             }
           ]
         },
@@ -2660,8 +2736,18 @@
             "zh-CN": "2026 最好的中国大模型是哪个？"
           },
           "answer": {
-            "en": "No single winner—DeepSeek, Qwen, GLM, and Kimi lead different jobs. Run a short bake-off on your data.",
-            "zh-CN": "无单一冠军——四家各擅胜场。用自有数据做短对比。"
+            "en": "No single winner. For a first POC, this index starts coding on DeepSeek-V4-Pro (1M context in the catalog), multimodal work on Qwen3-Max, agents on GLM-4.7, and long documents or many agents on Kimi K2.6. Score your own prompts.",
+            "zh-CN": "没有单一冠军。本索引的第一轮 POC：编程用 DeepSeek-V4-Pro（目录记载 100 万上下文），多模态用 Qwen3-Max，Agent 用 GLM-4.7，长文档或多 Agent 用 Kimi K2.6。用你自己的 prompt 打分。"
+          }
+        },
+        {
+          "question": {
+            "en": "Is “best llm chinese” a different ranking?",
+            "zh-CN": "best llm chinese 是另一份排名吗？"
+          },
+          "answer": {
+            "en": "No. It is the same shortlist intent as “best Chinese LLM.” Pick by job, then confirm model IDs on the vendor console.",
+            "zh-CN": "不是。它和「最佳中国大模型」是同一类选型意图。按任务选，再以厂商控制台的模型 ID 为准。"
           }
         },
         {
@@ -3185,7 +3271,7 @@
     {
       "slug": "glm-4-selection-guide-2026",
       "publishedAt": "2026-08-24",
-      "updatedAt": "2026-09-05",
+      "updatedAt": "2026-09-29",
       "tags": [
         "comparison",
         "guide",
@@ -3213,6 +3299,26 @@
             {
               "en": "GLM-4.x and GLM-4.7 lines from Zhipu (智谱) often appear in enterprise agent shortlists for stable function calling and structured output—not always for raw coding cost leadership. Match GLM when tool schemas, Chinese enterprise workflows, or IDE integrations matter. Compare with Kimi on long docs (/en/articles/kimi-vs-glm-selection-guide-2026) and DeepSeek on coding value (/en/articles/china-llm-coding-assistant-2026).",
               "zh-CN": "智谱 GLM-4.x/GLM-4.7 常进企业 Agent 短名单——稳定 function calling 与结构化输出，不一定在编程性价比上领先。工具 schema、中文企业流程、IDE 集成优先时选 GLM。长文档对比 Kimi；编程性价比对比 DeepSeek。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "GLM-4 and GLM-4.7 on this index",
+            "zh-CN": "本索引里的 GLM-4 与 GLM-4.7"
+          },
+          "paragraphs": [
+            {
+              "en": "Queries “glm-4” and “glm 4.7” land on the same family. On Swift Horse, GLM-4.7 is the text-and-agent entry: agentic coding, long-horizon planning, tool collaboration, code generation, natural dialogue, and immersive writing. Parameter count, context window, and knowledge cutoff are not publicly disclosed in the catalog. Treat any number you see elsewhere as unverified until the BigModel console shows it.",
+              "zh-CN": "查询 glm-4 和 glm 4.7 落在同一族。在 Swift Horse 上，GLM-4.7 是文本与 Agent 条目：Agentic Coding、长程规划、工具协同、代码生成、自然对话和沉浸式写作。目录未公开参数量、上下文和知识截止。别处看到的数字，在 BigModel 控制台出现之前都视为未核实。"
+            },
+            {
+              "en": "GLM-4V is the vision sibling in this catalog, not a drop-in replacement for GLM-4.7 text agents. GLM-5 is listed separately as the flagship tier for heavier enterprise workloads. If a blog says “GLM-4” without a version, open both the GLM-4.7 page and the GLM-5 page and match the ID your API key actually returns.",
+              "zh-CN": "GLM-4V 是本目录里的视觉型号，不能替代 GLM-4.7 的文本 Agent。GLM-5 单独列为更重的企业旗舰档。博客只写 GLM-4、不写版本时，同时打开 GLM-4.7 和 GLM-5 页，对照你的 API key 实际返回的 ID。"
+            },
+            {
+              "en": "A useful GLM-4 test is twenty of your own tool-calling prompts: same JSON schema, same tools, scored on schema validity, tool success, and whether the plan stays coherent after several steps. Put DeepSeek-V4-Pro beside it when the job is mostly coding cost, and Kimi K2.6 beside it when the job is a long PDF plus agents. Keep the winner only if it beats the alternate on your logs, not on a public screenshot.",
+              "zh-CN": "有用的 GLM-4 测试是你自己的 20 条工具调用 prompt：同一 JSON schema、同一组工具，按 schema 是否合法、工具是否成功、多步之后计划是否还连贯来打分。任务主要是编程成本时并列 DeepSeek-V4-Pro；任务是长 PDF 加 Agent 时并列 Kimi K2.6。只有日志上赢过对照，才留作主用，不要看公开截图。"
             }
           ]
         },

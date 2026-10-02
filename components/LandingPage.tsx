@@ -178,6 +178,9 @@ export function LandingPage({
 
 
             <p className="landing-hero-subtitle">{l.heroSubtitle}</p>
+            <p className="landing-hero-query mt-3 max-w-xl text-pretty text-sm leading-relaxed text-ink-muted">
+              {l.heroQueryIntro}
+            </p>
 
 
 

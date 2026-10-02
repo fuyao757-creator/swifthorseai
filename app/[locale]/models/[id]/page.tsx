@@ -29,11 +29,28 @@ export async function generateMetadata({
   const model = getModelById(params.id);
   if (!model) return { title: "Not Found" };
   const m = localizeModel(model, locale);
+  const isGlmFamily = params.id === "glm-4-7" || params.id === "glm-4v";
+  const isGlmFlagship = params.id === "glm-5";
+  const title = isGlmFamily
+    ? locale === "zh-CN"
+      ? `${m.name}（GLM-4）智谱中国大模型规格 - ${dict.siteName}`
+      : `${m.name} (GLM-4) — Zhipu China LLM specs | ${dict.siteName}`
+    : isGlmFlagship
+      ? locale === "zh-CN"
+        ? `${m.name} — 智谱中国大模型旗舰 - ${dict.siteName}`
+        : `${m.name} — Zhipu China LLM flagship | ${dict.siteName}`
+      : `${m.name} - ${dict.siteName}`;
+  const description =
+    isGlmFamily || isGlmFlagship
+      ? locale === "zh-CN"
+        ? `${m.tagline}。GLM-4 / GLM-4.7 与 GLM-5 的公开规格与选型说明，独立索引，模型 ID 以智谱控制台为准。`
+        : `${m.tagline}. GLM-4, GLM-4.7, and GLM-5 public specs for overseas teams. Independent index—confirm model IDs on the Zhipu console.`
+      : m.tagline;
   return buildPageMetadata({
     locale,
     path: `/models/${params.id}`,
-    title: `${m.name} - ${dict.siteName}`,
-    description: m.tagline,
+    title,
+    description,
   });
 }
 

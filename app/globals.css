@@ -1802,11 +1802,11 @@
   }
 
   .landing-hero-line-single {
-    @apply inline whitespace-nowrap;
+    @apply block w-full max-w-full;
   }
 
   .landing-hero-title-parts {
-    @apply inline-flex flex-wrap items-baseline gap-x-[0.15em];
+    @apply flex w-full max-w-full flex-wrap items-baseline gap-x-[0.22em] gap-y-1;
   }
 
   .landing-hero-subtitle {
