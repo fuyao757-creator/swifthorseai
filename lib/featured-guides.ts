@@ -62,6 +62,12 @@ const RELATED_GUIDE_POOL = [
   "china-llm-customer-support-chatbot-2026",
   "deepseek-vs-qwen-selection-guide",
   "china-llm-rag-selection-guide",
+  "what-is-a-chinese-llm-2026",
+  "qwen3-selection-guide-2026",
+  "deepseek-v4-selection-guide-2026",
+  "kimi-k2-selection-guide-2026",
+  "china-llm-context-window-2026",
+  "china-llm-seo-geo-citation-2026",
 ] as const;
 
 const prioritySet = new Set<string>(RELATED_PRIORITY_SLUGS);

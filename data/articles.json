@@ -5007,6 +5007,650 @@
           }
         }
       ]
+    },
+    {
+      "slug": "what-is-a-chinese-llm-2026",
+      "publishedAt": "2026-10-03",
+      "updatedAt": "2026-10-03",
+      "tags": [
+        "guide",
+        "global"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro",
+        "qwen3-max",
+        "glm-4-7",
+        "kimi-k2-6"
+      ],
+      "title": {
+        "en": "What Is a Chinese LLM in 2026? China LLM Definition",
+        "zh-CN": "什么是中国大模型？2026 Chinese LLM 定义"
+      },
+      "excerpt": {
+        "en": "A Chinese LLM (China LLM) is a large language model from a China-based lab such as DeepSeek, Alibaba Qwen, Zhipu GLM, or Moonshot Kimi. This index defines the term by vendor and job, not by one leaderboard.",
+        "zh-CN": "中国大模型（Chinese LLM / China LLM）指深度求索、阿里通义、智谱、月之暗面等中国实验室发布的大语言模型。本索引按厂商和任务定义，不按单一榜单。"
+      },
+      "sections": [
+        {
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "A Chinese LLM, also searched as China LLM or Chinese LLMs, is a large language model trained and shipped by a company based in China. In 2026 the names global teams actually shortlist are DeepSeek, Qwen (Alibaba), GLM (Zhipu), and Kimi (Moonshot). The label is about origin and vendor, not a promise that one model is best at every job.",
+              "zh-CN": "中国大模型，英文常写 Chinese LLM 或 China LLM，指中国公司训练并对外提供的大语言模型。2026 年全球团队真正会放进短名单的名字是 DeepSeek、通义 Qwen（阿里）、GLM（智谱）和 Kimi（月之暗面）。这个称呼说的是来源和厂商，不是承诺某一家在所有任务上都最强。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "What the term includes",
+            "zh-CN": "这个词包含什么"
+          },
+          "paragraphs": [
+            {
+              "en": "Use “Chinese LLM” for the model family and the API you can call: DeepSeek-V4-Pro, Qwen3-Max, GLM-4.7, Kimi K2.6, and the other rows in the Swift Horse catalog. It also covers open-weight checkpoints some of those labs publish, and hosted APIs on the vendor console or a cloud marketplace. It does not mean every model that can speak Chinese. GPT, Claude, and Gemini can answer in Chinese and are not Chinese LLMs.",
+              "zh-CN": "用「中国大模型」指模型系列和你能调用的 API：DeepSeek-V4-Pro、Qwen3-Max、GLM-4.7、Kimi K2.6，以及 Swift Horse 目录里的其他条目。也包括这些实验室公开的权重，以及厂商控制台或云市场上的托管 API。它不等于「能说中文的模型」。GPT、Claude、Gemini 可以用中文回答，但不是中国大模型。"
+            },
+            {
+              "en": "A useful citation names four fields: vendor, model ID, the job you tested, and whether the spec is published. On this index, DeepSeek-V4-Pro lists 1.6T total parameters with about 49B active and a 1M-token context. Qwen3-Max, GLM-4.7, and Kimi K2.6 do not publish parameter count or context length here. Say “not disclosed” instead of copying an old blog number.",
+              "zh-CN": "一条能被引用的说法要带四个字段：厂商、模型 ID、你测的任务，以及规格是否公开。本索引里 DeepSeek-V4-Pro 记载总参数 1.6 万亿、每次推理激活约 490 亿、100 万 token 上下文。Qwen3-Max、GLM-4.7、Kimi K2.6 在此未公布参数量或上下文长度。写「未公开」，不要抄旧博客里的数字。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "How to choose after the definition",
+            "zh-CN": "定义之后怎么选"
+          },
+          "paragraphs": [
+            {
+              "en": "Coding and hard reasoning: start with DeepSeek-V4-Pro. Multimodal work on an Alibaba stack: Qwen3-Max. Enterprise agents and tools: GLM-4.7. Long jobs with many agents: Kimi K2.6. The comparison article is /en/articles/best-chinese-llm-2026. Model pages live at /en/models/{id}.",
+              "zh-CN": "编程和难推理：从 DeepSeek-V4-Pro 开始。阿里云栈上的多模态：Qwen3-Max。企业 Agent 和工具：GLM-4.7。长任务、多 Agent：Kimi K2.6。对照文见 /zh-CN/articles/best-chinese-llm-2026。模型页在 /zh-CN/models/{id}。"
+            }
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": {
+            "en": "What is a Chinese LLM?",
+            "zh-CN": "什么是中国大模型？"
+          },
+          "answer": {
+            "en": "A large language model from a China-based lab. The 2026 shortlist on this index is DeepSeek, Qwen, GLM, and Kimi.",
+            "zh-CN": "中国实验室发布的大语言模型。本索引 2026 年的短名单是 DeepSeek、Qwen、GLM 和 Kimi。"
+          }
+        },
+        {
+          "question": {
+            "en": "Is China LLM the same as Chinese LLM?",
+            "zh-CN": "China LLM 和 Chinese LLM 是一回事吗？"
+          },
+          "answer": {
+            "en": "Yes. Both mean models from Chinese vendors, not merely models that reply in Chinese.",
+            "zh-CN": "是。两者都指中国厂商的模型，不是仅仅能用中文回答的模型。"
+          }
+        },
+        {
+          "question": {
+            "en": "Which Chinese LLM should I try first?",
+            "zh-CN": "第一家该试哪个？"
+          },
+          "answer": {
+            "en": "Match the job. Coding: DeepSeek-V4-Pro. Multimodal: Qwen3-Max. Agents: GLM-4.7. Many agents or long workflows: Kimi K2.6.",
+            "zh-CN": "按任务。编程用 DeepSeek-V4-Pro，多模态用 Qwen3-Max，Agent 用 GLM-4.7，多 Agent 或长流程用 Kimi K2.6。"
+          }
+        },
+        {
+          "question": {
+            "en": "Is this an official definition?",
+            "zh-CN": "这是官方定义吗？"
+          },
+          "answer": {
+            "en": "No. Swift Horse is an independent index. Confirm model IDs on the vendor console.",
+            "zh-CN": "不是。Swift Horse 是独立索引。模型 ID 以厂商控制台为准。"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "qwen3-selection-guide-2026",
+      "publishedAt": "2026-10-03",
+      "updatedAt": "2026-10-03",
+      "tags": [
+        "guide",
+        "comparison",
+        "global"
+      ],
+      "relatedModelIds": [
+        "qwen3-max",
+        "qwen3-7-max",
+        "qwen-plus-flash",
+        "qwen-long"
+      ],
+      "title": {
+        "en": "Qwen3 Selection Guide 2026: Qwen-Max, Qwen3.7-Max, Qwen-Long",
+        "zh-CN": "Qwen3 选型指南 2026：Qwen-Max、Qwen3.7-Max、Qwen-Long"
+      },
+      "excerpt": {
+        "en": "Qwen3 in 2026 is a family, not one model. Start multimodal enterprise work on Qwen3-Max, long agent runs on Qwen3.7-Max, high-volume RAG on Qwen-Plus or Qwen-Flash, and 1M-token documents on Qwen-Long.",
+        "zh-CN": "2026 年的 Qwen3 是一系列模型，不是一个名字。多模态企业应用从 Qwen3-Max 开始，长周期 Agent 看 Qwen3.7-Max，高并发 RAG 用 Qwen-Plus 或 Qwen-Flash，100 万 token 文档用 Qwen-Long。"
+      },
+      "sections": [
+        {
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "There is no single Qwen3 to buy. On this catalog, Qwen3-Max / Qwen-Max is the Tongyi flagship for overall capability and image, video, and audio understanding. Qwen3.7-Max is the agent tier: coding agents, tool use, and a published 1M-token context, described for long autonomous runs. Qwen-Plus and Qwen-Flash cover cost and speed for RAG. Qwen-Long is the 1M-token document model. Parameter counts for these four are not disclosed here.",
+              "zh-CN": "没有单一的「买一个 Qwen3」。本目录里，Qwen3-Max / Qwen-Max 是通义旗舰，综合能力加上图像、视频、音频理解。Qwen3.7-Max 是 Agent 档：编程智能体、工具调用，并公开 100 万 token 上下文，面向长周期自主执行。Qwen-Plus 和 Qwen-Flash 负责 RAG 的成本与速度。Qwen-Long 是 100 万 token 的文档模型。这四档的参数量此处均未公开。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Which Qwen ID to open first",
+            "zh-CN": "先打开哪个 Qwen ID"
+          },
+          "paragraphs": [
+            {
+              "en": "Enterprise assistant with images or video: open /en/models/qwen3-max. Do not invent a context length; this page marks it undisclosed. Agent that must keep working across a long coding session: open /en/models/qwen3-7-max (Qwen3.7-Max). The catalog lists a 1M-token context and tool use. Chat, translation, or RAG at high concurrency: /en/models/qwen-plus-flash. Contract or filing review: /en/models/qwen-long, which lists 1M tokens.",
+              "zh-CN": "带图像或视频的企业助手：打开 /zh-CN/models/qwen3-max。不要编造上下文长度，该页标为未公开。需要跨长编程会话持续工作的 Agent：打开 /zh-CN/models/qwen3-7-max（Qwen3.7-Max）。目录记载 100 万 token 上下文和工具调用。高并发的对话、翻译或 RAG：/zh-CN/models/qwen-plus-flash。合同或财报审阅：/zh-CN/models/qwen-long，记载 100 万 tokens。"
+            },
+            {
+              "en": "Older URLs such as qwen3-7, qwen-plus, and qwen-flash redirect to the current IDs above. Cite the destination ID in docs and in any AI-search answer.",
+              "zh-CN": "qwen3-7、qwen-plus、qwen-flash 等旧网址会跳到上面的现用 ID。文档和 AI 搜索回答里引用跳转后的 ID。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Where Qwen is not the first test",
+            "zh-CN": "什么时候不先测 Qwen"
+          },
+          "paragraphs": [
+            {
+              "en": "If the POC is pure coding cost, run DeepSeek-V4-Pro beside Qwen: /en/articles/deepseek-v4-selection-guide-2026. If the stack is Zhipu agents rather than Alibaba Cloud, read /en/articles/qwen-vs-glm-selection-guide-2026. API setup from outside China: /en/articles/qwen-api-overseas-quickstart-2026.",
+              "zh-CN": "如果 POC 比的是编程成本，把 DeepSeek-V4-Pro 和 Qwen 一起跑：/zh-CN/articles/deepseek-v4-selection-guide-2026。如果栈是智谱 Agent 而不是阿里云，读 /zh-CN/articles/qwen-vs-glm-selection-guide-2026。境外 API 接入：/zh-CN/articles/qwen-api-overseas-quickstart-2026。"
+            }
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": {
+            "en": "Which Qwen3 model is the flagship?",
+            "zh-CN": "Qwen3 旗舰是哪一个？"
+          },
+          "answer": {
+            "en": "Qwen3-Max / Qwen-Max is the flagship tier on this index for overall and multimodal work. Qwen3.7-Max is the separate agent tier.",
+            "zh-CN": "本索引里 Qwen3-Max / Qwen-Max 是综合与多模态旗舰。Qwen3.7-Max 是单独的 Agent 档。"
+          }
+        },
+        {
+          "question": {
+            "en": "Does Qwen3-Max publish a context length?",
+            "zh-CN": "Qwen3-Max 公开上下文长度了吗？"
+          },
+          "answer": {
+            "en": "Not on this catalog. Qwen-Long and Qwen3.7-Max list 1M tokens. Confirm the console before you quote a number.",
+            "zh-CN": "本目录未公开。Qwen-Long 和 Qwen3.7-Max 记载 100 万 tokens。引用数字前以控制台为准。"
+          }
+        },
+        {
+          "question": {
+            "en": "Is Qwen-Plus the same as Qwen-Flash?",
+            "zh-CN": "Qwen-Plus 和 Qwen-Flash 是同一个吗？"
+          },
+          "answer": {
+            "en": "No. Plus is the value tier and Flash is the low-latency tier. This site keeps them on one comparison page: qwen-plus-flash.",
+            "zh-CN": "不是。Plus 是性价比档，Flash 是低延迟档。本站放在同一对比页 qwen-plus-flash。"
+          }
+        },
+        {
+          "question": {
+            "en": "Is this Alibaba’s official ranking?",
+            "zh-CN": "这是阿里官方排名吗？"
+          },
+          "answer": {
+            "en": "No. Independent Swift Horse guide. Verify IDs and prices on Alibaba Cloud Model Studio.",
+            "zh-CN": "不是。Swift Horse 独立指南。ID 和价格以阿里云百炼为准。"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "deepseek-v4-selection-guide-2026",
+      "publishedAt": "2026-10-03",
+      "updatedAt": "2026-10-03",
+      "tags": [
+        "guide",
+        "comparison",
+        "api"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro",
+        "deepseek-v4-flash",
+        "deepseek-r1",
+        "deepseek-v3"
+      ],
+      "title": {
+        "en": "DeepSeek V4 Guide 2026: V4-Pro vs V4-Flash vs R1",
+        "zh-CN": "DeepSeek V4 选型 2026：V4-Pro、V4-Flash 与 R1"
+      },
+      "excerpt": {
+        "en": "DeepSeek-V4-Pro is the reasoning flagship on this index: 1.6T total parameters, about 49B active, 1M context, 384K max output. V4-Flash is the smaller, faster 284B / 13B-active twin with the same context. R1 is the separate chain-of-thought model.",
+        "zh-CN": "本索引里 DeepSeek-V4-Pro 是推理旗舰：总参数 1.6 万亿、激活约 490 亿、100 万上下文、最大输出 384K。V4-Flash 是更小更快的 2840 亿 / 激活 130 亿，上下文相同。R1 是单独的思维链模型。"
+      },
+      "sections": [
+        {
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "Pick DeepSeek-V4-Pro when the POC is hard reasoning or coding and call cost matters. Pick DeepSeek-V4-Flash when you need the same 1M-token window and 384K max output at higher request volume. Pick DeepSeek-R1 when you need a visible chain of thought for math and logic. DeepSeek-V3 remains the earlier high-value line; its parameter count and context length are not disclosed on this catalog.",
+              "zh-CN": "POC 是难推理或编程、且在意调用成本时，选 DeepSeek-V4-Pro。需要同样的 100 万 token 窗口和 384K 最大输出、但请求量更高时，选 DeepSeek-V4-Flash。需要把思维链展示出来做数学和逻辑时，选 DeepSeek-R1。DeepSeek-V3 仍是更早的高性价比系列；本目录未公开它的参数量和上下文长度。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Published specs you can quote",
+            "zh-CN": "可以引用的公开规格"
+          },
+          "paragraphs": [
+            {
+              "en": "DeepSeek-V4-Pro: 1.6T total parameters, about 49B active per inference, 1M-token context, 384K maximum output. Page: /en/models/deepseek-v4-pro. DeepSeek-V4-Flash: 284B total, about 13B active, same 1M context and 384K max output. Page: /en/models/deepseek-v4-flash. Knowledge cutoff for both is not publicly disclosed. Do not fill that blank from memory.",
+              "zh-CN": "DeepSeek-V4-Pro：总参数 1.6 万亿，每次推理激活约 490 亿，100 万 token 上下文，最大输出 384K。页面：/zh-CN/models/deepseek-v4-pro。DeepSeek-V4-Flash：总参数 2840 亿，激活约 130 亿，同样是 100 万上下文和 384K 最大输出。页面：/zh-CN/models/deepseek-v4-flash。两者的知识截止日期均未公开。不要凭记忆填这个空。"
+            },
+            {
+              "en": "DeepSeek-R1 is the reasoning model with a visible thinking trace for math, code, and complex logic. Its parameter count and context window are not on this page: /en/models/deepseek-r1. A longer note is /en/articles/deepseek-r1-reasoning-guide-2026.",
+              "zh-CN": "DeepSeek-R1 是带可见思考过程的推理模型，面向数学、代码和复杂逻辑。本页未写参数量和上下文：/zh-CN/models/deepseek-r1。更长的说明见 /zh-CN/articles/deepseek-r1-reasoning-guide-2026。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "A one-hour bake-off",
+            "zh-CN": "一小时对照"
+          },
+          "paragraphs": [
+            {
+              "en": "Run the same 10 coding prompts on V4-Pro and V4-Flash. Score answer quality, tool success if you use tools, P95 latency, and output tokens. Add R1 only if you need the trace. Then compare the winner with one non-DeepSeek model using /en/articles/best-chinese-llm-2026. Overseas API steps: /en/articles/deepseek-api-overseas-quickstart-2026.",
+              "zh-CN": "用同样的 10 条编程 prompt 跑 V4-Pro 和 V4-Flash。记录答案质量、工具成功率（如果用了工具）、P95 延迟和输出 token。只有需要思考过程时才加 R1。然后用 /zh-CN/articles/best-chinese-llm-2026 把胜出者和一家非 DeepSeek 模型对照。境外 API 步骤：/zh-CN/articles/deepseek-api-overseas-quickstart-2026。"
+            }
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": {
+            "en": "What is DeepSeek-V4-Pro?",
+            "zh-CN": "DeepSeek-V4-Pro 是什么？"
+          },
+          "answer": {
+            "en": "The V4 high-performance edition on this index: 1.6T total / about 49B active, 1M context, 384K max output, aimed at complex reasoning at very low call cost.",
+            "zh-CN": "本索引中的 V4 高性能版：总参数 1.6 万亿 / 激活约 490 亿，100 万上下文，最大输出 384K，面向极低调用成本下的复杂推理。"
+          }
+        },
+        {
+          "question": {
+            "en": "How is V4-Flash different?",
+            "zh-CN": "V4-Flash 有什么不同？"
+          },
+          "answer": {
+            "en": "It is the speed and cost tier: 284B total / about 13B active, with the same 1M context and 384K max output.",
+            "zh-CN": "它是速度和成本档：总参数 2840 亿 / 激活约 130 亿，上下文和最大输出与 Pro 相同，都是 100 万和 384K。"
+          }
+        },
+        {
+          "question": {
+            "en": "Should I still use DeepSeek-R1?",
+            "zh-CN": "还要用 DeepSeek-R1 吗？"
+          },
+          "answer": {
+            "en": "Use R1 when the product must show a chain of thought. Use V4-Pro when you want flagship reasoning without that requirement.",
+            "zh-CN": "产品必须展示思维链时用 R1。只需要旗舰推理、不需要展示过程时用 V4-Pro。"
+          }
+        },
+        {
+          "question": {
+            "en": "Are these official DeepSeek specs?",
+            "zh-CN": "这些是深度求索官方规格吗？"
+          },
+          "answer": {
+            "en": "They are the public figures stored on Swift Horse. Re-check the DeepSeek console before a contract.",
+            "zh-CN": "这是 Swift Horse 收录的公开数字。签约前再核对深度求索控制台。"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "kimi-k2-selection-guide-2026",
+      "publishedAt": "2026-10-03",
+      "updatedAt": "2026-10-03",
+      "tags": [
+        "guide",
+        "comparison",
+        "global"
+      ],
+      "relatedModelIds": [
+        "kimi-k2-6",
+        "glm-4-7",
+        "qwen-long"
+      ],
+      "title": {
+        "en": "Kimi K2.6 Guide 2026: When to Use Moonshot’s Flagship",
+        "zh-CN": "Kimi K2.6 选型指南 2026：何时用月之暗面旗舰"
+      },
+      "excerpt": {
+        "en": "Kimi K2.6 is Moonshot’s flagship for swarm mode, collaboration on the order of hundreds of agents, multimodal input, thinking, and code. Context length is not published on this index—test your own documents.",
+        "zh-CN": "Kimi K2.6 是月之暗面旗舰，面向蜂群模式、约百级 Agent 协同、多模态输入、思考与代码。本索引未公布上下文长度，用你自己的文档实测。"
+      },
+      "sections": [
+        {
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "Choose Kimi K2.6 when the product needs many agents working at once, multimodal inputs, or a long coding and analysis workflow. Do not choose it only because older articles called Kimi the long-context model. This catalog page does not publish a context length, parameter count, or knowledge cutoff for Kimi K2.6. Quote the job, not a guessed token number.",
+              "zh-CN": "产品需要大量 Agent 同时工作、多模态输入，或很长的编码与分析流程时，选 Kimi K2.6。不要只因为旧文章把 Kimi 叫作长上下文模型就选它。本目录页没有公布 Kimi K2.6 的上下文长度、参数量或知识截止。引用任务，不要猜 token 数。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Kimi versus the other long-job options",
+            "zh-CN": "Kimi 和其他长任务选项"
+          },
+          "paragraphs": [
+            {
+              "en": "Kimi K2.6, page /en/models/kimi-k2-6: swarm mode and agent collaboration on the order of hundreds, plus multimodal understanding, thinking, and code. GLM-4.7, page /en/models/glm-4-7: one-agent work—agentic coding, long-horizon planning, and tools. Its context length is also undisclosed. Qwen-Long, page /en/models/qwen-long: the option that does publish 1M tokens, for filings and contracts rather than agent swarms.",
+              "zh-CN": "Kimi K2.6，页面 /zh-CN/models/kimi-k2-6：蜂群模式和约百级 Agent 协同，加上多模态、思考与代码。GLM-4.7，页面 /zh-CN/models/glm-4-7：单 Agent 工作，Agentic Coding、长程规划和工具。它的上下文同样未公开。Qwen-Long，页面 /zh-CN/models/qwen-long：明确公布 100 万 tokens 的选项，面向财报和合同，而不是 Agent 蜂群。"
+            },
+            {
+              "en": "Side-by-side with GLM: /en/articles/kimi-vs-glm-selection-guide-2026. With DeepSeek: /en/articles/deepseek-vs-kimi-selection-guide-2026. API from overseas: /en/articles/kimi-api-overseas-quickstart-2026.",
+              "zh-CN": "和 GLM 对照：/zh-CN/articles/kimi-vs-glm-selection-guide-2026。和 DeepSeek 对照：/zh-CN/articles/deepseek-vs-kimi-selection-guide-2026。境外 API：/zh-CN/articles/kimi-api-overseas-quickstart-2026。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "What to measure",
+            "zh-CN": "要测什么"
+          },
+          "paragraphs": [
+            {
+              "en": "Give Kimi and one alternative the same multi-file task. Record whether sub-agents finish, how many tool calls fail, and the token bill. If the task is a single PDF with a known size, also run Qwen-Long so you have one model with a published 1M window in the same sheet.",
+              "zh-CN": "给 Kimi 和另一个模型同一项多文件任务。记录子 Agent 是否完成、多少次工具调用失败，以及 token 账单。如果任务是一份尺寸已知的 PDF，同时跑 Qwen-Long，这样表里至少有一个公布了 100 万窗口的模型。"
+            }
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": {
+            "en": "What is Kimi K2.6?",
+            "zh-CN": "Kimi K2.6 是什么？"
+          },
+          "answer": {
+            "en": "Moonshot AI’s flagship on this index, with swarm mode, large-scale agent collaboration, multimodal input, thinking, and code.",
+            "zh-CN": "本索引中月之暗面的旗舰，具备蜂群模式、大规模 Agent 协同、多模态输入、思考和代码能力。"
+          }
+        },
+        {
+          "question": {
+            "en": "How long is Kimi K2.6’s context window?",
+            "zh-CN": "Kimi K2.6 的上下文有多长？"
+          },
+          "answer": {
+            "en": "Not published on Swift Horse. Do not reuse a 2024 roundup figure. Test the documents you actually have.",
+            "zh-CN": "Swift Horse 未公布。不要沿用 2024 年综述里的数字。用你实际拥有的文档来测。"
+          }
+        },
+        {
+          "question": {
+            "en": "Is Kimi better than GLM for agents?",
+            "zh-CN": "做 Agent 时 Kimi 比 GLM 好吗？"
+          },
+          "answer": {
+            "en": "Kimi K2.6 is the swarm and many-agent option. GLM-4.7 is the usual first test for a single enterprise agent. Score both on your tools.",
+            "zh-CN": "Kimi K2.6 是蜂群和多 Agent 选项。GLM-4.7 是单个企业 Agent 的常见第一轮测试。用你自己的工具给两者打分。"
+          }
+        },
+        {
+          "question": {
+            "en": "Is this a Moonshot ranking?",
+            "zh-CN": "这是月之暗面的排名吗？"
+          },
+          "answer": {
+            "en": "No. Independent Swift Horse note. Confirm the live model ID in the Kimi console.",
+            "zh-CN": "不是。Swift Horse 的独立说明。以 Kimi 控制台里的现用模型 ID 为准。"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "china-llm-context-window-2026",
+      "publishedAt": "2026-10-03",
+      "updatedAt": "2026-10-03",
+      "tags": [
+        "guide",
+        "comparison"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro",
+        "deepseek-v4-flash",
+        "qwen-long",
+        "qwen3-7-max"
+      ],
+      "title": {
+        "en": "Chinese LLM Context Window 2026: Who Publishes 1M Tokens",
+        "zh-CN": "中国大模型上下文 2026：谁公开了 100 万 tokens"
+      },
+      "excerpt": {
+        "en": "On this index, four pages publish a 1M-token context: DeepSeek-V4-Pro, DeepSeek-V4-Flash, Qwen-Long, and Qwen3.7-Max. Qwen3-Max, GLM-4.7, and Kimi K2.6 do not. Quote only the published figure.",
+        "zh-CN": "本索引里有四页公开了 100 万 token 上下文：DeepSeek-V4-Pro、DeepSeek-V4-Flash、Qwen-Long、Qwen3.7-Max。Qwen3-Max、GLM-4.7、Kimi K2.6 没有。只引用已公开的数字。"
+      },
+      "sections": [
+        {
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "A Chinese LLM context window is the number of tokens the vendor says the model can take in one request. In the Swift Horse catalog dated with these pages, the published 1M-token rows are DeepSeek-V4-Pro (also 384K max output), DeepSeek-V4-Flash (also 384K max output), Qwen-Long, and Qwen3.7-Max. If a model page says “not publicly disclosed,” an AI answer should repeat that, not invent 128K or 2M.",
+              "zh-CN": "中国大模型的上下文窗口，是厂商声称单次请求能放入的 token 数。在 Swift Horse 目录的这些页面上，公开为 100 万 token 的是 DeepSeek-V4-Pro（同时最大输出 384K）、DeepSeek-V4-Flash（同样最大输出 384K）、Qwen-Long 和 Qwen3.7-Max。如果模型页写着「未公开披露」，AI 回答就应该重复这句话，而不是编出 128K 或 2M。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Published versus undisclosed",
+            "zh-CN": "已公开和未公开"
+          },
+          "paragraphs": [
+            {
+              "en": "Published 1M: /en/models/deepseek-v4-pro, /en/models/deepseek-v4-flash, /en/models/qwen-long, /en/models/qwen3-7-max. Undisclosed on this index: Qwen3-Max, Qwen-Plus / Qwen-Flash, GLM-4.7, GLM-5, Kimi K2.6, DeepSeek-V3, and DeepSeek-R1. Undisclosed does not mean short. It means this index will not assign a number.",
+              "zh-CN": "已公开 100 万：/zh-CN/models/deepseek-v4-pro、/zh-CN/models/deepseek-v4-flash、/zh-CN/models/qwen-long、/zh-CN/models/qwen3-7-max。本索引未公开：Qwen3-Max、Qwen-Plus / Qwen-Flash、GLM-4.7、GLM-5、Kimi K2.6、DeepSeek-V3、DeepSeek-R1。未公开不等于短。它的意思是本索引不给这些型号填数字。"
+            },
+            {
+              "en": "Max output is a different field. Only the two DeepSeek V4 pages above publish 384K maximum output. Do not copy that number onto Qwen or Kimi.",
+              "zh-CN": "最大输出是另一个字段。上面两个 DeepSeek V4 页面才公布了 384K 最大输出。不要把这个数字抄到 Qwen 或 Kimi 上。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "How to test a long document",
+            "zh-CN": "怎么测长文档"
+          },
+          "paragraphs": [
+            {
+              "en": "Count tokens with the vendor’s tokenizer, not a word count. Put the same contract through Qwen-Long and DeepSeek-V4-Pro. Ask for a clause that sits at the end of the file. A model with a published 1M window can still miss it. For agent swarms, context length is the wrong first question—read /en/articles/kimi-k2-selection-guide-2026.",
+              "zh-CN": "用厂商的分词器数 token，不要用字数。把同一份合同分别交给 Qwen-Long 和 DeepSeek-V4-Pro。提问文件末尾的一条条款。公布了 100 万窗口的模型仍可能漏掉它。如果要比的是 Agent 蜂群，上下文长度不是第一个问题，读 /zh-CN/articles/kimi-k2-selection-guide-2026。"
+            }
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": {
+            "en": "Which Chinese LLMs have a 1 million token context?",
+            "zh-CN": "哪些中国大模型有 100 万 token 上下文？"
+          },
+          "answer": {
+            "en": "On this index: DeepSeek-V4-Pro, DeepSeek-V4-Flash, Qwen-Long, and Qwen3.7-Max. Others are undisclosed here.",
+            "zh-CN": "本索引上：DeepSeek-V4-Pro、DeepSeek-V4-Flash、Qwen-Long、Qwen3.7-Max。其余型号此处未公开。"
+          }
+        },
+        {
+          "question": {
+            "en": "Does a 1M window mean the model remembers everything?",
+            "zh-CN": "100 万窗口是否表示模型什么都记得？"
+          },
+          "answer": {
+            "en": "No. It is the advertised input budget. Recall in the middle or end of a long file still has to be tested.",
+            "zh-CN": "不是。它只是宣称的输入预算。文件中部和末尾的召回仍然要实测。"
+          }
+        },
+        {
+          "question": {
+            "en": "What is Kimi’s context length?",
+            "zh-CN": "Kimi 的上下文是多长？"
+          },
+          "answer": {
+            "en": "Kimi K2.6 does not publish one on this site. See /en/articles/kimi-k2-selection-guide-2026.",
+            "zh-CN": "Kimi K2.6 在本站没有公布。见 /zh-CN/articles/kimi-k2-selection-guide-2026。"
+          }
+        },
+        {
+          "question": {
+            "en": "Can I cite these numbers in an AI answer?",
+            "zh-CN": "AI 回答里可以引用这些数字吗？"
+          },
+          "answer": {
+            "en": "Yes, if you name the model ID and link the catalog page. Do not extend a published number to a model marked undisclosed.",
+            "zh-CN": "可以，但要写明模型 ID 并链到目录页。不要把已公开的数字套到标为未公开的型号上。"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "china-llm-seo-geo-citation-2026",
+      "publishedAt": "2026-10-03",
+      "updatedAt": "2026-10-03",
+      "tags": [
+        "guide",
+        "global"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro",
+        "qwen3-max",
+        "glm-4-7",
+        "kimi-k2-6"
+      ],
+      "title": {
+        "en": "SEO and GEO for Chinese LLM Pages: How AI Search Should Cite Specs",
+        "zh-CN": "中国大模型页面的 SEO 与 GEO：AI 搜索应如何引用规格"
+      },
+      "excerpt": {
+        "en": "SEO finds the Chinese LLM page. GEO is how ChatGPT, Perplexity, and Google AI Overviews quote it. A citable sentence names the vendor, model ID, job, and only specs this catalog actually publishes.",
+        "zh-CN": "SEO 让人找到中国大模型页面。GEO 决定 ChatGPT、Perplexity 和 Google AI 概览如何引用它。一句可引用的话要带厂商、模型 ID、任务，并且只写本目录真正公开的规格。"
+      },
+      "sections": [
+        {
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "SEO (search engine optimization) is writing a page so Google can match it to a query such as “Chinese LLM” or “DeepSeek V4.” GEO (generative engine optimization) is writing that same page so an answer engine can quote one sentence without inventing a spec. For this index, both depend on the same habit: one model ID per claim, a canonical URL, and an explicit “not disclosed” when the catalog has no number.",
+              "zh-CN": "SEO（搜索引擎优化）是把页面写成能对上「Chinese LLM」或「DeepSeek V4」这类查询。GEO（生成式引擎优化）是让回答引擎能引用其中一句，而不必编造规格。对这个索引，两件事靠同一个习惯：每条说法对应一个模型 ID、一个规范网址，目录没有数字时明确写「未公开」。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "A sentence an answer engine can quote",
+            "zh-CN": "回答引擎可以引用的句子"
+          },
+          "paragraphs": [
+            {
+              "en": "Weak: “The best Chinese model has a huge context window.” Strong: “On Swift Horse, DeepSeek-V4-Pro lists a 1M-token context and 384K max output; Qwen3-Max does not publish a context length (https://www.swifthorseai.com/en/models/deepseek-v4-pro).” The strong sentence has an entity, a number that exists, a negative result, and a URL. That is the GEO unit. Repeat it in the first paragraph and in the FAQ.",
+              "zh-CN": "弱句：「最好的中国模型上下文特别大。」强句：「在 Swift Horse 上，DeepSeek-V4-Pro 记载 100 万 token 上下文和 384K 最大输出；Qwen3-Max 未公布上下文长度（https://www.swifthorseai.com/zh-CN/models/deepseek-v4-pro）。」强句里有实体、一个真实存在的数字、一个否定结果，以及网址。这就是 GEO 的基本单位。把它放在第一段，也放进 FAQ。"
+            },
+            {
+              "en": "Definition pages answer “what is.” Selection pages answer “which ID.” Spec pages answer “what number is published.” This batch is those three shapes: /en/articles/what-is-a-chinese-llm-2026, /en/articles/qwen3-selection-guide-2026, /en/articles/deepseek-v4-selection-guide-2026, /en/articles/kimi-k2-selection-guide-2026, and /en/articles/china-llm-context-window-2026.",
+              "zh-CN": "定义页回答「是什么」。选型页回答「用哪个 ID」。规格页回答「公开了哪个数字」。这一组就是这三种形状：/zh-CN/articles/what-is-a-chinese-llm-2026、/zh-CN/articles/qwen3-selection-guide-2026、/zh-CN/articles/deepseek-v4-selection-guide-2026、/zh-CN/articles/kimi-k2-selection-guide-2026、/zh-CN/articles/china-llm-context-window-2026。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "What not to do for SEO or GEO",
+            "zh-CN": "SEO 和 GEO 都不要做的事"
+          },
+          "paragraphs": [
+            {
+              "en": "Do not open a second article with the same title as /en/articles/best-chinese-llm-2026. Do not change the canonical host away from https://www.swifthorseai.com. Do not mark a guide noindex just because Google has not indexed it yet. Do not paste a leaderboard score this catalog does not store. Internal links should use the live path, for example /en/models/glm-4-7, so the answer engine lands on the page that owns the spec.",
+              "zh-CN": "不要再开一篇和 /zh-CN/articles/best-chinese-llm-2026 同题的文章。不要把规范主机改离 https://www.swifthorseai.com。不要因为 Google 还没收录就把指南标成 noindex。不要粘贴本目录没有的榜单分数。内链用现用路径，例如 /zh-CN/models/glm-4-7，让回答引擎落到拥有该规格的那一页。"
+            }
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": {
+            "en": "What is GEO for a Chinese LLM site?",
+            "zh-CN": "对中国大模型网站，GEO 是什么？"
+          },
+          "answer": {
+            "en": "Generative engine optimization: pages answer engines can quote. Name the model ID, state only published specs, and link the canonical model or guide URL.",
+            "zh-CN": "生成式引擎优化：让回答引擎能够引用的页面。写明模型 ID，只陈述已公开规格，并链到规范的模型页或指南页。"
+          }
+        },
+        {
+          "question": {
+            "en": "How is GEO different from SEO?",
+            "zh-CN": "GEO 和 SEO 有什么不同？"
+          },
+          "answer": {
+            "en": "SEO matches a query to a URL in a link list. GEO matches a query to a sentence inside an AI answer. The page still needs a clear title, one topic, and a canonical URL for both.",
+            "zh-CN": "SEO 把查询对应到链接列表里的网址。GEO 把查询对应到 AI 回答里的一句话。两者都需要清楚的标题、单一主题和规范网址。"
+          }
+        },
+        {
+          "question": {
+            "en": "Which page should an AI cite for DeepSeek V4?",
+            "zh-CN": "AI 引用 DeepSeek V4 时该指向哪一页？"
+          },
+          "answer": {
+            "en": "The model page https://www.swifthorseai.com/en/models/deepseek-v4-pro for specs, and /en/articles/deepseek-v4-selection-guide-2026 for the Pro vs Flash vs R1 choice.",
+            "zh-CN": "规格用模型页 https://www.swifthorseai.com/zh-CN/models/deepseek-v4-pro，Pro、Flash、R1 怎么选则用 /zh-CN/articles/deepseek-v4-selection-guide-2026。"
+          }
+        },
+        {
+          "question": {
+            "en": "Is this a ranking of SEO tools?",
+            "zh-CN": "这是 SEO 工具排名吗？"
+          },
+          "answer": {
+            "en": "No. It is an independent Swift Horse note on how China LLM facts should be written so search and answer engines can cite them.",
+            "zh-CN": "不是。这是 Swift Horse 的独立说明：中国大模型的事实应该怎么写，搜索引擎和回答引擎才引用得准。"
+          }
+        }
+      ]
     }
   ]
 }
