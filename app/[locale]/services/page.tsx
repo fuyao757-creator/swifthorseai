@@ -1,9 +1,9 @@
-import { Suspense } from "react";
 import type { Metadata } from "next";
 import { type Locale, isValidLocale } from "@/lib/i18n";
 import { getDictionary } from "@/lib/dictionary";
 import { buildPageMetadata } from "@/lib/seo";
-import { CommercialIndexClient } from "@/components/commercial-index/CommercialIndexClient";
+import { resolveCompareIds } from "@/lib/model-workflow";
+import { CommercialIndexView } from "@/components/commercial-index/CommercialIndexView";
 
 export async function generateMetadata({
   params,
@@ -22,16 +22,21 @@ export async function generateMetadata({
 
 export default function ServicesPage({
   params,
+  searchParams,
 }: {
   params: { locale: string };
+  searchParams?: { models?: string | string[] };
 }) {
   if (!isValidLocale(params.locale)) return null;
   const locale = params.locale as Locale;
   const dict = getDictionary(locale);
+  const selectedIds = resolveCompareIds(searchParams?.models);
 
   return (
-    <Suspense fallback={null}>
-      <CommercialIndexClient locale={locale} dict={dict} />
-    </Suspense>
+    <CommercialIndexView
+      locale={locale}
+      dict={dict}
+      selectedIds={selectedIds}
+    />
   );
 }

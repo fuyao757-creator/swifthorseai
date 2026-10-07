@@ -27,12 +27,26 @@ export function isComparableModel(id: string): boolean {
   return COMPARABLE_IDS.has(id);
 }
 
+export const DEFAULT_COMPARE_IDS = [
+  "deepseek-v4-pro",
+  "qwen3-max",
+  "glm-4-7",
+] as const;
+
 export function parseModelIdsParam(raw: string | null | undefined): string[] {
   if (!raw) return [];
   return raw
     .split(",")
     .map((s) => s.trim())
     .filter((id) => COMPARABLE_IDS.has(id));
+}
+
+/** Missing param uses the default trio. An explicit param keeps that selection, even if fewer than two. */
+export function resolveCompareIds(raw: string | string[] | undefined): string[] {
+  if (raw == null) return [...DEFAULT_COMPARE_IDS];
+  const value = Array.isArray(raw) ? raw[0] : raw;
+  if (!value) return [];
+  return parseModelIdsParam(value).slice(0, 3);
 }
 
 export function filterComparableIds(ids: string[]): string[] {

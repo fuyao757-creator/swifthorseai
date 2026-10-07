@@ -1,8 +1,5 @@
-"use client";
-
-import { Fragment, useEffect, useMemo, useState } from "react";
+import { Fragment } from "react";
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
 import type { Locale } from "@/lib/i18n";
 import type { Dictionary } from "@/lib/dictionary";
 import {
@@ -14,13 +11,8 @@ import { BackLink } from "@/components/BackLink";
 import { LegalNotice } from "@/components/LegalNotice";
 import { ModelWorkflowNav } from "@/components/ModelWorkflowNav";
 import { ModelBatchActions } from "@/components/ModelRelatedActions";
-import {
-  buildMatchUrl,
-  buildPromptsUrl,
-  parseModelIdsParam,
-} from "@/lib/model-workflow";
-
-const MAX_SELECT = 3;
+import { buildMatchUrl, buildPromptsUrl } from "@/lib/model-workflow";
+import { ModelPicker } from "@/components/commercial-index/ModelPicker";
 
 type CompareGroup = {
   id: string;
@@ -28,56 +20,20 @@ type CompareGroup = {
   rows: CompareRowKey[];
 };
 
-export function CommercialIndexClient({
+export function CommercialIndexView({
   locale,
   dict,
+  selectedIds,
 }: {
   locale: Locale;
   dict: Dictionary;
+  selectedIds: string[];
 }) {
   const t = dict.commercialIndex;
-  const searchParams = useSearchParams();
-  const router = useRouter();
-  const initialFromUrl = parseModelIdsParam(searchParams.get("models"));
-  const [selected, setSelected] = useState<string[]>(
-    initialFromUrl.length >= 2
-      ? initialFromUrl.slice(0, MAX_SELECT)
-      : ["deepseek-v4-pro", "qwen3-max", "glm-4-7"]
-  );
-
-  useEffect(() => {
-    const fromUrl = parseModelIdsParam(searchParams.get("models"));
-    if (fromUrl.length >= 2) {
-      setSelected(fromUrl.slice(0, MAX_SELECT));
-    }
-  }, [searchParams]);
-
-  useEffect(() => {
-    if (selected.length < 2) return;
-    const next = selected.join(",");
-    const current = searchParams.get("models") ?? "";
-    if (current === next) return;
-    router.replace(`/${locale}/services?models=${next}`, { scroll: false });
-  }, [selected, locale, router, searchParams]);
-
-  const selectedModels = useMemo(
-    () =>
-      COMMERCIAL_INDEX_MODELS.filter((m) => selected.includes(m.id)).slice(
-        0,
-        MAX_SELECT
-      ),
-    [selected]
-  );
-
-  const toggle = (id: string) => {
-    setSelected((prev) => {
-      if (prev.includes(id)) return prev.filter((x) => x !== id);
-      if (prev.length >= MAX_SELECT) return prev;
-      return [...prev, id];
-    });
-  };
-
   const loc = locale === "zh-CN" ? "zh-CN" : "en";
+  const selectedModels = COMMERCIAL_INDEX_MODELS.filter((m) =>
+    selectedIds.includes(m.id)
+  ).slice(0, 3);
 
   const compareGroups: CompareGroup[] = [
     {
@@ -138,47 +94,17 @@ export function CommercialIndexClient({
 
       <div className="access-ref-layout">
         <aside className="access-ref-sidebar">
-          <div className="access-ref-panel">
-            <div className="access-ref-panel-head">
-              <h2 className="font-display text-base font-semibold text-ink dark:text-white">
-                {t.pickerTitle}
-              </h2>
-              <span className="access-ref-count">
-                {selected.length}/{MAX_SELECT}
-              </span>
-            </div>
-            <p className="mt-2 text-xs leading-relaxed text-ink-muted">{t.compareHint}</p>
-
-            <ul className="access-ref-model-list mt-4">
-              {COMMERCIAL_INDEX_MODELS.map((m) => {
-                const on = selected.includes(m.id);
-                const disabled = !on && selected.length >= MAX_SELECT;
-                return (
-                  <li key={m.id}>
-                    <button
-                      type="button"
-                      disabled={disabled}
-                      onClick={() => toggle(m.id)}
-                      className={`access-ref-model-btn ${on ? "access-ref-model-btn-on" : ""}`}
-                      aria-pressed={on}
-                    >
-                      <span className="access-ref-model-check" aria-hidden>
-                        {on ? "✓" : ""}
-                      </span>
-                      <span className="min-w-0 flex-1 text-left">
-                        <span className="block truncate font-medium text-ink dark:text-white">
-                          {m.name[loc]}
-                        </span>
-                        <span className="mt-0.5 block truncate text-xs text-ink-faint">
-                          {m.vendor[loc]}
-                        </span>
-                      </span>
-                    </button>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
+          <ModelPicker
+            locale={locale}
+            title={t.pickerTitle}
+            hint={t.compareHint}
+            selectedIds={selectedIds}
+            models={COMMERCIAL_INDEX_MODELS.map((m) => ({
+              id: m.id,
+              name: m.name[loc],
+              vendor: m.vendor[loc],
+            }))}
+          />
 
           <div className="access-ref-panel mt-4">
             <h2 className="font-display text-base font-semibold text-ink dark:text-white">
@@ -192,7 +118,9 @@ export function CommercialIndexClient({
                     <h3 className="text-sm font-semibold text-ink dark:text-white">
                       {step.title}
                     </h3>
-                    <p className="mt-1 text-xs leading-relaxed text-ink-muted">{step.desc}</p>
+                    <p className="mt-1 text-xs leading-relaxed text-ink-muted">
+                      {step.desc}
+                    </p>
                   </div>
                 </li>
               ))}
@@ -208,14 +136,22 @@ export function CommercialIndexClient({
               <Link href={buildMatchUrl(locale)} className="access-ref-related-link">
                 {dict.nav.match} →
               </Link>
-              <Link href={buildPromptsUrl(locale, { models: selected })} className="access-ref-related-link">
+              <Link
+                href={buildPromptsUrl(locale, {
+                  models: selectedModels.map((m) => m.id),
+                })}
+                className="access-ref-related-link"
+              >
                 {dict.nav.prompts} →
               </Link>
             </div>
           </div>
 
           <div className="mt-6">
-            <LegalNotice linkHref={`/${locale}/disclaimer`} linkLabel={dict.footer.readMore}>
+            <LegalNotice
+              linkHref={`/${locale}/disclaimer`}
+              linkLabel={dict.footer.readMore}
+            >
               {t.disclosureBody}
             </LegalNotice>
           </div>
@@ -226,11 +162,16 @@ export function CommercialIndexClient({
             <div className="access-ref-workspace-head">
               <div>
                 <p className="section-eyebrow">{t.objectiveOnly}</p>
-                <h2 className="section-title mt-2 text-xl sm:text-2xl">{t.compareTitle}</h2>
+                <h2 className="section-title mt-2 text-xl sm:text-2xl">
+                  {t.compareTitle}
+                </h2>
               </div>
               {canCompare && (
                 <p className="access-ref-summary">
-                  {t.compareSummary.replace("{count}", String(selectedModels.length))}
+                  {t.compareSummary.replace(
+                    "{count}",
+                    String(selectedModels.length)
+                  )}
                 </p>
               )}
             </div>
@@ -240,7 +181,9 @@ export function CommercialIndexClient({
                 <p className="font-display text-lg font-semibold text-ink dark:text-white">
                   {t.emptyTitle}
                 </p>
-                <p className="mt-2 max-w-md text-sm text-ink-muted">{t.pickAtLeastTwo}</p>
+                <p className="mt-2 max-w-md text-sm text-ink-muted">
+                  {t.pickAtLeastTwo}
+                </p>
               </div>
             ) : (
               <>
