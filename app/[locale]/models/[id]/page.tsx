@@ -12,6 +12,8 @@ import { ModelJsonLd } from "@/components/ModelJsonLd";
 import { GuideLinksStrip } from "@/components/GuideLinksStrip";
 import { getGuideSlugsForModel } from "@/lib/featured-guides";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   const models = getModels();
   return locales.flatMap((locale) =>
@@ -24,10 +26,11 @@ export async function generateMetadata({
 }: {
   params: { locale: string; id: string };
 }): Promise<Metadata> {
+  if (!isValidLocale(params.locale)) notFound();
   const locale = params.locale as Locale;
   const dict = getDictionary(locale);
   const model = getModelById(params.id);
-  if (!model) return { title: "Not Found" };
+  if (!model) notFound();
   const m = localizeModel(model, locale);
   const isGlmFamily = params.id === "glm-4-7" || params.id === "glm-4v";
   const isGlmFlagship = params.id === "glm-5";

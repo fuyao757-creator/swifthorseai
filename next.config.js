@@ -66,7 +66,17 @@ const nextConfig = {
       destination: `${locale}/articles/:slug`,
       permanent: true,
     }));
+    const articleSlugRedirects = [
+      ["chinese-llm-global-guide-2026", "chinese-llms-global-guide-2026"],
+    ].flatMap(([from, to]) =>
+      ["/en", "/zh-CN"].map((locale) => ({
+        source: `${locale}/articles/${from}`,
+        destination: `${locale}/articles/${to}`,
+        permanent: true,
+      }))
+    );
     return [
+      ...articleSlugRedirects,
       ...articleTypoRedirects,
       ...newsRedirects,
       ...workflowsRedirects,

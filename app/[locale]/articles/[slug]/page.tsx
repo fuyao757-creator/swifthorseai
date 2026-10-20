@@ -15,6 +15,8 @@ import { ArticleDetail } from "@/components/articles/ArticleDetail";
 import { ArticleJsonLd } from "@/components/articles/ArticleJsonLd";
 import { LegalNotice } from "@/components/LegalNotice";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return locales.flatMap((locale) =>
     getArticleSlugs().map((slug) => ({ locale, slug }))
@@ -26,9 +28,10 @@ export async function generateMetadata({
 }: {
   params: { locale: string; slug: string };
 }): Promise<Metadata> {
+  if (!isValidLocale(params.locale)) notFound();
   const locale = params.locale as Locale;
   const article = getArticleBySlug(params.slug);
-  if (!article) return { title: "Not Found" };
+  if (!article) notFound();
   const dict = getDictionary(locale);
   const localized = localizeArticle(article, locale);
   const path = `/articles/${params.slug}`;
