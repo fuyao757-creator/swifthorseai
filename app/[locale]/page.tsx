@@ -19,7 +19,7 @@ export async function generateMetadata({
   return buildPageMetadata({
     locale,
     path: "",
-    title: `${dict.siteName} - ${dict.landing.metaTitle}`,
+    title: `${dict.landing.metaTitle} | ${dict.siteName}`,
     description: dict.landing.metaDescription,
   });
 }

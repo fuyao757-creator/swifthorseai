@@ -178,9 +178,20 @@ export function LandingPage({
 
 
             <p className="landing-hero-subtitle">{l.heroSubtitle}</p>
-            <p className="landing-hero-query mt-3 max-w-xl text-pretty text-sm leading-relaxed text-ink-muted">
-              {l.heroQueryIntro}
-            </p>
+            <div className="landing-hero-picks">
+              <p className="landing-hero-picks-caption">{l.heroQueryIntro}</p>
+              <ul>
+                {l.heroQueryLinks.map((item) => (
+                  <li key={item.href}>
+                    <Link href={`/${locale}${item.href}`} prefetch>
+                      {item.label}
+                    </Link>
+                    <strong>{item.pick}</strong>
+                    <span>{item.detail}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
 
 

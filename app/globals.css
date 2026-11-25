@@ -1814,8 +1814,36 @@
     box-shadow: -8px 0 24px -12px rgba(6, 182, 212, 0.18);
   }
 
+  .landing-hero-picks {
+    @apply relative mt-5 w-full max-w-xl overflow-hidden rounded-xl border border-slate-200/80 bg-white/80 text-left shadow-sm backdrop-blur-md dark:border-white/10 dark:bg-slate-950/55;
+  }
+
+  .landing-hero-picks-caption {
+    @apply border-b border-slate-200/80 px-3 py-2 text-xs leading-relaxed text-ink-muted dark:border-white/10 dark:text-slate-400;
+  }
+
+  .landing-hero-picks ul {
+    @apply m-0 list-none p-0;
+  }
+
+  .landing-hero-picks li {
+    @apply grid gap-0.5 border-t border-slate-200/70 px-3 py-2.5 first:border-t-0 dark:border-white/10;
+  }
+
+  .landing-hero-picks a {
+    @apply text-sm font-semibold text-cinnabar underline decoration-cinnabar/30 underline-offset-4 hover:decoration-cinnabar dark:text-tech-cyan dark:decoration-tech-cyan/40;
+  }
+
+  .landing-hero-picks strong {
+    @apply text-sm font-medium text-ink dark:text-white;
+  }
+
+  .landing-hero-picks li span {
+    @apply text-xs leading-relaxed text-ink-muted dark:text-slate-400;
+  }
+
   .landing-hero-actions {
-    @apply mt-14 flex flex-wrap gap-3 sm:mt-[4.5rem] lg:mt-20;
+    @apply mt-8 flex flex-wrap gap-3 sm:mt-9;
   }
 
   .landing-hero-cta-primary {

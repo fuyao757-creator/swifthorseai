@@ -64,6 +64,12 @@ const PRIORITY_URLS = [
   `${BASE_URL}/en/articles/china-llm-prompt-engineering-2026`,
   `${BASE_URL}/en/articles/china-llm-vs-gemini-2026`,
   `${BASE_URL}/en/articles/china-llm-customer-support-chatbot-2026`,
+  `${BASE_URL}/en/articles/top-cuda-chinese-llm-2026`,
+  `${BASE_URL}/en/articles/hunyuan-hy3-specs-2026`,
+  `${BASE_URL}/en/articles/ernie-4-5-turbo-guide-2026`,
+  `${BASE_URL}/en/articles/glm-4-7-vs-glm-5-2026`,
+  `${BASE_URL}/en/articles/qwen-long-document-guide-2026`,
+  `${BASE_URL}/en/articles/chinese-llm-canonical-url-2026`,
 ];
 
 function collectUrls() {

@@ -46,8 +46,8 @@
     "other": "其他"
   },
   "landing": {
-    "metaTitle": "中国 AI 模型导航",
-    "metaDescription": "Swift Horse（swifthorseai.com）— 面向全球团队的中国大模型开放索引：模型库、场景匹配与提示词工具，独立整理公开规格。",
+    "metaTitle": "2026最佳中国大模型：DeepSeek、Qwen、GLM、Kimi",
+    "metaDescription": "2026最佳中国大模型：编程 DeepSeek，Agent 用 GLM，长文档 Kimi，阿里云 Qwen。含 GLM API 海外接入、DeepSeek API 海外接入，以及中国 CUDA 大模型的激活参数。",
     "badge": "独立索引 · 全球视野",
     "heroCode": "SWIFT HORSE · ATLAS v2",
     "heroLead": "对比",
@@ -55,7 +55,33 @@
     "heroTail": "2026",
     "heroTitleSecond": "",
     "heroSubtitle": "面向全球团队的中国大模型（China LLM）独立索引：DeepSeek、Qwen、Kimi、GLM 的公开规格、选型指南与 API 说明。",
-    "heroQueryIntro": "搜中国大模型或 Chinese LLM，要的是按场景缩小名单，不是一个总冠军。先看下方指南，再打开模型页核对上下文、工具与接入方式，然后做小规模实测。",
+    "heroQueryIntro": "2026 年 11 月 15 日核对。没有单一的中国大模型冠军。",
+    "heroQueryLinks": [
+      {
+        "label": "最佳中国大模型",
+        "href": "/articles/best-chinese-llm-2026",
+        "pick": "编程用 DeepSeek",
+        "detail": "阿里云用 Qwen，Agent 用 GLM，长文档用 Kimi"
+      },
+      {
+        "label": "GLM API 海外接入",
+        "href": "/articles/glm-api-overseas-quickstart-2026",
+        "pick": "智谱 GLM-4.7",
+        "detail": "OpenAI 兼容，大约 10 分钟发出第一次请求"
+      },
+      {
+        "label": "中国 CUDA 大模型",
+        "href": "/articles/top-cuda-chinese-llm-2026",
+        "pick": "DeepSeek-V4-Pro，激活 490 亿",
+        "detail": "看已公开的激活参数，不是速度榜"
+      },
+      {
+        "label": "DeepSeek API 海外接入",
+        "href": "/articles/deepseek-api-overseas-quickstart-2026",
+        "pick": "api.deepseek.com",
+        "detail": "OpenAI 兼容 base URL，一小时跑通"
+      }
+    ],
     "heroVideoLabel": "Swift Horse 奔腾意象",
     "heroVideoTag": "CINEMATIC · 3D MOTION",
     "heroVideoCaption": "速度与技术并重 · 独立索引引擎",
@@ -96,7 +122,7 @@
     "ctaSubtitle": "所有内容均为公开信息整理，仅供研究参考，不构成官方推荐或采购建议。",
     "guideLinksEyebrow": "中国大模型指南",
     "guideLinksTitle": "中国大模型选型指南",
-    "guideLinksSubtitle": "面向搜索与 AI 引用—China LLM 选型、API 接入、价格与合规。",
+    "guideLinksSubtitle": "短名单、海外 API 与 CUDA。每篇指南都链到对应的模型页。",
     "guideLinksViewAll": "全部指南",
     "modules": {
       "models": {

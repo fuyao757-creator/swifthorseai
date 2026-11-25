@@ -1530,7 +1530,7 @@
     {
       "slug": "deepseek-api-overseas-quickstart-2026",
       "publishedAt": "2026-07-05",
-      "updatedAt": "2026-07-05",
+      "updatedAt": "2026-11-15",
       "tags": [
         "guide",
         "api",
@@ -1540,12 +1540,12 @@
         "deepseek-v4-pro"
       ],
       "title": {
-        "en": "DeepSeek API Overseas Quickstart 2026: China LLM Setup Guide",
-        "zh-CN": "2026海外接入DeepSeek API快速指南（China LLM）"
+        "en": "DeepSeek API Overseas 2026: Setup from Outside China",
+        "zh-CN": "DeepSeek API 海外接入 2026：境外一小时跑通"
       },
       "excerpt": {
-        "en": "Set up DeepSeek API from outside China in 2026—platform.deepseek.com signup, OpenAI-compatible base URL, model IDs, streaming, and a 1-hour POC for overseas developers.",
-        "zh-CN": "2026年海外开发者 1 小时接入 DeepSeek API：注册、OpenAI 兼容 base URL、模型 ID、流式与 POC 清单。"
+        "en": "DeepSeek API overseas in 2026: sign up at platform.deepseek.com, set the OpenAI-compatible base URL, and run a one-hour proof of concept from outside China.",
+        "zh-CN": "DeepSeek API 海外接入：在 platform.deepseek.com 注册，改 OpenAI 兼容 base URL，从境外一小时跑通一次调用。"
       },
       "sections": [
         {
@@ -1555,8 +1555,8 @@
           },
           "paragraphs": [
             {
-              "en": "DeepSeek is a frequent first China LLM API for overseas teams because of OpenAI-compatible endpoints and competitive reasoning pricing. Official base URL: https://api.deepseek.com. Always copy model names from platform.deepseek.com docs—aliases change. Swift Horse is not DeepSeek; verify billing and limits on the vendor site.",
-              "zh-CN": "DeepSeek 常是海外团队首个 China LLM API：OpenAI 兼容且推理性价比高。官方 base URL：https://api.deepseek.com。模型名以 platform.deepseek.com 文档为准。Swift Horse 非 DeepSeek 官方，计费与限流以官网为准。"
+              "en": "Checked 15 November 2026. DeepSeek is a frequent first China LLM API for overseas teams because of OpenAI-compatible endpoints and competitive reasoning pricing. Official base URL: https://api.deepseek.com. Always copy model names from platform.deepseek.com docs—aliases change. Swift Horse is not DeepSeek; verify billing and limits on the vendor site.",
+              "zh-CN": "2026 年 11 月 15 日核对。DeepSeek 常是海外团队首个 China LLM API：OpenAI 兼容且推理性价比高。官方 base URL：https://api.deepseek.com。模型名以 platform.deepseek.com 文档为准。Swift Horse 非 DeepSeek 官方，计费与限流以官网为准。"
             }
           ]
         },
@@ -2160,7 +2160,7 @@
     {
       "slug": "glm-api-overseas-quickstart-2026",
       "publishedAt": "2026-07-21",
-      "updatedAt": "2026-07-21",
+      "updatedAt": "2026-11-15",
       "tags": [
         "api",
         "guide",
@@ -2170,12 +2170,12 @@
         "glm-5"
       ],
       "title": {
-        "en": "GLM API Overseas Quickstart 2026: Zhipu China LLM from Abroad",
-        "zh-CN": "2026 GLM API 海外快速接入：从境外调用智谱中国大模型"
+        "en": "GLM API Overseas 2026: Zhipu Quickstart from Outside China",
+        "zh-CN": "GLM API 海外接入 2026：境外调用智谱"
       },
       "excerpt": {
-        "en": "Call Zhipu GLM China LLM APIs from overseas in 2026—account setup, model IDs, OpenAI-compatible endpoints, tool calling notes, and a 10-minute first request for global enterprise teams.",
-        "zh-CN": "2026年从海外调用智谱 GLM：账户开通、模型 ID、OpenAI 兼容接口、tool calling 提示与 10 分钟首请求。面向全球企业团队。"
+        "en": "GLM API overseas in 2026: open a Zhipu account from outside China, copy the model ID, and send a first OpenAI-compatible request in about 10 minutes.",
+        "zh-CN": "GLM API 海外接入：从境外开通智谱账户，复制模型 ID，大约 10 分钟发出第一次 OpenAI 兼容请求。"
       },
       "sections": [
         {
@@ -2185,8 +2185,8 @@
           },
           "paragraphs": [
             {
-              "en": "GLM (Zhipu) is a common China LLM shortlist pick for enterprise agents and stable function calling. Overseas teams should confirm the correct international console, model name, and billing path—do not copy mainland-only IDs from blogs. Pair with Kimi comparison (/en/articles/kimi-vs-glm-selection-guide-2026) and agent POC (/en/articles/china-llm-agent-tool-calling-2026).",
-              "zh-CN": "GLM（智谱）常进企业 Agent 与稳定 function calling 短名单。海外团队需确认国际站控制台、模型名与计费路径——勿照抄仅国内可用的 ID。配合 Kimi 对比与 Agent POC。"
+              "en": "Checked 15 November 2026. GLM (Zhipu) is a common China LLM shortlist pick for enterprise agents and stable function calling. Overseas teams should confirm the correct international console, model name, and billing path—do not copy mainland-only IDs from blogs. Pair with Kimi comparison (/en/articles/kimi-vs-glm-selection-guide-2026) and agent POC (/en/articles/china-llm-agent-tool-calling-2026).",
+              "zh-CN": "2026 年 11 月 15 日核对。GLM（智谱）常进企业 Agent 与稳定 function calling 短名单。海外团队需确认国际站控制台、模型名与计费路径——勿照抄仅国内可用的 ID。配合 Kimi 对比与 Agent POC。"
             }
           ]
         },
@@ -2630,7 +2630,7 @@
     {
       "slug": "best-chinese-llm-2026",
       "publishedAt": "2026-07-29",
-      "updatedAt": "2026-09-29",
+      "updatedAt": "2026-11-15",
       "tags": [
         "guide",
         "comparison",
@@ -2659,8 +2659,8 @@
           },
           "paragraphs": [
             {
-              "en": "There is no universal “best Chinese LLM” in 2026. DeepSeek often leads coding value POCs; Qwen fits Alibaba-cloud and multimodal stacks; GLM is common for enterprise agents; Kimi for ultra-long documents. Rank by your prompts, P95 latency, tool success, and monthly token cost—not one screenshot of a public bench. Swift Horse is an independent index.",
-              "zh-CN": "2026 没有 universal 的「最佳国产大模型」。DeepSeek 常领跑编程性价比 POC；Qwen 适合阿里云与多模态；GLM 常见于企业 Agent；Kimi 偏超长文档。按自有 prompt、P95、tool 成功率与月 token 成本排序。Swift Horse 为独立索引。"
+              "en": "Checked 15 November 2026: this shortlist is unchanged. There is no universal “best Chinese LLM” in 2026. DeepSeek often leads coding value POCs; Qwen fits Alibaba-cloud and multimodal stacks; GLM is common for enterprise agents; Kimi for ultra-long documents. Rank by your prompts, P95 latency, tool success, and monthly token cost—not one screenshot of a public bench. Swift Horse is an independent index.",
+              "zh-CN": "2026 年 11 月 15 日核对，短名单没有变。2026 没有单一的「最佳国产大模型」。DeepSeek 常领跑编程性价比 POC；Qwen 适合阿里云与多模态；GLM 常见于企业 Agent；Kimi 偏超长文档。按自有 prompt、P95、tool 成功率与月 token 成本排序。Swift Horse 为独立索引。"
             }
           ]
         },
@@ -5648,6 +5648,648 @@
           "answer": {
             "en": "No. It is an independent Swift Horse note on how China LLM facts should be written so search and answer engines can cite them.",
             "zh-CN": "不是。这是 Swift Horse 的独立说明：中国大模型的事实应该怎么写，搜索引擎和回答引擎才引用得准。"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "top-cuda-chinese-llm-2026",
+      "publishedAt": "2026-10-20",
+      "updatedAt": "2026-11-15",
+      "tags": [
+        "guide",
+        "comparison"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro",
+        "deepseek-v4-flash",
+        "hunyuan-hy3-preview",
+        "qwen3-max"
+      ],
+      "title": {
+        "en": "Top CUDA LLM China 2026: Published Active Parameters",
+        "zh-CN": "中国 CUDA 大模型 2026：已公开的激活参数"
+      },
+      "excerpt": {
+        "en": "Top CUDA LLM China 2026 is an active-parameter list, not a speed chart: DeepSeek-V4-Pro 49B active, DeepSeek-V4-Flash 13B active, Hunyuan Hy3 Preview 21B active. This index does not publish tokens per second.",
+        "zh-CN": "中国 CUDA 大模型看的是激活参数，不是速度榜：DeepSeek-V4-Pro 激活 490 亿，DeepSeek-V4-Flash 激活 130 亿，混元 Hy3 Preview 激活 210 亿。本索引不公布每秒 token。"
+      },
+      "sections": [
+        {
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "Checked 15 November 2026. A search for “top CUDA LLM China” is asking which Chinese model fits an NVIDIA GPU, not which API won a chat demo. Swift Horse does not store tokens per second, VRAM, or a CUDA leaderboard. The number that changes a serving plan is active parameters on a mixture-of-experts model, not the headline total. On this catalog, DeepSeek-V4-Pro lists 1.6T total with 49B active per inference, DeepSeek-V4-Flash lists 284B total with 13B active, and Tencent Hy3 Preview lists 295B total with 21B active.",
+              "zh-CN": "2026 年 11 月 15 日核对。搜索 “top CUDA LLM China” 的人想知道哪家中国模型适合放上 NVIDIA GPU，而不是哪家 API 聊天演示赢了。Swift Horse 不存每秒 token、显存或 CUDA 排行榜。改变部署计划的数字是混合专家模型的激活参数，不是标题上的总参数。本目录里，DeepSeek-V4-Pro 记载总参数 1.6 万亿、每次推理激活 490 亿；DeepSeek-V4-Flash 记载总参数 2840 亿、激活 130 亿；腾讯 Hy3 Preview 记载总参数 2950 亿、激活 210 亿。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "IDs with a number you can plan from",
+            "zh-CN": "有数字、可以拿来规划的型号"
+          },
+          "paragraphs": [
+            {
+              "en": "DeepSeek-V4-Pro and DeepSeek-V4-Flash also publish a 1M-token context and 384K maximum output. Hy3 Preview publishes a different shape: 256K context, with input 192K and output 128K. Those three pages are the CUDA-relevant rows because they publish an active-parameter figure. Confirm the license and whether weights are actually downloadable on the vendor site before you buy GPUs. This index does not assert that the checkpoint is open.",
+              "zh-CN": "DeepSeek-V4-Pro 和 DeepSeek-V4-Flash 还公布了 100 万 token 上下文和 384K 最大输出。Hy3 Preview 是另一种形状：256K 上下文，输入 192K、输出 128K。这三页和 CUDA 有关，是因为它们公布了激活参数。买 GPU 之前，到厂商官网确认许可证以及权重是否真的可以下载。本索引不断言权重已经开源。"
+            },
+            {
+              "en": "Model pages: /en/models/deepseek-v4-pro, /en/models/deepseek-v4-flash, /en/models/hunyuan-hy3-preview. Self-hosting steps, separate from these numbers, are in /en/articles/chinese-llm-self-hosting-guide-2026.",
+              "zh-CN": "模型页：/zh-CN/models/deepseek-v4-pro、/zh-CN/models/deepseek-v4-flash、/zh-CN/models/hunyuan-hy3-preview。自托管步骤和这些数字是两件事，见 /zh-CN/articles/chinese-llm-self-hosting-guide-2026。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "When the parameter count is missing",
+            "zh-CN": "参数量没有公布时"
+          },
+          "paragraphs": [
+            {
+              "en": "Qwen3-Max, GLM-4.7, and Kimi K2.6 do not publish parameter count or context length on this index. Qwen-Long and Qwen3.7-Max publish a 1M context and still do not publish parameters. Do not invent a 80GB or 8xH100 plan for them from this site. Call the API, or wait until the vendor publishes a size. Context figures for the 1M rows are compared in /en/articles/china-llm-context-window-2026.",
+              "zh-CN": "Qwen3-Max、GLM-4.7、Kimi K2.6 在本索引没有公布参数量或上下文长度。Qwen-Long 和 Qwen3.7-Max 公布了 100 万上下文，仍然没有公布参数。不要根据本站给它们编一份 80GB 或 8 卡 H100 的方案。改走 API，或者等到厂商公布规模。100 万上下文那几条的对照见 /zh-CN/articles/china-llm-context-window-2026。"
+            }
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": {
+            "en": "Which Chinese LLM is fastest on CUDA?",
+            "zh-CN": "哪家中国大模型在 CUDA 上最快？"
+          },
+          "answer": {
+            "en": "This index does not publish tokens per second. It publishes active parameters for DeepSeek-V4-Pro (49B), DeepSeek-V4-Flash (13B), and Hy3 Preview (21B).",
+            "zh-CN": "本索引不公布每秒 token。它公布的激活参数是 DeepSeek-V4-Pro（490 亿）、DeepSeek-V4-Flash（130 亿）和 Hy3 Preview（210 亿）。"
+          }
+        },
+        {
+          "question": {
+            "en": "Does a 1.6T model need 1.6T of GPU memory?",
+            "zh-CN": "1.6 万亿参数的模型需要 1.6 万亿显存吗？"
+          },
+          "answer": {
+            "en": "No. DeepSeek-V4-Pro lists 1.6T total and 49B active per inference. Serving math starts from the active figure, then you still measure the real checkpoint.",
+            "zh-CN": "不是。DeepSeek-V4-Pro 记载总参数 1.6 万亿、每次推理激活 490 亿。部署估算从激活参数开始，然后仍要实测真实权重。"
+          }
+        },
+        {
+          "question": {
+            "en": "Can I size a GPU for Qwen3-Max from this catalog?",
+            "zh-CN": "能用本目录给 Qwen3-Max 估算显存吗？"
+          },
+          "answer": {
+            "en": "No. Qwen3-Max does not publish a parameter count here. Use the API or the vendor’s own serving guide.",
+            "zh-CN": "不能。Qwen3-Max 在此没有参数量。用 API，或看厂商自己的部署说明。"
+          }
+        },
+        {
+          "question": {
+            "en": "Where should an AI answer link this fact?",
+            "zh-CN": "AI 回答应把这个事实链到哪？"
+          },
+          "answer": {
+            "en": "Link the model page that owns the number, for example https://www.swifthorseai.com/en/models/deepseek-v4-pro, and this guide for the CUDA caveat.",
+            "zh-CN": "链到拥有该数字的模型页，例如 https://www.swifthorseai.com/zh-CN/models/deepseek-v4-pro，CUDA 的限制说明则链到本指南。"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "hunyuan-hy3-specs-2026",
+      "publishedAt": "2026-10-20",
+      "updatedAt": "2026-10-20",
+      "tags": [
+        "guide",
+        "comparison"
+      ],
+      "relatedModelIds": [
+        "hunyuan-hy3-preview",
+        "hunyuan-hy2",
+        "deepseek-v4-pro",
+        "qwen-long"
+      ],
+      "title": {
+        "en": "Tencent Hunyuan Hy3 Preview Specs 2026: 295B MoE, 256K",
+        "zh-CN": "腾讯混元 Hy3 Preview 规格 2026：2950 亿 MoE，256K"
+      },
+      "excerpt": {
+        "en": "Hy3 Preview publishes 295B total / 21B active MoE, a 256K context (input 192K, output 128K), and a knowledge cutoff of April 2026. Hy2.0 on this index does not publish those numbers. Do not merge the two IDs.",
+        "zh-CN": "Hy3 Preview 公布总参数 2950 亿、激活 210 亿的 MoE，256K 上下文（输入 192K、输出 128K），知识截止日期 2026 年 4 月。本索引上的 Hy2.0 没有这些数字。不要把两个 ID 合成一个。"
+      },
+      "sections": [
+        {
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "Tencent Hunyuan Hy3 Preview is a catalog row with published size, context, and a knowledge cutoff. The page lists 295B total parameters, 21B active (MoE), a 256K-token context split as input 192K and output 128K (about 140K Chinese characters), and a knowledge cutoff of April 2026. The tagline also names deep thinking, agents, and coding. Those are the sentences an answer engine can quote.",
+              "zh-CN": "腾讯混元 Hy3 Preview 是目录里同时公开了规模、上下文和知识截止的一条。该页记载总参数 2950 亿、激活 210 亿（MoE），256K token 上下文拆成输入 192K 和输出 128K（约 14 万中文字符），知识截止日期为 2026 年 4 月。标语还写了深度思考、智能体和编程。回答引擎可以引用的就是这些句子。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Hy3 Preview is not Hy2.0",
+            "zh-CN": "Hy3 Preview 不是 Hy2.0"
+          },
+          "paragraphs": [
+            {
+              "en": "The canonical spec page is /en/models/hunyuan-hy3-preview. Hy2.0 is /en/models/hunyuan-hy2. Hy2.0 does not publish parameter count, context length, or a knowledge cutoff on this index. Copying the 295B or 256K figures onto Hy2.0 is a false citation.",
+              "zh-CN": "规范规格页是 /zh-CN/models/hunyuan-hy3-preview。Hy2.0 是 /zh-CN/models/hunyuan-hy2。Hy2.0 在本索引没有公布参数量、上下文长度或知识截止。把 2950 亿或 256K 抄到 Hy2.0 上是错误引用。"
+            },
+            {
+              "en": "Hy3 Preview’s 256K window is shorter than the 1M windows on DeepSeek-V4-Pro and Qwen-Long. It is longer than a 128K row such as ERNIE 4.5 Turbo. Compare windows in /en/articles/china-llm-context-window-2026 and the CUDA reading of the 21B active figure in /en/articles/top-cuda-chinese-llm-2026.",
+              "zh-CN": "Hy3 Preview 的 256K 窗口短于 DeepSeek-V4-Pro 和 Qwen-Long 的 100 万窗口，长于文心 ERNIE 4.5 Turbo 这类 128K。窗口对照见 /zh-CN/articles/china-llm-context-window-2026。210 亿激活参数怎么读，见 /zh-CN/articles/top-cuda-chinese-llm-2026。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "What this page will not add",
+            "zh-CN": "本页不会补充的内容"
+          },
+          "paragraphs": [
+            {
+              "en": "No price, no overseas API base URL, and no claim that Hy3 Preview beats DeepSeek or Qwen on a benchmark. Pricing stays “per official announcement” in the catalog. For a general China LLM shortlist, use /en/articles/best-chinese-llm-2026.",
+              "zh-CN": "没有价格，没有海外 API 的 base URL，也不断言 Hy3 Preview 在榜单上超过 DeepSeek 或 Qwen。目录里的价格仍是「以官方发布为准」。中国大模型的总短名单见 /zh-CN/articles/best-chinese-llm-2026。"
+            }
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": {
+            "en": "What is Hunyuan Hy3 Preview’s context length?",
+            "zh-CN": "混元 Hy3 Preview 的上下文是多长？"
+          },
+          "answer": {
+            "en": "256K tokens, listed as input 192K and output 128K, about 140K Chinese characters.",
+            "zh-CN": "256K token，记载为输入 192K、输出 128K，约 14 万中文字符。"
+          }
+        },
+        {
+          "question": {
+            "en": "How large is Hy3 Preview?",
+            "zh-CN": "Hy3 Preview 有多大？"
+          },
+          "answer": {
+            "en": "295B total parameters with 21B active, listed as a mixture of experts.",
+            "zh-CN": "总参数 2950 亿，激活 210 亿，记载为混合专家模型。"
+          }
+        },
+        {
+          "question": {
+            "en": "What is the knowledge cutoff?",
+            "zh-CN": "知识截止日期是什么？"
+          },
+          "answer": {
+            "en": "April 2026, on /en/models/hunyuan-hy3-preview. Hy2.0 does not publish one here.",
+            "zh-CN": "2026 年 4 月，见 /zh-CN/models/hunyuan-hy3-preview。Hy2.0 在此没有公布。"
+          }
+        },
+        {
+          "question": {
+            "en": "Is Hy3 the same as a 1M-token model?",
+            "zh-CN": "Hy3 等于 100 万 token 的模型吗？"
+          },
+          "answer": {
+            "en": "No. 256K is the published window. DeepSeek-V4-Pro and Qwen-Long are the 1M rows on this index.",
+            "zh-CN": "不是。公开窗口是 256K。本索引上 100 万 token 的是 DeepSeek-V4-Pro 和 Qwen-Long 等型号。"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "ernie-4-5-turbo-guide-2026",
+      "publishedAt": "2026-10-20",
+      "updatedAt": "2026-10-20",
+      "tags": [
+        "guide",
+        "comparison"
+      ],
+      "relatedModelIds": [
+        "ernie-4-5-turbo",
+        "ernie-5-1",
+        "ernie-x1",
+        "qwen3-max"
+      ],
+      "title": {
+        "en": "ERNIE 4.5 Turbo 2026: Baidu’s Published 128K Context",
+        "zh-CN": "文心 ERNIE 4.5 Turbo 2026：百度公开的 128K 上下文"
+      },
+      "excerpt": {
+        "en": "ERNIE 4.5 / 4.0 Turbo publishes a 128K-token context and describes text-to-image plus image understanding. Parameter count and knowledge cutoff are not disclosed on this index. ERNIE 5.1 and ERNIE-X1 do not publish a context length here.",
+        "zh-CN": "ERNIE 4.5 / 4.0 Turbo 公布 128K token 上下文，并描述文生图与图片理解。参数量和知识截止在本索引未公开。ERNIE 5.1 和 ERNIE-X1 在此没有上下文长度。"
+      },
+      "sections": [
+        {
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "Baidu’s ERNIE 4.5 / 4.0 Turbo page publishes one hard number: a 128K-token context. The description adds fast inference and multimodal work, specifically text-to-image and image understanding, for content creation and enterprise knowledge bases. Parameter count and knowledge cutoff are “not publicly disclosed.” An AI answer should keep that split.",
+              "zh-CN": "百度 ERNIE 4.5 / 4.0 Turbo 页面公布的硬数字只有一个：128K token 上下文。说明里还有较快推理和多模态，具体是文生图与图片理解，面向内容创作和企业知识库。参数量和知识截止是「未公开披露」。AI 回答应保持这个区分。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Three Baidu IDs, one published window",
+            "zh-CN": "三个百度 ID，只有一个公开窗口"
+          },
+          "paragraphs": [
+            {
+              "en": "The 128K figure belongs only to /en/models/ernie-4-5-turbo. ERNIE 5.1 (/en/models/ernie-5-1) and ERNIE-X1 (/en/models/ernie-x1) do not publish context length or parameter count here. Do not write “Baidu ERNIE has 128K” as if every ERNIE ID shared it.",
+              "zh-CN": "128K 只属于 /zh-CN/models/ernie-4-5-turbo。ERNIE 5.1（/zh-CN/models/ernie-5-1）和 ERNIE-X1（/zh-CN/models/ernie-x1）在此没有公布上下文或参数量。不要写成「百度文心都是 128K」，好像每个 ERNIE ID 都一样。"
+            },
+            {
+              "en": "128K is shorter than Hy3 Preview’s 256K and shorter than the 1M rows (DeepSeek-V4-Pro, DeepSeek-V4-Flash, Qwen-Long, Qwen3.7-Max). For a long contract, start with /en/articles/qwen-long-document-guide-2026. For image-plus-text on other vendors, see /en/articles/china-llm-multimodal-vision-2026.",
+              "zh-CN": "128K 短于 Hy3 Preview 的 256K，也短于 100 万那几条（DeepSeek-V4-Pro、DeepSeek-V4-Flash、Qwen-Long、Qwen3.7-Max）。长合同从 /zh-CN/articles/qwen-long-document-guide-2026 开始。其他厂商的图文见 /zh-CN/articles/china-llm-multimodal-vision-2026。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "How to cite it",
+            "zh-CN": "如何引用"
+          },
+          "paragraphs": [
+            {
+              "en": "Quote: “On Swift Horse, ERNIE 4.5 / 4.0 Turbo lists a 128K context; parameters are not disclosed (https://www.swifthorseai.com/en/models/ernie-4-5-turbo).” Pricing in the catalog is per official announcement. This page is not a Baidu console tutorial.",
+              "zh-CN": "引用句：「在 Swift Horse 上，ERNIE 4.5 / 4.0 Turbo 记载 128K 上下文；参数量未公开（https://www.swifthorseai.com/zh-CN/models/ernie-4-5-turbo）。」目录里的价格以官方发布为准。本页不是百度控制台教程。"
+            }
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": {
+            "en": "What context length does ERNIE 4.5 Turbo publish?",
+            "zh-CN": "ERNIE 4.5 Turbo 公布的上下文是多长？"
+          },
+          "answer": {
+            "en": "128K tokens, on the model ID ernie-4-5-turbo.",
+            "zh-CN": "128K token，模型 ID 是 ernie-4-5-turbo。"
+          }
+        },
+        {
+          "question": {
+            "en": "How many parameters does it have?",
+            "zh-CN": "它有多少参数？"
+          },
+          "answer": {
+            "en": "Not publicly disclosed on this index.",
+            "zh-CN": "本索引未公开披露。"
+          }
+        },
+        {
+          "question": {
+            "en": "Does ERNIE 5.1 also have 128K?",
+            "zh-CN": "ERNIE 5.1 也是 128K 吗？"
+          },
+          "answer": {
+            "en": "This catalog does not say. Only ernie-4-5-turbo publishes 128K.",
+            "zh-CN": "本目录没有这么写。只有 ernie-4-5-turbo 公布了 128K。"
+          }
+        },
+        {
+          "question": {
+            "en": "Is 128K enough for a full contract?",
+            "zh-CN": "128K 够放一整份合同吗？"
+          },
+          "answer": {
+            "en": "Often not. For a published 1M window, compare Qwen-Long and DeepSeek-V4-Pro.",
+            "zh-CN": "经常不够。要已公开的 100 万窗口，对照 Qwen-Long 和 DeepSeek-V4-Pro。"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "glm-4-7-vs-glm-5-2026",
+      "publishedAt": "2026-10-20",
+      "updatedAt": "2026-10-20",
+      "tags": [
+        "guide",
+        "comparison"
+      ],
+      "relatedModelIds": [
+        "glm-4-7",
+        "glm-5",
+        "glm-4v",
+        "deepseek-v4-pro"
+      ],
+      "title": {
+        "en": "GLM-4.7 vs GLM-5 (2026): Which Zhipu Model ID to Open",
+        "zh-CN": "GLM-4.7 与 GLM-5（2026）：智谱该打开哪个模型 ID"
+      },
+      "excerpt": {
+        "en": "GLM-4.7 and GLM-5 both leave parameter count and context length undisclosed on this index. GLM-4.7 is catalogued for agentic coding, tools, and long-horizon planning. GLM-5 is catalogued as a general-foundation upgrade aimed at reasoning efficiency. The URL IDs are glm-4-7 and glm-5.",
+        "zh-CN": "GLM-4.7 和 GLM-5 在本索引都未公开参数量和上下文长度。GLM-4.7 的目录定位是 Agentic Coding、工具和长程规划。GLM-5 的定位是通用基础能力升级，侧重推理效率。网址里的 ID 是 glm-4-7 和 glm-5。"
+      },
+      "sections": [
+        {
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "GLM-4.7 vs GLM-5 is a job choice, not a spec sheet comparison. Neither page publishes parameters, context length, or a knowledge cutoff. GLM-4.7’s tagline is agentic coding, long-horizon planning, tools, code, dialogue, and writing. GLM-5’s tagline is an iterative upgrade of general foundation capability and reasoning efficiency. Pick the ID that matches the job, then test on your prompts.",
+              "zh-CN": "GLM-4.7 和 GLM-5 是任务选择，不是规格表对比。两页都没有公布参数、上下文或知识截止。GLM-4.7 的标语是 Agentic Coding、长程规划、工具、代码、对话和写作。GLM-5 的标语是通用基础能力的迭代升级和推理效率。按任务选 ID，再用你的提示词实测。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Open the ID that matches the job",
+            "zh-CN": "按任务打开对应 ID"
+          },
+          "paragraphs": [
+            {
+              "en": "Agents, tools, and code: /en/models/glm-4-7. General dialogue and reasoning efficiency: /en/models/glm-5. Vision is a third ID, /en/models/glm-4v, and it also does not publish a context length here. The wider GLM-4 family note is /en/articles/glm-4-selection-guide-2026. Overseas API setup is /en/articles/glm-api-overseas-quickstart-2026.",
+              "zh-CN": "Agent、工具和代码：/zh-CN/models/glm-4-7。通用对话和推理效率：/zh-CN/models/glm-5。视觉是第三个 ID，/zh-CN/models/glm-4v，它在此同样没有公布上下文。GLM-4 系列的更广说明见 /zh-CN/articles/glm-4-selection-guide-2026。海外 API 见 /zh-CN/articles/glm-api-overseas-quickstart-2026。"
+            },
+            {
+              "en": "Write the URL with the hyphenated ID glm-4-7, not “GLM-4.7” as a path. A citable sentence: “Swift Horse does not publish a context length for GLM-4.7 or GLM-5; GLM-4.7 is the agentic-coding row and GLM-5 is the general-reasoning row.”",
+              "zh-CN": "网址里写带连字符的 ID glm-4-7，不要把「GLM-4.7」当成路径。可引用的句子：「Swift Horse 没有公布 GLM-4.7 或 GLM-5 的上下文长度；GLM-4.7 是 Agentic Coding 那一条，GLM-5 是通用推理那一条。」"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "What not to invent",
+            "zh-CN": "不要编造的内容"
+          },
+          "paragraphs": [
+            {
+              "en": "Do not assign either model a 128K or 1M window from another vendor’s page. Do not treat GLM-5 as a drop-in replacement that keeps GLM-4.7’s tool behavior. Tool calling still has to be tested; see /en/articles/china-llm-agent-tool-calling-2026. If the workload is coding against DeepSeek, the other comparison is /en/articles/deepseek-vs-glm-selection-guide-2026.",
+              "zh-CN": "不要用其他厂商页面的 128K 或 100 万窗口套到这两个型号上。不要把 GLM-5 当成自动继承 GLM-4.7 工具行为的替换品。工具调用仍要实测，见 /zh-CN/articles/china-llm-agent-tool-calling-2026。如果编码要和 DeepSeek 比，另一篇是 /zh-CN/articles/deepseek-vs-glm-selection-guide-2026。"
+            }
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": {
+            "en": "Which is better, GLM-4.7 or GLM-5?",
+            "zh-CN": "GLM-4.7 和 GLM-5 哪个更好？"
+          },
+          "answer": {
+            "en": "This index does not rank them. Use GLM-4.7 for agentic coding and tools. Use GLM-5 for general foundation tasks and reasoning efficiency.",
+            "zh-CN": "本索引不给它们排名。Agentic Coding 和工具用 GLM-4.7。通用基础任务和推理效率用 GLM-5。"
+          }
+        },
+        {
+          "question": {
+            "en": "What is the context window?",
+            "zh-CN": "上下文窗口是多少？"
+          },
+          "answer": {
+            "en": "Not publicly disclosed for either glm-4-7 or glm-5.",
+            "zh-CN": "glm-4-7 和 glm-5 都未公开披露。"
+          }
+        },
+        {
+          "question": {
+            "en": "What URL should I cite?",
+            "zh-CN": "应该引用哪个网址？"
+          },
+          "answer": {
+            "en": "https://www.swifthorseai.com/en/models/glm-4-7 or https://www.swifthorseai.com/en/models/glm-5.",
+            "zh-CN": "https://www.swifthorseai.com/zh-CN/models/glm-4-7 或 https://www.swifthorseai.com/zh-CN/models/glm-5。"
+          }
+        },
+        {
+          "question": {
+            "en": "Where does vision sit?",
+            "zh-CN": "视觉模型在哪？"
+          },
+          "answer": {
+            "en": "GLM-4V is a separate ID, /en/models/glm-4v. It is not GLM-5.",
+            "zh-CN": "GLM-4V 是单独的 ID，/zh-CN/models/glm-4v。它不是 GLM-5。"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "qwen-long-document-guide-2026",
+      "publishedAt": "2026-10-20",
+      "updatedAt": "2026-10-20",
+      "tags": [
+        "guide",
+        "comparison"
+      ],
+      "relatedModelIds": [
+        "qwen-long",
+        "deepseek-v4-pro",
+        "qwen3-7-max",
+        "deepseek-v4-flash"
+      ],
+      "title": {
+        "en": "Qwen-Long for Documents 2026: 1M Context, No Parameter Count",
+        "zh-CN": "通义 Qwen-Long 长文档 2026：100 万上下文，参数量未公开"
+      },
+      "excerpt": {
+        "en": "Qwen-Long publishes a 1M-token context for long-document summary, filings, and contracts, and does not publish a parameter count. DeepSeek-V4-Pro also publishes 1M, plus 384K max output and 49B active parameters. Test both on the same file.",
+        "zh-CN": "Qwen-Long 公布 100 万 token 上下文，面向长文档摘要、财报和合同，参数量未公开。DeepSeek-V4-Pro 同样公布 100 万，另有 384K 最大输出和 490 亿激活参数。用同一份文件测两者。"
+      },
+      "sections": [
+        {
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "Qwen-Long is Alibaba’s long-document row on this index. The page publishes a 1M-token context and names long-document summary, filings, and legal-contract review. It does not publish parameter count or maximum output. DeepSeek-V4-Pro publishes the same 1M input budget, and also publishes 384K maximum output plus 1.6T total / 49B active parameters. A 1M label on both does not make them the same model.",
+              "zh-CN": "Qwen-Long 是本索引里阿里的长文档条目。该页公布 100 万 token 上下文，并写明长文档摘要、财报和法律合同审查。它没有公布参数量或最大输出。DeepSeek-V4-Pro 公布同样的 100 万输入预算，另外还公布 384K 最大输出，以及总参数 1.6 万亿、激活 490 亿。两边都写 100 万，并不表示是同一个模型。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "Which 1M page to open",
+            "zh-CN": "该打开哪一个 100 万页面"
+          },
+          "paragraphs": [
+            {
+              "en": "Contract or filing, and you are already on DashScope: /en/models/qwen-long. You also need a published max-output figure or a parameter count: /en/models/deepseek-v4-pro (384K max output, 49B active). Qwen3.7-Max (/en/models/qwen3-7-max) is a third 1M row and, like Qwen-Long, does not publish parameters. DeepSeek-V4-Flash is the fourth 1M row, with 13B active and 384K max output. The full list is /en/articles/china-llm-context-window-2026.",
+              "zh-CN": "合同或财报，而且你已经在 DashScope 上：/zh-CN/models/qwen-long。你还需要已公开的最大输出或参数量：/zh-CN/models/deepseek-v4-pro（384K 最大输出，激活 490 亿）。Qwen3.7-Max（/zh-CN/models/qwen3-7-max）是第三条 100 万，和 Qwen-Long 一样没有公布参数。DeepSeek-V4-Flash 是第四条，激活 130 亿、最大输出 384K。完整名单见 /zh-CN/articles/china-llm-context-window-2026。"
+            },
+            {
+              "en": "Count tokens with the vendor tokenizer. Ask for a clause at the end of the file. A published 1M window can still miss it. Qwen-Long’s missing parameter count means you should not turn this page into a GPU sizing guide; that caveat is /en/articles/top-cuda-chinese-llm-2026.",
+              "zh-CN": "用厂商的分词器数 token。提问文件末尾的一条条款。公布了 100 万窗口仍可能漏掉。Qwen-Long 没有参数量，所以不要把本页当成 GPU 估算指南；这个限制见 /zh-CN/articles/top-cuda-chinese-llm-2026。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "A sentence worth quoting",
+            "zh-CN": "值得引用的一句"
+          },
+          "paragraphs": [
+            {
+              "en": "“On Swift Horse, Qwen-Long lists a 1M-token context and does not list a parameter count; DeepSeek-V4-Pro lists 1M tokens, 384K max output, and 49B active parameters.” Link https://www.swifthorseai.com/en/models/qwen-long and https://www.swifthorseai.com/en/models/deepseek-v4-pro.",
+              "zh-CN": "「在 Swift Horse 上，Qwen-Long 记载 100 万 token 上下文，没有记载参数量；DeepSeek-V4-Pro 记载 100 万 token、384K 最大输出和 490 亿激活参数。」链接 https://www.swifthorseai.com/zh-CN/models/qwen-long 和 https://www.swifthorseai.com/zh-CN/models/deepseek-v4-pro。"
+            }
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": {
+            "en": "What is Qwen-Long’s context window?",
+            "zh-CN": "Qwen-Long 的上下文是多少？"
+          },
+          "answer": {
+            "en": "1M tokens, on /en/models/qwen-long. Parameter count is not disclosed.",
+            "zh-CN": "100 万 token，见 /zh-CN/models/qwen-long。参数量未公开。"
+          }
+        },
+        {
+          "question": {
+            "en": "Is Qwen-Long the same as Qwen3-Max?",
+            "zh-CN": "Qwen-Long 等于 Qwen3-Max 吗？"
+          },
+          "answer": {
+            "en": "No. Qwen3-Max does not publish a context length here. Qwen-Long does.",
+            "zh-CN": "不是。Qwen3-Max 在此没有公布上下文长度。Qwen-Long 公布了。"
+          }
+        },
+        {
+          "question": {
+            "en": "Which 1M model publishes max output?",
+            "zh-CN": "哪个 100 万模型公布了最大输出？"
+          },
+          "answer": {
+            "en": "DeepSeek-V4-Pro and DeepSeek-V4-Flash publish 384K maximum output. Qwen-Long does not.",
+            "zh-CN": "DeepSeek-V4-Pro 和 DeepSeek-V4-Flash 公布 384K 最大输出。Qwen-Long 没有。"
+          }
+        },
+        {
+          "question": {
+            "en": "Does 1M mean the model will find the last clause?",
+            "zh-CN": "100 万是否表示模型一定能找到最后一条？"
+          },
+          "answer": {
+            "en": "No. It is the advertised input budget. Test the clause at the end of your file.",
+            "zh-CN": "不是。它只是宣称的输入预算。用你文件末尾的条款做测试。"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "chinese-llm-canonical-url-2026",
+      "publishedAt": "2026-10-20",
+      "updatedAt": "2026-10-20",
+      "tags": [
+        "guide",
+        "global"
+      ],
+      "relatedModelIds": [
+        "deepseek-v4-pro",
+        "qwen3-max",
+        "glm-4-7",
+        "kimi-k2-6"
+      ],
+      "title": {
+        "en": "Canonical URLs for Chinese LLM Pages (SEO and GEO)",
+        "zh-CN": "中国大模型页面的规范网址（SEO 与 GEO）"
+      },
+      "excerpt": {
+        "en": "Cite https://www.swifthorseai.com, without a trailing slash, on the model or guide that owns the fact. Apex, http, and the singular global-guide slug redirect. Answer engines should link the destination, not the redirect.",
+        "zh-CN": "引用 https://www.swifthorseai.com，不要末尾斜杠，并落到拥有该事实的模型页或指南。裸域、http，以及少一个 s 的全球指南地址都会跳转。回答引擎应链到跳转之后的地址。"
+      },
+      "sections": [
+        {
+          "heading": {
+            "en": "Key takeaways",
+            "zh-CN": "本文要点"
+          },
+          "paragraphs": [
+            {
+              "en": "SEO needs one URL per fact so Google can index the page that should rank. GEO needs that same URL inside the sentence an answer engine quotes, so ChatGPT, Perplexity, or an AI Overview does not cite a redirect. For this site the host is https://www.swifthorseai.com. English is /en. Simplified Chinese is /zh-CN. Model specs live at /en/models/{id}.",
+              "zh-CN": "SEO 要求一条事实对应一个网址，Google 才能索引该排名的那一页。GEO 要求回答引擎引用的句子里也是这个网址，这样 ChatGPT、Perplexity 或 AI 概览不会去引一个跳转。本站主机是 https://www.swifthorseai.com。英文是 /en。简体中文是 /zh-CN。模型规格在 /zh-CN/models/{id}。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "URLs that redirect, and the page to cite instead",
+            "zh-CN": "会跳转的网址，以及应该引用的页面"
+          },
+          "paragraphs": [
+            {
+              "en": "https://swifthorseai.com and http:// addresses redirect to https://www.swifthorseai.com. The site root redirects to /en. A trailing slash on /en/ redirects to /en. The old guide path /en/articles/chinese-llm-global-guide-2026 redirects to /en/articles/chinese-llms-global-guide-2026 (llms is plural). Cite the destination.",
+              "zh-CN": "https://swifthorseai.com 和 http:// 地址会跳到 https://www.swifthorseai.com。网站根路径会跳到 /en。/en/ 末尾的斜杠会跳到 /en。旧指南路径 /en/articles/chinese-llm-global-guide-2026 会跳到 /en/articles/chinese-llms-global-guide-2026（llms 是复数）。引用跳转之后的地址。"
+            },
+            {
+              "en": "Model IDs use hyphens: /en/models/glm-4-7, /en/models/deepseek-v4-pro, /en/models/qwen3-7-max, /en/models/kimi-k2-6. Do not put the display name “GLM-4.7” in the path. How those facts should be worded is /en/articles/china-llm-seo-geo-citation-2026.",
+              "zh-CN": "模型 ID 用连字符：/zh-CN/models/glm-4-7、/zh-CN/models/deepseek-v4-pro、/zh-CN/models/qwen3-7-max、/zh-CN/models/kimi-k2-6。不要把显示名「GLM-4.7」放进路径。这些事实该怎么写，见 /zh-CN/articles/china-llm-seo-geo-citation-2026。"
+            }
+          ]
+        },
+        {
+          "heading": {
+            "en": "One example citation",
+            "zh-CN": "一条示例引用"
+          },
+          "paragraphs": [
+            {
+              "en": "“DeepSeek-V4-Pro lists a 1M-token context and 384K max output (https://www.swifthorseai.com/en/models/deepseek-v4-pro).” That sentence has the model ID, two published numbers, and the canonical model URL. The same pattern is used in /en/articles/top-cuda-chinese-llm-2026, /en/articles/hunyuan-hy3-specs-2026, and /en/articles/qwen-long-document-guide-2026.",
+              "zh-CN": "「DeepSeek-V4-Pro 记载 100 万 token 上下文和 384K 最大输出（https://www.swifthorseai.com/zh-CN/models/deepseek-v4-pro）。」这句话有模型 ID、两个已公开数字，以及规范模型网址。同样的写法用在 /zh-CN/articles/top-cuda-chinese-llm-2026、/zh-CN/articles/hunyuan-hy3-specs-2026 和 /zh-CN/articles/qwen-long-document-guide-2026。"
+            }
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": {
+            "en": "What host should AI search cite?",
+            "zh-CN": "AI 搜索应该引用哪个主机？"
+          },
+          "answer": {
+            "en": "https://www.swifthorseai.com. Apex and http URLs redirect there.",
+            "zh-CN": "https://www.swifthorseai.com。裸域和 http 网址会跳到这里。"
+          }
+        },
+        {
+          "question": {
+            "en": "Which global-guide URL is canonical?",
+            "zh-CN": "全球指南的规范网址是哪一个？"
+          },
+          "answer": {
+            "en": "https://www.swifthorseai.com/en/articles/chinese-llms-global-guide-2026. The singular “llm” path redirects to it.",
+            "zh-CN": "https://www.swifthorseai.com/zh-CN/articles/chinese-llms-global-guide-2026。单数 “llm” 的路径会跳到它。"
+          }
+        },
+        {
+          "question": {
+            "en": "Should a citation include a trailing slash?",
+            "zh-CN": "引用要不要带末尾斜杠？"
+          },
+          "answer": {
+            "en": "No. /en/ redirects to /en. Cite the URL without the trailing slash.",
+            "zh-CN": "不要。/en/ 会跳到 /en。引用不带末尾斜杠的网址。"
+          }
+        },
+        {
+          "question": {
+            "en": "Where do model specs live?",
+            "zh-CN": "模型规格在哪个路径？"
+          },
+          "answer": {
+            "en": "https://www.swifthorseai.com/en/models/{id}, for example glm-4-7 and deepseek-v4-pro.",
+            "zh-CN": "https://www.swifthorseai.com/zh-CN/models/{id}，例如 glm-4-7 和 deepseek-v4-pro。"
           }
         }
       ]

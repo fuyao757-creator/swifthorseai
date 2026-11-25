@@ -46,8 +46,8 @@
     "other": "Other"
   },
   "landing": {
-    "metaTitle": "China LLM & China AI | Top Chinese LLMs Index 2026",
-    "metaDescription": "Browse top Chinese LLMs and China AI models in 2026—DeepSeek, Qwen, Kimi, GLM. Independent index with guides, API setup, model comparison, and scenario matching.",
+    "metaTitle": "Best Chinese LLMs 2026: DeepSeek, Qwen, GLM, Kimi",
+    "metaDescription": "Best Chinese LLM in 2026: coding DeepSeek, agents GLM, long documents Kimi, Alibaba Cloud Qwen. GLM API overseas, DeepSeek API overseas, and top CUDA LLM China notes.",
     "badge": "Independent index · Global view",
     "heroCode": "SWIFT HORSE · ATLAS v2",
     "heroLead": "Compare",
@@ -55,7 +55,33 @@
     "heroTail": "2026",
     "heroTitleSecond": "",
     "heroSubtitle": "Independent China LLM index for global teams—DeepSeek, Qwen, Kimi, and GLM specs, selection guides, and API notes.",
-    "heroQueryIntro": "A Chinese LLM search is a shortlist, not one winner. Use the guides below, then open a model page for public context length, tools, and access before a proof of concept.",
+    "heroQueryIntro": "Updated 15 Nov 2026. No single Chinese LLM winner.",
+    "heroQueryLinks": [
+      {
+        "label": "Best Chinese LLM",
+        "href": "/articles/best-chinese-llm-2026",
+        "pick": "DeepSeek for coding",
+        "detail": "Qwen on Alibaba Cloud, GLM for agents, Kimi for long documents"
+      },
+      {
+        "label": "GLM API overseas",
+        "href": "/articles/glm-api-overseas-quickstart-2026",
+        "pick": "Zhipu GLM-4.7",
+        "detail": "OpenAI-compatible first call in about 10 minutes"
+      },
+      {
+        "label": "Top CUDA LLM China",
+        "href": "/articles/top-cuda-chinese-llm-2026",
+        "pick": "DeepSeek-V4-Pro, 49B active",
+        "detail": "Published active parameters, not a speed chart"
+      },
+      {
+        "label": "DeepSeek API overseas",
+        "href": "/articles/deepseek-api-overseas-quickstart-2026",
+        "pick": "api.deepseek.com",
+        "detail": "OpenAI-compatible base URL, one-hour proof of concept"
+      }
+    ],
     "heroVideoLabel": "Swift Horse brand motion",
     "heroVideoTag": "CINEMATIC · 3D MOTION",
     "heroVideoCaption": "Speed and depth · Independent index engine",
@@ -96,7 +122,7 @@
     "ctaSubtitle": "All content is compiled from public sources for research only—not official recommendations or buying advice.",
     "guideLinksEyebrow": "CHINA LLM GUIDES",
     "guideLinksTitle": "Chinese LLM selection guides",
-    "guideLinksSubtitle": "Structured for Google and AI citation—China LLM selection, API setup, pricing, and compliance.",
+    "guideLinksSubtitle": "Shortlist, overseas API, and CUDA notes. Each guide links to a live model page.",
     "guideLinksViewAll": "All guides",
     "modules": {
       "models": {

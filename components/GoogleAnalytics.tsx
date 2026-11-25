@@ -3,7 +3,7 @@
 import Script from "next/script";
 import { Suspense, useEffect } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
-import { GA_MEASUREMENT_ID, pageview } from "@/lib/gtag";
+import { flushPageviews, GA_MEASUREMENT_ID, pageview } from "@/lib/gtag";
 
 function AnalyticsPageView() {
   const pathname = usePathname();
@@ -12,12 +12,21 @@ function AnalyticsPageView() {
   useEffect(() => {
     const query = searchParams.toString();
     pageview(query ? `${pathname}?${query}` : pathname);
+    flushPageviews();
   }, [pathname, searchParams]);
 
   return null;
 }
 
 export function GoogleAnalytics() {
+  useEffect(() => {
+    window.__bmFlushPageviews = flushPageviews;
+    flushPageviews();
+    return () => {
+      delete window.__bmFlushPageviews;
+    };
+  }, []);
+
   if (!GA_MEASUREMENT_ID) return null;
 
   return (
@@ -30,8 +39,10 @@ export function GoogleAnalytics() {
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
+          window.gtag = gtag;
           gtag('js', new Date());
           gtag('config', '${GA_MEASUREMENT_ID}', { send_page_view: false });
+          if (window.__bmFlushPageviews) window.__bmFlushPageviews();
         `}
       </Script>
       <Suspense fallback={null}>

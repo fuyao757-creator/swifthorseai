@@ -1,13 +1,13 @@
 import { getArticles } from "./articles";
 
-/** Homepage strip — aligned to GSC queries that already have impressions. */
+/** Homepage strip — queries with impressions and no clicks in Search Console. */
 export const HOMEPAGE_GUIDE_SLUGS = [
   "best-chinese-llm-2026",
-  "china-ai-llm-guide-2026",
+  "glm-api-overseas-quickstart-2026",
+  "top-cuda-chinese-llm-2026",
   "glm-4-selection-guide-2026",
-  "access-china-llm-api-overseas",
+  "deepseek-api-overseas-quickstart-2026",
   "top-chinese-ai-models-2026",
-  "china-llm-api-pricing-2026",
 ] as const;
 
 export const MATCH_PAGE_GUIDE_SLUGS = [
@@ -20,11 +20,11 @@ export const MATCH_PAGE_GUIDE_SLUGS = [
 /** Hub pages that should receive internal links from other articles. */
 const RELATED_PRIORITY_SLUGS = [
   "best-chinese-llm-2026",
+  "glm-api-overseas-quickstart-2026",
+  "top-cuda-chinese-llm-2026",
   "glm-4-selection-guide-2026",
-  "china-ai-llm-guide-2026",
+  "deepseek-api-overseas-quickstart-2026",
   "access-china-llm-api-overseas",
-  "top-chinese-ai-models-2026",
-  "china-llm-api-pricing-2026",
 ] as const;
 
 const RELATED_GUIDE_POOL = [
@@ -68,6 +68,12 @@ const RELATED_GUIDE_POOL = [
   "kimi-k2-selection-guide-2026",
   "china-llm-context-window-2026",
   "china-llm-seo-geo-citation-2026",
+  "top-cuda-chinese-llm-2026",
+  "hunyuan-hy3-specs-2026",
+  "ernie-4-5-turbo-guide-2026",
+  "glm-4-7-vs-glm-5-2026",
+  "qwen-long-document-guide-2026",
+  "chinese-llm-canonical-url-2026",
 ] as const;
 
 const prioritySet = new Set<string>(RELATED_PRIORITY_SLUGS);
